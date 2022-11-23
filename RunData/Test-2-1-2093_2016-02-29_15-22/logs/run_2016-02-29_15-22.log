@@ -1,0 +1,488 @@
+Treating group of Categories: Co
+Selected columns:
+
+Running predictor 'GLM' for group 'Co'.
+ERROR running train/test for predictor 'GLM' and group 'Co': 
+ x should be a matrix with 2 or more columns
+TRACEBACK:
+1: glmnet(x, y, weights = weights, offset = offset, lambda = lambda, ...)
+2: stop("x should be a matrix with 2 or more columns")
+Running predictor 'RF' for group 'Co'.
+ERROR running train/test for predictor 'RF' and group 'Co': 
+ argument to 'which' is not logical
+TRACEBACK:
+1: randomForest.default(Xtrain, Ytrain, Xtest)
+2: which(sapply(xtest, is.factor))
+Running predictor 'RF2' for group 'Co'.
+ERROR running train/test for predictor 'RF2' and group 'Co': 
+ argument to 'which' is not logical
+TRACEBACK:
+1: randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest))))
+2: which(sapply(xtest, is.factor))
+Running predictor 'RF3' for group 'Co'.
+ERROR running train/test for predictor 'RF3' and group 'Co': 
+ Need at least two classes to do classification.
+TRACEBACK:
+1: randomForest.default(Xtrain, factor(Ytrain), Xtest)
+2: stop("Need at least two classes to do classification.")
+Running predictor 'RFO' for group 'Co'.
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ Need at least two classes to do classification.
+TRACEBACK:
+1: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+2: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), pars, list(...)))
+3: randomForest(structure(list(), row.names = c(NA, -211L), class = c("tbl_df", "data.frame"), .Names = character(0)), y = structure(c(NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), mtry = NA_real_)
+4: randomForest.default(structure(list(), row.names = c(NA, -211L), class = c("tbl_df", "data.frame"), .Names = character(0)), y = structure(c(NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), mtry = NA_real_)
+5: stop("Need at least two classes to do classification.")
+Running predictor 'RP' for group 'Co'.
+ERROR running train/test for predictor 'RP' and group 'Co': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: is.factor(model.response(model.frame(formula, data)))
+2: model.response(model.frame(formula, data))
+3: model.frame(formula, data)
+4: model.frame.default(formula, data)
+5: is.data.frame(data)
+6: data.frame(Y = as.numeric(Ytrain), Xtrain)
+7: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'SVM' for group 'Co'.
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ Model is empty!
+TRACEBACK:
+1: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), pars, list(...)))
+2: (function (x, ...) 
+ UseMethod("svm"))(structure(integer(0), .Dim = c(211L, 0L), .Dimnames = list(NULL, NULL)), y = structure(c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), gamma = 0.0009765625, cost = 0.1, probability = TRUE)
+3: svm.default(structure(integer(0), .Dim = c(211L, 0L), .Dimnames = list(NULL, NULL)), y = structure(c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), gamma = 0.0009765625, cost = 0.1, probability = TRUE)
+4: na.action(predict(ret, xhold, decision.values = TRUE))
+5: predict(ret, xhold, decision.values = TRUE)
+6: predict.svm(ret, xhold, decision.values = TRUE)
+7: stop("Model is empty!")
+Running predictor 'NB' for group 'Co'.
+ERROR running train/test for predictor 'NB' and group 'Co': 
+ arguments imply differing number of rows: 0, 211
+TRACEBACK:
+1: lapply(X = X, FUN = FUN, ...)
+2: FUN(0:15[[1L]], ...)
+3: predict(naiveBayes(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l), Xtrain[foldIdxs == fold, 
+     ], type = "raw") at Code/05_predictors.R:193
+4: naiveBayes(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l)
+5: naiveBayes.formula(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l)
+6: is.data.frame(data)
+7: data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ])
+8: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'KNN' for group 'Co'.
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: model.frame(formula, data = data)
+2: model.frame.default(formula, data = data)
+3: is.data.frame(data)
+4: data.frame(Y = as.numeric(Ytrain), Xtrain)
+5: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'KNNC' for group 'Co'.
+ERROR running train/test for predictor 'KNNC' and group 'Co': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: model.frame(formula, data = data)
+2: model.frame.default(formula, data = data)
+3: is.data.frame(data)
+4: data.frame(Y = factor(as.numeric(Ytrain)), Xtrain)
+5: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Treating group of Categories: CoPa
+Selected columns:
+
+Running predictor 'GLM' for group 'CoPa'.
+ERROR running train/test for predictor 'GLM' and group 'CoPa': 
+ x should be a matrix with 2 or more columns
+TRACEBACK:
+1: glmnet(x, y, weights = weights, offset = offset, lambda = lambda, ...)
+2: stop("x should be a matrix with 2 or more columns")
+Running predictor 'RF' for group 'CoPa'.
+ERROR running train/test for predictor 'RF' and group 'CoPa': 
+ argument to 'which' is not logical
+TRACEBACK:
+1: randomForest.default(Xtrain, Ytrain, Xtest)
+2: which(sapply(xtest, is.factor))
+Running predictor 'RF2' for group 'CoPa'.
+ERROR running train/test for predictor 'RF2' and group 'CoPa': 
+ argument to 'which' is not logical
+TRACEBACK:
+1: randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest))))
+2: which(sapply(xtest, is.factor))
+Running predictor 'RF3' for group 'CoPa'.
+ERROR running train/test for predictor 'RF3' and group 'CoPa': 
+ Need at least two classes to do classification.
+TRACEBACK:
+1: randomForest.default(Xtrain, factor(Ytrain), Xtest)
+2: stop("Need at least two classes to do classification.")
+Running predictor 'RFO' for group 'CoPa'.
+ERROR running train/test for predictor 'RFO' and group 'CoPa': 
+ Need at least two classes to do classification.
+TRACEBACK:
+1: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+2: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), pars, list(...)))
+3: randomForest(structure(list(), row.names = c(NA, -211L), class = c("tbl_df", "data.frame"), .Names = character(0)), y = structure(c(NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), mtry = NA_real_)
+4: randomForest.default(structure(list(), row.names = c(NA, -211L), class = c("tbl_df", "data.frame"), .Names = character(0)), y = structure(c(NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), mtry = NA_real_)
+5: stop("Need at least two classes to do classification.")
+Running predictor 'RP' for group 'CoPa'.
+ERROR running train/test for predictor 'RP' and group 'CoPa': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: is.factor(model.response(model.frame(formula, data)))
+2: model.response(model.frame(formula, data))
+3: model.frame(formula, data)
+4: model.frame.default(formula, data)
+5: is.data.frame(data)
+6: data.frame(Y = as.numeric(Ytrain), Xtrain)
+7: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'SVM' for group 'CoPa'.
+ERROR running train/test for predictor 'SVM' and group 'CoPa': 
+ Model is empty!
+TRACEBACK:
+1: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), pars, list(...)))
+2: (function (x, ...) 
+ UseMethod("svm"))(structure(integer(0), .Dim = c(211L, 0L), .Dimnames = list(NULL, NULL)), y = structure(c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), gamma = 0.0009765625, cost = 0.1, probability = TRUE)
+3: svm.default(structure(integer(0), .Dim = c(211L, 0L), .Dimnames = list(NULL, NULL)), y = structure(c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), gamma = 0.0009765625, cost = 0.1, probability = TRUE)
+4: na.action(predict(ret, xhold, decision.values = TRUE))
+5: predict(ret, xhold, decision.values = TRUE)
+6: predict.svm(ret, xhold, decision.values = TRUE)
+7: stop("Model is empty!")
+Running predictor 'NB' for group 'CoPa'.
+ERROR running train/test for predictor 'NB' and group 'CoPa': 
+ arguments imply differing number of rows: 0, 211
+TRACEBACK:
+1: lapply(X = X, FUN = FUN, ...)
+2: FUN(0:15[[1L]], ...)
+3: predict(naiveBayes(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l), Xtrain[foldIdxs == fold, 
+     ], type = "raw") at Code/05_predictors.R:193
+4: naiveBayes(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l)
+5: naiveBayes.formula(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l)
+6: is.data.frame(data)
+7: data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ])
+8: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'KNN' for group 'CoPa'.
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: model.frame(formula, data = data)
+2: model.frame.default(formula, data = data)
+3: is.data.frame(data)
+4: data.frame(Y = as.numeric(Ytrain), Xtrain)
+5: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'KNNC' for group 'CoPa'.
+ERROR running train/test for predictor 'KNNC' and group 'CoPa': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: model.frame(formula, data = data)
+2: model.frame.default(formula, data = data)
+3: is.data.frame(data)
+4: data.frame(Y = factor(as.numeric(Ytrain)), Xtrain)
+5: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Treating group of Categories: Pa
+Selected columns:
+
+Running predictor 'GLM' for group 'Pa'.
+ERROR running train/test for predictor 'GLM' and group 'Pa': 
+ x should be a matrix with 2 or more columns
+TRACEBACK:
+1: glmnet(x, y, weights = weights, offset = offset, lambda = lambda, ...)
+2: stop("x should be a matrix with 2 or more columns")
+Running predictor 'RF' for group 'Pa'.
+ERROR running train/test for predictor 'RF' and group 'Pa': 
+ argument to 'which' is not logical
+TRACEBACK:
+1: randomForest.default(Xtrain, Ytrain, Xtest)
+2: which(sapply(xtest, is.factor))
+Running predictor 'RF2' for group 'Pa'.
+ERROR running train/test for predictor 'RF2' and group 'Pa': 
+ argument to 'which' is not logical
+TRACEBACK:
+1: randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest))))
+2: which(sapply(xtest, is.factor))
+Running predictor 'RF3' for group 'Pa'.
+ERROR running train/test for predictor 'RF3' and group 'Pa': 
+ Need at least two classes to do classification.
+TRACEBACK:
+1: randomForest.default(Xtrain, factor(Ytrain), Xtest)
+2: stop("Need at least two classes to do classification.")
+Running predictor 'RFO' for group 'Pa'.
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ Need at least two classes to do classification.
+TRACEBACK:
+1: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+2: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), pars, list(...)))
+3: randomForest(structure(list(), row.names = c(NA, -211L), class = c("tbl_df", "data.frame"), .Names = character(0)), y = structure(c(NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), mtry = NA_real_)
+4: randomForest.default(structure(list(), row.names = c(NA, -211L), class = c("tbl_df", "data.frame"), .Names = character(0)), y = structure(c(NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), mtry = NA_real_)
+5: stop("Need at least two classes to do classification.")
+Running predictor 'RP' for group 'Pa'.
+ERROR running train/test for predictor 'RP' and group 'Pa': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: is.factor(model.response(model.frame(formula, data)))
+2: model.response(model.frame(formula, data))
+3: model.frame(formula, data)
+4: model.frame.default(formula, data)
+5: is.data.frame(data)
+6: data.frame(Y = as.numeric(Ytrain), Xtrain)
+7: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'SVM' for group 'Pa'.
+ERROR running train/test for predictor 'SVM' and group 'Pa': 
+ Model is empty!
+TRACEBACK:
+1: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), pars, list(...)))
+2: (function (x, ...) 
+ UseMethod("svm"))(structure(integer(0), .Dim = c(211L, 0L), .Dimnames = list(NULL, NULL)), y = structure(c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), gamma = 0.0009765625, cost = 0.1, probability = TRUE)
+3: svm.default(structure(integer(0), .Dim = c(211L, 0L), .Dimnames = list(NULL, NULL)), y = structure(c(NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, NA_integer_, 
+ NA_integer_, NA_integer_, NA_integer_), .Label = character(0), class = "factor"), gamma = 0.0009765625, cost = 0.1, probability = TRUE)
+4: na.action(predict(ret, xhold, decision.values = TRUE))
+5: predict(ret, xhold, decision.values = TRUE)
+6: predict.svm(ret, xhold, decision.values = TRUE)
+7: stop("Model is empty!")
+Running predictor 'NB' for group 'Pa'.
+ERROR running train/test for predictor 'NB' and group 'Pa': 
+ arguments imply differing number of rows: 0, 211
+TRACEBACK:
+1: lapply(X = X, FUN = FUN, ...)
+2: FUN(0:15[[1L]], ...)
+3: predict(naiveBayes(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l), Xtrain[foldIdxs == fold, 
+     ], type = "raw") at Code/05_predictors.R:193
+4: naiveBayes(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l)
+5: naiveBayes.formula(formula = Y ~ ., data = data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ]), laplace = l)
+6: is.data.frame(data)
+7: data.frame(Y = Ytrain[foldIdxs != fold], Xtrain[foldIdxs != fold, ])
+8: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'KNN' for group 'Pa'.
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: model.frame(formula, data = data)
+2: model.frame.default(formula, data = data)
+3: is.data.frame(data)
+4: data.frame(Y = as.numeric(Ytrain), Xtrain)
+5: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Running predictor 'KNNC' for group 'Pa'.
+ERROR running train/test for predictor 'KNNC' and group 'Pa': 
+ arguments imply differing number of rows: 0, 264
+TRACEBACK:
+1: model.frame(formula, data = data)
+2: model.frame.default(formula, data = data)
+3: is.data.frame(data)
+4: data.frame(Y = factor(as.numeric(Ytrain)), Xtrain)
+5: stop(gettextf("arguments imply differing number of rows: %s", paste(unique(nrows), collapse = ", ")), domain = NA)
+Time elapsed for the run:
+0.004530907 secs

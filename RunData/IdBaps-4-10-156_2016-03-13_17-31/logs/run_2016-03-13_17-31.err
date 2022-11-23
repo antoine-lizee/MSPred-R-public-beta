@@ -1,0 +1,15 @@
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.086,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in ROCR::prediction(preds, labels) : 
+  Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.168989799270392,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.35,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in ROCR::prediction(preds, labels) : 
+  Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+

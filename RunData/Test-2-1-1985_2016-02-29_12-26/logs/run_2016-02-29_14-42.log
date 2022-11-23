@@ -1,0 +1,335 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RP' on group 'Co', skipping...
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Running predictor 'KNN' for group 'Co'.
+KNN for groups Core                                (  5 features) ->  best k: 60  / kernel: optimal    [perf: 0.714]
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'Co'.
+KNNC for groups Core                                (  5 features) ->  best k: 40 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'Co': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+6: cl[C]
+7: `[.factor`(cl, C)
+8: NextMethod("[")
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'CoMS', skipping...
+Already run predictor 'RF' on group 'CoMS', skipping...
+Already run predictor 'RF2' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'CoMS', skipping...
+Already run predictor 'RFO' on group 'CoMS', skipping...
+Already run predictor 'RP' on group 'CoMS', skipping...
+Already run predictor 'SVM' on group 'CoMS', skipping...
+Already run predictor 'NB' on group 'CoMS', skipping...
+Running predictor 'KNN' for group 'CoMS'.
+KNN for groups Core - MSFC                         (  7 features) ->  best k: 80  / kernel: optimal    [perf: 0.743]
+ERROR running train/test for predictor 'KNN' and group 'CoMS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'CoMS'.
+KNNC for groups Core - MSFC                         (  7 features) ->  best k: 70 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+6: cl[C]
+7: `[.factor`(cl, C)
+8: NextMethod("[")
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'CoPa', skipping...
+Already run predictor 'RF' on group 'CoPa', skipping...
+Already run predictor 'RF2' on group 'CoPa', skipping...
+Already run predictor 'RF3' on group 'CoPa', skipping...
+Already run predictor 'RFO' on group 'CoPa', skipping...
+Already run predictor 'RP' on group 'CoPa', skipping...
+Already run predictor 'SVM' on group 'CoPa', skipping...
+Already run predictor 'NB' on group 'CoPa', skipping...
+Running predictor 'KNN' for group 'CoPa'.
+KNN for groups Core - Patient                      (  7 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'CoPa'.
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 30 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 17 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoPa' in 0.05 minutes.
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'CoMSPa', skipping...
+Already run predictor 'RF' on group 'CoMSPa', skipping...
+Already run predictor 'RF2' on group 'CoMSPa', skipping...
+Already run predictor 'RF3' on group 'CoMSPa', skipping...
+Already run predictor 'RFO' on group 'CoMSPa', skipping...
+Already run predictor 'RP' on group 'CoMSPa', skipping...
+Already run predictor 'SVM' on group 'CoMSPa', skipping...
+Already run predictor 'NB' on group 'CoMSPa', skipping...
+Running predictor 'KNN' for group 'CoMSPa'.
+KNN for groups Core - MSFC - Patient               (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.728]
+ERROR running train/test for predictor 'KNN' and group 'CoMSPa': 
+ subscript out of bounds
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 40 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 11 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMSPa' in 0.05 minutes.
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'MS', skipping...
+Already run predictor 'RF' on group 'MS', skipping...
+Already run predictor 'RF2' on group 'MS', skipping...
+Already run predictor 'RF3' on group 'MS', skipping...
+Already run predictor 'RFO' on group 'MS', skipping...
+Already run predictor 'RP' on group 'MS', skipping...
+Already run predictor 'SVM' on group 'MS', skipping...
+Already run predictor 'NB' on group 'MS', skipping...
+Running predictor 'KNN' for group 'MS'.
+KNN for groups MSFC                                (  2 features) ->  best k: 6   / kernel: optimal    [perf: 0.518]
+ERROR running train/test for predictor 'KNN' and group 'MS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  2 features) ->  best k: 90 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+6: cl[C]
+7: `[.factor`(cl, C)
+8: NextMethod("[")
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'MSPa', skipping...
+Already run predictor 'RF' on group 'MSPa', skipping...
+Already run predictor 'RF2' on group 'MSPa', skipping...
+Already run predictor 'RF3' on group 'MSPa', skipping...
+Already run predictor 'RFO' on group 'MSPa', skipping...
+Already run predictor 'RP' on group 'MSPa', skipping...
+Already run predictor 'SVM' on group 'MSPa', skipping...
+Already run predictor 'NB' on group 'MSPa', skipping...
+Running predictor 'KNN' for group 'MSPa'.
+KNN for groups MSFC - Patient                      (  4 features) ->  best k: 11  / kernel: optimal    [perf: 0.506]
+ERROR running train/test for predictor 'KNN' and group 'MSPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'MSPa'.
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 80 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 11 / kernel: optimal
+Ran predictor 'KNNC' for group 'MSPa' in 0.04 minutes.
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'Pa', skipping...
+Already run predictor 'RF' on group 'Pa', skipping...
+Already run predictor 'RF2' on group 'Pa', skipping...
+Already run predictor 'RF3' on group 'Pa', skipping...
+Running predictor 'RFO' for group 'Pa'.
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.426]
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.423]
+Ran predictor 'RFO' for group 'Pa' in 0.08 minutes.
+Already run predictor 'RP' on group 'Pa', skipping...
+Already run predictor 'SVM' on group 'Pa', skipping...
+Already run predictor 'NB' on group 'Pa', skipping...
+Running predictor 'KNN' for group 'Pa'.
+KNN for groups Patient                             (  2 features) ->  best k: 60  / kernel: optimal    [perf: 0.573]
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ subscript out of bounds
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 40 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 6 / kernel: optimal
+Ran predictor 'KNNC' for group 'Pa' in 0.04 minutes.
+Time elapsed for the run:
+2.609889 secs

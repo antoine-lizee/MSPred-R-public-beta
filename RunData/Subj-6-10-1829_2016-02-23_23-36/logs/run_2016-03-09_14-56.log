@@ -1,0 +1,220 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClQO
+Treating group of Categories: ClPa
+Treating group of Categories: ClFS
+Treating group of Categories: ClMR
+Treating group of Categories: ClLi
+Treating group of Categories: CoFS
+Treating group of Categories: ClCo
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'ClPa', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'RPS' on group 'ClFS', skipping...
+Treating group of Categories: Co
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RPS' on group 'ClMR', skipping...
+Treating group of Categories: CoMR
+Treating group of Categories: CoMS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: ClMS
+Already run predictor 'RPS' on group 'ClQO', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RPS' on group 'CoMR', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'CoMS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Treating group of Categories: FS
+Already run predictor 'RPS' on group 'ClCo', skipping...
+Treating group of Categories: CoQO
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'RPS' on group 'FS', skipping...
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'RPS' on group 'Co', skipping...
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'CoPa', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'CoQO', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RPS' on group 'CoLi', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Already run predictor 'RPS' on group 'Cl', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RPS' on group 'ClLi', skipping...
+Treating group of Categories: Li
+Treating group of Categories: FSMS
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RPS' on group 'Li', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'CoFS', skipping...
+Already run predictor 'RPS' on group 'FSMS', skipping...
+Treating group of Categories: LiMS
+Treating group of Categories: LiMR
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'LiMS', skipping...
+Treating group of Categories: MR
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RPS' on group 'LiMR', skipping...
+Treating group of Categories: FSPa
+Treating group of Categories: MRMS
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RPS' on group 'MR', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'FSPa', skipping...
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Treating group of Categories: FSMR
+Treating group of Categories: MRPa
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'FSMR', skipping...
+Already run predictor 'RPS' on group 'MRPa', skipping...
+Already run predictor 'RPS' on group 'MRMS', skipping...
+Treating group of Categories: FSLi
+Treating group of Categories: LiPa
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RPS' on group 'FSLi', skipping...
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'LiPa', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.T25FW, MSFC.NHPT
+Treating group of Categories: MSQO
+Treating group of Categories: LiQO
+Treating group of Categories: MS
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'LiQO', skipping...
+Already run predictor 'RPS' on group 'ClMS', skipping...
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'MS', skipping...
+Treating group of Categories: MRQO
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'MRQO', skipping...
+Treating group of Categories: PaQO
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'MSQO', skipping...
+Treating group of Categories: CoMSPa
+Treating group of Categories: CoMRMS
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'PaQO', skipping...
+Treating group of Categories: MSPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'CoMSPa', skipping...
+Treating group of Categories: CoMSQO
+Treating group of Categories: MR
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RPS' on group 'MSPa', skipping...
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'MR', skipping...
+Already run predictor 'RPS' on group 'CoMSQO', skipping...
+Treating group of Categories: CoLiMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Treating group of Categories: FSQO
+Already run predictor 'RPS' on group 'CoMRMS', skipping...
+Treating group of Categories: FSMSQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'CoLiMS', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'FSQO', skipping...
+Treating group of Categories: QO
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: QO
+Already run predictor 'RPS' on group 'FSMSQO', skipping...
+Treating group of Categories: QO
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'QO', skipping...
+Treating group of Categories: FSLiMS
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'QO', skipping...
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RPS' on group 'QO', skipping...
+Treating group of Categories: FSMRMS
+Treating group of Categories: FS
+Treating group of Categories: FSMSPa
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'FS', skipping...
+Already run predictor 'RPS' on group 'FSMRMS', skipping...
+Treating group of Categories: Co
+Treating group of Categories: MR
+Treating group of Categories: Pa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RPS' on group 'Co', skipping...
+Already run predictor 'RPS' on group 'MR', skipping...
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Treating group of Categories: MS
+Treating group of Categories: MS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'FSMSPa'.
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RPS' on group 'MS', skipping...
+Already run predictor 'RPS' on group 'MS', skipping...
+Treating group of Categories: .
+Running predictor 'RPS' for group 'FSLiMS'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group '.'.
+Already run predictor 'RPS' on group 'Pa', skipping...
+Ran predictor 'RPS' for group 'FSMSPa' in 0.05 minutes.
+Ran predictor 'RPS' for group 'FSLiMS' in 0.06 minutes.
+Ran predictor 'RPS' for group '.' in 0.13 minutes.
+Stopping cluster...
+Time elapsed for the run:
+16.37494 secs
+Removing error log file... 

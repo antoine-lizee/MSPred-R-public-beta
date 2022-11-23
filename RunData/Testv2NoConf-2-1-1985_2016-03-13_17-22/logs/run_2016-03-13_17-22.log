@@ -1,0 +1,488 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running predictor 'GLM' for group 'Co'.
+Ran predictor 'GLM' for group 'Co' in 0.02 minutes.
+Running predictor 'RF' for group 'Co'.
+Ran predictor 'RF' for group 'Co' in 0.03 minutes.
+Running predictor 'RF2' for group 'Co'.
+Ran predictor 'RF2' for group 'Co' in 0.05 minutes.
+Running predictor 'RF3' for group 'Co'.
+Ran predictor 'RF3' for group 'Co' in 0.02 minutes.
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.644]
+RFO for groups Core                                (  5 features) -> best mtry:  3 [perf: 0.922]
+Ran predictor 'RFO' for group 'Co' in 0.24 minutes.
+Running predictor 'RP' for group 'Co'.
+RPart for groups Core                                (  5 features) -> best min split: 90 / best cp: 0.005  [perf: 0.681]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.882]
+Ran predictor 'RP' for group 'Co' in 0.46 minutes.
+Running predictor 'SVM' for group 'Co'.
+SVM for groups Core                                (  5 features) -> best gamma:    0.0156 / best cost:   31.6 [perf: 0.692]
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), 
+     predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.107457784665244, 0.0982693412494918, 0.132743019764773, 0.109294890590523, 0.0970964992141946, 
+ 0.121772743766028, 0.108858874269013, 0.105479566038325, 0.10933882010952, 0.121814302609837, 0.107043077380568, 0.105001347857739, 0.106345871152817, 0.101970756870172, 
+ 0.0953356960732737, 0.101286058545436, 0.103553261999608, 0.094898989918942, 0.110812049892778, 0.106125103411697, 0.111662137675249, 0.093684456791101, 
+ 0.111377508699153, 0.10613020133927, 0.0990982983584632, 0.0976667096440977, 0.102345980265072, 0.123795650360383, 0.110433753459721, 0.100091782294484, 
+ 0.102789798914734), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", 
+ "23", "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 0.132743019764773, 
+ 0.123795650360383, 0.121814302609837, 0.121772743766028, 0.111662137675249, 0.111377508699153, 0.110812049892778, 0.110433753459721, 0.10933882010952, 0.109294890590523, 
+ 0.108858874269013, 0.107457784665244, 0.107043077380568, 0.106345871152817, 0.10613020133927, 0.106125103411697, 0.105479566038325, 0.105001347857739, 0.103553261999608, 
+ 0.102789798914734, 0.102345980265072, 0.101970756870172, 0.101286058545436, 0.100091782294484, 0.0990982983584632, 0.0982693412494918, 0.0976667096440977, 
+ 0.0970964992141946, 0.0953356960732737, 0.094898989918942, 0.093684456791101), .Names = c("", "3", "28", "10", "6", "21", "23", "19", "29", "9", "4", "7", 
+ "1", "11", "13", "24", "20", "8", "12", "17", "31", "27", "14", "16", "30", "25", "2", "26", "5", "15", "18", "22")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 
+ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 
+ 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 
+ 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'Co'.
+NB for groups Core                                (  5 features) -> best l: 15 [perf: 0.675]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.816]
+Ran predictor 'NB' for group 'Co' in 0.22 minutes.
+Running predictor 'KNN' for group 'Co'.
+KNN for groups Core                                (  5 features) ->  best k: 11  / kernel: optimal    [perf: 0.677]
+KNN for groups Core                                (  5 features) ->  best k: 3   / kernel: optimal    [perf: 0.814]
+Ran predictor 'KNN' for group 'Co' in 0.01 minutes.
+Running predictor 'KNNC' for group 'Co'.
+KNNC for groups Core                                (  5 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 1 / kernel: optimal
+Ran predictor 'KNNC' for group 'Co' in 0.01 minutes.
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'CoMS'.
+Ran predictor 'GLM' for group 'CoMS' in 0.02 minutes.
+Running predictor 'RF' for group 'CoMS'.
+Ran predictor 'RF' for group 'CoMS' in 0.05 minutes.
+Running predictor 'RF2' for group 'CoMS'.
+Ran predictor 'RF2' for group 'CoMS' in 0.05 minutes.
+Running predictor 'RF3' for group 'CoMS'.
+Ran predictor 'RF3' for group 'CoMS' in 0.02 minutes.
+Running predictor 'RFO' for group 'CoMS'.
+RFO for groups Core - MSFC                         (  7 features) -> best mtry:  2 [perf: 0.704]
+ERROR running train/test for predictor 'RFO' and group 'CoMS': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, 
+     Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.042, 0.002, 0.16, 0, 0.002, 0.004, 0.006, 0.002, 0.024, 0.002, 0.024, 0.166, 0, 0.666, 0, 0.004, 
+ 0.002, 0.108, 0.038, 0.834, 0, 0.178, 0.142, 0.112, 0.02, 0, 0, 0.032, 0.008, 0.002, 0.324), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+ "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", 
+ "factor")), cutoffs = structure(c(Inf, 0.834, 0.666, 0.324, 0.178, 0.166, 0.16, 0.142, 0.112, 0.108, 0.042, 0.038, 0.032, 0.024, 0.02, 0.008, 0.006, 0.004, 
+ 0.002, 0), .Names = c("", "20", "14", "31", "22", "12", "3", "23", "24", "18", "1", "19", "28", "11", "25", "29", "7", "16", "30", "27")), fp = c(0, 1, 
+ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 19, 25, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 17, 16, 15, 14, 12, 6, 0), n.pos = 0L, n.neg = 31L, 
+     n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 19, 25, 31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 
+     19, 17, 16, 15, 14, 12, 6, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'CoMS'.
+RPart for groups Core - MSFC                         (  7 features) -> best min split: 100 / best cp: 0.002  [perf: 0.696]
+ERROR running train/test for predictor 'RP' and group 'CoMS': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 
+     0.05), tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'CoMS'.
+SVM for groups Core - MSFC                         (  7 features) -> best gamma:   0.00781 / best cost:     10 [perf: 0.747]
+SVM for groups Core - MSFC                         (  7 features) -> best gamma:       0.5 / best cost:    0.1 [perf: 0.924]
+Ran predictor 'SVM' for group 'CoMS' in 2.73 minutes.
+Running predictor 'NB' for group 'CoMS'.
+NB for groups Core - MSFC                         (  7 features) -> best l: 15 [perf: 0.673]
+NB for groups Core - MSFC                         (  7 features) -> best l:  0 [perf: 0.779]
+Ran predictor 'NB' for group 'CoMS' in 0.23 minutes.
+Running predictor 'KNN' for group 'CoMS'.
+KNN for groups Core - MSFC                         (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.679]
+KNN for groups Core - MSFC                         (  7 features) ->  best k: 3   / kernel: optimal    [perf: 0.822]
+Ran predictor 'KNN' for group 'CoMS' in 0.00 minutes.
+Running predictor 'KNNC' for group 'CoMS'.
+KNNC for groups Core - MSFC                         (  7 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC                         (  7 features) ->  best k: 1 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMS' in 0.01 minutes.
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoPa'.
+Ran predictor 'GLM' for group 'CoPa' in 0.02 minutes.
+Running predictor 'RF' for group 'CoPa'.
+Ran predictor 'RF' for group 'CoPa' in 0.05 minutes.
+Running predictor 'RF2' for group 'CoPa'.
+Ran predictor 'RF2' for group 'CoPa' in 0.05 minutes.
+Running predictor 'RF3' for group 'CoPa'.
+Ran predictor 'RF3' for group 'CoPa' in 0.01 minutes.
+Running predictor 'RFO' for group 'CoPa'.
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.667]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.912]
+Ran predictor 'RFO' for group 'CoPa' in 0.22 minutes.
+Running predictor 'RP' for group 'CoPa'.
+RPart for groups Core - Patient                      (  7 features) -> best min split: 60 / best cp: 0.001  [perf: 0.680]
+RPart for groups Core - Patient                      (  7 features) -> best min split: 50 / best cp: 0.0001 [perf: 0.860]
+Ran predictor 'RP' for group 'CoPa' in 0.44 minutes.
+Running predictor 'SVM' for group 'CoPa'.
+SVM for groups Core - Patient                      (  7 features) -> best gamma:     0.125 / best cost:  0.316 [perf: 0.688]
+ERROR running train/test for predictor 'SVM' and group 'CoPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), 
+     predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.0861259001427231, 0.093846394123751, 0.0839615786324612, 0.0871882387076935, 0.0855915844162182, 
+ 0.0825663270615479, 0.148483992978529, 0.14152534419988, 0.08051024942769, 0.153944428664916, 0.145833999031903, 0.0878714515486884, 0.0782281857211144, 
+ 0.151491940441632, 0.0816945571974518, 0.148863219714212, 0.0783345308920128, 0.0824137190097804, 0.0836333293708848, 0.152077375237023, 0.151775642161634, 
+ 0.0903923131811037, 0.0827953350979464, 0.143513716146195, 0.143510183218386, 0.151013445561874, 0.15132404654601, 0.086489338863658, 0.149752362999384, 
+ 0.146020874474291, 0.088652989521335), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", 
+ "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.153944428664916, 0.152077375237023, 0.151775642161634, 0.151491940441632, 0.15132404654601, 0.151013445561874, 0.149752362999384, 0.148863219714212, 0.148483992978529, 
+ 0.146020874474291, 0.145833999031903, 0.143513716146195, 0.143510183218386, 0.14152534419988, 0.093846394123751, 0.0903923131811037, 0.088652989521335, 
+ 0.0878714515486884, 0.0871882387076935, 0.086489338863658, 0.0861259001427231, 0.0855915844162182, 0.0839615786324612, 0.0836333293708848, 0.0827953350979464, 
+ 0.0825663270615479, 0.0824137190097804, 0.0816945571974518, 0.08051024942769, 0.0783345308920128, 0.0782281857211144), .Names = c("", "10", "20", "21", 
+ "14", "27", "26", "29", "16", "7", "30", "11", "24", "25", "8", "2", "22", "31", "12", "4", "28", "1", "5", "3", "19", "23", "6", "18", "15", "9", "17", 
+ "13")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), tp = c(0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+ 2, 1, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 
+ 28, 29, 30, 31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'CoPa'.
+NB for groups Core - Patient                      (  7 features) -> best l: 15 [perf: 0.678]
+NB for groups Core - Patient                      (  7 features) -> best l: 14 [perf: 0.715]
+Ran predictor 'NB' for group 'CoPa' in 0.28 minutes.
+Running predictor 'KNN' for group 'CoPa'.
+KNN for groups Core - Patient                      (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.661]
+KNN for groups Core - Patient                      (  7 features) ->  best k: 4   / kernel: optimal    [perf: 0.814]
+Ran predictor 'KNN' for group 'CoPa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'CoPa'.
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 7 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoPa' in 0.01 minutes.
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoMSPa'.
+Ran predictor 'GLM' for group 'CoMSPa' in 0.02 minutes.
+Running predictor 'RF' for group 'CoMSPa'.
+Ran predictor 'RF' for group 'CoMSPa' in 0.07 minutes.
+Running predictor 'RF2' for group 'CoMSPa'.
+Ran predictor 'RF2' for group 'CoMSPa' in 0.07 minutes.
+Running predictor 'RF3' for group 'CoMSPa'.
+Ran predictor 'RF3' for group 'CoMSPa' in 0.02 minutes.
+Running predictor 'RFO' for group 'CoMSPa'.
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  2 [perf: 0.706]
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  3 [perf: 0.920]
+Ran predictor 'RFO' for group 'CoMSPa' in 0.40 minutes.
+Running predictor 'RP' for group 'CoMSPa'.
+RPart for groups Core - MSFC - Patient               (  9 features) -> best min split: 100 / best cp: 0.001  [perf: 0.698]
+RPart for groups Core - MSFC - Patient               (  9 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.904]
+Ran predictor 'RP' for group 'CoMSPa' in 0.72 minutes.
+Running predictor 'SVM' for group 'CoMSPa'.
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:   0.00391 / best cost:   31.6 [perf: 0.751]
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.867]
+Ran predictor 'SVM' for group 'CoMSPa' in 3.31 minutes.
+Running predictor 'NB' for group 'CoMSPa'.
+NB for groups Core - MSFC - Patient               (  9 features) -> best l: 15 [perf: 0.678]
+NB for groups Core - MSFC - Patient               (  9 features) -> best l: 14 [perf: 0.792]
+Ran predictor 'NB' for group 'CoMSPa' in 0.29 minutes.
+Running predictor 'KNN' for group 'CoMSPa'.
+KNN for groups Core - MSFC - Patient               (  9 features) ->  best k: 11  / kernel: optimal    [perf: 0.661]
+KNN for groups Core - MSFC - Patient               (  9 features) ->  best k: 11  / kernel: optimal    [perf: 0.822]
+Ran predictor 'KNN' for group 'CoMSPa' in 0.01 minutes.
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 1 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMSPa' in 0.02 minutes.
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+Ran predictor 'GLM' for group 'MS' in 0.02 minutes.
+Running predictor 'RF' for group 'MS'.
+Ran predictor 'RF' for group 'MS' in 0.05 minutes.
+Running predictor 'RF2' for group 'MS'.
+Ran predictor 'RF2' for group 'MS' in 0.05 minutes.
+Running predictor 'RF3' for group 'MS'.
+Ran predictor 'RF3' for group 'MS' in 0.02 minutes.
+Running predictor 'RFO' for group 'MS'.
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.492]
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.633]
+Ran predictor 'RFO' for group 'MS' in 0.18 minutes.
+Running predictor 'RP' for group 'MS'.
+RPart for groups MSFC                                (  2 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.511]
+ERROR running train/test for predictor 'RP' and group 'MS': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 
+     0.05), tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'MS'.
+SVM for groups MSFC                                (  2 features) -> best gamma:  0.000977 / best cost:    0.1 [perf: 0.546]
+SVM for groups MSFC                                (  2 features) -> best gamma:     0.125 / best cost:   31.6 [perf: 0.787]
+Ran predictor 'SVM' for group 'MS' in 4.15 minutes.
+Running predictor 'NB' for group 'MS'.
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.521]
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.632]
+Ran predictor 'NB' for group 'MS' in 0.18 minutes.
+Running predictor 'KNN' for group 'MS'.
+KNN for groups MSFC                                (  2 features) ->  best k: 5   / kernel: optimal    [perf: 0.519]
+KNN for groups MSFC                                (  2 features) ->  best k: 10  / kernel: optimal    [perf: 0.604]
+Ran predictor 'KNN' for group 'MS' in 0.00 minutes.
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  2 features) ->  best k: 11 / kernel: optimal
+KNNC for groups MSFC                                (  2 features) ->  best k: 10 / kernel: optimal
+Ran predictor 'KNNC' for group 'MS' in 0.01 minutes.
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'MSPa'.
+Ran predictor 'GLM' for group 'MSPa' in 0.02 minutes.
+Running predictor 'RF' for group 'MSPa'.
+Ran predictor 'RF' for group 'MSPa' in 0.02 minutes.
+Running predictor 'RF2' for group 'MSPa'.
+Ran predictor 'RF2' for group 'MSPa' in 0.05 minutes.
+Running predictor 'RF3' for group 'MSPa'.
+Ran predictor 'RF3' for group 'MSPa' in 0.01 minutes.
+Running predictor 'RFO' for group 'MSPa'.
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.506]
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.665]
+Ran predictor 'RFO' for group 'MSPa' in 0.21 minutes.
+Running predictor 'RP' for group 'MSPa'.
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 70 / best cp: 0.002  [perf: 0.516]
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 80 / best cp: 0.02   [perf: 0.770]
+Ran predictor 'RP' for group 'MSPa' in 0.29 minutes.
+Running predictor 'SVM' for group 'MSPa'.
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.544]
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:         1 / best cost:  0.316 [perf: 0.703]
+Ran predictor 'SVM' for group 'MSPa' in 3.68 minutes.
+Running predictor 'NB' for group 'MSPa'.
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.517]
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.501]
+Ran predictor 'NB' for group 'MSPa' in 0.17 minutes.
+Running predictor 'KNN' for group 'MSPa'.
+KNN for groups MSFC - Patient                      (  4 features) ->  best k: 11  / kernel: optimal    [perf: 0.509]
+KNN for groups MSFC - Patient                      (  4 features) ->  best k: 8   / kernel: optimal    [perf: 0.655]
+Ran predictor 'KNN' for group 'MSPa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'MSPa'.
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 11 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 7 / kernel: optimal
+Ran predictor 'KNNC' for group 'MSPa' in 0.01 minutes.
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'Pa'.
+Ran predictor 'GLM' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF' for group 'Pa'.
+Ran predictor 'RF' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF2' for group 'Pa'.
+Ran predictor 'RF2' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF3' for group 'Pa'.
+Ran predictor 'RF3' for group 'Pa' in 0.00 minutes.
+Running predictor 'RFO' for group 'Pa'.
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.462]
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, 
+     Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.17, 0, 0, 0, 0, 0.466, 0.108, 0, 0, 0.466, 0, 0, 0.752, 0, 0, 0.002, 0.116, 0, 0, 0.7, 0, 0, 
+ 0.116, 0, 0.028, 0.752, 0.018, 0, 0, 0.466, 0), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", 
+ "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.752, 0.7, 0.466, 0.17, 0.116, 0.108, 0.028, 0.018, 0.002, 0), .Names = c("", "26", "20", "30", "1", "23", "7", "25", "27", "16", "31")), fp = c(0, 2, 
+ 3, 6, 7, 9, 10, 11, 12, 13, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 29, 28, 25, 24, 22, 21, 20, 
+ 19, 18, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 2, 3, 6, 7, 9, 10, 11, 12, 13, 31), n.neg.pred = c(31, 29, 28, 25, 24, 22, 21, 20, 19, 18, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'Pa'.
+RPart for groups Patient                             (  2 features) -> best min split: 20 / best cp: 0.005  [perf: 0.500]
+ERROR running train/test for predictor 'RP' and group 'Pa': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 
+     0.05), tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'Pa'.
+SVM for groups Patient                             (  2 features) -> best gamma:     0.125 / best cost:  0.316 [perf: 0.548]
+SVM for groups Patient                             (  2 features) -> best gamma:      0.25 / best cost:      1 [perf: 0.738]
+Ran predictor 'SVM' for group 'Pa' in 1.95 minutes.
+Running predictor 'NB' for group 'Pa'.
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.498]
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.577]
+Ran predictor 'NB' for group 'Pa' in 0.14 minutes.
+Running predictor 'KNN' for group 'Pa'.
+KNN for groups Patient                             (  2 features) ->  best k: 11  / kernel: optimal    [perf: 0.551]
+KNN for groups Patient                             (  2 features) ->  best k: 7   / kernel: optimal    [perf: 0.783]
+Ran predictor 'KNN' for group 'Pa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 4 / kernel: optimal
+Ran predictor 'KNNC' for group 'Pa' in 0.01 minutes.
+Time elapsed for the run:
+0.317544 secs

@@ -1,0 +1,39 @@
+2022-11-06 20:10:38: ###### Treating group of Categories: ClQO
+2022-11-06 20:10:38: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+2022-11-06 20:10:38: Already run predictor 'GLM' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'RF' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'RF2' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'RF3' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'RFO' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'RP' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'SVM' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'NB' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'KNN' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Already run predictor 'KNNC' on group 'ClQO', skipping...
+2022-11-06 20:10:38: Running predictor 'XGB' for group 'ClQO'.
+2022-11-06 20:10:38: CV num 1:
+Loading required package: xgboost
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+Loading required package: plyr
+------------------------------------------------------------------------------
+You have loaded plyr after dplyr - this is likely to cause problems.
+If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+library(plyr); library(dplyr)
+------------------------------------------------------------------------------
+
+Attaching package: ‘plyr’
+
+The following objects are masked from ‘package:dplyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+Loading required package: lattice
+Loading required package: ggplot2

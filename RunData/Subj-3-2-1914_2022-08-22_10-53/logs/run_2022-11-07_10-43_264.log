@@ -1,0 +1,41 @@
+2022-11-07 10:43:52: ###### Treating group of Categories: ClCo
+2022-11-07 10:43:52: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+2022-11-07 10:43:52: Already run predictor 'GLM' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'RF' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'RF2' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'RF3' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'RFO' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'RP' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'SVM' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'NB' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'KNN' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Already run predictor 'KNNC' on group 'ClCo', skipping...
+2022-11-07 10:43:52: Running predictor 'XGB' for group 'ClCo'.
+2022-11-07 10:43:52: CV num 1:
+Loading required package: xgboost
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+Loading required package: lattice
+Loading required package: ggplot2
+
+2022-11-07 10:44:08: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 250  / eta 0.05 / max_depth 1 [perf: 0.723]
+
+2022-11-07 10:44:22: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 200  / eta 0.10 / max_depth 1 [perf: 0.694]
+
+2022-11-07 10:44:37: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 200  / eta 0.20 / max_depth 1 [perf: 0.691]
+2022-11-07 10:44:37: CV num 2:
+
+2022-11-07 10:44:51: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 250  / eta 0.10 / max_depth 1 [perf: 0.687]
+
+2022-11-07 10:45:04: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 200  / eta 0.05 / max_depth 2 [perf: 0.695]
+
+2022-11-07 10:45:19: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 250  / eta 0.10 / max_depth 1 [perf: 0.709]
+2022-11-07 10:45:19: Ran predictor 'XGB' for group 'ClCo' in 1.44 minutes.
+2022-11-07 10:45:19: ## Ran group 'ClCo' in 1.44 minutes.
+

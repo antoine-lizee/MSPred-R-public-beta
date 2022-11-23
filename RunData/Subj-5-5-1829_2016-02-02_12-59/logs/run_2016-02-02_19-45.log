@@ -1,0 +1,462 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClCo
+Treating group of Categories: ClFS
+Treating group of Categories: ClLi
+Treating group of Categories: ClMR
+Treating group of Categories: ClMS
+Treating group of Categories: ClPa
+Treating group of Categories: Co
+Treating group of Categories: ClQO
+Treating group of Categories: CoFS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'Cl', skipping...
+Already run predictor 'GLM' on group 'ClMR', skipping...
+Already run predictor 'GLM' on group 'ClFS', skipping...
+Already run predictor 'GLM' on group 'ClMS', skipping...
+Already run predictor 'GLM' on group 'ClCo', skipping...
+Already run predictor 'GLM' on group 'ClLi', skipping...
+Already run predictor 'RF' on group 'Cl', skipping...
+Already run predictor 'RF' on group 'ClMR', skipping...
+Already run predictor 'RF' on group 'ClFS', skipping...
+Already run predictor 'RF' on group 'ClMS', skipping...
+Already run predictor 'GLM' on group 'ClPa', skipping...
+Already run predictor 'RF' on group 'ClCo', skipping...
+Already run predictor 'RF' on group 'ClLi', skipping...
+Already run predictor 'RF2' on group 'Cl', skipping...
+Already run predictor 'RF2' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'ClFS', skipping...
+Already run predictor 'RF2' on group 'ClMS', skipping...
+Already run predictor 'RF' on group 'ClPa', skipping...
+Already run predictor 'RF2' on group 'ClLi', skipping...
+Already run predictor 'RF3' on group 'ClMR', skipping...
+Already run predictor 'RF3' on group 'Cl', skipping...
+Already run predictor 'RF2' on group 'ClCo', skipping...
+Already run predictor 'RF3' on group 'ClMS', skipping...
+Already run predictor 'RF3' on group 'ClFS', skipping...
+Already run predictor 'RF2' on group 'ClPa', skipping...
+Already run predictor 'RFO' on group 'ClMR', skipping...
+Already run predictor 'RFO' on group 'Cl', skipping...
+Already run predictor 'RF3' on group 'ClCo', skipping...
+Already run predictor 'RF3' on group 'ClLi', skipping...
+Already run predictor 'RFO' on group 'ClMS', skipping...
+Already run predictor 'RFO' on group 'ClFS', skipping...
+Already run predictor 'RF3' on group 'ClPa', skipping...
+Already run predictor 'RP' on group 'Cl', skipping...
+Already run predictor 'RP' on group 'ClMR', skipping...
+Already run predictor 'RFO' on group 'ClCo', skipping...
+Already run predictor 'RFO' on group 'ClLi', skipping...
+Already run predictor 'RP' on group 'ClMS', skipping...
+Already run predictor 'RP' on group 'ClFS', skipping...
+Already run predictor 'RFO' on group 'ClPa', skipping...
+Already run predictor 'SVM' on group 'ClMR', skipping...
+Already run predictor 'SVM' on group 'Cl', skipping...
+Already run predictor 'RP' on group 'ClLi', skipping...
+Already run predictor 'RP' on group 'ClCo', skipping...
+Already run predictor 'SVM' on group 'ClMS', skipping...
+Already run predictor 'SVM' on group 'ClFS', skipping...
+Already run predictor 'RP' on group 'ClPa', skipping...
+Running predictor 'NB' for group 'Cl'.
+Already run predictor 'NB' on group 'ClMR', skipping...
+Already run predictor 'SVM' on group 'ClLi', skipping...
+Already run predictor 'SVM' on group 'ClCo', skipping...
+Running predictor 'NB' for group 'ClMS'.
+Already run predictor 'NB' on group 'ClFS', skipping...
+Already run predictor 'KNN' on group 'ClMR', skipping...
+Already run predictor 'SVM' on group 'ClPa', skipping...
+Running predictor 'NB' for group 'ClLi'.
+Already run predictor 'NB' on group 'ClCo', skipping...
+Already run predictor 'KNN' on group 'ClFS', skipping...
+Already run predictor 'KNNC' on group 'ClMR', skipping...
+Already run predictor 'NB' on group 'ClPa', skipping...
+Already run predictor 'KNN' on group 'ClCo', skipping...
+Already run predictor 'KNNC' on group 'ClFS', skipping...
+Already run predictor 'KNN' on group 'ClPa', skipping...
+Already run predictor 'KNNC' on group 'ClCo', skipping...
+Already run predictor 'KNNC' on group 'ClPa', skipping...
+Treating group of Categories: CoMR
+Treating group of Categories: CoMS
+Treating group of Categories: CoPa
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'GLM' on group 'CoFS', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RF' on group 'CoFS', skipping...
+Already run predictor 'GLM' on group 'CoMR', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Already run predictor 'RF2' on group 'CoFS', skipping...
+Already run predictor 'RF' on group 'CoMR', skipping...
+Already run predictor 'GLM' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'CoFS', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RF2' on group 'CoMR', skipping...
+Already run predictor 'RF' on group 'CoMS', skipping...
+Already run predictor 'RFO' on group 'CoFS', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RF3' on group 'CoMR', skipping...
+Already run predictor 'GLM' on group 'CoPa', skipping...
+Already run predictor 'RF2' on group 'CoMS', skipping...
+Already run predictor 'RP' on group 'CoFS', skipping...
+Already run predictor 'GLM' on group 'CoLi', skipping...
+Already run predictor 'RF' on group 'CoPa', skipping...
+Already run predictor 'RFO' on group 'CoMR', skipping...
+Already run predictor 'SVM' on group 'CoFS', skipping...
+Already run predictor 'RF3' on group 'CoMS', skipping...
+Already run predictor 'RF' on group 'CoLi', skipping...
+Already run predictor 'RP' on group 'CoMR', skipping...
+Already run predictor 'NB' on group 'CoFS', skipping...
+Already run predictor 'RF2' on group 'CoPa', skipping...
+Running predictor 'RFO' for group 'CoMS'.
+Already run predictor 'RF2' on group 'CoLi', skipping...
+Already run predictor 'KNN' on group 'CoFS', skipping...
+Running predictor 'SVM' for group 'CoMR'.
+Already run predictor 'RF3' on group 'CoPa', skipping...
+Already run predictor 'RF3' on group 'CoLi', skipping...
+Already run predictor 'KNNC' on group 'CoFS', skipping...
+Running predictor 'RFO' for group 'CoPa'.
+Already run predictor 'RFO' on group 'CoLi', skipping...
+Already run predictor 'RP' on group 'CoLi', skipping...
+Running predictor 'SVM' for group 'CoLi'.
+Treating group of Categories: CoQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'CoQO', skipping...
+Already run predictor 'RF' on group 'CoQO', skipping...
+Already run predictor 'RF2' on group 'CoQO', skipping...
+Already run predictor 'RF3' on group 'CoQO', skipping...
+Running predictor 'RFO' for group 'CoQO'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RP' on group 'Co', skipping...
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Already run predictor 'KNN' on group 'Co', skipping...
+Already run predictor 'KNNC' on group 'Co', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'ClQO', skipping...
+Already run predictor 'RF' on group 'ClQO', skipping...
+Already run predictor 'RF2' on group 'ClQO', skipping...
+Already run predictor 'RF3' on group 'ClQO', skipping...
+Already run predictor 'RFO' on group 'ClQO', skipping...
+Already run predictor 'RP' on group 'ClQO', skipping...
+Already run predictor 'SVM' on group 'ClQO', skipping...
+Already run predictor 'NB' on group 'ClQO', skipping...
+Already run predictor 'KNN' on group 'ClQO', skipping...
+Already run predictor 'KNNC' on group 'ClQO', skipping...
+Treating group of Categories: FS
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'GLM' on group 'FS', skipping...
+Already run predictor 'RF' on group 'FS', skipping...
+Already run predictor 'RF2' on group 'FS', skipping...
+Already run predictor 'RF3' on group 'FS', skipping...
+Running predictor 'RFO' for group 'FS'.
+Treating group of Categories: FSLi
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'GLM' on group 'FSLi', skipping...
+Already run predictor 'RF' on group 'FSLi', skipping...
+Already run predictor 'RF2' on group 'FSLi', skipping...
+Already run predictor 'RF3' on group 'FSLi', skipping...
+Running predictor 'RFO' for group 'FSLi'.
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.554]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.476]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.531]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.674]
+NB for groups Clinical                            ( 11 features) -> best l:  4 [perf: 0.549]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.459]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.670]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.499]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  3 [perf: 0.540]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.556]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.506]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.677]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.564]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.564]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.481]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.677]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.484]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  4 [perf: 0.711]
+NB for groups Clinical                            ( 11 features) -> best l:  3 [perf: 0.553]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.478]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.547]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.678]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.696]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.536]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.504]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.668]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.478]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.552]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.559]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.681]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.494]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  4 [perf: 0.538]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.568]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.507]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.471]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.675]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.682]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.529]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.485]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.563]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  2 [perf: 0.691]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.670]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.506]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.564]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.677]
+NB for groups Clinical                            ( 11 features) -> best l:  3 [perf: 0.545]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.487]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.692]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.500]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.530]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.551]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.679]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.651]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.489]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.553]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.485]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  3 [perf: 0.553]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.557]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.476]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.671]
+NB for groups Clinical                            ( 11 features) -> best l:  4 [perf: 0.539]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.681]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.530]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.505]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  2 [perf: 0.717]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.564]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.482]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.665]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.509]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.542]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.699]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.556]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.508]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.669]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.694]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.534]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.470]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.499]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.552]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.667]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.498]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.670]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.475]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.552]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.481]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.565]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  5 [perf: 0.719]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.564]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.690]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.503]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.561]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.690]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.504]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.563]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.516]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.706]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.518]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.672]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.552]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.484]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.560]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.652]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.492]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  2 [perf: 0.454]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.665]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.536]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  4 [perf: 0.557]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.513]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  3 [perf: 0.706]
+NB for groups Clinical                            ( 11 features) -> best l:  5 [perf: 0.542]
+Ran predictor 'NB' for group 'Cl' in 2.25 minutes.
+Running predictor 'KNN' for group 'Cl'.
+NB for groups Clinical - Life                     ( 15 features) -> best l:  4 [perf: 0.552]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.682]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.693]
+RFO for groups FSSCs                               (  2 features) -> best mtry:  2 [perf: 0.531]
+Ran predictor 'RFO' for group 'FS' in 2.29 minutes.
+Running predictor 'RP' for group 'FS'.
+KNN for groups Clinical                            ( 11 features) ->  best k: 20  / kernel: optimal    [perf: 0.626]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.505]
+KNN for groups Clinical                            ( 11 features) ->  best k: 18  / kernel: optimal    [perf: 0.614]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.555]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.705]
+KNN for groups Clinical                            ( 11 features) ->  best k: 50  / kernel: optimal    [perf: 0.607]
+KNN for groups Clinical                            ( 11 features) ->  best k: 19  / kernel: optimal    [perf: 0.633]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.664]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.679]
+KNN for groups Clinical                            ( 11 features) ->  best k: 19  / kernel: optimal    [perf: 0.618]
+RPart for groups FSSCs                               (  2 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.531]
+KNN for groups Clinical                            ( 11 features) ->  best k: 20  / kernel: optimal    [perf: 0.627]
+KNN for groups Clinical                            ( 11 features) ->  best k: 9   / kernel: optimal    [perf: 0.627]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.671]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.489]
+KNN for groups Clinical                            ( 11 features) ->  best k: 18  / kernel: optimal    [perf: 0.630]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.542]
+KNN for groups Clinical                            ( 11 features) ->  best k: 30  / kernel: optimal    [perf: 0.617]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.673]
+RPart for groups FSSCs                               (  2 features) -> best min split: 60 / best cp: 0.002  [perf: 0.516]
+KNN for groups Clinical                            ( 11 features) ->  best k: 17  / kernel: optimal    [perf: 0.640]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.683]
+KNN for groups Clinical                            ( 11 features) ->  best k: 20  / kernel: optimal    [perf: 0.600]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.542]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  2 [perf: 0.716]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.453]
+KNN for groups Clinical                            ( 11 features) ->  best k: 30  / kernel: optimal    [perf: 0.630]
+RPart for groups FSSCs                               (  2 features) -> best min split: 30 / best cp: 0.002  [perf: 0.515]
+KNN for groups Clinical                            ( 11 features) ->  best k: 17  / kernel: optimal    [perf: 0.617]
+KNN for groups Clinical                            ( 11 features) ->  best k: 50  / kernel: optimal    [perf: 0.612]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.698]
+NB for groups Clinical - Life                     ( 15 features) -> best l:  5 [perf: 0.543]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.676]
+Ran predictor 'NB' for group 'ClLi' in 2.81 minutes.
+Running predictor 'KNN' for group 'ClLi'.
+KNN for groups Clinical                            ( 11 features) ->  best k: 18  / kernel: optimal    [perf: 0.627]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.671]
+KNN for groups Clinical                            ( 11 features) ->  best k: 30  / kernel: optimal    [perf: 0.619]
+RPart for groups FSSCs                               (  2 features) -> best min split: 20 / best cp: 0.002  [perf: 0.511]
+KNN for groups Clinical                            ( 11 features) ->  best k: 18  / kernel: optimal    [perf: 0.600]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.671]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  2 [perf: 0.472]
+KNN for groups Clinical                            ( 11 features) ->  best k: 16  / kernel: optimal    [perf: 0.614]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.661]
+KNN for groups Clinical                            ( 11 features) ->  best k: 20  / kernel: optimal    [perf: 0.617]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.683]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 7   / kernel: optimal    [perf: 0.640]
+KNN for groups Clinical                            ( 11 features) ->  best k: 30  / kernel: optimal    [perf: 0.627]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.658]
+KNN for groups Clinical                            ( 11 features) ->  best k: 20  / kernel: optimal    [perf: 0.620]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 7   / kernel: optimal    [perf: 0.655]
+KNN for groups Clinical                            ( 11 features) ->  best k: 20  / kernel: optimal    [perf: 0.621]
+RPart for groups FSSCs                               (  2 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.528]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 9   / kernel: optimal    [perf: 0.668]
+KNN for groups Clinical                            ( 11 features) ->  best k: 30  / kernel: optimal    [perf: 0.613]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.650]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.674]
+KNN for groups Clinical                            ( 11 features) ->  best k: 19  / kernel: optimal    [perf: 0.629]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.506]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.661]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  3 [perf: 0.706]
+KNN for groups Clinical                            ( 11 features) ->  best k: 19  / kernel: optimal    [perf: 0.626]
+Ran predictor 'KNN' for group 'Cl' in 0.90 minutes.
+Running predictor 'KNNC' for group 'Cl'.
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 8   / kernel: optimal    [perf: 0.671]
+RPart for groups FSSCs                               (  2 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.522]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.682]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 70 / kernel: optimal
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.655]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.665]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 8   / kernel: optimal    [perf: 0.654]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 7   / kernel: optimal    [perf: 0.653]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  2 [perf: 0.464]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 18 / kernel: optimal
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 10  / kernel: optimal    [perf: 0.654]
+RPart for groups FSSCs                               (  2 features) -> best min split: 60 / best cp: 0.002  [perf: 0.503]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.698]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.672]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 19 / kernel: optimal
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.687]
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.688]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.646]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 8   / kernel: optimal    [perf: 0.663]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 60 / kernel: optimal
+RPart for groups FSSCs                               (  2 features) -> best min split: 40 / best cp: 0.001  [perf: 0.506]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 15 / kernel: optimal
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 8   / kernel: optimal    [perf: 0.676]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.647]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  2 [perf: 0.713]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.488]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 20 / kernel: optimal
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  5 [perf: 0.685]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.678]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.650]
+RPart for groups FSSCs                               (  2 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.668]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.664]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 30 / kernel: optimal
+NB for groups Clinical - MSFC                     ( 18 features) -> best l:  4 [perf: 0.679]
+Ran predictor 'NB' for group 'ClMS' in 3.67 minutes.
+Running predictor 'KNN' for group 'ClMS'.
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.662]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.670]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 40 / kernel: optimal
+RPart for groups FSSCs                               (  2 features) -> best min split: 30 / best cp: 0.001  [perf: 0.517]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.652]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.459]
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 40  / kernel: optimal    [perf: 0.675]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 10  / kernel: optimal    [perf: 0.642]
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 200 / kernel: optimal    [perf: 0.681]
+RFO for groups Core - MSFC                         ( 12 features) -> best mtry:  2 [perf: 0.705]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.660]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 190 / kernel: optimal    [perf: 0.678]
+KNN for groups Clinical - Life                     ( 15 features) ->  best k: 6   / kernel: optimal    [perf: 0.663]
+Ran predictor 'KNN' for group 'ClLi' in 1.07 minutes.
+Running predictor 'KNNC' for group 'ClLi'.
+RPart for groups FSSCs                               (  2 features) -> best min split: 50 / best cp: 0.005  [perf: 0.501]
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 100 / kernel: optimal    [perf: 0.688]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.663]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 70 / kernel: optimal
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 200 / kernel: optimal    [perf: 0.682]
+RFO for groups Core - QOL                          ( 10 features) -> best mtry:  2 [perf: 0.705]
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.492]
+KNNC for groups Clinical - Life                     ( 15 features) ->  best k: 19 / kernel: optimal
+KNNC for groups Clinical                            ( 11 features) ->  best k: 17 / kernel: optimal
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 110 / kernel: optimal    [perf: 0.673]
+KNNC for groups Clinical - Life                     ( 15 features) ->  best k: 12 / kernel: optimal
+KNNC for groups Clinical                            ( 11 features) ->  best k: 14 / kernel: optimal
+RPart for groups FSSCs                               (  2 features) -> best min split: 30 / best cp: 0.002  [perf: 0.522]
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 40  / kernel: optimal    [perf: 0.690]
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 190 / kernel: optimal    [perf: 0.676]
+KNNC for groups Clinical - Life                     ( 15 features) ->  best k: 15 / kernel: optimal
+KNNC for groups Clinical                            ( 11 features) ->  best k: 17 / kernel: optimal
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 100 / kernel: optimal    [perf: 0.676]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.653]
+KNNC for groups Clinical                            ( 11 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Clinical - Life                     ( 15 features) ->  best k: 19 / kernel: optimal
+RFO for groups FSSCs - Life                        (  6 features) -> best mtry:  3 [perf: 0.485]
+KNN for groups Clinical - MSFC                     ( 18 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+RPart for groups FSSCs                               (  2 features) -> best min split: 70 / best cp: 0.001  [perf: 0.535]
+Stopping cluster...
+Time elapsed for the run:
+4.263823 mins
+ERROR running train/test for predictor 'KNNC' and group 'Cl': 
+ error in evaluating the argument 'x' in selecting a method for function 'rowSums': 
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/06_predictAll.R:192
+4: rowSums(W * (matrix(CL[, 1:j], m, j) == lev[i]))

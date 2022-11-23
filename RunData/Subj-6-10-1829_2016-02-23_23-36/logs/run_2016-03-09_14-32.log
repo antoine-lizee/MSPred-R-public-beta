@@ -1,0 +1,258 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClCo
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Already run predictor 'RP' on group 'Cl', skipping...
+Treating group of Categories: ClLi
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'RP' on group 'ClCo', skipping...
+Treating group of Categories: ClFS
+Treating group of Categories: ClMR
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RP' on group 'ClLi', skipping...
+Treating group of Categories: ClQO
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'RP' on group 'ClFS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'ClMR', skipping...
+Treating group of Categories: CoLi
+Treating group of Categories: ClMS
+Treating group of Categories: CoQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RP' on group 'CoLi', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: CoMR
+Already run predictor 'RP' on group 'CoQO', skipping...
+Treating group of Categories: FSLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'CoMR', skipping...
+Treating group of Categories: CoPa
+Treating group of Categories: FS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RP' on group 'ClQO', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RP' on group 'FSLi', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'CoPa', skipping...
+Treating group of Categories: FSMS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'RP' on group 'FS', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'FSMS', skipping...
+Treating group of Categories: ClPa
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'ClMS', skipping...
+Treating group of Categories: FSPa
+Treating group of Categories: Li
+Treating group of Categories: LiMR
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RP' on group 'Li', skipping...
+Treating group of Categories: FSMR
+Treating group of Categories: LiMS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'FSPa', skipping...
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'LiMS', skipping...
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'LiMR', skipping...
+Treating group of Categories: LiPa
+Treating group of Categories: Co
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'FSMR', skipping...
+Treating group of Categories: FSQO
+Treating group of Categories: MR
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'FSQO', skipping...
+Already run predictor 'RP' on group 'MR', skipping...
+Treating group of Categories: MRMS
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'MS', skipping...
+Treating group of Categories: MRQO
+Treating group of Categories: MSPa
+Treating group of Categories: CoFS
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RP' on group 'MRQO', skipping...
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'MSPa', skipping...
+Treating group of Categories: LiQO
+Treating group of Categories: Pa
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RP' on group 'LiQO', skipping...
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Treating group of Categories: CoMS
+Already run predictor 'RP' on group 'Pa', skipping...
+Treating group of Categories: MSQO
+Treating group of Categories: QO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'CoMS', skipping...
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'LiPa', skipping...
+Treating group of Categories: MRPa
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'RP' on group 'QO', skipping...
+Already run predictor 'RP' on group 'CoFS', skipping...
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'MRPa', skipping...
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'MRMS', skipping...
+Treating group of Categories: CoMRMS
+Treating group of Categories: QO
+Treating group of Categories: CoLiMS
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'QO', skipping...
+Already run predictor 'RP' on group 'CoMRMS', skipping...
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: PaQO
+Already run predictor 'RP' on group 'MSQO', skipping...
+Treating group of Categories: MR
+Treating group of Categories: FSMSQO
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RP' on group 'PaQO', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'FSMSQO', skipping...
+Already run predictor 'RP' on group 'MR', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Treating group of Categories: CoMSPa
+Already run predictor 'RP' on group 'CoLiMS', skipping...
+Treating group of Categories: MS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'CoMSPa', skipping...
+Treating group of Categories: MR
+Treating group of Categories: FSMSPa
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RP' on group 'ClPa', skipping...
+Treating group of Categories: FSLiMS
+Treating group of Categories: MS
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'RP' on group 'MR', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RP' for group 'FSMSPa'.
+Treating group of Categories: FS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RP' for group 'FSLiMS'.
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'MS', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'RP' on group 'FS', skipping...
+Treating group of Categories: .
+Treating group of Categories: Co
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RP' on group '.', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'RP' on group 'Co', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'RP' on group 'Co', skipping...
+Treating group of Categories: QO
+Treating group of Categories: CoMSQO
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: FSMRMS
+Already run predictor 'RP' on group 'QO', skipping...
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'MS', skipping...
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RP' on group 'FSMRMS', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RP' on group 'CoMSQO', skipping...
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 100 / best cp: 0.005  [perf: 0.672]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 100 / best cp: 0.002  [perf: 0.675]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.667]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.664]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 70 / best cp: 0.002  [perf: 0.696]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 90 / best cp: 0.001  [perf: 0.693]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 50 / best cp: 0.001  [perf: 0.666]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 60 / best cp: 0.002  [perf: 0.672]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 80 / best cp: 0.002  [perf: 0.679]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.691]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 50 / best cp: 0.001  [perf: 0.691]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.688]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.690]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.689]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.666]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 90 / best cp: 0.001  [perf: 0.689]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 50 / best cp: 0.005  [perf: 0.686]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 70 / best cp: 0.002  [perf: 0.666]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 80 / best cp: 0.005  [perf: 0.700]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 80 / best cp: 0.001  [perf: 0.683]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 80 / best cp: 0.002  [perf: 0.669]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 110 / best cp: 0.001  [perf: 0.682]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 110 / best cp: 0.001  [perf: 0.686]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 110 / best cp: 0.002  [perf: 0.681]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.685]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 70 / best cp: 0.001  [perf: 0.679]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 70 / best cp: 0.001  [perf: 0.695]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 80 / best cp: 0.001  [perf: 0.680]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.684]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 100 / best cp: 0.002  [perf: 0.671]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 70 / best cp: 0.002  [perf: 0.679]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 40 / best cp: 0.005  [perf: 0.665]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 100 / best cp: 0.002  [perf: 0.708]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 90 / best cp: 0.002  [perf: 0.694]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.675]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 80 / best cp: 0.002  [perf: 0.661]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.674]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 60 / best cp: 0.0001 [perf: 0.685]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 60 / best cp: 0.002  [perf: 0.692]
+RPart for groups FSSs - Life - MSFC                  ( 13 features) -> best min split: 60 / best cp: 0.002  [perf: 0.674]
+RPart for groups FSSs - MSFC - Patient               ( 11 features) -> best min split: 50 / best cp: 0.002  [perf: 0.666]
+Stopping cluster...
+Time elapsed for the run:
+5.022576 mins
+Removing error log file... 

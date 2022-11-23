@@ -1,0 +1,41 @@
+2022-11-07 10:43:52: ###### Treating group of Categories: Cl
+2022-11-07 10:43:52: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+2022-11-07 10:43:52: Already run predictor 'GLM' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'RF' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'RF2' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'RF3' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'RFO' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'RP' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'SVM' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'NB' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'KNN' on group 'Cl', skipping...
+2022-11-07 10:43:52: Already run predictor 'KNNC' on group 'Cl', skipping...
+2022-11-07 10:43:52: Running predictor 'XGB' for group 'Cl'.
+2022-11-07 10:43:52: CV num 1:
+Loading required package: xgboost
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+Loading required package: lattice
+Loading required package: ggplot2
+
+2022-11-07 10:44:07: XGB for groups Clinical                            ( 11 features) -> best nrounds: 10  / eta 0.10 / max_depth 2 [perf: 0.536]
+
+2022-11-07 10:44:20: XGB for groups Clinical                            ( 11 features) -> best nrounds: 10  / eta 0.05 / max_depth 1 [perf: 0.516]
+
+2022-11-07 10:44:32: XGB for groups Clinical                            ( 11 features) -> best nrounds: 20  / eta 0.05 / max_depth 1 [perf: 0.506]
+2022-11-07 10:44:32: CV num 2:
+
+2022-11-07 10:44:45: XGB for groups Clinical                            ( 11 features) -> best nrounds: 10  / eta 0.05 / max_depth 1 [perf: 0.494]
+
+2022-11-07 10:44:58: XGB for groups Clinical                            ( 11 features) -> best nrounds: 10  / eta 0.05 / max_depth 1 [perf: 0.506]
+
+2022-11-07 10:45:10: XGB for groups Clinical                            ( 11 features) -> best nrounds: 10  / eta 0.05 / max_depth 1 [perf: 0.541]
+2022-11-07 10:45:10: Ran predictor 'XGB' for group 'Cl' in 1.30 minutes.
+2022-11-07 10:45:10: ## Ran group 'Cl' in 1.30 minutes.
+

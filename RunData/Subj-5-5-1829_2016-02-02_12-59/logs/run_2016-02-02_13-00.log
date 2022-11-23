@@ -1,0 +1,3028 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClCo
+Treating group of Categories: ClFS
+Treating group of Categories: ClMR
+Treating group of Categories: ClLi
+Treating group of Categories: ClMS
+Treating group of Categories: ClPa
+Treating group of Categories: CoFS
+Treating group of Categories: ClQO
+Treating group of Categories: Co
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Running for predictor 'GLM' for group 'Cl'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Running for predictor 'GLM' for group 'ClCo'.
+Running for predictor 'GLM' for group 'ClMR'.
+Running for predictor 'GLM' for group 'ClLi'.
+Running for predictor 'GLM' for group 'ClFS'.
+Running for predictor 'GLM' for group 'ClPa'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Running for predictor 'GLM' for group 'ClMS'.
+Running for predictor 'GLM' for group 'CoFS'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'ClQO'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running for predictor 'GLM' for group 'Co'.
+Ran for predictor 'GLM' for group 'Cl' in 0.23 minutes.
+Running for predictor 'RF' for group 'Cl'.
+Ran for predictor 'GLM' for group 'ClLi' in 0.25 minutes.
+Running for predictor 'RF' for group 'ClLi'.
+Ran for predictor 'GLM' for group 'ClFS' in 0.25 minutes.
+Running for predictor 'RF' for group 'ClFS'.
+Ran for predictor 'GLM' for group 'ClPa' in 0.25 minutes.
+Running for predictor 'RF' for group 'ClPa'.
+Ran for predictor 'GLM' for group 'ClMR' in 0.26 minutes.
+Running for predictor 'RF' for group 'ClMR'.
+Ran for predictor 'GLM' for group 'Co' in 0.27 minutes.
+Running for predictor 'RF' for group 'Co'.
+Ran for predictor 'GLM' for group 'ClQO' in 0.28 minutes.
+Running for predictor 'RF' for group 'ClQO'.
+Ran for predictor 'GLM' for group 'CoFS' in 0.30 minutes.
+Running for predictor 'RF' for group 'CoFS'.
+Ran for predictor 'GLM' for group 'ClMS' in 0.32 minutes.
+Running for predictor 'RF' for group 'ClMS'.
+Ran for predictor 'GLM' for group 'ClCo' in 0.38 minutes.
+Running for predictor 'RF' for group 'ClCo'.
+Ran for predictor 'RF' for group 'Co' in 0.44 minutes.
+Running for predictor 'RF2' for group 'Co'.
+Ran for predictor 'RF' for group 'CoFS' in 1.06 minutes.
+Running for predictor 'RF2' for group 'CoFS'.
+Ran for predictor 'RF' for group 'Cl' in 1.18 minutes.
+Running for predictor 'RF2' for group 'Cl'.
+Ran for predictor 'RF2' for group 'Co' in 1.06 minutes.
+Running for predictor 'RF3' for group 'Co'.
+Ran for predictor 'RF3' for group 'Co' in 0.27 minutes.
+Running for predictor 'RFO' for group 'Co'.
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'Co'.
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'Co'.
+ERROR running train/test for predictor 'SofSVM' and group 'Co': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'Co'.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'CoFS' in 0.99 minutes.
+Running for predictor 'RF3' for group 'CoFS'.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'Cl' in 1.18 minutes.
+Running for predictor 'RF3' for group 'Cl'.
+NB for groups Core (5 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'CoFS' in 0.33 minutes.
+Running for predictor 'RFO' for group 'CoFS'.
+NB for groups Core (5 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'CoFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'CoFS'.
+ERROR running train/test for predictor 'SVM' and group 'CoFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoFS'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoFS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'CoFS'.
+NB for groups Core (5 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'Cl' in 0.15 minutes.
+Running for predictor 'RFO' for group 'Cl'.
+ERROR running train/test for predictor 'RFO' and group 'Cl': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'Cl'.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+ERROR running train/test for predictor 'SVM' and group 'Cl': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'Cl'.
+ERROR running train/test for predictor 'SofSVM' and group 'Cl': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'Cl'.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core (5 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'ClPa' in 2.95 minutes.
+Running for predictor 'RF2' for group 'ClPa'.
+NB for groups Clinical (11 features) ->  best l: 2.
+NB for groups Core (5 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'Co' in 1.15 minutes.
+Running for predictor 'KNN' for group 'Co'.
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'Co'.
+ERROR running train/test for predictor 'KNNC' and group 'Co': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Running for predictor 'GLM' for group 'CoLi'.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'CoLi' in 0.26 minutes.
+Running for predictor 'RF' for group 'CoLi'.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'ClMR' in 3.28 minutes.
+Running for predictor 'RF2' for group 'ClMR'.
+NB for groups Clinical (11 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'ClFS' in 3.29 minutes.
+Running for predictor 'RF2' for group 'ClFS'.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 2.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'ClLi' in 3.67 minutes.
+Running for predictor 'RF2' for group 'ClLi'.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+NB for groups Clinical (11 features) ->  best l: 3.
+NB for groups Core - FSSCs (7 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'CoFS' in 1.43 minutes.
+Running for predictor 'KNN' for group 'CoFS'.
+ERROR running train/test for predictor 'KNN' and group 'CoFS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'CoFS'.
+ERROR running train/test for predictor 'KNNC' and group 'CoFS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: CoMR
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running for predictor 'GLM' for group 'CoMR'.
+NB for groups Clinical (11 features) ->  best l: 2.
+Ran for predictor 'NB' for group 'Cl' in 1.39 minutes.
+Running for predictor 'KNN' for group 'Cl'.
+ERROR running train/test for predictor 'KNN' and group 'Cl': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'Cl'.
+ERROR running train/test for predictor 'KNNC' and group 'Cl': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Running for predictor 'GLM' for group 'CoMS'.
+Ran for predictor 'RF' for group 'ClQO' in 3.97 minutes.
+Running for predictor 'RF2' for group 'ClQO'.
+Ran for predictor 'RF' for group 'ClMS' in 4.01 minutes.
+Running for predictor 'RF2' for group 'ClMS'.
+Ran for predictor 'RF' for group 'ClCo' in 4.01 minutes.
+Running for predictor 'RF2' for group 'ClCo'.
+Ran for predictor 'GLM' for group 'CoMR' in 0.27 minutes.
+Running for predictor 'RF' for group 'CoMR'.
+Ran for predictor 'GLM' for group 'CoMS' in 0.31 minutes.
+Running for predictor 'RF' for group 'CoMS'.
+Ran for predictor 'RF' for group 'CoLi' in 1.49 minutes.
+Running for predictor 'RF2' for group 'CoLi'.
+Ran for predictor 'RF2' for group 'ClPa' in 1.83 minutes.
+Running for predictor 'RF3' for group 'ClPa'.
+Ran for predictor 'RF3' for group 'ClPa' in 0.20 minutes.
+Running for predictor 'RFO' for group 'ClPa'.
+ERROR running train/test for predictor 'RFO' and group 'ClPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClPa'.
+ERROR running train/test for predictor 'SVM' and group 'ClPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClPa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClPa'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'CoMR' in 1.00 minutes.
+Running for predictor 'RF2' for group 'CoMR'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'ClMR' in 2.16 minutes.
+Running for predictor 'RF3' for group 'ClMR'.
+Ran for predictor 'RF2' for group 'ClFS' in 2.16 minutes.
+Running for predictor 'RF3' for group 'ClFS'.
+Ran for predictor 'RF2' for group 'ClLi' in 1.80 minutes.
+Running for predictor 'RF3' for group 'ClLi'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'CoMS' in 1.32 minutes.
+Running for predictor 'RF2' for group 'CoMS'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'ClFS' in 0.26 minutes.
+Running for predictor 'RFO' for group 'ClFS'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'ClLi' in 0.26 minutes.
+Running for predictor 'RFO' for group 'ClLi'.
+ERROR running train/test for predictor 'RFO' and group 'ClFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClFS'.
+ERROR running train/test for predictor 'SVM' and group 'ClFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClFS'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClFS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClFS'.
+Ran for predictor 'RF3' for group 'ClMR' in 0.31 minutes.
+Running for predictor 'RFO' for group 'ClMR'.
+ERROR running train/test for predictor 'RFO' and group 'ClLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClLi'.
+ERROR running train/test for predictor 'SVM' and group 'ClLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClLi'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClLi': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClLi'.
+ERROR running train/test for predictor 'RFO' and group 'ClMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClMR'.
+ERROR running train/test for predictor 'SVM' and group 'ClMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClMR': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClMR'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'CoLi' in 1.45 minutes.
+Running for predictor 'RF3' for group 'CoLi'.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'CoMR' in 1.03 minutes.
+Running for predictor 'RF3' for group 'CoMR'.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 1.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 1.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'CoMR' in 0.35 minutes.
+Running for predictor 'RFO' for group 'CoMR'.
+ERROR running train/test for predictor 'RFO' and group 'CoMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'CoMR'.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+ERROR running train/test for predictor 'SVM' and group 'CoMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoMR': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'CoMR'.
+Ran for predictor 'RF3' for group 'CoLi' in 0.40 minutes.
+Running for predictor 'RFO' for group 'CoLi'.
+NB for groups Clinical - Patient (13 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'CoLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'CoLi'.
+Ran for predictor 'NB' for group 'ClPa' in 1.57 minutes.
+Running for predictor 'KNN' for group 'ClPa'.
+ERROR running train/test for predictor 'KNN' and group 'ClPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClPa'.
+ERROR running train/test for predictor 'KNNC' and group 'ClPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running for predictor 'GLM' for group 'CoPa'.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+ERROR running train/test for predictor 'SVM' and group 'CoLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoLi'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoLi': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'CoLi'.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'CoMS' in 1.09 minutes.
+Running for predictor 'RF3' for group 'CoMS'.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'ClMS' in 2.68 minutes.
+Running for predictor 'RF3' for group 'ClMS'.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'CoPa' in 0.23 minutes.
+Running for predictor 'RF' for group 'CoPa'.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'CoMS' in 0.46 minutes.
+Running for predictor 'RFO' for group 'CoMS'.
+ERROR running train/test for predictor 'RFO' and group 'CoMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'CoMS'.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+ERROR running train/test for predictor 'SVM' and group 'CoMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoMS'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoMS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'CoMS'.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'ClQO' in 3.19 minutes.
+Running for predictor 'RF3' for group 'ClQO'.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'ClMS' in 0.45 minutes.
+Running for predictor 'RFO' for group 'ClMS'.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'ClMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClMS'.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+ERROR running train/test for predictor 'SVM' and group 'ClMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClMS'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClMS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClMS'.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'ClCo' in 3.18 minutes.
+Running for predictor 'RF3' for group 'ClCo'.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 2.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - FSSCs (13 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'ClFS' in 1.64 minutes.
+Running for predictor 'KNN' for group 'ClFS'.
+ERROR running train/test for predictor 'KNN' and group 'ClFS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClFS'.
+ERROR running train/test for predictor 'KNNC' and group 'ClFS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: CoQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'CoQO'.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 2.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Life (15 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'ClLi' in 1.73 minutes.
+Running for predictor 'KNN' for group 'ClLi'.
+ERROR running train/test for predictor 'KNN' and group 'ClLi': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClLi'.
+ERROR running train/test for predictor 'KNNC' and group 'ClLi': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: FS
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT
+Running for predictor 'GLM' for group 'FS'.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - MRI (14 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'ClMR' in 1.77 minutes.
+Running for predictor 'KNN' for group 'ClMR'.
+ERROR running train/test for predictor 'KNN' and group 'ClMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClMR'.
+ERROR running train/test for predictor 'KNNC' and group 'ClMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: FSLi
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Running for predictor 'GLM' for group 'FSLi'.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'FS' in 0.11 minutes.
+Running for predictor 'RF' for group 'FS'.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'ClQO' in 0.43 minutes.
+Running for predictor 'RFO' for group 'ClQO'.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'ClQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClQO'.
+ERROR running train/test for predictor 'SVM' and group 'ClQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClQO'.
+Ran for predictor 'GLM' for group 'CoQO' in 0.27 minutes.
+Running for predictor 'RF' for group 'CoQO'.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'FSLi' in 0.13 minutes.
+Running for predictor 'RF' for group 'FSLi'.
+Ran for predictor 'RF3' for group 'ClCo' in 0.37 minutes.
+Running for predictor 'RFO' for group 'ClCo'.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'ClCo': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'ClCo'.
+ERROR running train/test for predictor 'SVM' and group 'ClCo': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClCo'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClCo': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'ClCo'.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 2.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'CoPa' in 1.16 minutes.
+Running for predictor 'RF2' for group 'CoPa'.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Core - MRI (8 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'CoMR' in 1.55 minutes.
+Running for predictor 'KNN' for group 'CoMR'.
+ERROR running train/test for predictor 'KNN' and group 'CoMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'CoMR'.
+ERROR running train/test for predictor 'KNNC' and group 'CoMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: FSMR
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running for predictor 'GLM' for group 'FSMR'.
+NB for groups Core - Life (9 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'CoLi' in 1.51 minutes.
+Running for predictor 'KNN' for group 'CoLi'.
+ERROR running train/test for predictor 'KNN' and group 'CoLi': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'CoLi'.
+ERROR running train/test for predictor 'KNNC' and group 'CoLi': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: FSMS
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Running for predictor 'GLM' for group 'FSMS'.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 2.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'FSMR' in 0.17 minutes.
+Running for predictor 'RF' for group 'FSMR'.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'FS' in 0.76 minutes.
+Running for predictor 'RF2' for group 'FS'.
+Ran for predictor 'GLM' for group 'FSMS' in 0.25 minutes.
+Running for predictor 'RF' for group 'FSMS'.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'FSLi' in 0.89 minutes.
+Running for predictor 'RF2' for group 'FSLi'.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'FSMR' in 0.48 minutes.
+Running for predictor 'RF2' for group 'FSMR'.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'CoQO' in 1.30 minutes.
+Running for predictor 'RF2' for group 'CoQO'.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'FS' in 0.77 minutes.
+Running for predictor 'RF3' for group 'FS'.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'CoPa' in 1.19 minutes.
+Running for predictor 'RF3' for group 'CoPa'.
+NB for groups Core - MSFC (12 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'CoMS' in 2.07 minutes.
+Running for predictor 'KNN' for group 'CoMS'.
+ERROR running train/test for predictor 'KNN' and group 'CoMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'CoMS'.
+ERROR running train/test for predictor 'KNNC' and group 'CoMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: FSPa
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running for predictor 'GLM' for group 'FSPa'.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'FSMS' in 0.85 minutes.
+Running for predictor 'RF2' for group 'FSMS'.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'FSPa' in 0.14 minutes.
+Running for predictor 'RF' for group 'FSPa'.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'FS' in 0.22 minutes.
+Running for predictor 'RFO' for group 'FS'.
+ERROR running train/test for predictor 'RFO' and group 'FS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'FS'.
+ERROR running train/test for predictor 'SVM' and group 'FS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'FS'.
+ERROR running train/test for predictor 'SofSVM' and group 'FS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'FS'.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'CoPa' in 0.31 minutes.
+Running for predictor 'RFO' for group 'CoPa'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'FSLi' in 0.91 minutes.
+Running for predictor 'RF3' for group 'FSLi'.
+ERROR running train/test for predictor 'RFO' and group 'CoPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'CoPa'.
+ERROR running train/test for predictor 'SVM' and group 'CoPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoPa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'CoPa'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Clinical - MSFC (18 features) ->  best l: 3.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'ClMS' in 2.29 minutes.
+Running for predictor 'KNN' for group 'ClMS'.
+ERROR running train/test for predictor 'KNN' and group 'ClMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClMS'.
+ERROR running train/test for predictor 'KNNC' and group 'ClMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: FSQO
+Selected columns:
+FSSCs.T25FW, FSSCs.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'FSQO'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Clinical - QOL (16 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'ClQO' in 1.98 minutes.
+Running for predictor 'KNN' for group 'ClQO'.
+ERROR running train/test for predictor 'KNN' and group 'ClQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClQO'.
+ERROR running train/test for predictor 'KNNC' and group 'ClQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: Li
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Running for predictor 'GLM' for group 'Li'.
+Ran for predictor 'RF' for group 'FSPa' in 0.32 minutes.
+Running for predictor 'RF2' for group 'FSPa'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'FSQO' in 0.14 minutes.
+Running for predictor 'RF' for group 'FSQO'.
+NB for groups Clinical - Core (16 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'ClCo' in 1.96 minutes.
+Running for predictor 'KNN' for group 'ClCo'.
+ERROR running train/test for predictor 'KNN' and group 'ClCo': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'ClCo'.
+ERROR running train/test for predictor 'KNNC' and group 'ClCo': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: LiMR
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running for predictor 'GLM' for group 'LiMR'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'Li' in 0.11 minutes.
+Running for predictor 'RF' for group 'Li'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'FSMR' in 0.99 minutes.
+Running for predictor 'RF3' for group 'FSMR'.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'FSLi' in 0.30 minutes.
+Running for predictor 'RFO' for group 'FSLi'.
+ERROR running train/test for predictor 'RFO' and group 'FSLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'FSLi'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+ERROR running train/test for predictor 'SVM' and group 'FSLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'FSLi'.
+ERROR running train/test for predictor 'SofSVM' and group 'FSLi': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'FSLi'.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'LiMR' in 0.18 minutes.
+Running for predictor 'RF' for group 'LiMR'.
+Ran for predictor 'RF' for group 'Li' in 0.13 minutes.
+Running for predictor 'RF2' for group 'Li'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 2.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 2.
+Ran for predictor 'RF3' for group 'FSMR' in 0.34 minutes.
+Running for predictor 'RFO' for group 'FSMR'.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'FSMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'FSMR'.
+ERROR running train/test for predictor 'SVM' and group 'FSMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'FSMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'FSMR': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'FSMR'.
+Ran for predictor 'RF2' for group 'FSMS' in 0.91 minutes.
+Running for predictor 'RF3' for group 'FSMS'.
+NB for groups FSSCs - Life (6 features) ->  best l: 1.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs (2 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'FS' in 0.81 minutes.
+Running for predictor 'KNN' for group 'FS'.
+ERROR running train/test for predictor 'KNN' and group 'FS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'FS'.
+ERROR running train/test for predictor 'KNNC' and group 'FS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: LiMS
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Running for predictor 'GLM' for group 'LiMS'.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'CoQO' in 1.28 minutes.
+Running for predictor 'RF3' for group 'CoQO'.
+Ran for predictor 'RF2' for group 'Li' in 0.38 minutes.
+Running for predictor 'RF3' for group 'Li'.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'Li' in 0.14 minutes.
+Running for predictor 'RFO' for group 'Li'.
+ERROR running train/test for predictor 'RFO' and group 'Li': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'Li'.
+ERROR running train/test for predictor 'SVM' and group 'Li': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'Li'.
+ERROR running train/test for predictor 'SofSVM' and group 'Li': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'Li'.
+Ran for predictor 'GLM' for group 'LiMS' in 0.24 minutes.
+Running for predictor 'RF' for group 'LiMS'.
+NB for groups FSSCs - Life (6 features) ->  best l: 2.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'FSMS' in 0.39 minutes.
+Running for predictor 'RFO' for group 'FSMS'.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'FSMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'FSMS'.
+ERROR running train/test for predictor 'SVM' and group 'FSMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'FSMS'.
+ERROR running train/test for predictor 'SofSVM' and group 'FSMS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'FSMS'.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+Ran for predictor 'RF' for group 'FSQO' in 0.94 minutes.
+Running for predictor 'RF2' for group 'FSQO'.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'CoQO' in 0.45 minutes.
+Running for predictor 'RFO' for group 'CoQO'.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'CoQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'CoQO'.
+ERROR running train/test for predictor 'SVM' and group 'CoQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'CoQO'.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+Ran for predictor 'RF' for group 'LiMR' in 0.89 minutes.
+Running for predictor 'RF2' for group 'LiMR'.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 2.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups Core - Patient (7 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'CoPa' in 1.35 minutes.
+Running for predictor 'KNN' for group 'CoPa'.
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'CoPa'.
+ERROR running train/test for predictor 'KNNC' and group 'CoPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: LiPa
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, Patient.AgeOfOnset, Patient.Gender
+Running for predictor 'GLM' for group 'LiPa'.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'FSPa' in 1.28 minutes.
+Running for predictor 'RF3' for group 'FSPa'.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Life (6 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 3.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'LiPa' in 0.14 minutes.
+Running for predictor 'RF' for group 'LiPa'.
+NB for groups FSSCs - Life (6 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'FSLi' in 1.20 minutes.
+Running for predictor 'KNN' for group 'FSLi'.
+ERROR running train/test for predictor 'KNN' and group 'FSLi': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'FSLi'.
+ERROR running train/test for predictor 'KNNC' and group 'FSLi': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: LiQO
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'LiQO'.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 1.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 2.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+Ran for predictor 'GLM' for group 'LiQO' in 0.17 minutes.
+Running for predictor 'RF' for group 'LiQO'.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'FSPa' in 0.30 minutes.
+Running for predictor 'RFO' for group 'FSPa'.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+ERROR running train/test for predictor 'RFO' and group 'FSPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'FSPa'.
+ERROR running train/test for predictor 'SVM' and group 'FSPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'FSPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'FSPa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'FSPa'.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups FSSCs - MRI (5 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'FSMR' in 1.21 minutes.
+Running for predictor 'KNN' for group 'FSMR'.
+ERROR running train/test for predictor 'KNN' and group 'FSMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'FSMR'.
+ERROR running train/test for predictor 'KNNC' and group 'FSMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MR
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running for predictor 'GLM' for group 'MR'.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups Life (4 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 1.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Life (4 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'Li' in 0.96 minutes.
+Running for predictor 'KNN' for group 'Li'.
+ERROR running train/test for predictor 'KNN' and group 'Li': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'Li'.
+ERROR running train/test for predictor 'KNNC' and group 'Li': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MRMS
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Running for predictor 'GLM' for group 'MRMS'.
+Ran for predictor 'RF' for group 'LiMS' in 0.98 minutes.
+Running for predictor 'RF2' for group 'LiMS'.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 1.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'MR' in 0.15 minutes.
+Running for predictor 'RF' for group 'MR'.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'FSQO' in 0.91 minutes.
+Running for predictor 'RF3' for group 'FSQO'.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - Patient (4 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 3.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'MRMS' in 0.26 minutes.
+Running for predictor 'RF' for group 'MRMS'.
+Ran for predictor 'RF' for group 'LiPa' in 0.64 minutes.
+Running for predictor 'RF2' for group 'LiPa'.
+Ran for predictor 'RF2' for group 'LiMR' in 0.88 minutes.
+Running for predictor 'RF3' for group 'LiMR'.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 1.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 2.
+NB for groups FSSCs - Patient (4 features) ->  best l: 2.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'MR' in 0.29 minutes.
+Running for predictor 'RF2' for group 'MR'.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'FSQO' in 0.39 minutes.
+Running for predictor 'RFO' for group 'FSQO'.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+ERROR running train/test for predictor 'RFO' and group 'FSQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'FSQO'.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+ERROR running train/test for predictor 'SVM' and group 'FSQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'FSQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'FSQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'FSQO'.
+Ran for predictor 'RF3' for group 'LiMR' in 0.33 minutes.
+Running for predictor 'RFO' for group 'LiMR'.
+NB for groups FSSCs - Patient (4 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'LiMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'LiMR'.
+ERROR running train/test for predictor 'SVM' and group 'LiMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'LiMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'LiMR': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'LiMR'.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 2.
+Ran for predictor 'RF2' for group 'MR' in 0.30 minutes.
+Running for predictor 'RF3' for group 'MR'.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 3.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'MR' in 0.13 minutes.
+Running for predictor 'RFO' for group 'MR'.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+ERROR running train/test for predictor 'RFO' and group 'MR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MR'.
+ERROR running train/test for predictor 'SVM' and group 'MR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MR'.
+ERROR running train/test for predictor 'SofSVM' and group 'MR': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MR'.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'LiPa' in 0.62 minutes.
+Running for predictor 'RF3' for group 'LiPa'.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups FSSCs - MSFC (9 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'FSMS' in 1.74 minutes.
+Running for predictor 'KNN' for group 'FSMS'.
+ERROR running train/test for predictor 'KNN' and group 'FSMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'FSMS'.
+ERROR running train/test for predictor 'KNNC' and group 'FSMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MRPa
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+Running for predictor 'GLM' for group 'MRPa'.
+NB for groups FSSCs - Patient (4 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'FSPa' in 1.05 minutes.
+Running for predictor 'KNN' for group 'FSPa'.
+ERROR running train/test for predictor 'KNN' and group 'FSPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'FSPa'.
+ERROR running train/test for predictor 'KNNC' and group 'FSPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MRQO
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'MRQO'.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'LiMS' in 0.96 minutes.
+Running for predictor 'RF3' for group 'LiMS'.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'LiPa' in 0.18 minutes.
+Running for predictor 'RFO' for group 'LiPa'.
+Ran for predictor 'GLM' for group 'MRPa' in 0.16 minutes.
+Running for predictor 'RF' for group 'MRPa'.
+ERROR running train/test for predictor 'RFO' and group 'LiPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'LiPa'.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+ERROR running train/test for predictor 'SVM' and group 'LiPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'LiPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'LiPa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'LiPa'.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+Ran for predictor 'GLM' for group 'MRQO' in 0.19 minutes.
+Running for predictor 'RF' for group 'MRQO'.
+Ran for predictor 'RF' for group 'MRMS' in 0.87 minutes.
+Running for predictor 'RF2' for group 'MRMS'.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Core - QOL (10 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'CoQO' in 1.80 minutes.
+Running for predictor 'KNN' for group 'CoQO'.
+ERROR running train/test for predictor 'KNN' and group 'CoQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'CoQO'.
+ERROR running train/test for predictor 'KNNC' and group 'CoQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MS
+Selected columns:
+MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Running for predictor 'GLM' for group 'MS'.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+Ran for predictor 'RF' for group 'LiQO' in 1.41 minutes.
+Running for predictor 'RF2' for group 'LiQO'.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+NB for groups Life - MRI (7 features) ->  best l: 2.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+Ran for predictor 'RF' for group 'MRPa' in 0.26 minutes.
+Running for predictor 'RF2' for group 'MRPa'.
+Ran for predictor 'GLM' for group 'MS' in 0.21 minutes.
+Running for predictor 'RF' for group 'MS'.
+NB for groups Life - Patient (6 features) ->  best l: 2.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'LiMS' in 0.41 minutes.
+Running for predictor 'RFO' for group 'LiMS'.
+ERROR running train/test for predictor 'RFO' and group 'LiMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'LiMS'.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+ERROR running train/test for predictor 'SVM' and group 'LiMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'LiMS'.
+ERROR running train/test for predictor 'SofSVM' and group 'LiMS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'LiMS'.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 2.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 1.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups MRI (3 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MR' in 0.96 minutes.
+Running for predictor 'KNN' for group 'MR'.
+ERROR running train/test for predictor 'KNN' and group 'MR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MR'.
+ERROR running train/test for predictor 'KNNC' and group 'MR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental, Patient.AgeOfOnset, Patient.Gender
+Running for predictor 'GLM' for group 'MSPa'.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'MS' in 0.52 minutes.
+Running for predictor 'RF2' for group 'MS'.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Life - MRI (7 features) ->  best l: 0.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MRI (7 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'LiMR' in 1.37 minutes.
+Running for predictor 'KNN' for group 'LiMR'.
+ERROR running train/test for predictor 'KNN' and group 'LiMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'LiMR'.
+ERROR running train/test for predictor 'KNNC' and group 'LiMR': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: MSQO
+Selected columns:
+MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'MSQO'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'MRMS' in 0.90 minutes.
+Running for predictor 'RF3' for group 'MRMS'.
+Ran for predictor 'GLM' for group 'MSPa' in 0.22 minutes.
+Running for predictor 'RF' for group 'MSPa'.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+NB for groups FSSCs - QOL (7 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'FSQO' in 1.49 minutes.
+Running for predictor 'KNN' for group 'FSQO'.
+ERROR running train/test for predictor 'KNN' and group 'FSQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'FSQO'.
+ERROR running train/test for predictor 'KNNC' and group 'FSQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running for predictor 'GLM' for group 'Pa'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'MRQO' in 0.99 minutes.
+Running for predictor 'RF2' for group 'MRQO'.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'GLM' for group 'Pa' in 0.12 minutes.
+Running for predictor 'RF' for group 'Pa'.
+NB for groups Life - Patient (6 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Life - Patient (6 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'LiPa' in 1.15 minutes.
+Running for predictor 'KNN' for group 'LiPa'.
+ERROR running train/test for predictor 'KNN' and group 'LiPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'LiPa'.
+ERROR running train/test for predictor 'KNNC' and group 'LiPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: PaQO
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'PaQO'.
+Ran for predictor 'GLM' for group 'MSQO' in 0.27 minutes.
+Running for predictor 'RF' for group 'MSQO'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'Pa' in 0.12 minutes.
+Running for predictor 'RF2' for group 'Pa'.
+Ran for predictor 'RF2' for group 'MS' in 0.50 minutes.
+Running for predictor 'RF3' for group 'MS'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF2' for group 'MRPa' in 1.05 minutes.
+Running for predictor 'RF3' for group 'MRPa'.
+Ran for predictor 'GLM' for group 'PaQO' in 0.17 minutes.
+Running for predictor 'RF' for group 'PaQO'.
+Ran for predictor 'RF2' for group 'Pa' in 0.12 minutes.
+Running for predictor 'RF3' for group 'Pa'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'MRMS' in 0.44 minutes.
+Running for predictor 'RFO' for group 'MRMS'.
+ERROR running train/test for predictor 'RFO' and group 'MRMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MRMS'.
+Ran for predictor 'RF3' for group 'Pa' in 0.06 minutes.
+Running for predictor 'RFO' for group 'Pa'.
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'Pa'.
+ERROR running train/test for predictor 'SVM' and group 'MRMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MRMS'.
+ERROR running train/test for predictor 'SofSVM' and group 'MRMS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MRMS'.
+ERROR running train/test for predictor 'SVM' and group 'Pa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'Pa'.
+ERROR running train/test for predictor 'SofSVM' and group 'Pa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'Pa'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF3' for group 'MS' in 0.26 minutes.
+Running for predictor 'RFO' for group 'MS'.
+NB for groups Patient (2 features) ->  best l: 0.
+ERROR running train/test for predictor 'RFO' and group 'MS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MS'.
+Ran for predictor 'RF2' for group 'LiQO' in 1.43 minutes.
+Running for predictor 'RF3' for group 'LiQO'.
+ERROR running train/test for predictor 'SVM' and group 'MS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MS'.
+ERROR running train/test for predictor 'SofSVM' and group 'MS': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MS'.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'MRPa' in 0.29 minutes.
+Running for predictor 'RFO' for group 'MRPa'.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 0.
+ERROR running train/test for predictor 'RFO' and group 'MRPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MRPa'.
+NB for groups MSFC (7 features) ->  best l: 0.
+ERROR running train/test for predictor 'SVM' and group 'MRPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MRPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'MRPa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MRPa'.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 3.
+NB for groups Life - MSFC (11 features) ->  best l: 2.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 2.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 2.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 1.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 1.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'MSPa' in 1.01 minutes.
+Running for predictor 'RF2' for group 'MSPa'.
+Ran for predictor 'RF2' for group 'MRQO' in 0.96 minutes.
+Running for predictor 'RF3' for group 'MRQO'.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+NB for groups Patient (2 features) ->  best l: 1.
+Ran for predictor 'RF3' for group 'LiQO' in 0.48 minutes.
+Running for predictor 'RFO' for group 'LiQO'.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+ERROR running train/test for predictor 'RFO' and group 'LiQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'LiQO'.
+NB for groups Patient (2 features) ->  best l: 0.
+ERROR running train/test for predictor 'SVM' and group 'LiQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'LiQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'LiQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'LiQO'.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 2.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Life - MSFC (11 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'LiMS' in 1.85 minutes.
+Running for predictor 'KNN' for group 'LiMS'.
+ERROR running train/test for predictor 'KNN' and group 'LiMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'LiMS'.
+ERROR running train/test for predictor 'KNNC' and group 'LiMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Treating group of Categories: QO
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'GLM' for group 'QO'.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Patient (2 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'Pa' in 0.78 minutes.
+Running for predictor 'KNN' for group 'Pa'.
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'Pa'.
+ERROR running train/test for predictor 'KNNC' and group 'Pa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 2.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'MSQO' in 1.12 minutes.
+Running for predictor 'RF2' for group 'MSQO'.
+Ran for predictor 'GLM' for group 'QO' in 0.13 minutes.
+Running for predictor 'RF' for group 'QO'.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'MRQO' in 0.39 minutes.
+Running for predictor 'RFO' for group 'MRQO'.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+Ran for predictor 'RF' for group 'PaQO' in 1.07 minutes.
+Running for predictor 'RF2' for group 'PaQO'.
+ERROR running train/test for predictor 'RFO' and group 'MRQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MRQO'.
+ERROR running train/test for predictor 'SVM' and group 'MRQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MRQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'MRQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MRQO'.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 2.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MRI - Patient (5 features) ->  best l: 3.
+Ran for predictor 'RF' for group 'QO' in 0.43 minutes.
+Running for predictor 'RF2' for group 'QO'.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - Patient (5 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MRPa' in 1.16 minutes.
+Running for predictor 'KNN' for group 'MRPa'.
+ERROR running train/test for predictor 'KNN' and group 'MRPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MRPa'.
+ERROR running train/test for predictor 'KNNC' and group 'MRPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'MSPa' in 0.96 minutes.
+Running for predictor 'RF3' for group 'MSPa'.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MSFC (7 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MS' in 1.41 minutes.
+Running for predictor 'KNN' for group 'MS'.
+ERROR running train/test for predictor 'KNN' and group 'MS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MS'.
+ERROR running train/test for predictor 'KNNC' and group 'MS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MRI - MSFC (10 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MRMS' in 1.75 minutes.
+Running for predictor 'KNN' for group 'MRMS'.
+ERROR running train/test for predictor 'KNN' and group 'MRMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MRMS'.
+ERROR running train/test for predictor 'KNNC' and group 'MRMS': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Ran for predictor 'RF2' for group 'MSQO' in 0.87 minutes.
+Running for predictor 'RF3' for group 'MSQO'.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'MSPa' in 0.34 minutes.
+Running for predictor 'RFO' for group 'MSPa'.
+ERROR running train/test for predictor 'RFO' and group 'MSPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MSPa'.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+ERROR running train/test for predictor 'SVM' and group 'MSPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MSPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'MSPa': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MSPa'.
+NB for groups Life - QOL (9 features) ->  best l: 1.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups Life - QOL (9 features) ->  best l: 3.
+Ran for predictor 'NB' for group 'LiQO' in 1.30 minutes.
+Running for predictor 'KNN' for group 'LiQO'.
+ERROR running train/test for predictor 'KNN' and group 'LiQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'LiQO'.
+ERROR running train/test for predictor 'KNNC' and group 'LiQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Ran for predictor 'RF2' for group 'PaQO' in 0.99 minutes.
+Running for predictor 'RF3' for group 'PaQO'.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 1.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+Ran for predictor 'RF2' for group 'QO' in 0.73 minutes.
+Running for predictor 'RF3' for group 'QO'.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 2.
+Ran for predictor 'RF3' for group 'MSQO' in 0.34 minutes.
+Running for predictor 'RFO' for group 'MSQO'.
+ERROR running train/test for predictor 'RFO' and group 'MSQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'MSQO'.
+ERROR running train/test for predictor 'SVM' and group 'MSQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'MSQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'MSQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'MSQO'.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 3.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'PaQO' in 0.24 minutes.
+Running for predictor 'RFO' for group 'PaQO'.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+ERROR running train/test for predictor 'RFO' and group 'PaQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'PaQO'.
+ERROR running train/test for predictor 'SVM' and group 'PaQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'PaQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'PaQO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'PaQO'.
+NB for groups MRI - QOL (8 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MRQO' in 1.24 minutes.
+Running for predictor 'KNN' for group 'MRQO'.
+ERROR running train/test for predictor 'KNN' and group 'MRQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MRQO'.
+ERROR running train/test for predictor 'KNNC' and group 'MRQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 1.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+Ran for predictor 'RF3' for group 'QO' in 0.23 minutes.
+Running for predictor 'RFO' for group 'QO'.
+ERROR running train/test for predictor 'RFO' and group 'QO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SVM' for group 'QO'.
+ERROR running train/test for predictor 'SVM' and group 'QO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'QO'.
+ERROR running train/test for predictor 'SofSVM' and group 'QO': 
+ there is no package called ‘RSofia’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(RSofia) at Code/06_predictAll.R:115
+4: stop(txt, domain = NA)
+Running for predictor 'NB' for group 'QO'.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 1.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 3.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 1.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 1.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 2.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 3.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 1.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups MSFC - Patient (9 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MSPa' in 0.95 minutes.
+Running for predictor 'KNN' for group 'MSPa'.
+ERROR running train/test for predictor 'KNN' and group 'MSPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MSPa'.
+ERROR running train/test for predictor 'KNNC' and group 'MSPa': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+NB for groups QOL (5 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups Patient - QOL (7 features) ->  best l: 1.
+NB for groups QOL (5 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'QO' in 0.65 minutes.
+Running for predictor 'KNN' for group 'QO'.
+ERROR running train/test for predictor 'KNN' and group 'QO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'QO'.
+ERROR running train/test for predictor 'KNNC' and group 'QO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups Patient - QOL (7 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'PaQO' in 0.77 minutes.
+Running for predictor 'KNN' for group 'PaQO'.
+ERROR running train/test for predictor 'KNN' and group 'PaQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'PaQO'.
+ERROR running train/test for predictor 'KNNC' and group 'PaQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+NB for groups MSFC - QOL (12 features) ->  best l: 0.
+Ran for predictor 'NB' for group 'MSQO' in 1.09 minutes.
+Running for predictor 'KNN' for group 'MSQO'.
+ERROR running train/test for predictor 'KNN' and group 'MSQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:166
+4: stop(txt, domain = NA)
+Running for predictor 'KNNC' for group 'MSQO'.
+ERROR running train/test for predictor 'KNNC' and group 'MSQO': 
+ there is no package called ‘kknn’
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: library(kknn) at Code/06_predictAll.R:179
+4: stop(txt, domain = NA)
+Stopping cluster...
+Time elapsed for the run:
+17.44 mins

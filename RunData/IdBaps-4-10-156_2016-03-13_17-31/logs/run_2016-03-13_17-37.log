@@ -1,0 +1,630 @@
+Starting up cluster...
+Treating group of Categories: Co
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, MSFC.PASAT, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'GLM' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RF' on group 'CoMS', skipping...
+Running predictor 'RFO' for group 'Co'.
+Already run predictor 'RF2' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'CoMS', skipping...
+Running predictor 'RFO' for group 'CoMS'.
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'Co'.
+ERROR running train/test for predictor 'RFO' and group 'CoMS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'CoMS'.
+ERROR running train/test for predictor 'RP' and group 'Co': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Running predictor 'SVM' for group 'Co'.
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/05_predictors.R:76
+Already run predictor 'NB' on group 'Co', skipping...
+Already run predictor 'KNN' on group 'Co', skipping...
+Already run predictor 'KNNC' on group 'Co', skipping...
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoPa'.
+ERROR running train/test for predictor 'RP' and group 'CoMS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Already run predictor 'SVM' on group 'CoMS', skipping...
+Running predictor 'NB' for group 'CoMS'.
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.575]
+ERROR running train/test for predictor 'GLM' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'CoPa'.
+NB for groups Core - MSFC                         (  8 features) -> best l:  1 [perf: 0.626]
+ERROR running train/test for predictor 'RF' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'CoPa'.
+ERROR running train/test for predictor 'RF2' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'CoPa'.
+ERROR running train/test for predictor 'RF3' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'CoPa'.
+ERROR running train/test for predictor 'RFO' and group 'CoPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'CoPa'.
+ERROR running train/test for predictor 'RP' and group 'CoPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Running predictor 'SVM' for group 'CoPa'.
+ERROR running train/test for predictor 'SVM' and group 'CoPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/05_predictors.R:76
+Running predictor 'NB' for group 'CoPa'.
+NB for groups Core - MSFC                         (  8 features) -> best l:  1 [perf: 0.637]
+ERROR running train/test for predictor 'NB' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'CoMS'.
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.637]
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.771]
+ERROR running train/test for predictor 'KNN' and group 'CoMS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, labels = Ytrain) at Code/05_predictors.R:153
+4: lapply(X = X, FUN = FUN, ...)
+5: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'CoMS'.
+KNNC for groups Core - MSFC                         (  8 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC                         (  8 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - MSFC                         (  8 features) ->  best k: 5 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, MSFC.PASAT, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoMSPa'.
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.677]
+ERROR running train/test for predictor 'NB' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'CoPa'.
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, labels = Ytrain) at Code/05_predictors.R:153
+4: lapply(X = X, FUN = FUN, ...)
+5: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'CoPa'.
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 5 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: MS
+Selected columns:
+MSFC.PASAT, MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+ERROR running train/test for predictor 'GLM' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'CoMSPa'.
+ERROR running train/test for predictor 'GLM' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'MS'.
+ERROR running train/test for predictor 'RF2' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'MS'.
+ERROR running train/test for predictor 'RF3' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RFO' and group 'CoMSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF2' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'MS'.
+ERROR running train/test for predictor 'RP' and group 'CoMSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Running predictor 'SVM' for group 'CoMSPa'.
+ERROR running train/test for predictor 'SVM' and group 'CoMSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/05_predictors.R:76
+Running predictor 'NB' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF3' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'MS'.
+ERROR running train/test for predictor 'RFO' and group 'MS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'MS'.
+ERROR running train/test for predictor 'RP' and group 'MS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Running predictor 'SVM' for group 'MS'.
+ERROR running train/test for predictor 'SVM' and group 'MS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/05_predictors.R:76
+Running predictor 'NB' for group 'MS'.
+NB for groups MSFC                                (  3 features) -> best l:  0 [perf: 0.525]
+NB for groups Core - MSFC - Patient               ( 10 features) -> best l:  0 [perf: 0.611]
+NB for groups MSFC                                (  3 features) -> best l:  0 [perf: 0.420]
+NB for groups MSFC                                (  3 features) -> best l:  0 [perf: 0.482]
+ERROR running train/test for predictor 'NB' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'MS'.
+ERROR running train/test for predictor 'KNN' and group 'MS': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, labels = Ytrain) at Code/05_predictors.R:153
+4: lapply(X = X, FUN = FUN, ...)
+5: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  3 features) ->  best k: 9 / kernel: optimal
+KNNC for groups MSFC                                (  3 features) ->  best k: 10 / kernel: optimal
+KNNC for groups MSFC                                (  3 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.PASAT, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'MSPa'.
+NB for groups Core - MSFC - Patient               ( 10 features) -> best l:  0 [perf: 0.678]
+ERROR running train/test for predictor 'GLM' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'MSPa'.
+ERROR running train/test for predictor 'RF' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'MSPa'.
+ERROR running train/test for predictor 'RF2' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'MSPa'.
+ERROR running train/test for predictor 'RF3' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'MSPa'.
+ERROR running train/test for predictor 'RFO' and group 'MSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'MSPa'.
+ERROR running train/test for predictor 'RP' and group 'MSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Running predictor 'SVM' for group 'MSPa'.
+ERROR running train/test for predictor 'SVM' and group 'MSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/05_predictors.R:76
+Running predictor 'NB' for group 'MSPa'.
+NB for groups Core - MSFC - Patient               ( 10 features) -> best l: 13 [perf: 0.608]
+ERROR running train/test for predictor 'NB' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'CoMSPa'.
+ERROR running train/test for predictor 'KNN' and group 'CoMSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, labels = Ytrain) at Code/05_predictors.R:153
+4: lapply(X = X, FUN = FUN, ...)
+5: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               ( 10 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               ( 10 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               ( 10 features) ->  best k: 5 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'Pa'.
+NB for groups MSFC - Patient                      (  5 features) -> best l:  0 [perf: 0.569]
+ERROR running train/test for predictor 'GLM' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'Pa'.
+ERROR running train/test for predictor 'RF' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'Pa'.
+ERROR running train/test for predictor 'RF2' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'Pa'.
+ERROR running train/test for predictor 'RF3' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'Pa'.
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+Running predictor 'RP' for group 'Pa'.
+ERROR running train/test for predictor 'RP' and group 'Pa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+4: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:128
+Running predictor 'SVM' for group 'Pa'.
+ERROR running train/test for predictor 'SVM' and group 'Pa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/05_predictors.R:76
+Running predictor 'NB' for group 'Pa'.
+NB for groups MSFC - Patient                      (  5 features) -> best l:  0 [perf: 0.672]
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.528]
+NB for groups MSFC - Patient                      (  5 features) -> best l:  0 [perf: 0.478]
+ERROR running train/test for predictor 'NB' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'MSPa'.
+ERROR running train/test for predictor 'KNN' and group 'MSPa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, labels = Ytrain) at Code/05_predictors.R:153
+4: lapply(X = X, FUN = FUN, ...)
+5: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'MSPa'.
+NB for groups Patient                             (  2 features) -> best l:  2 [perf: 0.618]
+KNNC for groups MSFC - Patient                      (  5 features) ->  best k: 11 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  5 features) ->  best k: 10 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  5 features) ->  best k: 9 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.504]
+ERROR running train/test for predictor 'NB' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'Pa'.
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ could not find function "calcAuroc"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+3: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, labels = Ytrain) at Code/05_predictors.R:153
+4: lapply(X = X, FUN = FUN, ...)
+5: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 4 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 8 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Stopping cluster...
+Time elapsed for the run:
+30.24986 secs

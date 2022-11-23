@@ -1,0 +1,340 @@
+2022-09-05 16:06:34: ###### Treating group of Categories: ClFS
+2022-09-05 16:06:34: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+2022-09-05 16:06:34: Already run predictor 'GLM' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF2' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF3' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RFO' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RP' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'SVM' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'NB' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNN' on group 'ClFS', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNNC' on group 'ClFS', skipping...
+2022-09-05 16:06:34: ## Ran group 'ClFS' in 0.00 minutes.
+
+2022-09-05 16:06:34: ###### Treating group of Categories: ClCoMS
+2022-09-05 16:06:34: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+2022-09-05 16:06:34: Already run predictor 'GLM' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF2' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF3' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RFO' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RP' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'SVM' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'NB' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNN' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNNC' on group 'ClCoMS', skipping...
+2022-09-05 16:06:34: ## Ran group 'ClCoMS' in 0.00 minutes.
+
+2022-09-05 16:06:34: ###### Treating group of Categories: CoMS
+2022-09-05 16:06:34: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+2022-09-05 16:06:34: Already run predictor 'GLM' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF2' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF3' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RFO' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'RP' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'SVM' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'NB' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNN' on group 'CoMS', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNNC' on group 'CoMS', skipping...
+2022-09-05 16:06:34: ## Ran group 'CoMS' in 0.00 minutes.
+
+2022-09-05 16:06:34: ###### Treating group of Categories: CoFSQO
+2022-09-05 16:06:34: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+2022-09-05 16:06:34: Already run predictor 'GLM' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF2' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'RF3' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'RFO' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'RP' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'SVM' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'NB' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNN' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: Already run predictor 'KNNC' on group 'CoFSQO', skipping...
+2022-09-05 16:06:34: ## Ran group 'CoFSQO' in 0.00 minutes.
+
+2022-09-05 16:06:34: ###### Treating group of Categories: CoMRMS
+2022-09-05 16:06:35: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+2022-09-05 16:06:35: Already run predictor 'GLM' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'RF' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'RF2' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'RF3' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'RFO' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'RP' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'SVM' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'NB' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'KNN' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: Already run predictor 'KNNC' on group 'CoMRMS', skipping...
+2022-09-05 16:06:35: ## Ran group 'CoMRMS' in 0.00 minutes.
+
+2022-09-05 16:06:35: ###### Treating group of Categories: CoMSTr
+2022-09-05 16:06:35: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Treatments.nDMT, Treatments.hasIM, Treatments.hasIS, Treatments.hasMA, Treatments.DMTcategory
+2022-09-05 16:06:35: Running predictor 'GLM' for group 'CoMSTr'.
+2022-09-05 16:06:35: CV num 1:
+Loading required package: Matrix
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+2022-09-05 16:06:43: CV num 2:
+2022-09-05 16:06:46: Ran predictor 'GLM' for group 'CoMSTr' in 0.19 minutes.
+2022-09-05 16:06:46: Running predictor 'RF' for group 'CoMSTr'.
+2022-09-05 16:06:46: CV num 1:
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:06:59: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:14: Ran predictor 'RF' for group 'CoMSTr' in 0.47 minutes.
+2022-09-05 16:07:14: Running predictor 'RF2' for group 'CoMSTr'.
+2022-09-05 16:07:14: CV num 1:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:25: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:36: Ran predictor 'RF2' for group 'CoMSTr' in 0.36 minutes.
+2022-09-05 16:07:36: Running predictor 'RF3' for group 'CoMSTr'.
+2022-09-05 16:07:36: CV num 1:
+2022-09-05 16:07:41: CV num 2:
+2022-09-05 16:07:47: Ran predictor 'RF3' for group 'CoMSTr' in 0.19 minutes.
+2022-09-05 16:07:47: Running predictor 'RFO' for group 'CoMSTr'.
+2022-09-05 16:07:47: CV num 1:
+2022-09-05 16:08:22: RFO for groups Core - MSFC - Treatments            ( 12 features) -> best mtry:  2 [perf: 0.720]
+2022-09-05 16:08:58: RFO for groups Core - MSFC - Treatments            ( 12 features) -> best mtry:  2 [perf: 0.726]
+2022-09-05 16:09:27: RFO for groups Core - MSFC - Treatments            ( 12 features) -> best mtry:  2 [perf: 0.707]
+2022-09-05 16:09:27: CV num 2:
+2022-09-05 16:09:55: RFO for groups Core - MSFC - Treatments            ( 12 features) -> best mtry:  2 [perf: 0.697]
+2022-09-05 16:10:21: RFO for groups Core - MSFC - Treatments            ( 12 features) -> best mtry:  2 [perf: 0.731]
+2022-09-05 16:10:53: RFO for groups Core - MSFC - Treatments            ( 12 features) -> best mtry:  2 [perf: 0.715]
+2022-09-05 16:10:53: Ran predictor 'RFO' for group 'CoMSTr' in 3.09 minutes.
+2022-09-05 16:10:53: Running predictor 'RP' for group 'CoMSTr'.
+2022-09-05 16:10:53: CV num 1:
+2022-09-05 16:11:17: RPart for groups Core - MSFC - Treatments            ( 12 features) -> best min split: 80 / best cp: 0.002  [perf: 0.700]
+2022-09-05 16:11:39: RPart for groups Core - MSFC - Treatments            ( 12 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.703]
+2022-09-05 16:12:01: RPart for groups Core - MSFC - Treatments            ( 12 features) -> best min split: 70 / best cp: 0.002  [perf: 0.687]
+2022-09-05 16:12:01: CV num 2:
+2022-09-05 16:12:23: RPart for groups Core - MSFC - Treatments            ( 12 features) -> best min split: 110 / best cp: 0.001  [perf: 0.674]
+2022-09-05 16:12:44: RPart for groups Core - MSFC - Treatments            ( 12 features) -> best min split: 110 / best cp: 0.002  [perf: 0.707]
+2022-09-05 16:13:07: RPart for groups Core - MSFC - Treatments            ( 12 features) -> best min split: 80 / best cp: 0.001  [perf: 0.691]
+2022-09-05 16:13:07: Ran predictor 'RP' for group 'CoMSTr' in 2.23 minutes.
+2022-09-05 16:13:07: Running predictor 'SVM' for group 'CoMSTr'.
+2022-09-05 16:13:07: CV num 1:
+2022-09-05 16:16:15: SVM for groups Core - MSFC - Treatments            ( 12 features) -> best gamma:   0.00781 / best cost:     10 [perf: 0.764]
+2022-09-05 19:12:34: SVM for groups Core - MSFC - Treatments            ( 12 features) -> best gamma:   0.00391 / best cost:   31.6 [perf: 0.736]
+2022-09-05 19:15:48: SVM for groups Core - MSFC - Treatments            ( 12 features) -> best gamma:    0.0312 / best cost:      1 [perf: 0.739]
+2022-09-05 19:15:48: CV num 2:
+2022-09-05 19:58:27: SVM for groups Core - MSFC - Treatments            ( 12 features) -> best gamma:    0.0312 / best cost:   3.16 [perf: 0.732]
+2022-09-05 20:01:23: SVM for groups Core - MSFC - Treatments            ( 12 features) -> best gamma:   0.00781 / best cost:     10 [perf: 0.751]
+2022-09-05 20:04:58: SVM for groups Core - MSFC - Treatments            ( 12 features) -> best gamma:   0.00781 / best cost:     10 [perf: 0.749]
+2022-09-05 20:04:58: Ran predictor 'SVM' for group 'CoMSTr' in 231.85 minutes.
+2022-09-05 20:04:58: Already run predictor 'NB' on group 'CoMSTr', skipping...
+2022-09-05 20:04:58: Running predictor 'KNN' for group 'CoMSTr'.
+2022-09-05 20:04:58: CV num 1:
+2022-09-05 20:05:00: KNN for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 140 / kernel: optimal    [perf: 0.714]
+2022-09-05 20:05:02: KNN for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 60  / kernel: optimal    [perf: 0.700]
+2022-09-05 20:05:04: KNN for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 80  / kernel: optimal    [perf: 0.686]
+2022-09-05 20:05:04: CV num 2:
+2022-09-05 20:05:05: KNN for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 110 / kernel: optimal    [perf: 0.691]
+2022-09-05 20:05:06: KNN for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 130 / kernel: optimal    [perf: 0.707]
+2022-09-05 20:05:08: KNN for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 70  / kernel: optimal    [perf: 0.709]
+2022-09-05 20:05:08: Ran predictor 'KNN' for group 'CoMSTr' in 0.17 minutes.
+2022-09-05 20:05:08: Running predictor 'KNNC' for group 'CoMSTr'.
+2022-09-05 20:05:08: CV num 1:
+2022-09-05 20:05:11: KNNC for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 30 / kernel: optimal
+2022-09-05 20:05:14: KNNC for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 30 / kernel: optimal
+2022-09-05 20:05:17: KNNC for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 40 / kernel: optimal
+2022-09-05 20:05:17: CV num 2:
+2022-09-05 20:05:19: KNNC for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 20 / kernel: optimal
+2022-09-05 20:05:22: KNNC for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 40 / kernel: optimal
+2022-09-05 20:05:24: KNNC for groups Core - MSFC - Treatments            ( 12 features) ->  best k: 20 / kernel: optimal
+2022-09-05 20:05:24: Ran predictor 'KNNC' for group 'CoMSTr' in 0.27 minutes.
+2022-09-05 20:05:24: ## Ran group 'CoMSTr' in 238.83 minutes.
+
+2022-09-05 20:05:24: ###### Treating group of Categories: MR
+2022-09-05 20:05:24: Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+2022-09-05 20:05:24: Already run predictor 'GLM' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF2' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF3' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'RFO' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'RP' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'SVM' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'NB' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNN' on group 'MR', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNNC' on group 'MR', skipping...
+2022-09-05 20:05:24: ## Ran group 'MR' in 0.00 minutes.
+
+2022-09-05 20:05:24: ###### Treating group of Categories: MRMS
+2022-09-05 20:05:24: Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+2022-09-05 20:05:24: Already run predictor 'GLM' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF2' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF3' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'RFO' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'RP' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'SVM' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'NB' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNN' on group 'MRMS', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNNC' on group 'MRMS', skipping...
+2022-09-05 20:05:24: ## Ran group 'MRMS' in 0.00 minutes.
+
+2022-09-05 20:05:24: ###### Treating group of Categories: MRPa
+2022-09-05 20:05:24: Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+2022-09-05 20:05:24: Already run predictor 'GLM' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF2' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF3' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'RFO' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'RP' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'SVM' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'NB' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNN' on group 'MRPa', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNNC' on group 'MRPa', skipping...
+2022-09-05 20:05:24: ## Ran group 'MRPa' in 0.00 minutes.
+
+2022-09-05 20:05:24: ###### Treating group of Categories: MRQO
+2022-09-05 20:05:24: Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+2022-09-05 20:05:24: Already run predictor 'GLM' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF2' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'RF3' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'RFO' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'RP' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'SVM' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'NB' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNN' on group 'MRQO', skipping...
+2022-09-05 20:05:24: Already run predictor 'KNNC' on group 'MRQO', skipping...
+2022-09-05 20:05:24: ## Ran group 'MRQO' in 0.00 minutes.
+
+2022-09-05 20:05:25: ###### Treating group of Categories: MRTr
+2022-09-05 20:05:25: Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Treatments.nDMT, Treatments.hasIM, Treatments.hasIS, Treatments.hasMA, Treatments.DMTcategory
+2022-09-05 20:05:25: Running predictor 'GLM' for group 'MRTr'.
+2022-09-05 20:05:25: CV num 1:
+2022-09-05 20:05:27: CV num 2:
+2022-09-05 20:05:29: Ran predictor 'GLM' for group 'MRTr' in 0.07 minutes.
+2022-09-05 20:05:29: Running predictor 'RF' for group 'MRTr'.
+2022-09-05 20:05:29: CV num 1:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 20:05:32: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 20:05:35: Ran predictor 'RF' for group 'MRTr' in 0.11 minutes.
+2022-09-05 20:05:35: Running predictor 'RF2' for group 'MRTr'.
+2022-09-05 20:05:35: CV num 1:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 20:05:38: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 20:05:43: Ran predictor 'RF2' for group 'MRTr' in 0.12 minutes.
+2022-09-05 20:05:43: Running predictor 'RF3' for group 'MRTr'.
+2022-09-05 20:05:43: CV num 1:
+2022-09-05 20:05:48: CV num 2:
+2022-09-05 20:05:50: Ran predictor 'RF3' for group 'MRTr' in 0.12 minutes.
+2022-09-05 20:05:50: Running predictor 'RFO' for group 'MRTr'.
+2022-09-05 20:05:50: CV num 1:
+2022-09-05 20:36:00: RFO for groups MRI - Treatments                    (  8 features) -> best mtry:  2 [perf: 0.506]
+2022-09-05 20:36:08: RFO for groups MRI - Treatments                    (  8 features) -> best mtry:  2 [perf: 0.545]
+2022-09-05 20:42:49: RFO for groups MRI - Treatments                    (  8 features) -> best mtry:  3 [perf: 0.539]
+2022-09-05 20:42:49: CV num 2:
+2022-09-05 20:43:16: RFO for groups MRI - Treatments                    (  8 features) -> best mtry:  3 [perf: 0.545]
+2022-09-05 20:43:36: RFO for groups MRI - Treatments                    (  8 features) -> best mtry:  2 [perf: 0.516]
+2022-09-05 20:48:45: RFO for groups MRI - Treatments                    (  8 features) -> best mtry:  2 [perf: 0.523]
+2022-09-05 20:48:45: Ran predictor 'RFO' for group 'MRTr' in 42.93 minutes.
+2022-09-05 20:48:45: Running predictor 'RP' for group 'MRTr'.
+2022-09-05 20:48:45: CV num 1:
+2022-09-05 20:49:18: RPart for groups MRI - Treatments                    (  8 features) -> best min split: 90 / best cp: 0.005  [perf: 0.533]
+2022-09-05 20:55:01: RPart for groups MRI - Treatments                    (  8 features) -> best min split: 80 / best cp: 0.002  [perf: 0.572]
+2022-09-05 21:06:12: RPart for groups MRI - Treatments                    (  8 features) -> best min split: 90 / best cp: 0.005  [perf: 0.548]
+2022-09-05 21:06:12: CV num 2:
+2022-09-05 21:12:14: RPart for groups MRI - Treatments                    (  8 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.561]
+2022-09-05 21:18:47: RPart for groups MRI - Treatments                    (  8 features) -> best min split: 100 / best cp: 0.002  [perf: 0.570]
+2022-09-05 21:20:13: RPart for groups MRI - Treatments                    (  8 features) -> best min split: 50 / best cp: 0.001  [perf: 0.551]
+2022-09-05 21:20:13: Ran predictor 'RP' for group 'MRTr' in 31.46 minutes.
+2022-09-05 21:20:13: Running predictor 'SVM' for group 'MRTr'.
+2022-09-05 21:20:13: CV num 1:
+2022-09-05 21:26:20: SVM for groups MRI - Treatments                    (  8 features) -> best gamma:   0.00781 / best cost:   3.16 [perf: 0.535]
+2022-09-05 21:30:03: SVM for groups MRI - Treatments                    (  8 features) -> best gamma:    0.0625 / best cost:    0.1 [perf: 0.553]
+2022-09-05 21:33:51: SVM for groups MRI - Treatments                    (  8 features) -> best gamma:   0.00391 / best cost:  0.316 [perf: 0.536]
+2022-09-05 21:33:51: CV num 2:
+2022-09-05 21:36:43: SVM for groups MRI - Treatments                    (  8 features) -> best gamma:    0.0625 / best cost:  0.316 [perf: 0.540]
+2022-09-05 21:39:05: SVM for groups MRI - Treatments                    (  8 features) -> best gamma:    0.0625 / best cost:  0.316 [perf: 0.554]
+2022-09-05 21:41:20: SVM for groups MRI - Treatments                    (  8 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.566]
+2022-09-05 21:41:20: Ran predictor 'SVM' for group 'MRTr' in 21.11 minutes.
+2022-09-05 21:41:20: Already run predictor 'NB' on group 'MRTr', skipping...
+2022-09-05 21:41:20: Running predictor 'KNN' for group 'MRTr'.
+2022-09-05 21:41:20: CV num 1:
+2022-09-05 21:41:21: KNN for groups MRI - Treatments                    (  8 features) ->  best k: 180 / kernel: optimal    [perf: 0.499]
+2022-09-05 21:41:22: KNN for groups MRI - Treatments                    (  8 features) ->  best k: 6   / kernel: optimal    [perf: 0.526]
+2022-09-05 21:41:22: KNN for groups MRI - Treatments                    (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.533]
+2022-09-05 21:41:23: CV num 2:
+2022-09-05 21:41:23: KNN for groups MRI - Treatments                    (  8 features) ->  best k: 180 / kernel: optimal    [perf: 0.507]
+2022-09-05 21:41:24: KNN for groups MRI - Treatments                    (  8 features) ->  best k: 190 / kernel: optimal    [perf: 0.513]
+2022-09-05 21:41:26: KNN for groups MRI - Treatments                    (  8 features) ->  best k: 190 / kernel: optimal    [perf: 0.524]
+2022-09-05 21:41:26: Ran predictor 'KNN' for group 'MRTr' in 0.10 minutes.
+2022-09-05 21:41:26: Running predictor 'KNNC' for group 'MRTr'.
+2022-09-05 21:41:26: CV num 1:
+2022-09-05 21:41:28: KNNC for groups MRI - Treatments                    (  8 features) ->  best k: 40 / kernel: optimal
+2022-09-05 21:41:32: KNNC for groups MRI - Treatments                    (  8 features) ->  best k: 80 / kernel: optimal
+2022-09-05 21:41:34: KNNC for groups MRI - Treatments                    (  8 features) ->  best k: 120 / kernel: optimal
+2022-09-05 21:41:34: CV num 2:
+2022-09-05 21:41:35: KNNC for groups MRI - Treatments                    (  8 features) ->  best k: 150 / kernel: optimal
+2022-09-05 21:41:38: KNNC for groups MRI - Treatments                    (  8 features) ->  best k: 70 / kernel: optimal
+2022-09-05 21:41:45: KNNC for groups MRI - Treatments                    (  8 features) ->  best k: 160 / kernel: optimal
+2022-09-05 21:41:46: Ran predictor 'KNNC' for group 'MRTr' in 0.33 minutes.
+2022-09-05 21:41:46: ## Ran group 'MRTr' in 96.35 minutes.
+

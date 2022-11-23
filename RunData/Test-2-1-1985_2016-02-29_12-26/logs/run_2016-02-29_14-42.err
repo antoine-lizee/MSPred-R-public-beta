@@ -1,0 +1,32 @@
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: There were 13 warnings (use warnings() to see them)
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in best[1, 2] : subscript out of bounds
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:ggplot2’:
+
+    margin
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Error in best[1, 2] : subscript out of bounds
+In addition: Warning messages:
+1: In matrix(cl[C], nrow = p, ncol = kmax + 2) :
+  data length [31356] is not a sub-multiple or multiple of the number of columns [202]
+2: package ‘e1071’ was built under R version 3.1.3 
+3: package ‘randomForest’ was built under R version 3.1.3 

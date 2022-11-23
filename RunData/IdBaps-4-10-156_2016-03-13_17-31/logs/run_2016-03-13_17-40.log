@@ -1,0 +1,1774 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core                                (  5 features) -> best mtry:  3 [perf: 0.668]
+RFO for groups Core                                (  5 features) -> best mtry:  3 [perf: 0.624]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.710]
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RP' for group 'Co'.
+RPart for groups Core                                (  5 features) -> best min split: 50 / best cp: 0.0001 [perf: 0.722]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.700]
+ERROR running train/test for predictor 'RP' and group 'Co': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'Co'.
+SVM for groups Core                                (  5 features) -> best gamma:    0.0156 / best cost:   3.16 [perf: 0.662]
+SVM for groups Core                                (  5 features) -> best gamma:   0.00391 / best cost:   3.16 [perf: 0.774]
+SVM for groups Core                                (  5 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.803]
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Already run predictor 'NB' on group 'Co', skipping...
+Already run predictor 'KNN' on group 'Co', skipping...
+Already run predictor 'KNNC' on group 'Co', skipping...
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, MSFC.PASAT, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'CoMS', skipping...
+Already run predictor 'RF' on group 'CoMS', skipping...
+Already run predictor 'RF2' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'CoMS', skipping...
+Running predictor 'RFO' for group 'CoMS'.
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  2 [perf: 0.658]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  3 [perf: 0.749]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  2 [perf: 0.833]
+ERROR running train/test for predictor 'RFO' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RP' for group 'CoMS'.
+RPart for groups Core - MSFC                         (  8 features) -> best min split: 40 / best cp: 0.02   [perf: 0.636]
+RPart for groups Core - MSFC                         (  8 features) -> best min split: 20 / best cp: 0.01   [perf: 0.617]
+RPart for groups Core - MSFC                         (  8 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.735]
+ERROR running train/test for predictor 'RP' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Already run predictor 'SVM' on group 'CoMS', skipping...
+Running predictor 'NB' for group 'CoMS'.
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.529]
+NB for groups Core - MSFC                         (  8 features) -> best l:  1 [perf: 0.546]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.673]
+ERROR running train/test for predictor 'NB' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'CoMS'.
+KNN for groups Core - MSFC                         (  8 features) ->  best k: 11  / kernel: optimal    [perf: 0.611]
+KNN for groups Core - MSFC                         (  8 features) ->  best k: 11  / kernel: optimal    [perf: 0.575]
+KNN for groups Core - MSFC                         (  8 features) ->  best k: 2   / kernel: optimal    [perf: 0.719]
+ERROR running train/test for predictor 'KNN' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNNC' for group 'CoMS'.
+KNNC for groups Core - MSFC                         (  8 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC                         (  8 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - MSFC                         (  8 features) ->  best k: 5 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoPa'.
+ERROR running train/test for predictor 'GLM' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'CoPa'.
+ERROR running train/test for predictor 'RF' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'CoPa'.
+ERROR running train/test for predictor 'RF2' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'CoPa'.
+ERROR running train/test for predictor 'RF3' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'CoPa'.
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.693]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.657]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.682]
+ERROR running train/test for predictor 'RFO' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RP' for group 'CoPa'.
+RPart for groups Core - Patient                      (  7 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.561]
+RPart for groups Core - Patient                      (  7 features) -> best min split: 30 / best cp: 0.01   [perf: 0.708]
+RPart for groups Core - Patient                      (  7 features) -> best min split: 30 / best cp: 0.02   [perf: 0.754]
+ERROR running train/test for predictor 'RP' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'SVM' for group 'CoPa'.
+SVM for groups Core - Patient                      (  7 features) -> best gamma:      0.25 / best cost:     10 [perf: 0.740]
+SVM for groups Core - Patient                      (  7 features) -> best gamma:     0.125 / best cost:     10 [perf: 0.860]
+SVM for groups Core - Patient                      (  7 features) -> best gamma:         1 / best cost:   31.6 [perf: 0.804]
+ERROR running train/test for predictor 'SVM' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'NB' for group 'CoPa'.
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.597]
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.761]
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.686]
+ERROR running train/test for predictor 'NB' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'CoPa'.
+KNN for groups Core - Patient                      (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.612]
+KNN for groups Core - Patient                      (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.762]
+KNN for groups Core - Patient                      (  7 features) ->  best k: 6   / kernel: optimal    [perf: 0.724]
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNNC' for group 'CoPa'.
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 5 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, MSFC.PASAT, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoMSPa'.
+ERROR running train/test for predictor 'GLM' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF2' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RF3' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RFO' and group 'CoMSPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.196, 0.204, 0.288, 0.054, 
+ 0.322, 0.188, 0.34, 0.162, 0.196, 0.388, 0.236, 0.182, 0.11, 0.162, 0.072, 0.26, 
+ 0.126, 0.346, 0.114, 0.322, 0.196, 0.216, 0.064), .Names = c("1", "2", "3", "4", 
+ "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", 
+ "20", "21", "22", "23")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"
+ ), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 0.388, 0.346, 0.34, 
+ 0.322, 0.288, 0.26, 0.236, 0.216, 0.204, 0.196, 0.188, 0.182, 0.162, 0.126, 0.114, 
+ 0.11, 0.072, 0.064, 0.054), .Names = c("", "10", "18", "7", "20", "3", "16", "11", 
+ "22", "2", "21", "6", "12", "14", "17", "19", "13", "15", "23", "4")), fp = c(0, 
+ 1, 2, 3, 5, 6, 7, 8, 9, 10, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23), tp = c(0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(23, 22, 21, 20, 18, 17, 16, 15, 14, 
+ 13, 10, 9, 8, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 23L, n.pos.pred = c(0, 1, 
+ 2, 3, 5, 6, 7, 8, 9, 10, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23), n.neg.pred = c(23, 
+ 22, 21, 20, 18, 17, 16, 15, 14, 13, 10, 9, 8, 6, 5, 4, 3, 2, 1, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'CoMSPa'.
+RPart for groups Core - MSFC - Patient               ( 10 features) -> best min split: 50 / best cp: 0.0001 [perf: 0.683]
+RPart for groups Core - MSFC - Patient               ( 10 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.697]
+RPart for groups Core - MSFC - Patient               ( 10 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.650]
+ERROR running train/test for predictor 'RP' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'SVM' for group 'CoMSPa'.
+SVM for groups Core - MSFC - Patient               ( 10 features) -> best gamma:   0.00195 / best cost:      1 [perf: 0.689]
+ERROR running train/test for predictor 'SVM' and group 'CoMSPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.100812716869836, 0.20389149320834, 
+ 0.339877088183799, 0.432806682118791, 0.242698370948656, 0.192109359842565, 0.248746589074697, 
+ 0.0695510280267514, 0.174359805466606, 0.222181557517944, 0.447871938776988, 0.182106750607894, 
+ 0.0964556195188614, 0.157055906692372, 0.216812184796428, 0.197531756435351, 0.678130248045019, 
+ 0.059188918709612, 0.328889985839864, 0.192056774782959, 0.217785877130824, 0.182567332586431, 
+ 0.160358144132915), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+ "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23")), labels = structure(c(1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.678130248045019, 0.447871938776988, 0.432806682118791, 0.339877088183799, 0.328889985839864, 
+ 0.248746589074697, 0.242698370948656, 0.222181557517944, 0.217785877130824, 0.216812184796428, 
+ 0.20389149320834, 0.197531756435351, 0.192109359842565, 0.192056774782959, 0.182567332586431, 
+ 0.182106750607894, 0.174359805466606, 0.160358144132915, 0.157055906692372, 0.100812716869836, 
+ 0.0964556195188614, 0.0695510280267514, 0.059188918709612), .Names = c("", "17", 
+ "11", "4", "3", "19", "7", "5", "10", "21", "15", "2", "16", "6", "20", "22", "12", 
+ "9", "23", "14", "1", "13", "8", "18")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23), tp = c(0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(23, 22, 21, 20, 19, 18, 17, 
+ 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 23L, 
+     n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+     18, 19, 20, 21, 22, 23), n.neg.pred = c(23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 
+     13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'CoMSPa'.
+NB for groups Core - MSFC - Patient               ( 10 features) -> best l:  1 [perf: 0.538]
+NB for groups Core - MSFC - Patient               ( 10 features) -> best l:  0 [perf: 0.691]
+NB for groups Core - MSFC - Patient               ( 10 features) -> best l:  0 [perf: 0.619]
+ERROR running train/test for predictor 'NB' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'CoMSPa'.
+KNN for groups Core - MSFC - Patient               ( 10 features) ->  best k: 9   / kernel: optimal    [perf: 0.645]
+KNN for groups Core - MSFC - Patient               ( 10 features) ->  best k: 11  / kernel: optimal    [perf: 0.713]
+KNN for groups Core - MSFC - Patient               ( 10 features) ->  best k: 3   / kernel: optimal    [perf: 0.724]
+ERROR running train/test for predictor 'KNN' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               ( 10 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               ( 10 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               ( 10 features) ->  best k: 5 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: MS
+Selected columns:
+MSFC.PASAT, MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+ERROR running train/test for predictor 'GLM' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'MS'.
+ERROR running train/test for predictor 'RF' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'MS'.
+ERROR running train/test for predictor 'RF2' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'MS'.
+ERROR running train/test for predictor 'RF3' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'MS'.
+RFO for groups MSFC                                (  3 features) -> best mtry:  3 [perf: 0.512]
+RFO for groups MSFC                                (  3 features) -> best mtry:  2 [perf: 0.486]
+RFO for groups MSFC                                (  3 features) -> best mtry:  2 [perf: 0.575]
+ERROR running train/test for predictor 'RFO' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RP' for group 'MS'.
+RPart for groups MSFC                                (  3 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.615]
+RPart for groups MSFC                                (  3 features) -> best min split: 30 / best cp: 0.0001 [perf: 0.670]
+RPart for groups MSFC                                (  3 features) -> best min split: 30 / best cp: 0.0001 [perf: 0.722]
+ERROR running train/test for predictor 'RP' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'SVM' for group 'MS'.
+SVM for groups MSFC                                (  3 features) -> best gamma:   0.00195 / best cost:      1 [perf: 0.625]
+SVM for groups MSFC                                (  3 features) -> best gamma:    0.0625 / best cost:      1 [perf: 0.631]
+SVM for groups MSFC                                (  3 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.651]
+ERROR running train/test for predictor 'SVM' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'NB' for group 'MS'.
+NB for groups MSFC                                (  3 features) -> best l:  0 [perf: 0.493]
+NB for groups MSFC                                (  3 features) -> best l:  0 [perf: 0.392]
+NB for groups MSFC                                (  3 features) -> best l:  0 [perf: 0.529]
+ERROR running train/test for predictor 'NB' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'MS'.
+KNN for groups MSFC                                (  3 features) ->  best k: 2   / kernel: optimal    [perf: 0.566]
+KNN for groups MSFC                                (  3 features) ->  best k: 2   / kernel: optimal    [perf: 0.538]
+KNN for groups MSFC                                (  3 features) ->  best k: 11  / kernel: optimal    [perf: 0.558]
+ERROR running train/test for predictor 'KNN' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  3 features) ->  best k: 9 / kernel: optimal
+KNNC for groups MSFC                                (  3 features) ->  best k: 10 / kernel: optimal
+KNNC for groups MSFC                                (  3 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.PASAT, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'MSPa'.
+ERROR running train/test for predictor 'GLM' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'MSPa'.
+ERROR running train/test for predictor 'RF' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'MSPa'.
+ERROR running train/test for predictor 'RF2' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'MSPa'.
+ERROR running train/test for predictor 'RF3' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'MSPa'.
+RFO for groups MSFC - Patient                      (  5 features) -> best mtry:  2 [perf: 0.594]
+RFO for groups MSFC - Patient                      (  5 features) -> best mtry:  2 [perf: 0.712]
+RFO for groups MSFC - Patient                      (  5 features) -> best mtry:  2 [perf: 0.585]
+ERROR running train/test for predictor 'RFO' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RP' for group 'MSPa'.
+RPart for groups MSFC - Patient                      (  5 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.640]
+RPart for groups MSFC - Patient                      (  5 features) -> best min split: 20 / best cp: 0.01   [perf: 0.740]
+RPart for groups MSFC - Patient                      (  5 features) -> best min split: 20 / best cp: 0.02   [perf: 0.611]
+ERROR running train/test for predictor 'RP' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'SVM' for group 'MSPa'.
+SVM for groups MSFC - Patient                      (  5 features) -> best gamma:      0.25 / best cost:   31.6 [perf: 0.624]
+SVM for groups MSFC - Patient                      (  5 features) -> best gamma:    0.0312 / best cost:  0.316 [perf: 0.753]
+SVM for groups MSFC - Patient                      (  5 features) -> best gamma:   0.00391 / best cost:    0.1 [perf: 0.672]
+ERROR running train/test for predictor 'SVM' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'NB' for group 'MSPa'.
+NB for groups MSFC - Patient                      (  5 features) -> best l:  0 [perf: 0.564]
+NB for groups MSFC - Patient                      (  5 features) -> best l:  0 [perf: 0.656]
+NB for groups MSFC - Patient                      (  5 features) -> best l:  0 [perf: 0.479]
+ERROR running train/test for predictor 'NB' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'MSPa'.
+KNN for groups MSFC - Patient                      (  5 features) ->  best k: 2   / kernel: optimal    [perf: 0.443]
+KNN for groups MSFC - Patient                      (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.603]
+KNN for groups MSFC - Patient                      (  5 features) ->  best k: 10  / kernel: optimal    [perf: 0.483]
+ERROR running train/test for predictor 'KNN' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNNC' for group 'MSPa'.
+KNNC for groups MSFC - Patient                      (  5 features) ->  best k: 11 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  5 features) ->  best k: 10 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  5 features) ->  best k: 9 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MSPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'Pa'.
+ERROR running train/test for predictor 'GLM' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF' for group 'Pa'.
+ERROR running train/test for predictor 'RF' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF2' for group 'Pa'.
+ERROR running train/test for predictor 'RF2' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RF3' for group 'Pa'.
+ERROR running train/test for predictor 'RF3' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RFO' for group 'Pa'.
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.369]
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.641]
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.436]
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'RP' for group 'Pa'.
+RPart for groups Patient                             (  2 features) -> best min split: 50 / best cp: 0.01   [perf: 0.604]
+RPart for groups Patient                             (  2 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.668]
+RPart for groups Patient                             (  2 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.500]
+ERROR running train/test for predictor 'RP' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'SVM' for group 'Pa'.
+SVM for groups Patient                             (  2 features) -> best gamma:     0.125 / best cost:   31.6 [perf: 0.719]
+SVM for groups Patient                             (  2 features) -> best gamma:  0.000977 / best cost:    0.1 [perf: 0.656]
+SVM for groups Patient                             (  2 features) -> best gamma:    0.0625 / best cost:     10 [perf: 0.659]
+ERROR running train/test for predictor 'SVM' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'NB' for group 'Pa'.
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.542]
+NB for groups Patient                             (  2 features) -> best l:  3 [perf: 0.651]
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.500]
+ERROR running train/test for predictor 'NB' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNN' for group 'Pa'.
+KNN for groups Patient                             (  2 features) ->  best k: 5   / kernel: optimal    [perf: 0.687]
+KNN for groups Patient                             (  2 features) ->  best k: 4   / kernel: optimal    [perf: 0.815]
+KNN for groups Patient                             (  2 features) ->  best k: 11  / kernel: optimal    [perf: 0.695]
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 4 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 8 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'Pa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:163
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Time elapsed for the run:
+0.1024718 secs

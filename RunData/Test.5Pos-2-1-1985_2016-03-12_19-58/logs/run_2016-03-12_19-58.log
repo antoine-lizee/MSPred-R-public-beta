@@ -1,0 +1,248 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running predictor 'GLM' for group 'Co'.
+Ran predictor 'GLM' for group 'Co' in 0.01 minutes.
+Running predictor 'RF' for group 'Co'.
+Ran predictor 'RF' for group 'Co' in 0.02 minutes.
+Running predictor 'RF2' for group 'Co'.
+Ran predictor 'RF2' for group 'Co' in 0.04 minutes.
+Running predictor 'RF3' for group 'Co'.
+Ran predictor 'RF3' for group 'Co' in 0.02 minutes.
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.623]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.653]
+Ran predictor 'RFO' for group 'Co' in 0.24 minutes.
+Running predictor 'RP' for group 'Co'.
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.001  [perf: 0.664]
+RPart for groups Core                                (  5 features) -> best min split: 50 / best cp: 0.0001 [perf: 0.696]
+Ran predictor 'RP' for group 'Co' in 0.37 minutes.
+Running predictor 'SVM' for group 'Co'.
+SVM for groups Core                                (  5 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.684]
+SVM for groups Core                                (  5 features) -> best gamma:    0.0312 / best cost:   31.6 [perf: 0.713]
+Ran predictor 'SVM' for group 'Co' in 2.41 minutes.
+Running predictor 'NB' for group 'Co'.
+NB for groups Core                                (  5 features) -> best l: 15 [perf: 0.668]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.607]
+Ran predictor 'NB' for group 'Co' in 0.18 minutes.
+Running predictor 'KNN' for group 'Co'.
+KNN for groups Core                                (  5 features) ->  best k: 11  / kernel: optimal    [perf: 0.653]
+KNN for groups Core                                (  5 features) ->  best k: 8   / kernel: optimal    [perf: 0.645]
+Ran predictor 'KNN' for group 'Co' in 0.00 minutes.
+Running predictor 'KNNC' for group 'Co'.
+KNNC for groups Core                                (  5 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+Ran predictor 'KNNC' for group 'Co' in 0.01 minutes.
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'CoMS'.
+Ran predictor 'GLM' for group 'CoMS' in 0.01 minutes.
+Running predictor 'RF' for group 'CoMS'.
+Ran predictor 'RF' for group 'CoMS' in 0.04 minutes.
+Running predictor 'RF2' for group 'CoMS'.
+Ran predictor 'RF2' for group 'CoMS' in 0.05 minutes.
+Running predictor 'RF3' for group 'CoMS'.
+Ran predictor 'RF3' for group 'CoMS' in 0.02 minutes.
+Running predictor 'RFO' for group 'CoMS'.
+RFO for groups Core - MSFC                         (  7 features) -> best mtry:  2 [perf: 0.682]
+RFO for groups Core - MSFC                         (  7 features) -> best mtry:  2 [perf: 0.775]
+Ran predictor 'RFO' for group 'CoMS' in 0.22 minutes.
+Running predictor 'RP' for group 'CoMS'.
+RPart for groups Core - MSFC                         (  7 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.679]
+RPart for groups Core - MSFC                         (  7 features) -> best min split: 30 / best cp: 0.02   [perf: 0.676]
+Ran predictor 'RP' for group 'CoMS' in 0.43 minutes.
+Running predictor 'SVM' for group 'CoMS'.
+SVM for groups Core - MSFC                         (  7 features) -> best gamma:   0.00391 / best cost:   31.6 [perf: 0.724]
+SVM for groups Core - MSFC                         (  7 features) -> best gamma:    0.0312 / best cost:   31.6 [perf: 0.753]
+Ran predictor 'SVM' for group 'CoMS' in 2.56 minutes.
+Running predictor 'NB' for group 'CoMS'.
+NB for groups Core - MSFC                         (  7 features) -> best l: 15 [perf: 0.663]
+NB for groups Core - MSFC                         (  7 features) -> best l:  1 [perf: 0.438]
+Ran predictor 'NB' for group 'CoMS' in 0.21 minutes.
+Running predictor 'KNN' for group 'CoMS'.
+KNN for groups Core - MSFC                         (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.654]
+KNN for groups Core - MSFC                         (  7 features) ->  best k: 4   / kernel: optimal    [perf: 0.621]
+Ran predictor 'KNN' for group 'CoMS' in 0.00 minutes.
+Running predictor 'KNNC' for group 'CoMS'.
+KNNC for groups Core - MSFC                         (  7 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC                         (  7 features) ->  best k: 11 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMS' in 0.01 minutes.
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoPa'.
+Ran predictor 'GLM' for group 'CoPa' in 0.01 minutes.
+Running predictor 'RF' for group 'CoPa'.
+Ran predictor 'RF' for group 'CoPa' in 0.04 minutes.
+Running predictor 'RF2' for group 'CoPa'.
+Ran predictor 'RF2' for group 'CoPa' in 0.04 minutes.
+Running predictor 'RF3' for group 'CoPa'.
+Ran predictor 'RF3' for group 'CoPa' in 0.01 minutes.
+Running predictor 'RFO' for group 'CoPa'.
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.626]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  3 [perf: 0.624]
+Ran predictor 'RFO' for group 'CoPa' in 0.22 minutes.
+Running predictor 'RP' for group 'CoPa'.
+RPart for groups Core - Patient                      (  7 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.664]
+RPart for groups Core - Patient                      (  7 features) -> best min split: 60 / best cp: 0.0001 [perf: 0.688]
+Ran predictor 'RP' for group 'CoPa' in 0.42 minutes.
+Running predictor 'SVM' for group 'CoPa'.
+SVM for groups Core - Patient                      (  7 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.684]
+SVM for groups Core - Patient                      (  7 features) -> best gamma:      0.25 / best cost:   3.16 [perf: 0.742]
+Ran predictor 'SVM' for group 'CoPa' in 2.63 minutes.
+Running predictor 'NB' for group 'CoPa'.
+NB for groups Core - Patient                      (  7 features) -> best l: 15 [perf: 0.670]
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.633]
+Ran predictor 'NB' for group 'CoPa' in 0.21 minutes.
+Running predictor 'KNN' for group 'CoPa'.
+KNN for groups Core - Patient                      (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.621]
+KNN for groups Core - Patient                      (  7 features) ->  best k: 11  / kernel: optimal    [perf: 0.641]
+Ran predictor 'KNN' for group 'CoPa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'CoPa'.
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 7 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoPa' in 0.01 minutes.
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoMSPa'.
+Ran predictor 'GLM' for group 'CoMSPa' in 0.02 minutes.
+Running predictor 'RF' for group 'CoMSPa'.
+Ran predictor 'RF' for group 'CoMSPa' in 0.06 minutes.
+Running predictor 'RF2' for group 'CoMSPa'.
+Ran predictor 'RF2' for group 'CoMSPa' in 0.05 minutes.
+Running predictor 'RF3' for group 'CoMSPa'.
+Ran predictor 'RF3' for group 'CoMSPa' in 0.02 minutes.
+Running predictor 'RFO' for group 'CoMSPa'.
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  2 [perf: 0.675]
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  3 [perf: 0.699]
+Ran predictor 'RFO' for group 'CoMSPa' in 0.33 minutes.
+Running predictor 'RP' for group 'CoMSPa'.
+RPart for groups Core - MSFC - Patient               (  9 features) -> best min split: 70 / best cp: 0.002  [perf: 0.676]
+RPart for groups Core - MSFC - Patient               (  9 features) -> best min split: 30 / best cp: 0.02   [perf: 0.685]
+Ran predictor 'RP' for group 'CoMSPa' in 0.50 minutes.
+Running predictor 'SVM' for group 'CoMSPa'.
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:   0.00781 / best cost:     10 [perf: 0.722]
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:      0.25 / best cost:     10 [perf: 0.755]
+Ran predictor 'SVM' for group 'CoMSPa' in 2.97 minutes.
+Running predictor 'NB' for group 'CoMSPa'.
+NB for groups Core - MSFC - Patient               (  9 features) -> best l: 15 [perf: 0.661]
+NB for groups Core - MSFC - Patient               (  9 features) -> best l:  0 [perf: 0.627]
+Ran predictor 'NB' for group 'CoMSPa' in 0.29 minutes.
+Running predictor 'KNN' for group 'CoMSPa'.
+KNN for groups Core - MSFC - Patient               (  9 features) ->  best k: 11  / kernel: optimal    [perf: 0.625]
+KNN for groups Core - MSFC - Patient               (  9 features) ->  best k: 11  / kernel: optimal    [perf: 0.672]
+Ran predictor 'KNN' for group 'CoMSPa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 10 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMSPa' in 0.01 minutes.
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+Ran predictor 'GLM' for group 'MS' in 0.01 minutes.
+Running predictor 'RF' for group 'MS'.
+Ran predictor 'RF' for group 'MS' in 0.04 minutes.
+Running predictor 'RF2' for group 'MS'.
+Ran predictor 'RF2' for group 'MS' in 0.04 minutes.
+Running predictor 'RF3' for group 'MS'.
+Ran predictor 'RF3' for group 'MS' in 0.01 minutes.
+Running predictor 'RFO' for group 'MS'.
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.514]
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.439]
+Ran predictor 'RFO' for group 'MS' in 11.08 minutes.
+Running predictor 'RP' for group 'MS'.
+RPart for groups MSFC                                (  2 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+RPart for groups MSFC                                (  2 features) -> best min split: 30 / best cp: 0.01   [perf: 0.575]
+Ran predictor 'RP' for group 'MS' in 0.27 minutes.
+Running predictor 'SVM' for group 'MS'.
+SVM for groups MSFC                                (  2 features) -> best gamma:      0.25 / best cost:   3.16 [perf: 0.537]
+SVM for groups MSFC                                (  2 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.623]
+Ran predictor 'SVM' for group 'MS' in 3.75 minutes.
+Running predictor 'NB' for group 'MS'.
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.513]
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.501]
+Ran predictor 'NB' for group 'MS' in 0.14 minutes.
+Running predictor 'KNN' for group 'MS'.
+KNN for groups MSFC                                (  2 features) ->  best k: 4   / kernel: optimal    [perf: 0.516]
+KNN for groups MSFC                                (  2 features) ->  best k: 3   / kernel: optimal    [perf: 0.537]
+Ran predictor 'KNN' for group 'MS' in 0.00 minutes.
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  2 features) ->  best k: 10 / kernel: optimal
+KNNC for groups MSFC                                (  2 features) ->  best k: 7 / kernel: optimal
+Ran predictor 'KNNC' for group 'MS' in 0.01 minutes.
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'MSPa'.
+Ran predictor 'GLM' for group 'MSPa' in 0.01 minutes.
+Running predictor 'RF' for group 'MSPa'.
+Ran predictor 'RF' for group 'MSPa' in 0.01 minutes.
+Running predictor 'RF2' for group 'MSPa'.
+Ran predictor 'RF2' for group 'MSPa' in 0.06 minutes.
+Running predictor 'RF3' for group 'MSPa'.
+Ran predictor 'RF3' for group 'MSPa' in 0.02 minutes.
+Running predictor 'RFO' for group 'MSPa'.
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.482]
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  2 [perf: 0.647]
+Ran predictor 'RFO' for group 'MSPa' in 0.21 minutes.
+Running predictor 'RP' for group 'MSPa'.
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 20 / best cp: 0.005  [perf: 0.500]
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.619]
+Ran predictor 'RP' for group 'MSPa' in 0.30 minutes.
+Running predictor 'SVM' for group 'MSPa'.
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:         1 / best cost:    0.1 [perf: 0.534]
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:   0.00391 / best cost:  0.316 [perf: 0.576]
+Ran predictor 'SVM' for group 'MSPa' in 2.98 minutes.
+Running predictor 'NB' for group 'MSPa'.
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.497]
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.556]
+Ran predictor 'NB' for group 'MSPa' in 0.18 minutes.
+Running predictor 'KNN' for group 'MSPa'.
+KNN for groups MSFC - Patient                      (  4 features) ->  best k: 1   / kernel: optimal    [perf: 0.475]
+KNN for groups MSFC - Patient                      (  4 features) ->  best k: 6   / kernel: optimal    [perf: 0.535]
+Ran predictor 'KNN' for group 'MSPa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'MSPa'.
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 4 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 11 / kernel: optimal
+Ran predictor 'KNNC' for group 'MSPa' in 0.01 minutes.
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'Pa'.
+Ran predictor 'GLM' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF' for group 'Pa'.
+Ran predictor 'RF' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF2' for group 'Pa'.
+Ran predictor 'RF2' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF3' for group 'Pa'.
+Ran predictor 'RF3' for group 'Pa' in 0.00 minutes.
+Running predictor 'RFO' for group 'Pa'.
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.415]
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.427]
+Ran predictor 'RFO' for group 'Pa' in 0.09 minutes.
+Running predictor 'RP' for group 'Pa'.
+RPart for groups Patient                             (  2 features) -> best min split: 20 / best cp: 0.005  [perf: 0.500]
+RPart for groups Patient                             (  2 features) -> best min split: 70 / best cp: 0.02   [perf: 0.619]
+Ran predictor 'RP' for group 'Pa' in 0.20 minutes.
+Running predictor 'SVM' for group 'Pa'.
+SVM for groups Patient                             (  2 features) -> best gamma:         1 / best cost:      1 [perf: 0.522]
+SVM for groups Patient                             (  2 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.621]
+Ran predictor 'SVM' for group 'Pa' in 2.47 minutes.
+Running predictor 'NB' for group 'Pa'.
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.498]
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.562]
+Ran predictor 'NB' for group 'Pa' in 0.14 minutes.
+Running predictor 'KNN' for group 'Pa'.
+KNN for groups Patient                             (  2 features) ->  best k: 11  / kernel: optimal    [perf: 0.537]
+KNN for groups Patient                             (  2 features) ->  best k: 6   / kernel: optimal    [perf: 0.704]
+Ran predictor 'KNN' for group 'Pa' in 0.00 minutes.
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 4 / kernel: optimal
+Ran predictor 'KNNC' for group 'Pa' in 0.01 minutes.
+Time elapsed for the run:
+0.3027411 secs
+Removing error log file... 

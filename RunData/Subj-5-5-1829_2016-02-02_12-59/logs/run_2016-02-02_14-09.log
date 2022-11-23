@@ -1,0 +1,417 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClCo
+Treating group of Categories: ClLi
+Treating group of Categories: ClFS
+Treating group of Categories: ClMR
+Treating group of Categories: ClMS
+Treating group of Categories: ClPa
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'ClLi', skipping...
+Already run predictor 'GLM' on group 'Cl', skipping...
+Already run predictor 'GLM' on group 'ClCo', skipping...
+Already run predictor 'RF' on group 'ClLi', skipping...
+Already run predictor 'RF' on group 'Cl', skipping...
+Already run predictor 'RF' on group 'ClCo', skipping...
+Already run predictor 'RF2' on group 'ClLi', skipping...
+Already run predictor 'RF2' on group 'Cl', skipping...
+Already run predictor 'RF2' on group 'ClCo', skipping...
+Already run predictor 'RF3' on group 'ClLi', skipping...
+Already run predictor 'RF3' on group 'Cl', skipping...
+Already run predictor 'RF3' on group 'ClCo', skipping...
+Running predictor 'RFO' for group 'ClLi'.
+Running predictor 'RFO' for group 'Cl'.
+Running predictor 'RFO' for group 'ClCo'.
+Treating group of Categories: CoFS
+Treating group of Categories: ClQO
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'ClFS', skipping...
+Already run predictor 'GLM' on group 'ClMR', skipping...
+Already run predictor 'GLM' on group 'ClPa', skipping...
+Already run predictor 'RF' on group 'ClMR', skipping...
+Already run predictor 'RF' on group 'ClFS', skipping...
+Already run predictor 'RF2' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'ClFS', skipping...
+Already run predictor 'RF' on group 'ClPa', skipping...
+Already run predictor 'RF3' on group 'ClMR', skipping...
+Already run predictor 'RF3' on group 'ClFS', skipping...
+Already run predictor 'RF2' on group 'ClPa', skipping...
+Running predictor 'RFO' for group 'ClMR'.
+Running predictor 'RFO' for group 'ClFS'.
+Already run predictor 'RF3' on group 'ClPa', skipping...
+Running predictor 'RFO' for group 'ClPa'.
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'GLM' on group 'CoFS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'RF' on group 'CoFS', skipping...
+Already run predictor 'GLM' on group 'ClQO', skipping...
+Already run predictor 'RF2' on group 'CoFS', skipping...
+Already run predictor 'RF' on group 'ClQO', skipping...
+Already run predictor 'RF3' on group 'CoFS', skipping...
+Running predictor 'RFO' for group 'CoFS'.
+Already run predictor 'RF2' on group 'ClQO', skipping...
+Already run predictor 'RF3' on group 'ClQO', skipping...
+Running predictor 'RFO' for group 'ClQO'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Already run predictor 'GLM' on group 'ClMS', skipping...
+Already run predictor 'RF' on group 'ClMS', skipping...
+Already run predictor 'RF2' on group 'ClMS', skipping...
+Already run predictor 'RF3' on group 'ClMS', skipping...
+Running predictor 'RFO' for group 'ClMS'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.649]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.725]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.516]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.493]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 5 [perf: 0.529]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.650]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 3 [perf: 0.718]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.490]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.492]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.544]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.718]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.650]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 5 [perf: 0.553]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.490]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.727]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.506]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 4 [perf: 0.556]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.661]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.681]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.729]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.471]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.524]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.667]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.499]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.535]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.724]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.507]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.711]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.647]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.538]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.526]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.495]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.722]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.656]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.505]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.500]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.476]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.731]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.511]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.677]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.504]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.652]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.717]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.730]
+RFO for groups Clinical (11 features) ->  best mtry: 3 [perf: 0.515]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.647]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.538]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.515]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.473]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.716]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.535]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.673]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.455]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.537]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.728]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.634]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.519]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.718]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.537]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.485]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.681]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.682]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.716]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.537]
+RFO for groups Clinical (11 features) ->  best mtry: 3 [perf: 0.502]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.489]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.504]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.638]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.523]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.520]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.717]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.498]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.650]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.710]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.728]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.493]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.677]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.526]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.520]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.734]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.480]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.535]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.692]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.508]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.645]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.489]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.521]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 3 [perf: 0.741]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.528]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.703]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.649]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 3 [perf: 0.717]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.488]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.462]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.469]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.678]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.522]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.536]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 3 [perf: 0.729]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 5 [perf: 0.504]
+RFO for groups Clinical (11 features) ->  best mtry: 3 [perf: 0.525]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.647]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.688]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.504]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.734]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.720]
+RFO for groups Clinical (11 features) ->  best mtry: 3 [perf: 0.520]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.677]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.482]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.506]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 3 [perf: 0.723]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.494]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.647]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.516]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.491]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.536]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.741]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.642]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.716]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.512]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.520]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.490]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.731]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.467]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.657]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 4 [perf: 0.691]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.541]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.508]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.723]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.668]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.524]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.506]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 4 [perf: 0.552]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 3 [perf: 0.722]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.520]
+RFO for groups Core (5 features) ->  best mtry: 2 [perf: 0.658]
+Ran predictor 'RFO' for group 'Co' in 3.59 minutes.
+Running predictor 'SVM' for group 'Co'.
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.703]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.479]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.495]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.729]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 5 [perf: 0.533]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.511]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.558]
+RFO for groups Core - FSSCs (7 features) ->  best mtry: 2 [perf: 0.725]
+Ran predictor 'RFO' for group 'CoFS' in 3.89 minutes.
+Running predictor 'SVM' for group 'CoFS'.
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.696]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.507]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.466]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.542]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.722]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.527]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.477]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.501]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.490]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.495]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.509]
+RFO for groups Clinical (11 features) ->  best mtry: 2 [perf: 0.501]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 4 [perf: 0.526]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.480]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.489]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.707]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.667]
+RFO for groups Clinical (11 features) ->  best mtry: 5 [perf: 0.515]
+Ran predictor 'RFO' for group 'Cl' in 4.48 minutes.
+Running predictor 'SVM' for group 'Cl'.
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.504]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.536]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.494]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.505]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.522]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.719]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 3 [perf: 0.499]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.483]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.542]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.683]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.544]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.493]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.460]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.710]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.521]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.499]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.475]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.533]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.478]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.488]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.707]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.702]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.535]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.545]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 4 [perf: 0.546]
+RFO for groups Clinical - Patient (13 features) ->  best mtry: 2 [perf: 0.492]
+Ran predictor 'RFO' for group 'ClPa' in 5.80 minutes.
+Running predictor 'SVM' for group 'ClPa'.
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.487]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.519]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.721]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.522]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.533]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 4 [perf: 0.541]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 3 [perf: 0.682]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.430]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.514]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.529]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.708]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 4 [perf: 0.530]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.480]
+RFO for groups Clinical - FSSCs (13 features) ->  best mtry: 2 [perf: 0.549]
+Ran predictor 'RFO' for group 'ClFS' in 6.70 minutes.
+Running predictor 'SVM' for group 'ClFS'.
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.708]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.525]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.705]
+SVM for groups Core (5 features) ->  best gamma: 0.0312, best cost: 3.16 [perf: 0.712]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.512]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.491]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.534]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.729]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 3 [perf: 0.688]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.492]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.5, best cost: 10 [perf: 0.397]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.518]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.540]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 3 [perf: 0.726]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.489]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 3 [perf: 0.671]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.537]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.539]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.697]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.488]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.523]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.515]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.697]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.710]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.474]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.534]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 7 [perf: 0.529]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.478]
+SVM for groups Clinical (11 features) ->  best gamma: 0.00781, best cost: 1 [perf: 0.532]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.697]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.685]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.520]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.527]
+RFO for groups Clinical - Life (15 features) ->  best mtry: 2 [perf: 0.481]
+Ran predictor 'RFO' for group 'ClLi' in 9.22 minutes.
+Running predictor 'SVM' for group 'ClLi'.
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.706]
+RFO for groups Clinical - MRI (14 features) ->  best mtry: 2 [perf: 0.533]
+Ran predictor 'RFO' for group 'ClMR' in 9.47 minutes.
+Running predictor 'SVM' for group 'ClMR'.
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.676]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.530]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.726]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.513]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 3 [perf: 0.703]
+RFO for groups Clinical - Core (16 features) ->  best mtry: 2 [perf: 0.714]
+Ran predictor 'RFO' for group 'ClCo' in 10.07 minutes.
+Running predictor 'SVM' for group 'ClCo'.
+SVM for groups Core (5 features) ->  best gamma: 0.000977, best cost: 1 [perf: 0.712]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.568]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 3 [perf: 0.676]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.769]
+RFO for groups Clinical - QOL (16 features) ->  best mtry: 2 [perf: 0.518]
+Ran predictor 'RFO' for group 'ClQO' in 10.89 minutes.
+Running predictor 'SVM' for group 'ClQO'.
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.675]
+SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.0156, best cost: 0.1 [perf: 0.535]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.696]
+SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.000977, best cost: 1 [perf: 0.524]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.675]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 3 [perf: 0.696]
+SVM for groups Clinical (11 features) ->  best gamma: 1, best cost: 0.1 [perf: 0.533]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.700]
+SVM for groups Core (5 features) ->  best gamma: 0.00195, best cost: 0.1 [perf: 0.717]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.687]
+RFO for groups Clinical - MSFC (18 features) ->  best mtry: 2 [perf: 0.698]
+Ran predictor 'RFO' for group 'ClMS' in 13.90 minutes.
+Running predictor 'SVM' for group 'ClMS'.
+SVM for groups Clinical - Life (15 features) ->  best gamma: 0.000977, best cost: 10 [perf: 0.530]
+SVM for groups Clinical - Core (16 features) ->  best gamma: 0.00195, best cost: 31.6 [perf: 0.726]
+SVM for groups Clinical - MRI (14 features) ->  best gamma: 0.0625, best cost: 0.1 [perf: 0.537]
+SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.5, best cost: 10 [perf: 0.523]
+SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.00195, best cost: 0.316 [perf: 0.534]
+SVM for groups Clinical - QOL (16 features) ->  best gamma: 0.00781, best cost: 31.6 [perf: 0.523]
+SVM for groups Core (5 features) ->  best gamma: 0.0312, best cost: 10 [perf: 0.722]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.412]
+SVM for groups Clinical (11 features) ->  best gamma: 0.0312, best cost: 0.1 [perf: 0.518]
+SVM for groups Clinical - Core (16 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.399]
+SVM for groups Clinical - MSFC (18 features) ->  best gamma: 0.000977, best cost: 31.6 [perf: 0.654]
+SVM for groups Clinical - Life (15 features) ->  best gamma: 0.000977, best cost: 0.1 [perf: 0.542]
+SVM for groups Core (5 features) ->  best gamma: 0.0625, best cost: 31.6 [perf: 0.399]
+SVM for groups Clinical - MRI (14 features) ->  best gamma: 0.00195, best cost: 1 [perf: 0.534]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.666]
+SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.000977, best cost: 0.316 [perf: 0.520]
+SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.0625, best cost: 0.1 [perf: 0.537]
+SVM for groups Clinical (11 features) ->  best gamma: 0.000977, best cost: 31.6 [perf: 0.524]
+SVM for groups Clinical - QOL (16 features) ->  best gamma: 1, best cost: 1 [perf: 0.549]
+SVM for groups Clinical - Core (16 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.436]
+SVM for groups Core (5 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.424]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.5, best cost: 31.6 [perf: 0.333]
+SVM for groups Clinical - MSFC (18 features) ->  best gamma: 0.0312, best cost: 0.316 [perf: 0.610]
+SVM for groups Clinical - Life (15 features) ->  best gamma: 0.5, best cost: 31.6 [perf: 0.550]
+SVM for groups Clinical - MRI (14 features) ->  best gamma: 0.000977, best cost: 0.1 [perf: 0.541]
+SVM for groups Clinical (11 features) ->  best gamma: 0.5, best cost: 10 [perf: 0.545]
+SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.0625, best cost: 31.6 [perf: 0.559]
+SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.000977, best cost: 1 [perf: 0.541]
+SVM for groups Core (5 features) ->  best gamma: 0.00195, best cost: 0.1 [perf: 0.713]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00781, best cost: 31.6 [perf: 0.776]
+SVM for groups Clinical - QOL (16 features) ->  best gamma: 0.0625, best cost: 3.16 [perf: 0.537]
+SVM for groups Clinical - Core (16 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.451]
+SVM for groups Clinical - MSFC (18 features) ->  best gamma: 0.00781, best cost: 31.6 [perf: 0.695]
+SVM for groups Clinical (11 features) ->  best gamma: 0.125, best cost: 0.1 [perf: 0.534]
+SVM for groups Clinical - Life (15 features) ->  best gamma: 1, best cost: 1 [perf: 0.527]
+SVM for groups Core (5 features) ->  best gamma: 0.000977, best cost: 0.316 [perf: 0.720]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.346]
+SVM for groups Clinical - MRI (14 features) ->  best gamma: 0.00195, best cost: 0.316 [perf: 0.546]
+SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.5, best cost: 1 [perf: 0.540]
+SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.125, best cost: 1 [perf: 0.517]
+SVM for groups Clinical - Core (16 features) ->  best gamma: 0.00195, best cost: 31.6 [perf: 0.728]
+SVM for groups Clinical - QOL (16 features) ->  best gamma: 0.00195, best cost: 10 [perf: 0.517]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00391, best cost: 0.316 [perf: 0.673]
+SVM for groups Core (5 features) ->  best gamma: 0.00195, best cost: 0.316 [perf: 0.668]
+SVM for groups Clinical (11 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.529]
+SVM for groups Clinical - MSFC (18 features) ->  best gamma: 0.00391, best cost: 10 [perf: 0.667]
+SVM for groups Clinical - Life (15 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.537]
+SVM for groups Clinical - MRI (14 features) ->  best gamma: 0.5, best cost: 31.6 [perf: 0.535]
+SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.00781, best cost: 0.316 [perf: 0.528]
+SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.0156, best cost: 3.16 [perf: 0.523]
+SVM for groups Clinical - Core (16 features) ->  best gamma: 0.00195, best cost: 31.6 [perf: 0.730]
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.689]
+SVM for groups Core (5 features) ->  best gamma: 0.000977, best cost: 3.16 [perf: 0.726]
+Stopping cluster...
+Time elapsed for the run:
+39.61833 mins

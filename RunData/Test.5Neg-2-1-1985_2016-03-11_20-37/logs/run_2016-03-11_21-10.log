@@ -1,0 +1,986 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.698]
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, 
+     Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0, 0.15, 0, 0, 0, 0.188, 0, 0, 0, 0.002, 0, 0.006, 0, 0.132, 0, 0.024, 0, 0.008, 0.004, 0, 0, 0.272, 
+ 0.004, 0, 0, 0, 0, 0, 0.012, 0.014, 0), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+ "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 0.272, 0.188, 0.15, 
+ 0.132, 0.024, 0.014, 0.012, 0.008, 0.006, 0.004, 0.002, 0), .Names = c("", "22", "6", "2", "14", "16", "30", "29", "18", "12", "23", "10", "31")), fp = c(0, 1, 
+ 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 30, 29, 28, 27, 
+ 26, 25, 24, 23, 22, 20, 19, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 25, 
+ 24, 23, 22, 20, 19, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'Co'.
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.002  [perf: 0.746]
+ERROR running train/test for predictor 'RP' and group 'Co': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Running predictor 'KNN' for group 'Co'.
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Already run predictor 'KNNC' on group 'Co', skipping...
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'CoMS', skipping...
+Already run predictor 'RF' on group 'CoMS', skipping...
+Already run predictor 'RF2' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'CoMS', skipping...
+Running predictor 'RFO' for group 'CoMS'.
+RFO for groups Core - MSFC                         (  7 features) -> best mtry:  2 [perf: 0.774]
+ERROR running train/test for predictor 'RFO' and group 'CoMS': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, 
+     Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.036, 0.022, 0.008, 0, 0, 0.034, 0.034, 0, 0, 0, 0.034, 0.01, 0.084, 0.002, 0, 0.03, 0, 0.026, 0.04, 
+ 0.176, 0.228, 0.006, 0.154, 0.01, 0.024, 0.006, 0, 0.002, 0.234, 0.048, 0, 0), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", 
+ "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor"
+ )), cutoffs = structure(c(Inf, 0.234, 0.228, 0.176, 0.154, 0.084, 0.048, 0.04, 0.036, 0.034, 0.03, 0.026, 0.024, 0.022, 0.01, 0.008, 0.006, 0.002, 0), .Names = c("", 
+ "29", "21", "20", "23", "13", "30", "19", "1", "11", "16", "18", "25", "2", "24", "3", "26", "28", "32")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 
+ 17, 18, 20, 22, 32), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(32, 
+ 31, 30, 29, 28, 27, 26, 25, 24, 21, 20, 19, 18, 17, 15, 14, 12, 10, 0), n.pos = 0L, n.neg = 32L, n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 
+ 17, 18, 20, 22, 32), n.neg.pred = c(32, 31, 30, 29, 28, 27, 26, 25, 24, 21, 20, 19, 18, 17, 15, 14, 12, 10, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Already run predictor 'RP' on group 'CoMS', skipping...
+Already run predictor 'SVM' on group 'CoMS', skipping...
+Already run predictor 'NB' on group 'CoMS', skipping...
+Running predictor 'KNN' for group 'CoMS'.
+ERROR running train/test for predictor 'KNN' and group 'CoMS': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Already run predictor 'KNNC' on group 'CoMS', skipping...
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'CoPa', skipping...
+Already run predictor 'RF' on group 'CoPa', skipping...
+Already run predictor 'RF2' on group 'CoPa', skipping...
+Already run predictor 'RF3' on group 'CoPa', skipping...
+Already run predictor 'RFO' on group 'CoPa', skipping...
+Already run predictor 'RP' on group 'CoPa', skipping...
+Running predictor 'SVM' for group 'CoPa'.
+SVM for groups Core - Patient                      (  7 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.751]
+ERROR running train/test for predictor 'SVM' and group 'CoPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), 
+     predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.0435465232741354, 0.0436061012202763, 0.0463088303097297, 0.0449540121356805, 0.0418924744506624, 0.0436183467867034, 
+ 0.0473108857503788, 0.0457502486878326, 0.0461600744008192, 0.0497489171036991, 0.0430778698521604, 0.0521279902970325, 0.0525599836326746, 0.0449130257008969, 
+ 0.0426110790073637, 0.0710171122681511, 0.0581905442467948, 0.0481255517071534, 0.0488499268721523, 0.0582692825453003, 0.0429865328889752, 0.0434614464205527, 
+ 0.0430273264834472, 0.0415617813167049, 0.0568179086007885, 0.0503037402838585, 0.0486166806020066, 0.0430861721839899, 0.0498520207164868, 0.044607262709284, 
+ 0.0445901968505985), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", 
+ "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 0.0710171122681511, 0.0582692825453003, 
+ 0.0581905442467948, 0.0568179086007885, 0.0525599836326746, 0.0521279902970325, 0.0503037402838585, 0.0498520207164868, 0.0497489171036991, 0.0488499268721523, 
+ 0.0486166806020066, 0.0481255517071534, 0.0473108857503788, 0.0463088303097297, 0.0461600744008192, 0.0457502486878326, 0.0449540121356805, 0.0449130257008969, 
+ 0.044607262709284, 0.0445901968505985, 0.0436183467867034, 0.0436061012202763, 0.0435465232741354, 0.0434614464205527, 0.0430861721839899, 0.0430778698521604, 
+ 0.0430273264834472, 0.0429865328889752, 0.0426110790073637, 0.0418924744506624, 0.0415617813167049), .Names = c("", "16", "20", "17", "25", "13", "12", "26", 
+ "29", "10", "19", "27", "18", "7", "3", "9", "8", "4", "14", "30", "31", "6", "2", "1", "22", "28", "11", "23", "21", "15", "5", "24")), fp = c(0, 1, 2, 3, 4, 
+ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 
+ 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 25, 
+ 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Already run predictor 'NB' on group 'CoPa', skipping...
+Running predictor 'KNN' for group 'CoPa'.
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Already run predictor 'KNNC' on group 'CoPa', skipping...
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'CoMSPa', skipping...
+Already run predictor 'RF' on group 'CoMSPa', skipping...
+Already run predictor 'RF2' on group 'CoMSPa', skipping...
+Already run predictor 'RF3' on group 'CoMSPa', skipping...
+Running predictor 'RFO' for group 'CoMSPa'.
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  3 [perf: 0.788]
+ERROR running train/test for predictor 'RFO' and group 'CoMSPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, 
+     Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.022, 0.012, 0.014, 0.008, 0.004, 0, 0.078, 0.002, 0.008, 0, 0.002, 0.004, 0.002, 0.006, 0.004, 0.274, 
+ 0.008, 0.034, 0.106, 0, 0.316, 0.344, 0, 0, 0.002, 0, 0.246, 0.018, 0, 0.084, 0), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", 
+ "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), 
+     cutoffs = structure(c(Inf, 0.344, 0.316, 0.274, 0.246, 0.106, 0.084, 0.078, 0.034, 0.022, 0.018, 0.014, 0.012, 0.008, 0.006, 0.004, 0.002, 0), .Names = c("", 
+     "22", "21", "16", "27", "19", "30", "7", "18", "1", "28", "3", "2", "17", "14", "15", "25", "31")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 
+     19, 23, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 30, 29, 
+     28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 16, 15, 12, 8, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 19, 23, 
+     31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 16, 15, 12, 8, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Already run predictor 'RP' on group 'CoMSPa', skipping...
+Running predictor 'SVM' for group 'CoMSPa'.
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.800]
+ERROR running train/test for predictor 'SVM' and group 'CoMSPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), 
+     predict.func = predict.fun, tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.0860419816838631, 0.0575393562887884, 0.0526566383225203, 0.0501159207890981, 0.0488243567603697, 0.0514379305385537, 
+ 0.0524498734045841, 0.0496114386597999, 0.0530591175461544, 0.0522068914647735, 0.0570254720371977, 0.0519153733341868, 0.0552877659074651, 0.0614796932796792, 
+ 0.0527234196746971, 0.0522208325504054, 0.0475742629704053, 0.0503637847204175, 0.0554251152751881, 0.0894035696591724, 0.0869999686358823, 0.0552619308819536, 
+ 0.0477667582513377, 0.0601268824464164, 0.0419011858087624, 0.0550642760334125, 0.0484327994562225, 0.0489479292315995, 0.0540776584513166, 0.0546543774707991, 
+ 0.0532314346521697), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", 
+ "24", "25", "26", "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 0.0894035696591724, 0.0869999686358823, 
+ 0.0860419816838631, 0.0614796932796792, 0.0601268824464164, 0.0575393562887884, 0.0570254720371977, 0.0554251152751881, 0.0552877659074651, 0.0552619308819536, 
+ 0.0550642760334125, 0.0546543774707991, 0.0540776584513166, 0.0532314346521697, 0.0530591175461544, 0.0527234196746971, 0.0526566383225203, 0.0524498734045841, 
+ 0.0522208325504054, 0.0522068914647735, 0.0519153733341868, 0.0514379305385537, 0.0503637847204175, 0.0501159207890981, 0.0496114386597999, 0.0489479292315995, 
+ 0.0488243567603697, 0.0484327994562225, 0.0477667582513377, 0.0475742629704053, 0.0419011858087624), .Names = c("", "20", "21", "1", "14", "24", "2", "11", "19", 
+ "13", "22", "26", "30", "29", "31", "9", "15", "3", "7", "16", "10", "12", "6", "18", "4", "8", "28", "5", "27", "23", "17", "25")), fp = c(0, 1, 2, 3, 4, 5, 
+ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 
+ 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), n.neg.pred = c(31, 30, 29, 28, 27, 26, 25, 
+ 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'CoMSPa'.
+NB for groups Core - MSFC - Patient               (  9 features) -> best l: 15 [perf: 0.731]
+NB for groups Core - MSFC - Patient               (  9 features) -> best l: 10 [perf: 0.489]
+Ran predictor 'NB' for group 'CoMSPa' in 0.30 minutes.
+Running predictor 'KNN' for group 'CoMSPa'.
+ERROR running train/test for predictor 'KNN' and group 'CoMSPa': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 5 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMSPa' in 0.01 minutes.
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+Ran predictor 'GLM' for group 'MS' in 0.01 minutes.
+Running predictor 'RF' for group 'MS'.
+Ran predictor 'RF' for group 'MS' in 0.03 minutes.
+Running predictor 'RF2' for group 'MS'.
+Ran predictor 'RF2' for group 'MS' in 0.04 minutes.
+Running predictor 'RF3' for group 'MS'.
+Ran predictor 'RF3' for group 'MS' in 0.01 minutes.
+Running predictor 'RFO' for group 'MS'.
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.494]
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.484]
+Ran predictor 'RFO' for group 'MS' in 0.09 minutes.
+Running predictor 'RP' for group 'MS'.
+RPart for groups MSFC                                (  2 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.516]
+ERROR running train/test for predictor 'RP' and group 'MS': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+         2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'MS'.
+SVM for groups MSFC                                (  2 features) -> best gamma:         1 / best cost:      1 [perf: 0.547]
+ERROR running train/test for predictor 'SVM' and group 'MS': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, 
+         ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", 
+             predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, 
+             catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == 
+     i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.0590753337147423, 
+ 0.0602476051582322, 0.063654345659389, 0.0610628558051906, 0.055563453493915, 
+ 0.0576334748311527, 0.055759819892981, 0.057209994215123, 0.0553658790874574, 
+ 0.0549540541490776, 0.0581434771360883, 0.0595503570170137, 0.0621163189489474, 
+ 0.0563010796279763, 0.0581265150001745, 0.0594803126123735, 0.0579189234288512, 
+ 0.0629689760883834, 0.0570686409902048, 0.0663989662674283, 0.0623289618679282, 
+ 0.0584750298446733, 0.0575020192816443, 0.0561221619265562, 0.0591712698463055, 
+ 0.0574484803955591, 0.0594647304339408, 0.0595137068249137, 0.0539621018145064, 
+ 0.056076306765714, 0.0597443178211925), .Names = c("1", "2", "3", "4", "5", 
+ "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", 
+ "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", 
+ "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.0663989662674283, 0.063654345659389, 0.0629689760883834, 0.0623289618679282, 
+ 0.0621163189489474, 0.0610628558051906, 0.0602476051582322, 0.0597443178211925, 
+ 0.0595503570170137, 0.0595137068249137, 0.0594803126123735, 0.0594647304339408, 
+ 0.0591712698463055, 0.0590753337147423, 0.0584750298446733, 0.0581434771360883, 
+ 0.0581265150001745, 0.0579189234288512, 0.0576334748311527, 0.0575020192816443, 
+ 0.0574484803955591, 0.057209994215123, 0.0570686409902048, 0.0563010796279763, 
+ 0.0561221619265562, 0.056076306765714, 0.055759819892981, 0.055563453493915, 
+ 0.0553658790874574, 0.0549540541490776, 0.0539621018145064), .Names = c("", 
+ "20", "3", "18", "21", "13", "4", "2", "31", "12", "28", "16", "27", "25", 
+ "1", "22", "11", "15", "17", "6", "23", "26", "8", "19", "14", "24", "30", 
+ "7", "5", "9", "10", "29")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+ 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+ 30, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 
+ 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 
+ 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 
+ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31), n.neg.pred = c(31, 30, 29, 28, 
+ 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 
+ 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'MS'.
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.478]
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.260]
+Ran predictor 'NB' for group 'MS' in 0.18 minutes.
+Running predictor 'KNN' for group 'MS'.
+ERROR running train/test for predictor 'KNN' and group 'MS': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, 
+         ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", 
+             predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, 
+             catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == 
+     i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  2 features) ->  best k: 11 / kernel: optimal
+KNNC for groups MSFC                                (  2 features) ->  best k: 4 / kernel: optimal
+Ran predictor 'KNNC' for group 'MS' in 0.01 minutes.
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'MSPa'.
+Ran predictor 'GLM' for group 'MSPa' in 0.02 minutes.
+Running predictor 'RF' for group 'MSPa'.
+Ran predictor 'RF' for group 'MSPa' in 0.01 minutes.
+Running predictor 'RF2' for group 'MSPa'.
+Ran predictor 'RF2' for group 'MSPa' in 0.05 minutes.
+Running predictor 'RF3' for group 'MSPa'.
+Ran predictor 'RF3' for group 'MSPa' in 0.01 minutes.
+Running predictor 'RFO' for group 'MSPa'.
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  2 [perf: 0.495]
+ERROR running train/test for predictor 'RFO' and group 'MSPa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, 
+         ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", 
+             predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, 
+             catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == 
+     i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.006, 0, 0.038, 
+ 0.024, 0.01, 0.004, 0.1, 0.002, 0.452, 0, 0.002, 0, 0.324, 0, 0.004, 0, 
+ 0.056, 0.012, 0.006, 0, 0.038, 0.356, 0.442, 0.022, 0, 0, 0.002, 0.078, 
+ 0.004, 0.522, 0.144, 0.2), .Names = c("1", "2", "3", "4", "5", "6", "7", 
+ "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+ "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32")), 
+     labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+     1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+     1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor"
+     )), cutoffs = structure(c(Inf, 0.522, 0.452, 0.442, 0.356, 0.324, 0.2, 
+     0.144, 0.1, 0.078, 0.056, 0.038, 0.024, 0.022, 0.012, 0.01, 0.006, 0.004, 
+     0.002, 0), .Names = c("", "30", "9", "23", "22", "13", "32", "31", "7", 
+     "28", "17", "21", "4", "24", "18", "5", "19", "29", "27", "26")), fp = c(0, 
+     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 18, 21, 24, 32), 
+     tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
+     fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
+     tn = c(32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 20, 19, 18, 17, 16, 
+     14, 11, 8, 0), n.pos = 0L, n.neg = 32L, n.pos.pred = c(0, 1, 2, 3, 4, 
+     5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 18, 21, 24, 32), n.neg.pred = c(32, 
+     31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 20, 19, 18, 17, 16, 14, 11, 
+     8, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'MSPa'.
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.510]
+ERROR running train/test for predictor 'RP' and group 'MSPa': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, 
+         ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", 
+             predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, 
+             catGroupLabel, difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == 
+     i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), 
+     minsplit = (2:11) * 10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 
+         0.02, 0.05), tunecontrol = tune.control(cross = 5, error.fun = function(Yt, 
+         Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'MSPa'.
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:       0.5 / best cost:  0.316 [perf: 0.532]
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:         1 / best cost:    0.1 [perf: 0.740]
+Ran predictor 'SVM' for group 'MSPa' in 3.69 minutes.
+Running predictor 'NB' for group 'MSPa'.
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.496]
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.212]
+Ran predictor 'NB' for group 'MSPa' in 0.19 minutes.
+Running predictor 'KNN' for group 'MSPa'.
+ERROR running train/test for predictor 'KNN' and group 'MSPa': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), 
+             t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, 
+         catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'MSPa'.
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 11 / kernel: optimal
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 4 / kernel: optimal
+Ran predictor 'KNNC' for group 'MSPa' in 0.01 minutes.
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'Pa'.
+Ran predictor 'GLM' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF' for group 'Pa'.
+Ran predictor 'RF' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF2' for group 'Pa'.
+Ran predictor 'RF2' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF3' for group 'Pa'.
+Ran predictor 'RF3' for group 'Pa' in 0.00 minutes.
+Running predictor 'RFO' for group 'Pa'.
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.457]
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), 
+             t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, 
+         catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.006, 0, 0, 0.008, 0.008, 0, 0, 0.092, 0.19, 
+ 0, 0.008, 0, 0.428, 0, 0, 0.028, 0, 0.006, 0, 0, 0, 0.052, 0, 0, 0, 0, 0, 0, 0, 0.274, 0.178, 0), .Names = c("1", 
+ "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+ "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32")), labels = structure(c(1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.428, 0.274, 0.19, 0.178, 0.092, 0.052, 0.028, 0.008, 0.006, 0), .Names = c("", "13", "30", "9", "31", 
+ "8", "22", "16", "11", "18", "32")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 10, 12, 32), tp = c(0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(32, 31, 30, 29, 28, 27, 26, 25, 22, 
+ 20, 0), n.pos = 0L, n.neg = 32L, n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 10, 12, 32), n.neg.pred = c(32, 
+ 31, 30, 29, 28, 27, 26, 25, 22, 20, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'Pa'.
+RPart for groups Patient                             (  2 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+ERROR running train/test for predictor 'RP' and group 'Pa': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), 
+             t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, 
+         catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 10, 
+     cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+         error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, na.action = na.action, 
+     ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'Pa'.
+SVM for groups Patient                             (  2 features) -> best gamma:   0.00195 / best cost:    0.1 [perf: 0.528]
+ERROR running train/test for predictor 'SVM' and group 'Pa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), 
+             t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, 
+         catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:73
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:69
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.0602959492054207, 0.0602959492054207, 0.0581401125397155, 
+ 0.059896703218143, 0.0591261335898901, 0.0580094169467418, 0.0599998208662279, 0.0566188043850927, 0.0579891475520686, 
+ 0.0593553821780236, 0.0571926876436288, 0.0585224760235587, 0.059896703218143, 0.0602959492054207, 0.0582220114804458, 
+ 0.0563235870559965, 0.0592829566324592, 0.0584481721658681, 0.059241648899825, 0.0588898301458217, 0.0597921418996212, 
+ 0.0576276120005962, 0.0599993802221176, 0.0587690794479918, 0.0583966625701182, 0.0590088544852307, 0.059566008593732, 
+ 0.0577432890788027, 0.0576276120005962, 0.0576276120005962, 0.0577432890788027, 0.0593791715166677), .Names = c("1", 
+ "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+ "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32")), labels = structure(c(1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.0602959492054207, 0.0599998208662279, 0.0599993802221176, 0.059896703218143, 0.0597921418996212, 0.059566008593732, 
+ 0.0593791715166677, 0.0593553821780236, 0.0592829566324592, 0.059241648899825, 0.0591261335898901, 0.0590088544852307, 
+ 0.0588898301458217, 0.0587690794479918, 0.0585224760235587, 0.0584481721658681, 0.0583966625701182, 0.0582220114804458, 
+ 0.0581401125397155, 0.0580094169467418, 0.0579891475520686, 0.0577432890788027, 0.0576276120005962, 0.0571926876436288, 
+ 0.0566188043850927, 0.0563235870559965), .Names = c("", "14", "7", "23", "13", "21", "27", "32", "10", 
+ "17", "19", "5", "26", "20", "24", "12", "18", "25", "15", "3", "6", "9", "31", "30", "11", "8", "16")), 
+     fp = c(0, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 29, 30, 
+     31, 32), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
+     fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(32, 
+     29, 28, 27, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 6, 3, 2, 1, 0), 
+     n.pos = 0L, n.neg = 32L, n.pos.pred = c(0, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+     20, 21, 22, 23, 24, 26, 29, 30, 31, 32), n.neg.pred = c(32, 29, 28, 27, 25, 24, 23, 22, 21, 20, 19, 
+     18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 6, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'Pa'.
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.490]
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.286]
+Ran predictor 'NB' for group 'Pa' in 0.16 minutes.
+Running predictor 'KNN' for group 'Pa'.
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ unused argument (ytest = c(TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FA
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), 
+             t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, 
+         catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: sapply(lapply(kknn.mod$fitted.values, as.numeric), AUROC, ytest = Ytrain) at Code/05_predictors.R:153
+5: lapply(X = X, FUN = FUN, ...)
+6: FUN(X[[1L]], ...)
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Patient                             (  2 features) ->  best k: 4 / kernel: optimal
+Ran predictor 'KNNC' for group 'Pa' in 0.01 minutes.
+Time elapsed for the run:
+0.3632722 secs

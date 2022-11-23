@@ -1,0 +1,463 @@
+2022-11-06 21:57:39: ###### Treating group of Categories: Cl
+2022-11-06 21:57:39: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+2022-11-06 21:57:39: Already run predictor 'GLM' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'RF' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'RF2' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'RF3' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'RFO' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'RP' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'SVM' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'NB' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'KNN' on group 'Cl', skipping...
+2022-11-06 21:57:39: Already run predictor 'KNNC' on group 'Cl', skipping...
+2022-11-06 21:57:39: Running predictor 'XGB' for group 'Cl'.
+2022-11-06 21:57:39: CV num 1:
+Loading required package: xgboost
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+Loading required package: lattice
+Loading required package: ggplot2
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+
+Warning in nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  REAL() can only be applied to a 'numeric', not a 'integer'
+2022-11-06 21:58:43: ## Ran group 'Cl' in 1.06 minutes.
+

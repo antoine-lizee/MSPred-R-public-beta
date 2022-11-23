@@ -1,0 +1,387 @@
+Starting up cluster...
+Treating group of Categories: .
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'GLM' for group '.'.
+Ran predictor 'GLM' for group '.' in 0.98 minutes.
+Running predictor 'RF' for group '.'.
+Ran predictor 'RF' for group '.' in 7.08 minutes.
+Running predictor 'RF2' for group '.'.
+Ran predictor 'RF2' for group '.' in 3.85 minutes.
+Running predictor 'RF3' for group '.'.
+Ran predictor 'RF3' for group '.' in 1.44 minutes.
+Running predictor 'RFO' for group '.'.
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.737]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.759]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  3 [perf: 0.741]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  3 [perf: 0.739]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.741]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.748]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.756]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.739]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.750]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.750]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.728]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.744]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.743]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.746]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.734]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.748]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.750]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.735]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.752]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.742]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.739]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.740]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.732]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.740]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.731]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.735]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.748]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.747]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.762]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  3 [perf: 0.741]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.752]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.742]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.752]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.742]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.748]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.754]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.743]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  3 [perf: 0.742]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.735]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.742]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.730]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.746]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.747]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.735]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.740]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.752]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.760]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.737]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.749]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.740]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.738]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  3 [perf: 0.744]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  5 [perf: 0.747]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.750]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  3 [perf: 0.734]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.733]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.755]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  7 [perf: 0.748]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  9 [perf: 0.737]
+RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best mtry:  4 [perf: 0.742]
+Ran predictor 'RFO' for group '.' in 40.56 minutes.
+Running predictor 'RP' for group '.'.
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.005  [perf: 0.702]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.737]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.002  [perf: 0.706]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.001  [perf: 0.708]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.005  [perf: 0.682]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.005  [perf: 0.706]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 40 / best cp: 0.005  [perf: 0.710]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.721]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.002  [perf: 0.704]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.696]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.005  [perf: 0.719]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 60 / best cp: 0.005  [perf: 0.706]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.704]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.696]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.002  [perf: 0.713]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.005  [perf: 0.717]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.713]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 40 / best cp: 0.002  [perf: 0.685]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.697]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.01   [perf: 0.712]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.001  [perf: 0.706]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.0003 [perf: 0.714]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.001  [perf: 0.703]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.005  [perf: 0.708]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.723]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.0003 [perf: 0.720]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.700]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.01   [perf: 0.711]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.731]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.002  [perf: 0.711]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.699]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 30 / best cp: 0.005  [perf: 0.696]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.710]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.005  [perf: 0.723]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.719]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.002  [perf: 0.711]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.696]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.005  [perf: 0.699]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.005  [perf: 0.726]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 20 / best cp: 0.01   [perf: 0.710]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.703]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.002  [perf: 0.702]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.005  [perf: 0.719]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.01   [perf: 0.699]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.001  [perf: 0.698]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.001  [perf: 0.706]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 50 / best cp: 0.0003 [perf: 0.723]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.711]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.721]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 60 / best cp: 0.002  [perf: 0.733]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.002  [perf: 0.706]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 30 / best cp: 0.01   [perf: 0.690]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 100 / best cp: 0.005  [perf: 0.718]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.005  [perf: 0.708]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 80 / best cp: 0.005  [perf: 0.690]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 110 / best cp: 0.005  [perf: 0.710]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.002  [perf: 0.731]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.002  [perf: 0.709]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 70 / best cp: 0.002  [perf: 0.715]
+RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best min split: 90 / best cp: 0.005  [perf: 0.725]
+Ran predictor 'RP' for group '.' in 30.72 minutes.
+Running predictor 'SVM' for group '.'.
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.758]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.787]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.765]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.764]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00391 / best cost:   3.16 [perf: 0.766]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.771]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00781 / best cost:      1 [perf: 0.777]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.767]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.758]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.771]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.768]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00391 / best cost:     10 [perf: 0.765]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.768]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.767]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00391 / best cost:   3.16 [perf: 0.762]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.762]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.772]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.775]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.766]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.769]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.763]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.773]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.770]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.769]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.766]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.770]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.763]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00391 / best cost:   3.16 [perf: 0.762]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.786]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.766]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.766]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.771]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.775]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.766]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.774]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.765]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.755]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.773]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.767]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.774]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.760]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.777]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.759]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.762]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.771]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.774]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00391 / best cost:   3.16 [perf: 0.784]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.764]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.758]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.775]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.774]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.770]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.764]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.768]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.774]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.759]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.769]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.782]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.763]
+SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.759]
+Ran predictor 'SVM' for group '.' in 310.17 minutes.
+Running predictor 'NB' for group '.'.
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.673]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.695]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.674]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.682]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.684]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.688]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.693]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.677]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.669]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.693]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.680]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.671]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.683]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.681]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.682]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.680]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.681]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.683]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.680]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.684]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.685]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.671]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.686]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.689]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.686]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.682]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.673]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.676]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.688]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.678]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.667]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.684]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.688]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.677]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 14 [perf: 0.678]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.686]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.672]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.688]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.677]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.682]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.681]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.693]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.675]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.675]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.674]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.685]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.688]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.681]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.682]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.686]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.676]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.683]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.678]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.688]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.680]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.675]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.696]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.685]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.683]
+NB for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) -> best l: 15 [perf: 0.677]
+Ran predictor 'NB' for group '.' in 20.45 minutes.
+Running predictor 'KNN' for group '.'.
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.715]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.692]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.709]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.700]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.692]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.708]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.699]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.698]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.706]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.691]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.695]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.708]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.698]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.701]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.700]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.700]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.708]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.689]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.718]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.700]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.693]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.707]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.697]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.707]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.691]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.711]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.699]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.699]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.707]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.699]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.690]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.707]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.711]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.701]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.701]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.693]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.710]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.694]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.720]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.705]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.694]
+KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+Ran predictor 'KNN' for group '.' in 1.39 minutes.
+Running predictor 'KNNC' for group '.'.
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 170 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 170 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 170 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 170 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 160 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 170 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 160 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 160 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL ( 39 features) ->  best k: 150 / kernel: optimal
+Ran predictor 'KNNC' for group '.' in 1.96 minutes.
+Stopping cluster...
+Time elapsed for the run:
+6.978458 hours

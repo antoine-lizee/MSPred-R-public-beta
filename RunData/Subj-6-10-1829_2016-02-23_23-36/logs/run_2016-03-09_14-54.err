@@ -1,0 +1,24 @@
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+Loaded glmnet 2.0-2
+
+Loading required package: Matrix
+Error in predmat[which, seq(nlami)] = preds : replacement has length zero
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+Loaded glmnet 2.0-2
+
+Error in predmat[which, seq(nlami)] = preds : replacement has length zero

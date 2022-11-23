@@ -1,0 +1,502 @@
+2022-11-07 10:27:18: ###### Treating group of Categories: Cl
+2022-11-07 10:27:18: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+2022-11-07 10:27:18: Already run predictor 'GLM' on group 'Cl', skipping...
+2022-11-07 10:27:18: Already run predictor 'RF' on group 'Cl', skipping...
+2022-11-07 10:27:18: Already run predictor 'RF2' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'RF3' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'RFO' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'RP' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'SVM' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'NB' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'KNN' on group 'Cl', skipping...
+2022-11-07 10:27:19: Already run predictor 'KNNC' on group 'Cl', skipping...
+2022-11-07 10:27:19: Running predictor 'XGB' for group 'Cl'.
+2022-11-07 10:27:19: CV num 1:
+Loading required package: xgboost
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+Loading required package: lattice
+
+2022-11-07 10:27:32: XGB for groups Clinical                            ( 11 features) -> best nrounds: 30  / eta 0.05 / max_depth 1 [perf: 0.533]
+2022-11-07 10:27:32: ERROR running train/test for predictor 'XGB' and group 'Cl': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+In addition: Warning messages:
+1: In unFreeze("cleanWithTreatments", "v1") :
+  FREEZER: loading file detected as most recent, with date stamp '20220905.134444'
+2: executing %dopar% sequentially: no parallel backend registered 
+2022-11-07 10:27:32: ## Ran group 'Cl' in 0.23 minutes.
+
+2022-11-07 10:27:32: ###### Treating group of Categories: ClCo
+2022-11-07 10:27:32: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+2022-11-07 10:27:32: Already run predictor 'GLM' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'RF' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'RF2' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'RF3' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'RFO' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'RP' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'SVM' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'NB' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'KNN' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Already run predictor 'KNNC' on group 'ClCo', skipping...
+2022-11-07 10:27:32: Running predictor 'XGB' for group 'ClCo'.
+2022-11-07 10:27:32: CV num 1:
+Warning: closing unused connection 3 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:27:47: XGB for groups Clinical - Core                     ( 16 features) -> best nrounds: 150  / eta 0.05 / max_depth 2 [perf: 0.720]
+2022-11-07 10:27:47: ERROR running train/test for predictor 'XGB' and group 'ClCo': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:27:47: ## Ran group 'ClCo' in 0.24 minutes.
+
+2022-11-07 10:27:47: ###### Treating group of Categories: ClFS
+2022-11-07 10:27:47: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+2022-11-07 10:27:47: Already run predictor 'GLM' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'RF' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'RF2' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'RF3' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'RFO' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'RP' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'SVM' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'NB' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'KNN' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Already run predictor 'KNNC' on group 'ClFS', skipping...
+2022-11-07 10:27:47: Running predictor 'XGB' for group 'ClFS'.
+2022-11-07 10:27:47: CV num 1:
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:28:01: XGB for groups Clinical - FSSs                     ( 18 features) -> best nrounds: 40  / eta 0.05 / max_depth 2 [perf: 0.673]
+2022-11-07 10:28:01: ERROR running train/test for predictor 'XGB' and group 'ClFS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:28:01: ## Ran group 'ClFS' in 0.23 minutes.
+
+2022-11-07 10:28:01: ###### Treating group of Categories: ClLi
+2022-11-07 10:28:01: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.MemoryConcerns, Life.Smoking
+2022-11-07 10:28:01: Already run predictor 'GLM' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'RF' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'RF2' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'RF3' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'RFO' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'RP' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'SVM' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'NB' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'KNN' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Already run predictor 'KNNC' on group 'ClLi', skipping...
+2022-11-07 10:28:01: Running predictor 'XGB' for group 'ClLi'.
+2022-11-07 10:28:01: CV num 1:
+Warning: closing unused connection 3 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:28:15: XGB for groups Clinical - Life                     ( 14 features) -> best nrounds: 50  / eta 0.05 / max_depth 1 [perf: 0.525]
+2022-11-07 10:28:15: ERROR running train/test for predictor 'XGB' and group 'ClLi': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:28:15: ## Ran group 'ClLi' in 0.25 minutes.
+
+2022-11-07 10:28:15: ###### Treating group of Categories: ClMR
+2022-11-07 10:28:15: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+2022-11-07 10:28:15: Already run predictor 'GLM' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'RF' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'RF2' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'RF3' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'RFO' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'RP' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'SVM' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'NB' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'KNN' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Already run predictor 'KNNC' on group 'ClMR', skipping...
+2022-11-07 10:28:15: Running predictor 'XGB' for group 'ClMR'.
+2022-11-07 10:28:15: CV num 1:
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:28:29: XGB for groups Clinical - MRI                      ( 14 features) -> best nrounds: 40  / eta 0.10 / max_depth 1 [perf: 0.538]
+2022-11-07 10:28:29: ERROR running train/test for predictor 'XGB' and group 'ClMR': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:28:29: ## Ran group 'ClMR' in 0.22 minutes.
+
+2022-11-07 10:28:29: ###### Treating group of Categories: ClMS
+2022-11-07 10:28:29: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.T25FW, MSFC.NHPT
+2022-11-07 10:28:29: Already run predictor 'GLM' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'RF' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'RF2' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'RF3' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'RFO' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'RP' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'SVM' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'NB' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'KNN' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Already run predictor 'KNNC' on group 'ClMS', skipping...
+2022-11-07 10:28:29: Running predictor 'XGB' for group 'ClMS'.
+2022-11-07 10:28:29: CV num 1:
+Warning: closing unused connection 3 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:28:42: XGB for groups Clinical - MSFC                     ( 13 features) -> best nrounds: 100  / eta 0.05 / max_depth 1 [perf: 0.577]
+2022-11-07 10:28:42: ERROR running train/test for predictor 'XGB' and group 'ClMS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:28:42: ## Ran group 'ClMS' in 0.22 minutes.
+
+2022-11-07 10:28:42: ###### Treating group of Categories: ClPa
+2022-11-07 10:28:42: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+2022-11-07 10:28:42: Already run predictor 'GLM' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'RF' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'RF2' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'RF3' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'RFO' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'RP' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'SVM' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'NB' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'KNN' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Already run predictor 'KNNC' on group 'ClPa', skipping...
+2022-11-07 10:28:42: Running predictor 'XGB' for group 'ClPa'.
+2022-11-07 10:28:42: CV num 1:
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:28:55: XGB for groups Clinical - Patient                  ( 13 features) -> best nrounds: 10  / eta 0.05 / max_depth 2 [perf: 0.523]
+2022-11-07 10:28:55: ERROR running train/test for predictor 'XGB' and group 'ClPa': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:28:55: ## Ran group 'ClPa' in 0.22 minutes.
+
+2022-11-07 10:28:55: ###### Treating group of Categories: ClQO
+2022-11-07 10:28:55: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+2022-11-07 10:28:55: Already run predictor 'GLM' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'RF' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'RF2' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'RF3' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'RFO' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'RP' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'SVM' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'NB' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'KNN' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Already run predictor 'KNNC' on group 'ClQO', skipping...
+2022-11-07 10:28:55: Running predictor 'XGB' for group 'ClQO'.
+2022-11-07 10:28:55: CV num 1:
+Warning: closing unused connection 3 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:29:12: XGB for groups Clinical - QOL                      ( 16 features) -> best nrounds: 70  / eta 0.10 / max_depth 1 [perf: 0.547]
+2022-11-07 10:29:12: ERROR running train/test for predictor 'XGB' and group 'ClQO': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:29:12: ## Ran group 'ClQO' in 0.28 minutes.
+
+2022-11-07 10:29:12: ###### Treating group of Categories: ClTr
+2022-11-07 10:29:12: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Treatments.nDMT, Treatments.hasIM, Treatments.hasIS, Treatments.hasMA, Treatments.DMTcategory
+2022-11-07 10:29:12: Already run predictor 'GLM' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'RF' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'RF2' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'RF3' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'RFO' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'RP' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'SVM' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'NB' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'KNN' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Already run predictor 'KNNC' on group 'ClTr', skipping...
+2022-11-07 10:29:12: Running predictor 'XGB' for group 'ClTr'.
+2022-11-07 10:29:12: CV num 1:
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:29:28: XGB for groups Clinical - Treatments               ( 16 features) -> best nrounds: 10  / eta 0.10 / max_depth 1 [perf: 0.517]
+2022-11-07 10:29:28: ERROR running train/test for predictor 'XGB' and group 'ClTr': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:29:28: ## Ran group 'ClTr' in 0.28 minutes.
+
+2022-11-07 10:29:28: ###### Treating group of Categories: ClCoFS
+2022-11-07 10:29:28: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+2022-11-07 10:29:28: Already run predictor 'GLM' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'RF' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'RF2' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'RF3' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'RFO' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'RP' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'SVM' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'NB' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'KNN' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Already run predictor 'KNNC' on group 'ClCoFS', skipping...
+2022-11-07 10:29:28: Running predictor 'XGB' for group 'ClCoFS'.
+2022-11-07 10:29:28: CV num 1:
+Warning: closing unused connection 3 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:29:45: XGB for groups Clinical - Core - FSSs              ( 23 features) -> best nrounds: 100  / eta 0.10 / max_depth 2 [perf: 0.725]
+2022-11-07 10:29:45: ERROR running train/test for predictor 'XGB' and group 'ClCoFS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:29:45: ## Ran group 'ClCoFS' in 0.28 minutes.
+
+2022-11-07 10:29:45: ###### Treating group of Categories: ClCoLi
+2022-11-07 10:29:45: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.MemoryConcerns, Life.Smoking
+2022-11-07 10:29:45: Already run predictor 'GLM' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'RF' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'RF2' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'RF3' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'RFO' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'RP' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'SVM' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'NB' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'KNN' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Already run predictor 'KNNC' on group 'ClCoLi', skipping...
+2022-11-07 10:29:45: Running predictor 'XGB' for group 'ClCoLi'.
+2022-11-07 10:29:45: CV num 1:
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+
+2022-11-07 10:30:00: XGB for groups Clinical - Core - Life              ( 19 features) -> best nrounds: 150  / eta 0.05 / max_depth 2 [perf: 0.712]
+2022-11-07 10:30:00: ERROR running train/test for predictor 'XGB' and group 'ClCoLi': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"))
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"))
+ })
+2: run(X, Y, pred, FIs)
+3: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+4: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-11-07 10:30:00: ## Ran group 'ClCoLi' in 0.25 minutes.
+
+2022-11-07 10:30:00: ###### Treating group of Categories: ClCoMR
+2022-11-07 10:30:00: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+2022-11-07 10:30:00: Already run predictor 'GLM' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'RF' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'RF2' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'RF3' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'RFO' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'RP' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'SVM' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'NB' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'KNN' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Already run predictor 'KNNC' on group 'ClCoMR', skipping...
+2022-11-07 10:30:00: Running predictor 'XGB' for group 'ClCoMR'.
+2022-11-07 10:30:00: CV num 1:
+
+2022-11-07 10:30:07: Time elapsed for the run:
+7.388814 secs
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+Warning: closing unused connection 3 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-11-07_10-27_174.log)
+Error in is.data.frame(frame) : object 'Xtest' not found
+Error: object 'tt' not found
+Error: object 'tt' not found
+Loading required package: iterators
+Loading required package: parallel
+
+Error: unexpected '@' in "2+@"
+Error: something

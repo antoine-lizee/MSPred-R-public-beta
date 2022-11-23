@@ -1,0 +1,13 @@
+Error : length(res) == sum(foldIdx == i) is not TRUE
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.0459968520342753,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+Error : length(res) == sum(foldIdx == i) is not TRUE
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.14,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+Error in ROCR::prediction(preds, labels) : 
+  Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.105918450771,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+Error : length(res) == sum(foldIdx == i) is not TRUE
+Error : length(res) == sum(foldIdx == i) is not TRUE

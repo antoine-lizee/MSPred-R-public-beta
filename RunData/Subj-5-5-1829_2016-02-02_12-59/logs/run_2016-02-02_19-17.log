@@ -1,0 +1,1080 @@
+Starting up cluster...
+Treating group of Categories: ClFS
+Treating group of Categories: ClCo
+Treating group of Categories: Cl
+Treating group of Categories: ClLi
+Treating group of Categories: ClMR
+Treating group of Categories: ClMS
+Treating group of Categories: ClPa
+Treating group of Categories: ClQO
+Treating group of Categories: Co
+Treating group of Categories: CoFS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'GLM' on group 'ClFS', skipping...
+Already run predictor 'RF' on group 'ClFS', skipping...
+Already run predictor 'RF2' on group 'ClFS', skipping...
+Already run predictor 'RF3' on group 'ClFS', skipping...
+Already run predictor 'RFO' on group 'ClFS', skipping...
+Running predictor 'RP' for group 'ClFS'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Already run predictor 'GLM' on group 'Cl', skipping...
+Already run predictor 'RF' on group 'Cl', skipping...
+Already run predictor 'RF2' on group 'Cl', skipping...
+Already run predictor 'RF3' on group 'Cl', skipping...
+Already run predictor 'RFO' on group 'Cl', skipping...
+Running predictor 'RP' for group 'Cl'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'ClLi', skipping...
+Already run predictor 'GLM' on group 'ClCo', skipping...
+Already run predictor 'GLM' on group 'ClMR', skipping...
+Already run predictor 'GLM' on group 'ClMS', skipping...
+Already run predictor 'RF' on group 'ClLi', skipping...
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'ClCo', skipping...
+Already run predictor 'GLM' on group 'ClPa', skipping...
+Already run predictor 'RF' on group 'ClMR', skipping...
+Already run predictor 'RF' on group 'ClMS', skipping...
+Already run predictor 'RF2' on group 'ClLi', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'GLM' on group 'ClQO', skipping...
+Already run predictor 'RF2' on group 'ClCo', skipping...
+Already run predictor 'RF' on group 'ClPa', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'RF3' on group 'ClLi', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF' on group 'ClQO', skipping...
+Already run predictor 'RF2' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'ClMS', skipping...
+Already run predictor 'RF3' on group 'ClCo', skipping...
+Already run predictor 'RF2' on group 'ClPa', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'ClLi', skipping...
+Already run predictor 'RF3' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'ClQO', skipping...
+Already run predictor 'RFO' on group 'ClCo', skipping...
+Already run predictor 'RF3' on group 'ClMS', skipping...
+Already run predictor 'GLM' on group 'CoFS', skipping...
+Already run predictor 'RF3' on group 'ClPa', skipping...
+Running predictor 'RP' for group 'ClLi'.
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'ClMR', skipping...
+Already run predictor 'RF3' on group 'ClQO', skipping...
+Running predictor 'RP' for group 'ClCo'.
+Already run predictor 'RFO' on group 'ClMS', skipping...
+Already run predictor 'RFO' on group 'ClPa', skipping...
+Already run predictor 'RF' on group 'CoFS', skipping...
+Running predictor 'RP' for group 'Co'.
+Already run predictor 'RFO' on group 'ClQO', skipping...
+Running predictor 'RP' for group 'ClMR'.
+Running predictor 'RP' for group 'ClMS'.
+Already run predictor 'RF2' on group 'CoFS', skipping...
+Running predictor 'RP' for group 'ClPa'.
+Running predictor 'RP' for group 'ClQO'.
+Already run predictor 'RF3' on group 'CoFS', skipping...
+Already run predictor 'RFO' on group 'CoFS', skipping...
+Running predictor 'RP' for group 'CoFS'.
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.002  [perf: 0.698]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.556]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.703]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 90 / best cp: 0.002  [perf: 0.580]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 30 / best cp: 0.005  [perf: 0.535]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.542]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.555]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 60 / best cp: 0.0001 [perf: 0.549]
+RPart for groups Core                                (  5 features) -> best min split: 90 / best cp: 0.005  [perf: 0.705]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 60 / best cp: 0.005  [perf: 0.683]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.002  [perf: 0.697]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 40 / best cp: 0.005  [perf: 0.727]
+RPart for groups Clinical                            ( 11 features) -> best min split: 110 / best cp: 0.002  [perf: 0.558]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 100 / best cp: 0.002  [perf: 0.576]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.002  [perf: 0.711]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 80 / best cp: 0.005  [perf: 0.555]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 110 / best cp: 0.002  [perf: 0.529]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 110 / best cp: 0.005  [perf: 0.583]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.720]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.535]
+RPart for groups Core                                (  5 features) -> best min split: 100 / best cp: 0.002  [perf: 0.696]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.531]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 70 / best cp: 0.002  [perf: 0.660]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.705]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 100 / best cp: 0.002  [perf: 0.531]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.731]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.547]
+RPart for groups Core                                (  5 features) -> best min split: 30 / best cp: 0.005  [perf: 0.704]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 20 / best cp: 0.01   [perf: 0.571]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 30 / best cp: 0.005  [perf: 0.549]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.005  [perf: 0.558]
+RPart for groups Clinical                            ( 11 features) -> best min split: 110 / best cp: 0.001  [perf: 0.559]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 100 / best cp: 0.001  [perf: 0.718]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 30 / best cp: 0.005  [perf: 0.558]
+RPart for groups Core                                (  5 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.695]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.553]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 30 / best cp: 0.005  [perf: 0.674]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 100 / best cp: 0.001  [perf: 0.693]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.552]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 20 / best cp: 0.002  [perf: 0.546]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 110 / best cp: 0.002  [perf: 0.541]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 80 / best cp: 0.005  [perf: 0.716]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.005  [perf: 0.697]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.005  [perf: 0.541]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 20 / best cp: 0.01   [perf: 0.564]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 80 / best cp: 0.005  [perf: 0.529]
+RPart for groups Clinical                            ( 11 features) -> best min split: 40 / best cp: 0.005  [perf: 0.554]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 50 / best cp: 0.005  [perf: 0.723]
+RPart for groups Core                                (  5 features) -> best min split: 80 / best cp: 0.002  [perf: 0.697]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 100 / best cp: 0.001  [perf: 0.677]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 100 / best cp: 0.002  [perf: 0.718]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.547]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 70 / best cp: 0.005  [perf: 0.570]
+RPart for groups Core                                (  5 features) -> best min split: 90 / best cp: 0.005  [perf: 0.697]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 80 / best cp: 0.001  [perf: 0.564]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 80 / best cp: 0.005  [perf: 0.559]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.722]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 40 / best cp: 0.005  [perf: 0.548]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.548]
+RPart for groups Core                                (  5 features) -> best min split: 70 / best cp: 0.001  [perf: 0.714]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 20 / best cp: 0.005  [perf: 0.547]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.01   [perf: 0.555]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 110 / best cp: 0.001  [perf: 0.676]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 80 / best cp: 0.002  [perf: 0.726]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 40 / best cp: 0.005  [perf: 0.700]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.511]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 90 / best cp: 0.002  [perf: 0.536]
+RPart for groups Clinical                            ( 11 features) -> best min split: 100 / best cp: 0.001  [perf: 0.570]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.680]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.005  [perf: 0.554]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 90 / best cp: 0.001  [perf: 0.737]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.002  [perf: 0.709]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.535]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.577]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.554]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 80 / best cp: 0.005  [perf: 0.667]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 60 / best cp: 0.005  [perf: 0.549]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 60 / best cp: 0.005  [perf: 0.570]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 60 / best cp: 0.005  [perf: 0.689]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 40 / best cp: 0.005  [perf: 0.572]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.005  [perf: 0.688]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 50 / best cp: 0.001  [perf: 0.729]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.551]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 80 / best cp: 0.005  [perf: 0.546]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 110 / best cp: 0.002  [perf: 0.569]
+RPart for groups Core                                (  5 features) -> best min split: 90 / best cp: 0.002  [perf: 0.707]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 80 / best cp: 0.005  [perf: 0.552]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 50 / best cp: 0.005  [perf: 0.589]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 110 / best cp: 0.001  [perf: 0.735]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 80 / best cp: 0.005  [perf: 0.694]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 100 / best cp: 0.002  [perf: 0.695]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 110 / best cp: 0.005  [perf: 0.555]
+RPart for groups Core                                (  5 features) -> best min split: 30 / best cp: 0.005  [perf: 0.726]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.547]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.537]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 30 / best cp: 0.005  [perf: 0.716]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 30 / best cp: 0.0003 [perf: 0.560]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 60 / best cp: 0.002  [perf: 0.541]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.544]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.002  [perf: 0.692]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.553]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.705]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 20 / best cp: 0.005  [perf: 0.666]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 70 / best cp: 0.005  [perf: 0.726]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.005  [perf: 0.541]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.707]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 30 / best cp: 0.005  [perf: 0.536]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 50 / best cp: 0.005  [perf: 0.544]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 90 / best cp: 0.005  [perf: 0.575]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 110 / best cp: 0.005  [perf: 0.540]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.546]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 110 / best cp: 0.002  [perf: 0.743]
+RPart for groups Core                                (  5 features) -> best min split: 30 / best cp: 0.005  [perf: 0.718]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 100 / best cp: 0.005  [perf: 0.558]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 110 / best cp: 0.005  [perf: 0.546]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.708]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 40 / best cp: 0.002  [perf: 0.679]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 110 / best cp: 0.002  [perf: 0.528]
+RPart for groups Core                                (  5 features) -> best min split: 100 / best cp: 0.002  [perf: 0.698]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.540]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 60 / best cp: 0.005  [perf: 0.543]
+RPart for groups Clinical                            ( 11 features) -> best min split: 40 / best cp: 0.002  [perf: 0.537]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 70 / best cp: 0.005  [perf: 0.707]
+RPart for groups Core                                (  5 features) -> best min split: 100 / best cp: 0.002  [perf: 0.716]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 40 / best cp: 0.005  [perf: 0.533]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 70 / best cp: 0.005  [perf: 0.565]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 80 / best cp: 0.001  [perf: 0.727]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.01   [perf: 0.562]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.01   [perf: 0.560]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.548]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.001  [perf: 0.697]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 100 / best cp: 0.005  [perf: 0.573]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 70 / best cp: 0.001  [perf: 0.702]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.699]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 80 / best cp: 0.0003 [perf: 0.714]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.573]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.548]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.001  [perf: 0.543]
+RPart for groups Core                                (  5 features) -> best min split: 60 / best cp: 0.002  [perf: 0.690]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 90 / best cp: 0.002  [perf: 0.522]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.565]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.570]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 80 / best cp: 0.005  [perf: 0.706]
+RPart for groups Core                                (  5 features) -> best min split: 110 / best cp: 0.002  [perf: 0.704]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.692]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 30 / best cp: 0.005  [perf: 0.581]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.668]
+RPart for groups Clinical                            ( 11 features) -> best min split: 90 / best cp: 0.002  [perf: 0.547]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 30 / best cp: 0.005  [perf: 0.574]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 30 / best cp: 0.005  [perf: 0.561]
+RPart for groups Core                                (  5 features) -> best min split: 90 / best cp: 0.002  [perf: 0.708]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.527]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 70 / best cp: 0.005  [perf: 0.725]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 20 / best cp: 0.01   [perf: 0.557]
+RPart for groups Clinical                            ( 11 features) -> best min split: 30 / best cp: 0.002  [perf: 0.536]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 60 / best cp: 0.005  [perf: 0.537]
+RPart for groups Core                                (  5 features) -> best min split: 100 / best cp: 0.002  [perf: 0.709]
+Ran predictor 'RP' for group 'Co' in 4.46 minutes.
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'SofSVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Already run predictor 'KNN' on group 'Co', skipping...
+Already run predictor 'KNNC' on group 'Co', skipping...
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'GLM' on group 'CoLi', skipping...
+Already run predictor 'RF' on group 'CoLi', skipping...
+Already run predictor 'RF2' on group 'CoLi', skipping...
+Already run predictor 'RF3' on group 'CoLi', skipping...
+Already run predictor 'RFO' on group 'CoLi', skipping...
+Running predictor 'RP' for group 'CoLi'.
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.551]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 60 / best cp: 0.005  [perf: 0.705]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 50 / best cp: 0.001  [perf: 0.714]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 60 / best cp: 0.005  [perf: 0.533]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 100 / best cp: 0.001  [perf: 0.684]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.547]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 70 / best cp: 0.005  [perf: 0.564]
+RPart for groups Clinical                            ( 11 features) -> best min split: 90 / best cp: 0.002  [perf: 0.554]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.547]
+RPart for groups Core - Life                         (  9 features) -> best min split: 100 / best cp: 0.002  [perf: 0.694]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 110 / best cp: 0.001  [perf: 0.698]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.528]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 70 / best cp: 0.005  [perf: 0.546]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.701]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.531]
+RPart for groups Clinical                            ( 11 features) -> best min split: 40 / best cp: 0.002  [perf: 0.570]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 80 / best cp: 0.002  [perf: 0.685]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 100 / best cp: 0.002  [perf: 0.720]
+RPart for groups Core - Life                         (  9 features) -> best min split: 70 / best cp: 0.002  [perf: 0.701]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 110 / best cp: 0.005  [perf: 0.564]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 30 / best cp: 0.005  [perf: 0.566]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.536]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.005  [perf: 0.572]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 100 / best cp: 0.001  [perf: 0.739]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.564]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.001  [perf: 0.685]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 60 / best cp: 0.005  [perf: 0.546]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 80 / best cp: 0.001  [perf: 0.698]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 80 / best cp: 0.005  [perf: 0.680]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 40 / best cp: 0.005  [perf: 0.573]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 80 / best cp: 0.005  [perf: 0.575]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.01   [perf: 0.543]
+RPart for groups Core - FSSCs                        (  7 features) -> best min split: 70 / best cp: 0.001  [perf: 0.742]
+Ran predictor 'RP' for group 'CoFS' in 5.40 minutes.
+Already run predictor 'SVM' on group 'CoFS', skipping...
+Already run predictor 'SofSVM' on group 'CoFS', skipping...
+Already run predictor 'NB' on group 'CoFS', skipping...
+Already run predictor 'KNN' on group 'CoFS', skipping...
+Already run predictor 'KNNC' on group 'CoFS', skipping...
+Treating group of Categories: CoMR
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'CoMR', skipping...
+Already run predictor 'RF' on group 'CoMR', skipping...
+Already run predictor 'RF2' on group 'CoMR', skipping...
+Already run predictor 'RF3' on group 'CoMR', skipping...
+Already run predictor 'RFO' on group 'CoMR', skipping...
+Running predictor 'RP' for group 'CoMR'.
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.553]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 100 / best cp: 0.002  [perf: 0.544]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.002  [perf: 0.709]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 30 / best cp: 0.005  [perf: 0.555]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 60 / best cp: 0.005  [perf: 0.566]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 90 / best cp: 0.005  [perf: 0.563]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 30 / best cp: 0.005  [perf: 0.542]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 40 / best cp: 0.005  [perf: 0.727]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.551]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.001  [perf: 0.693]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 50 / best cp: 0.005  [perf: 0.693]
+RPart for groups Core - Life                         (  9 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.705]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 110 / best cp: 0.005  [perf: 0.559]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.576]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.540]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.01   [perf: 0.564]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.548]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 70 / best cp: 0.001  [perf: 0.583]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.002  [perf: 0.692]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.687]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 110 / best cp: 0.001  [perf: 0.698]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 20 / best cp: 0.002  [perf: 0.670]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 100 / best cp: 0.002  [perf: 0.571]
+RPart for groups Clinical                            ( 11 features) -> best min split: 20 / best cp: 0.005  [perf: 0.550]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 40 / best cp: 0.005  [perf: 0.557]
+Ran predictor 'RP' for group 'Cl' in 6.15 minutes.
+Already run predictor 'SVM' on group 'Cl', skipping...
+Running predictor 'SofSVM' for group 'Cl'.
+RPart for groups Core - MRI                          (  8 features) -> best min split: 70 / best cp: 0.001  [perf: 0.702]
+Stopping cluster...
+Time elapsed for the run:
+6.254019 mins
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 100 / best cp: 0.002  [perf: 0.522]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 40 / best cp: 0.005  [perf: 0.547]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 20 / best cp: 0.005  [perf: 0.543]
+RPart for groups Core - Life                         (  9 features) -> best min split: 70 / best cp: 0.001  [perf: 0.715]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 70 / best cp: 0.002  [perf: 0.685]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 100 / best cp: 0.001  [perf: 0.687]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 110 / best cp: 0.002  [perf: 0.555]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.001  [perf: 0.694]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 20 / best cp: 0.01   [perf: 0.559]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.554]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 100 / best cp: 0.002  [perf: 0.562]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 30 / best cp: 0.005  [perf: 0.538]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.001  [perf: 0.718]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.554]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.002  [perf: 0.702]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.688]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 90 / best cp: 0.005  [perf: 0.534]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.550]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 110 / best cp: 0.002  [perf: 0.552]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.721]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 90 / best cp: 0.005  [perf: 0.582]
+RPart for groups Core - Life                         (  9 features) -> best min split: 80 / best cp: 0.005  [perf: 0.709]
+RPart for groups Clinical - FSSCs                    ( 13 features) -> best min split: 50 / best cp: 0.005  [perf: 0.563]
+Ran predictor 'RP' for group 'ClFS' in 6.88 minutes.
+Already run predictor 'SVM' on group 'ClFS', skipping...
+Running predictor 'SofSVM' for group 'ClFS'.
+RPart for groups Core - MRI                          (  8 features) -> best min split: 90 / best cp: 0.002  [perf: 0.683]
+RPart for groups Clinical - Patient                  ( 13 features) -> best min split: 20 / best cp: 0.005  [perf: 0.544]
+Ran predictor 'RP' for group 'ClPa' in 6.99 minutes.
+Already run predictor 'SVM' on group 'ClPa', skipping...
+Running predictor 'SofSVM' for group 'ClPa'.
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 20 / best cp: 0.01   [perf: 0.584]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 20 / best cp: 0.005  [perf: 0.538]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.005  [perf: 0.701]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 40 / best cp: 0.002  [perf: 0.662]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 50 / best cp: 0.005  [perf: 0.551]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 80 / best cp: 0.002  [perf: 0.693]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 100 / best cp: 0.002  [perf: 0.701]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 90 / best cp: 0.002  [perf: 0.538]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 60 / best cp: 0.0001 [perf: 0.546]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.005  [perf: 0.675]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 40 / best cp: 0.005  [perf: 0.546]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 70 / best cp: 0.005  [perf: 0.693]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.675]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 60 / best cp: 0.0003 [perf: 0.704]
+RPart for groups Clinical - MRI                      ( 14 features) -> best min split: 40 / best cp: 0.005  [perf: 0.578]
+Ran predictor 'RP' for group 'ClMR' in 7.53 minutes.
+Already run predictor 'SVM' on group 'ClMR', skipping...
+Running predictor 'SofSVM' for group 'ClMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClMR': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/06_predictAll.R:133
+6: ROCR::performance(ROCR::prediction(ypred, ytest), "auc") at Code/Helpers.R:115
+7: ROCR::prediction(ypred, ytest)
+8: stop(message)
+Already run predictor 'NB' on group 'ClMR', skipping...
+Already run predictor 'KNN' on group 'ClMR', skipping...
+Already run predictor 'KNNC' on group 'ClMR', skipping...
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.005  [perf: 0.712]
+RPart for groups Clinical - Life                     ( 15 features) -> best min split: 90 / best cp: 0.005  [perf: 0.546]
+Ran predictor 'RP' for group 'ClLi' in 7.59 minutes.
+Already run predictor 'SVM' on group 'ClLi', skipping...
+Running predictor 'SofSVM' for group 'ClLi'.
+RPart for groups Core - MRI                          (  8 features) -> best min split: 70 / best cp: 0.002  [perf: 0.706]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 20 / best cp: 0.005  [perf: 0.537]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.01   [perf: 0.593]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.594]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 50 / best cp: 0.0003 [perf: 0.678]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.708]
+RPart for groups Core - Life                         (  9 features) -> best min split: 50 / best cp: 0.002  [perf: 0.686]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.718]
+RPart for groups Clinical - QOL                      ( 16 features) -> best min split: 110 / best cp: 0.002  [perf: 0.544]
+Ran predictor 'RP' for group 'ClQO' in 7.93 minutes.
+Already run predictor 'SVM' on group 'ClQO', skipping...
+Running predictor 'SofSVM' for group 'ClQO'.
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.002  [perf: 0.706]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 70 / best cp: 0.002  [perf: 0.666]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.687]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.673]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.178  [perf: 0.565]
+RPart for groups Core - Life                         (  9 features) -> best min split: 20 / best cp: 0.005  [perf: 0.738]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.599]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.672]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.712]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 80 / best cp: 0.005  [perf: 0.706]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.01   [perf: 0.597]
+RPart for groups Core - Life                         (  9 features) -> best min split: 90 / best cp: 0.002  [perf: 0.704]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 90 / best cp: 0.002  [perf: 0.706]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 100 / best cp: 0.002  [perf: 0.692]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.001  [perf: 0.703]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.00178 [perf: 0.605]
+RPart for groups Core - Life                         (  9 features) -> best min split: 80 / best cp: 0.005  [perf: 0.695]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.001  [perf: 0.688]
+RPart for groups Clinical - Core                     ( 16 features) -> best min split: 90 / best cp: 0.002  [perf: 0.705]
+Ran predictor 'RP' for group 'ClCo' in 8.95 minutes.
+Already run predictor 'SVM' on group 'ClCo', skipping...
+Already run predictor 'SofSVM' on group 'ClCo', skipping...
+Already run predictor 'NB' on group 'ClCo', skipping...
+Already run predictor 'KNN' on group 'ClCo', skipping...
+Already run predictor 'KNNC' on group 'ClCo', skipping...
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.562  [perf: 0.574]
+RPart for groups Clinical - MSFC                     ( 18 features) -> best min split: 40 / best cp: 0.001  [perf: 0.678]
+Ran predictor 'RP' for group 'ClMS' in 9.02 minutes.
+Already run predictor 'SVM' on group 'ClMS', skipping...
+Running predictor 'SofSVM' for group 'ClMS'.
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00562 [perf: 0.599]
+RPart for groups Core - Life                         (  9 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.714]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 80 / best cp: 0.002  [perf: 0.717]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0316 [perf: 0.591]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.002  [perf: 0.685]
+RPart for groups Core - Life                         (  9 features) -> best min split: 80 / best cp: 0.002  [perf: 0.701]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 90 / best cp: 0.0001 [perf: 0.683]
+RPart for groups Core - Life                         (  9 features) -> best min split: 70 / best cp: 0.0001 [perf: 0.704]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.602]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0178 [perf: 0.583]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-combined-roc / best cost: 0.00178 [perf: 0.595]
+RPart for groups Core - Life                         (  9 features) -> best min split: 110 / best cp: 0.002  [perf: 0.697]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.601]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.005  [perf: 0.702]
+RPart for groups Core - Life                         (  9 features) -> best min split: 100 / best cp: 0.002  [perf: 0.682]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.0001 [perf: 0.705]
+RPart for groups Core - Life                         (  9 features) -> best min split: 70 / best cp: 0.005  [perf: 0.692]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 60 / best cp: 0.005  [perf: 0.695]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-combined-roc / best cost: 0.00178 [perf: 0.609]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.593]
+RPart for groups Core - Life                         (  9 features) -> best min split: 90 / best cp: 0.005  [perf: 0.707]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.602]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 110 / best cp: 0.002  [perf: 0.694]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.178  [perf: 0.568]
+RPart for groups Core - Life                         (  9 features) -> best min split: 90 / best cp: 0.005  [perf: 0.710]
+Ran predictor 'RP' for group 'CoLi' in 5.80 minutes.
+Running predictor 'SVM' for group 'CoLi'.
+RPart for groups Core - MRI                          (  8 features) -> best min split: 80 / best cp: 0.002  [perf: 0.703]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.691]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.1    [perf: 0.588]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.707]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.593]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.00316 [perf: 0.606]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0316 [perf: 0.578]
+RPart for groups Core - MRI                          (  8 features) -> best min split: 100 / best cp: 0.002  [perf: 0.692]
+Ran predictor 'RP' for group 'CoMR' in 5.40 minutes.
+Running predictor 'SVM' for group 'CoMR'.
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00562 [perf: 0.595]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.586]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.587]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.001  [perf: 0.604]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.00562 [perf: 0.615]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.01   [perf: 0.605]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.1    [perf: 0.578]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.01   [perf: 0.594]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.597]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0562 [perf: 0.596]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.178  [perf: 0.586]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-combined-roc / best cost: 0.001  [perf: 0.602]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.708]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.01   [perf: 0.595]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.1    [perf: 0.588]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.562  [perf: 0.577]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-combined-roc / best cost: 0.001  [perf: 0.623]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.711]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.0178 [perf: 0.587]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: sgd-svm-combined-roc / best cost: 0.01   [perf: 0.588]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.316  [perf: 0.577]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.00178 [perf: 0.605]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.01   [perf: 0.591]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.01   [perf: 0.590]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.562  [perf: 0.575]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.01   [perf: 0.600]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-combined-roc / best cost: 0.00316 [perf: 0.605]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.594]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc     / best cost: 0.1    [perf: 0.578]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.0562 [perf: 0.594]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.719]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0316 [perf: 0.598]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.01   [perf: 0.598]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.178  [perf: 0.583]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00195 / best cost:    0.1 [perf: 0.716]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0316 [perf: 0.604]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00316 [perf: 0.602]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00562 [perf: 0.595]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0178 [perf: 0.576]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0562 [perf: 0.587]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-combined-roc / best cost: 0.00562 [perf: 0.602]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-combined-roc / best cost: 0.01   [perf: 0.611]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.178  [perf: 0.581]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.0178 [perf: 0.580]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.583]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.00562 [perf: 0.614]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.719]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.00316 [perf: 0.591]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc     / best cost: 0.178  [perf: 0.588]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.0316 [perf: 0.585]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:  0.316 [perf: 0.719]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-combined-roc / best cost: 0.00178 [perf: 0.610]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.01   [perf: 0.597]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc     / best cost: 0.562  [perf: 0.561]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.608]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.0178 [perf: 0.597]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.178  [perf: 0.569]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.00178 [perf: 0.606]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00178 [perf: 0.610]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0316 [perf: 0.601]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.1    [perf: 0.580]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.01   [perf: 0.596]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-combined-roc / best cost: 0.00316 [perf: 0.596]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00781 / best cost:     10 [perf: 0.722]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.01   [perf: 0.591]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.178  [perf: 0.579]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00562 [perf: 0.596]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.0178 [perf: 0.597]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.178  [perf: 0.593]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.723]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.562  [perf: 0.594]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-combined-roc / best cost: 0.00316 [perf: 0.611]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00316 [perf: 0.604]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0178 [perf: 0.594]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.001  [perf: 0.618]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: pegasos-roc     / best cost: 0.01   [perf: 0.595]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00562 [perf: 0.584]
+Ran predictor 'SofSVM' for group 'ClPa' in 13.65 minutes.
+Running predictor 'NB' for group 'ClPa'.
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.544]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.550]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.550]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.569]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.525]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.556]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.558]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.555]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.00316 [perf: 0.594]
+Ran predictor 'SofSVM' for group 'ClFS' in 14.18 minutes.
+Running predictor 'NB' for group 'ClFS'.
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.00316 [perf: 0.613]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.543]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.543]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.525]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.550]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.559]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.538]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.556]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  4 [perf: 0.555]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.722]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.531]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.543]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.576]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.521]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  4 [perf: 0.555]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.539]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.536]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.553]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.551]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.564]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  1 [perf: 0.556]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.562]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.546]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.557]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  4 [perf: 0.562]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-roc     / best cost: 0.00562 [perf: 0.600]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.564]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.539]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.555]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.547]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.566]
+NB for groups Clinical - Patient                  ( 13 features) -> best l:  5 [perf: 0.541]
+Ran predictor 'NB' for group 'ClPa' in 1.21 minutes.
+Running predictor 'KNN' for group 'ClPa'.
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.549]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.716]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 8   / kernel: optimal    [perf: 0.672]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.655]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.534]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.643]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 8   / kernel: optimal    [perf: 0.671]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.662]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.548]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 7   / kernel: optimal    [perf: 0.658]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.660]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 7   / kernel: optimal    [perf: 0.667]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.557]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.660]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.676]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.561]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.660]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.662]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 8   / kernel: optimal    [perf: 0.665]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.561]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 7   / kernel: optimal    [perf: 0.649]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 8   / kernel: optimal    [perf: 0.677]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.555]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 9   / kernel: optimal    [perf: 0.655]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.649]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 8   / kernel: optimal    [perf: 0.666]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  3 [perf: 0.557]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 8   / kernel: optimal    [perf: 0.677]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.663]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.00562 [perf: 0.603]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.662]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.550]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.665]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.657]
+NB for groups Clinical - FSSCs                    ( 13 features) -> best l:  5 [perf: 0.554]
+Ran predictor 'NB' for group 'ClFS' in 1.26 minutes.
+Running predictor 'KNN' for group 'ClFS'.
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 9   / kernel: optimal    [perf: 0.662]
+KNN for groups Clinical - Patient                  ( 13 features) ->  best k: 6   / kernel: optimal    [perf: 0.657]
+Ran predictor 'KNN' for group 'ClPa' in 0.50 minutes.
+Running predictor 'KNNC' for group 'ClPa'.
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.519]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 12 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.525]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 19 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.526]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.530]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.528]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 12 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.509]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.531]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 18 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.534]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 50 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.536]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.524]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.510]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 30 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.534]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 10 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.533]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 10 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.521]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.539]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 19 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.537]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 40 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.478]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 13 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.519]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.536]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 18 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.540]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 12 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.531]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 19 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.523]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.529]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 17 / kernel: optimal
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: logreg-pegasos-combined-roc / best cost: 0.00178 [perf: 0.606]
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.514]
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 20 / kernel: optimal
+KNN for groups Clinical - FSSCs                    ( 13 features) ->  best k: 200 / kernel: optimal    [perf: 0.521]
+Ran predictor 'KNN' for group 'ClFS' in 0.57 minutes.
+Running predictor 'KNNC' for group 'ClFS'.
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 16 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 17 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 16 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 15 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Clinical - Patient                  ( 13 features) ->  best k: 18 / kernel: optimal
+Ran predictor 'KNNC' for group 'ClPa' in 0.73 minutes.
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 60 / kernel: optimal
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.717]
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 60 / kernel: optimal
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.00316 [perf: 0.597]
+Ran predictor 'SofSVM' for group 'ClQO' in 15.52 minutes.
+Running predictor 'NB' for group 'ClQO'.
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 60 / kernel: optimal
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.535]
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.528]
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 50 / kernel: optimal
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.555]
+KNNC for groups Clinical - FSSCs                    ( 13 features) ->  best k: 70 / kernel: optimal
+Ran predictor 'KNNC' for group 'ClFS' in 0.76 minutes.
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.554]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.544]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  4 [perf: 0.533]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.541]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.567]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.713]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.552]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.541]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.543]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.542]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.551]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.546]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.556]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.552]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.536]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.540]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.552]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.549]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.560]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.537]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.545]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.548]
+NB for groups Clinical - QOL                      ( 16 features) -> best l:  5 [perf: 0.543]
+Ran predictor 'NB' for group 'ClQO' in 1.47 minutes.
+Running predictor 'KNN' for group 'ClQO'.
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.530]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.532]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.533]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.538]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.549]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.517]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.540]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.553]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.550]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.535]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.519]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.541]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.548]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.548]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.547]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.546]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.517]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.536]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.548]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.550]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.543]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.542]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.538]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.539]
+KNN for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal    [perf: 0.525]
+Ran predictor 'KNN' for group 'ClQO' in 0.53 minutes.
+Running predictor 'KNNC' for group 'ClQO'.
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.719]
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 190 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 120 / kernel: optimal
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:  0.316 [perf: 0.720]
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 200 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 170 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Clinical - QOL                      ( 16 features) ->  best k: 150 / kernel: optimal
+Ran predictor 'KNNC' for group 'ClQO' in 0.76 minutes.
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.717]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00195 / best cost:  0.316 [perf: 0.718]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:    0.1 [perf: 0.722]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.712]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.730]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00391 / best cost:   3.16 [perf: 0.725]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00781 / best cost:   31.6 [perf: 0.707]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.695]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.725]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:  0.316 [perf: 0.727]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:  0.316 [perf: 0.710]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00195 / best cost:    0.1 [perf: 0.712]
+SVM for groups Core - Life                         (  9 features) -> best gamma:    0.0625 / best cost:   3.16 [perf: 0.719]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.715]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.728]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00391 / best cost:     10 [perf: 0.737]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.707]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00195 / best cost:      1 [perf: 0.712]
+SVM for groups Core - Life                         (  9 features) -> best gamma:    0.0156 / best cost:   31.6 [perf: 0.714]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.715]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:    0.1 [perf: 0.733]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.733]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:  0.316 [perf: 0.713]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.708]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.725]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.716]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.724]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.721]
+SVM for groups Core - Life                         (  9 features) -> best gamma:   0.00781 / best cost:   31.6 [perf: 0.709]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.709]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.720]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00391 / best cost:     10 [perf: 0.719]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.725]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.727]
+SVM for groups Core - Life                         (  9 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.715]
+Ran predictor 'SVM' for group 'CoLi' in 59.67 minutes.
+Running predictor 'SofSVM' for group 'CoLi'.
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.1    [perf: 0.719]
+SVM for groups Core - MRI                          (  8 features) -> best gamma:   0.00391 / best cost:     10 [perf: 0.714]
+Ran predictor 'SVM' for group 'CoMR' in 60.15 minutes.
+Running predictor 'SofSVM' for group 'CoMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoMR': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/06_predictAll.R:133
+6: ROCR::performance(ROCR::prediction(ypred, ytest), "auc") at Code/Helpers.R:115
+7: ROCR::prediction(ypred, ytest)
+8: stop(message)
+Running predictor 'NB' for group 'CoMR'.
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.1    [perf: 0.715]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.683]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.670]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.682]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.685]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.688]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.673]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.686]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.673]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.680]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.686]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: pegasos-roc     / best cost: 0.316  [perf: 0.721]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.676]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.669]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.677]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.682]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.690]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.681]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.678]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.679]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.672]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.689]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.178  [perf: 0.723]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.680]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.661]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.686]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.693]
+NB for groups Core - MRI                          (  8 features) -> best l:  5 [perf: 0.675]
+Ran predictor 'NB' for group 'CoMR' in 1.36 minutes.
+Running predictor 'KNN' for group 'CoMR'.
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 110 / kernel: optimal    [perf: 0.689]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.694]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.709]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.698]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.686]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 160 / kernel: optimal    [perf: 0.699]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 110 / kernel: optimal    [perf: 0.696]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 150 / kernel: optimal    [perf: 0.701]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.712]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 190 / kernel: optimal    [perf: 0.688]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.1    [perf: 0.719]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.693]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.689]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 190 / kernel: optimal    [perf: 0.700]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 100 / kernel: optimal    [perf: 0.725]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.695]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.705]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 90  / kernel: optimal    [perf: 0.700]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.697]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.701]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.692]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 170 / kernel: optimal    [perf: 0.701]
+KNN for groups Core - MRI                          (  8 features) ->  best k: 130 / kernel: optimal    [perf: 0.698]
+Ran predictor 'KNN' for group 'CoMR' in 0.59 minutes.
+Running predictor 'KNNC' for group 'CoMR'.
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 50 / kernel: optimal
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: pegasos-roc     / best cost: 0.0562 [perf: 0.722]
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 130 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 40 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 80 / kernel: optimal
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.178  [perf: 0.718]
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 30 / kernel: optimal
+KNNC for groups Core - MRI                          (  8 features) ->  best k: 70 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoMR' in 0.86 minutes.
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: pegasos-roc     / best cost: 0.1    [perf: 0.715]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.178  [perf: 0.717]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.1    [perf: 0.727]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.0562 [perf: 0.711]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.316  [perf: 0.723]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 1      [perf: 0.709]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.562  [perf: 0.719]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.562  [perf: 0.732]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: pegasos-roc     / best cost: 0.316  [perf: 0.709]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.178  [perf: 0.719]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: pegasos-roc     / best cost: 0.562  [perf: 0.724]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.562  [perf: 0.715]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 1.78   [perf: 0.722]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.00178 [perf: 0.731]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.562  [perf: 0.701]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: logreg-pegasos-roc / best cost: 0.1    [perf: 0.724]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: pegasos-roc     / best cost: 1      [perf: 0.723]
+SofiaSVM for groups Core - Life                         (  9 features) -> best learner.loop type: sgd-svm-roc     / best cost: 0.316  [perf: 0.714]
+Ran predictor 'SofSVM' for group 'CoLi' in 12.52 minutes.
+Running predictor 'NB' for group 'CoLi'.
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.694]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.691]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.706]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.696]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.689]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.695]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.694]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.689]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.695]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.704]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.687]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.699]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.686]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.701]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.700]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.692]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.691]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.701]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.695]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.699]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.694]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.684]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.699]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.703]
+NB for groups Core - Life                         (  9 features) -> best l:  5 [perf: 0.696]
+Ran predictor 'NB' for group 'CoLi' in 1.23 minutes.
+Running predictor 'KNN' for group 'CoLi'.
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.684]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.702]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.691]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.686]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.696]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.705]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.687]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.701]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.681]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.695]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.709]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.690]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.694]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.703]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.690]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.693]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.695]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.687]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.700]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.706]
+KNN for groups Core - Life                         (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.693]
+Ran predictor 'KNN' for group 'CoLi' in 0.55 minutes.
+Running predictor 'KNNC' for group 'CoLi'.
+KNNC for groups Core - Life                         (  9 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 40 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 80 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 70 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 110 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 150 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 180 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 40 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 120 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 60 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 90 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 50 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 40 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 100 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 30 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 140 / kernel: optimal
+KNNC for groups Core - Life                         (  9 features) ->  best k: 40 / kernel: optimal
+Ran predictor 'KNNC' for group 'CoLi' in 0.82 minutes.

@@ -1,0 +1,37 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RP' on group 'Co', skipping...
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Running predictor 'KNN' for group 'Co'.
+KNN for groups Core                                (  5 features) ->  best k: 60  / kernel: optimal    [perf: 0.714]
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, difftime(Sys.time(), t0, units = "min"), 
+             file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", predName, catGroupLabel, e$message, 
+         paste(create_traceback(sc[25:(length(sc) - 2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:45
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+4: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+5: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'Co'.

@@ -1,0 +1,362 @@
+Starting up cluster...
+Treating group of Categories: Co
+Treating group of Categories: CoMS
+Treating group of Categories: CoPa
+Treating group of Categories: CoMSPa
+Treating group of Categories: MS
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+Treating group of Categories: Pa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RP' on group 'Co', skipping...
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Running predictor 'KNN' for group 'Co'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoPa'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'CoMS'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'CoMSPa'.
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'MSPa'.
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'GLM' for group 'Pa'.
+Ran predictor 'GLM' for group 'MS' in 0.12 minutes.
+Running predictor 'RF' for group 'MS'.
+Ran predictor 'GLM' for group 'Pa' in 0.13 minutes.
+Running predictor 'RF' for group 'Pa'.
+Ran predictor 'GLM' for group 'MSPa' in 0.13 minutes.
+Running predictor 'RF' for group 'MSPa'.
+Ran predictor 'GLM' for group 'CoPa' in 0.14 minutes.
+Running predictor 'RF' for group 'CoPa'.
+Ran predictor 'GLM' for group 'CoMSPa' in 0.14 minutes.
+Running predictor 'RF' for group 'CoMSPa'.
+Ran predictor 'RF' for group 'Pa' in 0.02 minutes.
+Running predictor 'RF2' for group 'Pa'.
+Ran predictor 'GLM' for group 'CoMS' in 0.15 minutes.
+Running predictor 'RF' for group 'CoMS'.
+Ran predictor 'RF2' for group 'Pa' in 0.01 minutes.
+Running predictor 'RF3' for group 'Pa'.
+Ran predictor 'RF' for group 'MSPa' in 0.04 minutes.
+Running predictor 'RF2' for group 'MSPa'.
+Ran predictor 'RF3' for group 'Pa' in 0.01 minutes.
+Running predictor 'RFO' for group 'Pa'.
+KNN for groups Core                                (  5 features) ->  best k: 60  / kernel: optimal    [perf: 0.714]
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'Co'.
+Ran predictor 'RF' for group 'MS' in 0.09 minutes.
+Running predictor 'RF2' for group 'MS'.
+Ran predictor 'RF' for group 'CoMS' in 0.11 minutes.
+Running predictor 'RF2' for group 'CoMS'.
+Ran predictor 'RF' for group 'CoPa' in 0.14 minutes.
+Running predictor 'RF2' for group 'CoPa'.
+Ran predictor 'RF2' for group 'MS' in 0.08 minutes.
+Running predictor 'RF3' for group 'MS'.
+Ran predictor 'RF' for group 'CoMSPa' in 0.17 minutes.
+Running predictor 'RF2' for group 'CoMSPa'.
+Ran predictor 'RF2' for group 'MSPa' in 0.16 minutes.
+Running predictor 'RF3' for group 'MSPa'.
+Ran predictor 'RF3' for group 'MS' in 0.03 minutes.
+Running predictor 'RFO' for group 'MS'.
+KNNC for groups Core                                (  5 features) ->  best k: 40 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'Co': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+RFO for groups Patient                             (  2 features) -> best mtry:  2 [perf: 0.441]
+ERROR running train/test for predictor 'RFO' and group 'Pa': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:39
+7: ROCR::performance(ROCR::prediction(ypred, ytest), "auc") at Code/Helpers.R:116
+8: do.call(function.name, argumentlist)
+9: .performance.auc(fpr.stop = 1, predictions = structure(c(0.06, 0.06, 0.274, 0.742, 
+ 0.076, 0.008, 0.004, 0.004, 0, 0.632, 0.632, 0.068, 0, 0.032, 0.298, 0.192, 0.002, 
+ 0.06, 0.268, 0.414, 0.126, 0.16, 0.016, 0.084, 0.464, 0.464, 0.016, 0.01, 0, 0.076, 
+ 0.436), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", 
+ "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", 
+ "27", "28", "29", "30", "31")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 
+ 0.742, 0.632, 0.464, 0.436, 0.414, 0.298, 0.274, 0.268, 0.192, 0.16, 0.126, 0.084, 
+ 0.076, 0.068, 0.06, 0.032, 0.016, 0.01, 0.008, 0.004, 0.002, 0), .Names = c("", "4", 
+ "11", "26", "31", "20", "15", "3", "19", "16", "22", "21", "24", "30", "12", "18", 
+ "14", "27", "28", "6", "8", "17", "29")), fp = c(0, 1, 3, 5, 6, 7, 8, 9, 10, 11, 
+ 12, 13, 14, 16, 17, 20, 21, 23, 24, 25, 27, 28, 31), tp = c(0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(31, 30, 28, 26, 25, 24, 23, 22, 
+ 21, 20, 19, 18, 17, 15, 14, 11, 10, 8, 7, 6, 4, 3, 0), n.pos = 0L, n.neg = 31L, n.pos.pred = c(0, 
+ 1, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 20, 21, 23, 24, 25, 27, 28, 31), 
+     n.neg.pred = c(31, 30, 28, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 15, 14, 11, 
+     10, 8, 7, 6, 4, 3, 0))
+10: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'Pa'.
+Ran predictor 'RF3' for group 'MSPa' in 0.03 minutes.
+Running predictor 'RFO' for group 'MSPa'.
+Ran predictor 'RF2' for group 'CoMS' in 0.10 minutes.
+Running predictor 'RF3' for group 'CoMS'.
+Ran predictor 'RF2' for group 'CoPa' in 0.12 minutes.
+Running predictor 'RF3' for group 'CoPa'.
+Ran predictor 'RF3' for group 'CoMS' in 0.04 minutes.
+Running predictor 'RFO' for group 'CoMS'.
+Ran predictor 'RF3' for group 'CoPa' in 0.03 minutes.
+Running predictor 'RFO' for group 'CoPa'.
+Ran predictor 'RF2' for group 'CoMSPa' in 0.15 minutes.
+Running predictor 'RF3' for group 'CoMSPa'.
+Ran predictor 'RF3' for group 'CoMSPa' in 0.04 minutes.
+Running predictor 'RFO' for group 'CoMSPa'.
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.496]
+RFO for groups MSFC                                (  2 features) -> best mtry:  2 [perf: 0.480]
+Ran predictor 'RFO' for group 'MS' in 0.26 minutes.
+Running predictor 'RP' for group 'MS'.
+RPart for groups Patient                             (  2 features) -> best min split: 50 / best cp: 0.002  [perf: 0.506]
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.491]
+RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  2 [perf: 0.538]
+Ran predictor 'RFO' for group 'MSPa' in 0.46 minutes.
+Running predictor 'RP' for group 'MSPa'.
+RFO for groups Core - MSFC                         (  7 features) -> best mtry:  2 [perf: 0.731]
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.676]
+RFO for groups Core - MSFC                         (  7 features) -> best mtry:  3 [perf: 0.728]
+Ran predictor 'RFO' for group 'CoMS' in 0.47 minutes.
+Running predictor 'RP' for group 'CoMS'.
+RPart for groups Patient                             (  2 features) -> best min split: 20 / best cp: 0.01   [perf: 0.700]
+Ran predictor 'RP' for group 'Pa' in 0.53 minutes.
+Running predictor 'SVM' for group 'Pa'.
+RFO for groups Core - Patient                      (  7 features) -> best mtry:  2 [perf: 0.735]
+Ran predictor 'RFO' for group 'CoPa' in 0.46 minutes.
+Running predictor 'RP' for group 'CoPa'.
+RPart for groups MSFC                                (  2 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+RPart for groups MSFC                                (  2 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.523]
+Ran predictor 'RP' for group 'MS' in 0.54 minutes.
+Running predictor 'SVM' for group 'MS'.
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  3 [perf: 0.726]
+RFO for groups Core - MSFC - Patient               (  9 features) -> best mtry:  2 [perf: 0.795]
+Ran predictor 'RFO' for group 'CoMSPa' in 0.68 minutes.
+Running predictor 'RP' for group 'CoMSPa'.
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 60 / best cp: 0.001  [perf: 0.519]
+RPart for groups MSFC - Patient                      (  4 features) -> best min split: 40 / best cp: 0.01   [perf: 0.607]
+Ran predictor 'RP' for group 'MSPa' in 0.74 minutes.
+Running predictor 'SVM' for group 'MSPa'.
+RPart for groups Core - Patient                      (  7 features) -> best min split: 110 / best cp: 0.002  [perf: 0.706]
+RPart for groups Core - MSFC                         (  7 features) -> best min split: 20 / best cp: 0.005  [perf: 0.730]
+RPart for groups Core - Patient                      (  7 features) -> best min split: 20 / best cp: 0.01   [perf: 0.654]
+Ran predictor 'RP' for group 'CoPa' in 1.08 minutes.
+Running predictor 'SVM' for group 'CoPa'.
+RPart for groups Core - MSFC                         (  7 features) -> best min split: 40 / best cp: 0.01   [perf: 0.671]
+Ran predictor 'RP' for group 'CoMS' in 1.13 minutes.
+Running predictor 'SVM' for group 'CoMS'.
+RPart for groups Core - MSFC - Patient               (  9 features) -> best min split: 100 / best cp: 0.002  [perf: 0.716]
+RPart for groups Core - MSFC - Patient               (  9 features) -> best min split: 50 / best cp: 0.01   [perf: 0.653]
+Ran predictor 'RP' for group 'CoMSPa' in 1.27 minutes.
+Running predictor 'SVM' for group 'CoMSPa'.
+SVM for groups Patient                             (  2 features) -> best gamma:    0.0312 / best cost:     10 [perf: 0.532]
+SVM for groups Patient                             (  2 features) -> best gamma:    0.0156 / best cost:     10 [perf: 0.693]
+Ran predictor 'SVM' for group 'Pa' in 4.48 minutes.
+Running predictor 'NB' for group 'Pa'.
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.505]
+NB for groups Patient                             (  2 features) -> best l:  0 [perf: 0.509]
+Ran predictor 'NB' for group 'Pa' in 0.35 minutes.
+Running predictor 'KNN' for group 'Pa'.
+KNN for groups Patient                             (  2 features) ->  best k: 60  / kernel: optimal    [perf: 0.573]
+ERROR running train/test for predictor 'KNN' and group 'Pa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'Pa'.
+KNNC for groups Patient                             (  2 features) ->  best k: 40 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'Pa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+SVM for groups Core - MSFC                         (  7 features) -> best gamma:   0.00391 / best cost:   31.6 [perf: 0.770]
+SVM for groups Core - Patient                      (  7 features) -> best gamma:   0.00391 / best cost:  0.316 [perf: 0.713]
+SVM for groups Core - MSFC                         (  7 features) -> best gamma:    0.0625 / best cost:     10 [perf: 0.755]
+Ran predictor 'SVM' for group 'CoMS' in 5.26 minutes.
+Running predictor 'NB' for group 'CoMS'.
+SVM for groups Core - Patient                      (  7 features) -> best gamma:      0.25 / best cost:     10 [perf: 0.719]
+Ran predictor 'SVM' for group 'CoPa' in 5.36 minutes.
+Running predictor 'NB' for group 'CoPa'.
+NB for groups Core - MSFC                         (  7 features) -> best l: 15 [perf: 0.695]
+NB for groups Core - MSFC                         (  7 features) -> best l:  0 [perf: 0.604]
+NB for groups Core - Patient                      (  7 features) -> best l: 15 [perf: 0.702]
+Ran predictor 'NB' for group 'CoMS' in 0.46 minutes.
+Running predictor 'KNN' for group 'CoMS'.
+NB for groups Core - Patient                      (  7 features) -> best l:  0 [perf: 0.596]
+KNN for groups Core - MSFC                         (  7 features) ->  best k: 80  / kernel: optimal    [perf: 0.743]
+ERROR running train/test for predictor 'KNN' and group 'CoMS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'CoMS'.
+Ran predictor 'NB' for group 'CoPa' in 0.44 minutes.
+Running predictor 'KNN' for group 'CoPa'.
+KNN for groups Core - Patient                      (  7 features) ->  best k: 200 / kernel: optimal    [perf: 0.704]
+ERROR running train/test for predictor 'KNN' and group 'CoPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'CoPa'.
+KNNC for groups Core - MSFC                         (  7 features) ->  best k: 70 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+KNNC for groups Core - Patient                      (  7 features) ->  best k: 30 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:   0.00391 / best cost:   31.6 [perf: 0.772]
+SVM for groups Core - MSFC - Patient               (  9 features) -> best gamma:     0.125 / best cost:   31.6 [perf: 0.778]
+Ran predictor 'SVM' for group 'CoMSPa' in 5.82 minutes.
+Running predictor 'NB' for group 'CoMSPa'.
+NB for groups Core - MSFC - Patient               (  9 features) -> best l: 15 [perf: 0.690]
+NB for groups Core - MSFC - Patient               (  9 features) -> best l:  0 [perf: 0.595]
+Ran predictor 'NB' for group 'CoMSPa' in 0.30 minutes.
+Running predictor 'KNN' for group 'CoMSPa'.
+KNN for groups Core - MSFC - Patient               (  9 features) ->  best k: 200 / kernel: optimal    [perf: 0.728]
+ERROR running train/test for predictor 'KNN' and group 'CoMSPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'CoMSPa'.
+KNNC for groups Core - MSFC - Patient               (  9 features) ->  best k: 40 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoMSPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:       0.5 / best cost:  0.316 [perf: 0.527]
+SVM for groups MSFC - Patient                      (  4 features) -> best gamma:       0.5 / best cost:     10 [perf: 0.582]
+Ran predictor 'SVM' for group 'MSPa' in 7.49 minutes.
+Running predictor 'NB' for group 'MSPa'.
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.508]
+NB for groups MSFC - Patient                      (  4 features) -> best l:  0 [perf: 0.577]
+Ran predictor 'NB' for group 'MSPa' in 0.17 minutes.
+Running predictor 'KNN' for group 'MSPa'.
+KNN for groups MSFC - Patient                      (  4 features) ->  best k: 11  / kernel: optimal    [perf: 0.506]
+ERROR running train/test for predictor 'KNN' and group 'MSPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'MSPa'.
+KNNC for groups MSFC - Patient                      (  4 features) ->  best k: 80 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MSPa': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+SVM for groups MSFC                                (  2 features) -> best gamma:    0.0312 / best cost:    0.1 [perf: 0.540]
+SVM for groups MSFC                                (  2 features) -> best gamma:         1 / best cost:   31.6 [perf: 0.602]
+Ran predictor 'SVM' for group 'MS' in 8.23 minutes.
+Running predictor 'NB' for group 'MS'.
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.504]
+NB for groups MSFC                                (  2 features) -> best l:  0 [perf: 0.440]
+Ran predictor 'NB' for group 'MS' in 0.12 minutes.
+Running predictor 'KNN' for group 'MS'.
+KNN for groups MSFC                                (  2 features) ->  best k: 6   / kernel: optimal    [perf: 0.518]
+ERROR running train/test for predictor 'KNN' and group 'MS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), ks = ks) at Code/05_predictors.R:147
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+Running predictor 'KNNC' for group 'MS'.
+KNNC for groups MSFC                                (  2 features) ->  best k: 90 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'MS': 
+ only 0's may be mixed with negative subscripts
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:45
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)), Xtrain), 
+     ks = c(6:19, seq(20, 200, 10))) at Code/05_predictors.R:164
+4: matrix(cl[C], nrow = p, ncol = kmax + 2)
+5: cl[C]
+6: `[.factor`(cl, C)
+7: NextMethod("[")
+Stopping cluster...
+Time elapsed for the run:
+9.629713 mins

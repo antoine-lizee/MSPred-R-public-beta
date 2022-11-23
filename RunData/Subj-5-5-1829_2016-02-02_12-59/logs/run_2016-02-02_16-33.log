@@ -1,0 +1,681 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClCo
+Treating group of Categories: ClFS
+Treating group of Categories: ClLi
+Treating group of Categories: ClMS
+Treating group of Categories: ClMR
+Treating group of Categories: ClPa
+Treating group of Categories: ClQO
+Treating group of Categories: Co
+Treating group of Categories: CoFS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'GLM' on group 'ClMS', skipping...
+Already run predictor 'GLM' on group 'ClLi', skipping...
+Already run predictor 'RF' on group 'ClMS', skipping...
+Already run predictor 'RF' on group 'ClLi', skipping...
+Already run predictor 'RF2' on group 'ClMS', skipping...
+Already run predictor 'RF2' on group 'ClLi', skipping...
+Already run predictor 'RF3' on group 'ClMS', skipping...
+Already run predictor 'RF3' on group 'ClLi', skipping...
+Already run predictor 'RFO' on group 'ClMS', skipping...
+Already run predictor 'RFO' on group 'ClLi', skipping...
+Running predictor 'SVM' for group 'ClMS'.
+Running predictor 'SVM' for group 'ClLi'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'GLM' on group 'Cl', skipping...
+Already run predictor 'GLM' on group 'ClCo', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'ClFS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'RF' on group 'Cl', skipping...
+Already run predictor 'RF' on group 'ClCo', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'RF' on group 'ClFS', skipping...
+Already run predictor 'GLM' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'Cl', skipping...
+Already run predictor 'RF2' on group 'ClCo', skipping...
+Already run predictor 'GLM' on group 'ClPa', skipping...
+Already run predictor 'RF2' on group 'ClFS', skipping...
+Already run predictor 'GLM' on group 'ClQO', skipping...
+Already run predictor 'RF' on group 'ClMR', skipping...
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Cl', skipping...
+Already run predictor 'RF3' on group 'ClCo', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Already run predictor 'RF' on group 'ClPa', skipping...
+Already run predictor 'RF3' on group 'ClFS', skipping...
+Already run predictor 'RF' on group 'ClQO', skipping...
+Already run predictor 'RF2' on group 'ClMR', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Cl', skipping...
+Already run predictor 'RFO' on group 'ClCo', skipping...
+Already run predictor 'RF2' on group 'ClPa', skipping...
+Already run predictor 'RFO' on group 'ClFS', skipping...
+Already run predictor 'RF3' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'ClQO', skipping...
+Already run predictor 'GLM' on group 'CoFS', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Running predictor 'SVM' for group 'Cl'.
+Running predictor 'SVM' for group 'ClCo'.
+Already run predictor 'RF3' on group 'ClPa', skipping...
+Running predictor 'SVM' for group 'ClFS'.
+Already run predictor 'RFO' on group 'ClMR', skipping...
+Already run predictor 'RF3' on group 'ClQO', skipping...
+Already run predictor 'RF' on group 'CoFS', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'ClPa', skipping...
+Already run predictor 'RFO' on group 'ClQO', skipping...
+Running predictor 'SVM' for group 'ClMR'.
+Already run predictor 'RF2' on group 'CoFS', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Running predictor 'SVM' for group 'ClPa'.
+Running predictor 'SVM' for group 'ClQO'.
+Already run predictor 'RF3' on group 'CoFS', skipping...
+Running predictor 'SVM' for group 'Co'.
+Already run predictor 'RFO' on group 'CoFS', skipping...
+Running predictor 'SVM' for group 'CoFS'.
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.769]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 10 [perf: 0.710]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.0312, best cost: 31.6 [perf: 0.513]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.730]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 0.316 [perf: 0.530]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.5, best cost: 10 [perf: 0.556]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.534]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 0.1 [perf: 0.535]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.648]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.0625, best cost: 31.6 [perf: 0.513]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.766]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.714]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.00781, best cost: 0.1 [perf: 0.530]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.774]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.730]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.713]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 0.316 [perf: 0.523]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 10 [perf: 0.540]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 10 [perf: 0.536]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.531]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.666]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 1, best cost: 31.6 [perf: 0.534]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.774]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 1, best cost: 3.16 [perf: 0.529]
+SVM for groups Core                                (  5 features) -> best gamma: 0.0312, best cost: 10 [perf: 0.723]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.727]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 10 [perf: 0.555]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.25, best cost: 10 [perf: 0.547]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.5, best cost: 0.316 [perf: 0.579]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00391, best cost: 0.1 [perf: 0.540]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.769]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.684]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.719]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.525]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 1, best cost: 0.316 [perf: 0.538]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.730]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.768]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.712]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.537]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.00781, best cost: 0.316 [perf: 0.536]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.528]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.5, best cost: 0.1 [perf: 0.568]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.5, best cost: 1 [perf: 0.546]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 0.1 [perf: 0.688]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.771]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.715]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.0312, best cost: 0.316 [perf: 0.526]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.730]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.00391, best cost: 10 [perf: 0.557]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.771]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.5, best cost: 3.16 [perf: 0.510]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.25, best cost: 10 [perf: 0.533]
+SVM for groups Core                                (  5 features) -> best gamma: 0.0312, best cost: 10 [perf: 0.722]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.0625, best cost: 31.6 [perf: 0.535]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 0.1 [perf: 0.529]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.691]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.734]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.125, best cost: 3.16 [perf: 0.554]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.763]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.712]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.543]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.5, best cost: 31.6 [perf: 0.536]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.531]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.5, best cost: 10 [perf: 0.557]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.25, best cost: 10 [perf: 0.534]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.780]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.672]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00781, best cost: 0.1 [perf: 0.723]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.726]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.530]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 1 [perf: 0.542]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.533]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.125, best cost: 3.16 [perf: 0.524]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.768]
+SVM for groups Core                                (  5 features) -> best gamma: 0.0312, best cost: 3.16 [perf: 0.704]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.125, best cost: 31.6 [perf: 0.572]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00391, best cost: 10 [perf: 0.728]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.5, best cost: 0.316 [perf: 0.532]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.677]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.769]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 1, best cost: 1 [perf: 0.520]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.722]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.00781, best cost: 1 [perf: 0.551]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.00195, best cost: 10 [perf: 0.540]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 10 [perf: 0.554]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.5, best cost: 31.6 [perf: 0.526]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.728]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.766]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.534]
+SVM for groups Core                                (  5 features) -> best gamma: 0.0312, best cost: 0.1 [perf: 0.710]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.680]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.00195, best cost: 3.16 [perf: 0.543]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.542]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 0.1 [perf: 0.530]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.527]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.769]
+SVM for groups Core                                (  5 features) -> best gamma: 0.0312, best cost: 3.16 [perf: 0.711]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 31.6 [perf: 0.553]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.742]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.0312, best cost: 10 [perf: 0.550]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.25, best cost: 1 [perf: 0.540]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.0312, best cost: 3.16 [perf: 0.671]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.730]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.784]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.25, best cost: 10 [perf: 0.558]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.00781, best cost: 0.1 [perf: 0.528]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 1, best cost: 3.16 [perf: 0.537]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.125, best cost: 0.1 [perf: 0.536]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.718]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.125, best cost: 31.6 [perf: 0.543]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.708]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.762]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.544]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00391, best cost: 0.1 [perf: 0.707]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.0156, best cost: 10 [perf: 0.532]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 0.316 [perf: 0.560]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.716]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.776]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.00781, best cost: 3.16 [perf: 0.532]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.736]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.518]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.5, best cost: 3.16 [perf: 0.545]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.125, best cost: 31.6 [perf: 0.532]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.775]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.730]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00391, best cost: 0.316 [perf: 0.671]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.537]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.716]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.25, best cost: 1 [perf: 0.549]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.518]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 3.16 [perf: 0.764]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.717]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.25, best cost: 10 [perf: 0.551]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 3.16 [perf: 0.555]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.693]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 1, best cost: 10 [perf: 0.551]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.532]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.776]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.00195, best cost: 10 [perf: 0.527]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 3.16 [perf: 0.533]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.721]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.725]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.535]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.778]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 1, best cost: 3.16 [perf: 0.523]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.718]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 1, best cost: 0.316 [perf: 0.532]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 0.1 [perf: 0.510]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.666]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.00195, best cost: 1 [perf: 0.534]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.743]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.5, best cost: 31.6 [perf: 0.556]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.765]
+SVM for groups Core                                (  5 features) -> best gamma: 0.0312, best cost: 0.1 [perf: 0.710]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.0625, best cost: 31.6 [perf: 0.545]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 1, best cost: 0.316 [perf: 0.530]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.0312, best cost: 3.16 [perf: 0.536]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.731]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 10 [perf: 0.767]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 1, best cost: 0.316 [perf: 0.535]
+SVM for groups Core                                (  5 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.724]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 0.1 [perf: 0.660]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.0312, best cost: 10 [perf: 0.536]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.541]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 1, best cost: 10 [perf: 0.529]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.767]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 10 [perf: 0.533]
+SVM for groups Core                                (  5 features) -> best gamma: 0.00195, best cost: 10 [perf: 0.724]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.725]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 1, best cost: 31.6 [perf: 0.529]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 0.316 [perf: 0.552]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00391, best cost: 0.316 [perf: 0.553]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.25, best cost: 0.1 [perf: 0.530]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.705]
+SVM for groups Core - FSSCs                        (  7 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.776]
+Ran predictor 'SVM' for group 'CoFS' in 70.20 minutes.
+Running predictor 'SofSVM' for group 'CoFS'.
+SVM for groups Core                                (  5 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.713]
+Ran predictor 'SVM' for group 'Co' in 70.69 minutes.
+Running predictor 'SofSVM' for group 'Co'.
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.1 [perf: 0.764]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.0156, best cost: 10 [perf: 0.538]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.726]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.761]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0316 [perf: 0.721]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 31.6 [perf: 0.553]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.0316 [perf: 0.761]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.726]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.740]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.1 [perf: 0.765]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.735]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.0178 [perf: 0.767]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.730]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.5, best cost: 10 [perf: 0.559]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.5, best cost: 10 [perf: 0.555]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.684]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.00781, best cost: 0.1 [perf: 0.522]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.0625, best cost: 10 [perf: 0.529]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.722]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.763]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0178 [perf: 0.725]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0178 [perf: 0.765]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.00391, best cost: 10 [perf: 0.544]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.726]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-combined-roc, best cost: 0.0316 [perf: 0.765]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.725]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.763]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0316 [perf: 0.736]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.766]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.25, best cost: 10 [perf: 0.576]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.716]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.723]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.764]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.733]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.762]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.716]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.25, best cost: 1 [perf: 0.539]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.5, best cost: 1 [perf: 0.538]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 1, best cost: 1 [perf: 0.534]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.0156, best cost: 31.6 [perf: 0.527]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-combined-roc, best cost: 0.00562 [perf: 0.728]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.01 [perf: 0.758]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.661]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.5, best cost: 3.16 [perf: 0.528]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.741]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.1 [perf: 0.763]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.721]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.769]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.1 [perf: 0.722]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.762]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.01 [perf: 0.738]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.734]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.761]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.728]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.5, best cost: 31.6 [perf: 0.547]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.0316 [perf: 0.765]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0316 [perf: 0.730]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.00781, best cost: 10 [perf: 0.545]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0178 [perf: 0.731]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.767]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0316 [perf: 0.716]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: logreg-pegasos-combined-roc, best cost: 0.01 [perf: 0.765]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.25, best cost: 0.1 [perf: 0.520]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 0.316 [perf: 0.531]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.530]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.1 [perf: 0.734]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.765]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.0312, best cost: 3.16 [perf: 0.684]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.00391, best cost: 1 [perf: 0.527]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.733]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.01 [perf: 0.762]
+SofiaSVM for groups Core                                (  5 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.727]
+Ran predictor 'SofSVM' for group 'Co' in 17.39 minutes.
+Already run predictor 'NB' on group 'Co', skipping...
+Running predictor 'KNN' for group 'Co'.
+ERROR running train/test for predictor 'KNN' and group 'Co': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNN for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.mod$best.parameters$k, 
+     kknn.mod$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:171
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+Running predictor 'KNNC' for group 'Co'.
+ERROR running train/test for predictor 'KNNC' and group 'Co': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNNC for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.modC$best.parameters$k, 
+     kknn.modC$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:184
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'GLM' on group 'CoLi', skipping...
+Already run predictor 'RF' on group 'CoLi', skipping...
+Already run predictor 'RF2' on group 'CoLi', skipping...
+Already run predictor 'RF3' on group 'CoLi', skipping...
+Running predictor 'RFO' for group 'CoLi'.
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.768]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.706]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.727]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.679]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.692]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-roc, best cost: 0.0178 [perf: 0.767]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.700]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.699]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.125, best cost: 3.16 [perf: 0.548]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.682]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.000977, best cost: 10 [perf: 0.530]
+SofiaSVM for groups Core - FSSCs                        (  7 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.0562 [perf: 0.766]
+Ran predictor 'SofSVM' for group 'CoFS' in 19.96 minutes.
+Already run predictor 'NB' on group 'CoFS', skipping...
+Running predictor 'KNN' for group 'CoFS'.
+ERROR running train/test for predictor 'KNN' and group 'CoFS': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNN for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.mod$best.parameters$k, 
+     kknn.mod$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:171
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+Running predictor 'KNNC' for group 'CoFS'.
+ERROR running train/test for predictor 'KNNC' and group 'CoFS': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNNC for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.modC$best.parameters$k, 
+     kknn.modC$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:184
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+Treating group of Categories: CoMR
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'CoMR', skipping...
+Already run predictor 'RF' on group 'CoMR', skipping...
+Already run predictor 'RF2' on group 'CoMR', skipping...
+Already run predictor 'RF3' on group 'CoMR', skipping...
+Running predictor 'RFO' for group 'CoMR'.
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.727]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.703]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.698]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.694]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.698]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.682]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.719]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 1 [perf: 0.534]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.697]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.681]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 3 [perf: 0.694]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.5, best cost: 10 [perf: 0.533]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.712]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.690]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00391, best cost: 1 [perf: 0.517]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.675]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.697]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.706]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.695]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.704]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.698]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.693]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00391, best cost: 0.1 [perf: 0.662]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.718]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.0312, best cost: 0.1 [perf: 0.534]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.724]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.686]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.684]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.706]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.696]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.699]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.671]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.704]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.25, best cost: 10 [perf: 0.524]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.704]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.706]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.721]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.683]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.681]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.706]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.688]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 31.6 [perf: 0.530]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.700]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.717]
+RFO for groups Core - Life                         (  9 features) -> best mtry: 2 [perf: 0.700]
+Ran predictor 'RFO' for group 'CoLi' in 7.01 minutes.
+Running predictor 'SVM' for group 'CoLi'.
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.712]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.689]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.689]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 1 [perf: 0.526]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.674]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.695]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 2 [perf: 0.714]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.533]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.544]
+RFO for groups Core - MRI                          (  8 features) -> best mtry: 4 [perf: 0.700]
+Ran predictor 'RFO' for group 'CoMR' in 6.54 minutes.
+Running predictor 'SVM' for group 'CoMR'.
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.735]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00391, best cost: 3.16 [perf: 0.689]
+SVM for groups Clinical                            ( 11 features) -> best gamma: 0.000977, best cost: 10 [perf: 0.535]
+Ran predictor 'SVM' for group 'Cl' in 97.99 minutes.
+Running predictor 'SofSVM' for group 'Cl'.
+Stopping cluster...
+Time elapsed for the run:
+1.63497 hours
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.125, best cost: 10 [perf: 0.553]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.714]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 1 [perf: 0.565]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 10 [perf: 0.514]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.718]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 0.316 [perf: 0.521]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.744]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.000977, best cost: 0.1 [perf: 0.547]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.00391, best cost: 0.1 [perf: 0.717]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.678]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.000977, best cost: 0.1 [perf: 0.525]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.0625, best cost: 10 [perf: 0.549]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.00781, best cost: 1 [perf: 0.711]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.529]
+SVM for groups Clinical - Core                     ( 16 features) -> best gamma: 0.00391, best cost: 10 [perf: 0.723]
+Ran predictor 'SVM' for group 'ClCo' in 104.97 minutes.
+Running predictor 'SofSVM' for group 'ClCo'.
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.720]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.519]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 1, best cost: 31.6 [perf: 0.564]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.746]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.738]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.662]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.713]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.00562 [perf: 0.746]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 1, best cost: 31.6 [perf: 0.527]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.00562 [perf: 0.754]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 1, best cost: 0.1 [perf: 0.572]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.728]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.00195, best cost: 1 [perf: 0.537]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.747]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 1, best cost: 31.6 [perf: 0.538]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.742]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.00195, best cost: 10 [perf: 0.552]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.01 [perf: 0.743]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.720]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00781, best cost: 31.6 [perf: 0.677]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.724]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.744]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.524]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.743]
+SVM for groups Clinical - FSSCs                    ( 13 features) -> best gamma: 0.000977, best cost: 1 [perf: 0.517]
+Ran predictor 'SVM' for group 'ClFS' in 113.06 minutes.
+Running predictor 'SofSVM' for group 'ClFS'.
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.125, best cost: 10 [perf: 0.566]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0178 [perf: 0.755]
+SofiaSVM for groups Clinical - FSSCs                    ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.00178 [perf: 0.599]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.540]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.737]
+SVM for groups Clinical - Patient                  ( 13 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.541]
+Ran predictor 'SVM' for group 'ClPa' in 114.78 minutes.
+Running predictor 'SofSVM' for group 'ClPa'.
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.00195, best cost: 31.6 [perf: 0.721]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.714]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.00178 [perf: 0.593]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0178 [perf: 0.750]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.00391, best cost: 0.316 [perf: 0.700]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.592]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.00316 [perf: 0.744]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.591]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0178 [perf: 0.743]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0316 [perf: 0.592]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.125, best cost: 10 [perf: 0.514]
+SVM for groups Clinical - Life                     ( 15 features) -> best gamma: 0.00781, best cost: 3.16 [perf: 0.547]
+Ran predictor 'SVM' for group 'ClLi' in 117.84 minutes.
+Running predictor 'SofSVM' for group 'ClLi'.
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.757]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.00195, best cost: 0.1 [perf: 0.710]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.01 [perf: 0.587]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.00195, best cost: 1 [perf: 0.716]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.316 [perf: 0.599]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.00562 [perf: 0.745]
+SVM for groups Clinical - MRI                      ( 14 features) -> best gamma: 0.5, best cost: 10 [perf: 0.522]
+Ran predictor 'SVM' for group 'ClMR' in 118.67 minutes.
+Running predictor 'SofSVM' for group 'ClMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClMR': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:121
+4: tunecontrol$error.fun(true.y, pred)
+5: AUROC(Yp, Yt) at Code/06_predictAll.R:134
+6: ROCR::performance(ROCR::prediction(ypred, ytest), "auc") at Code/Helpers.R:115
+7: ROCR::prediction(ypred, ytest)
+8: stop(message)
+Already run predictor 'NB' on group 'ClMR', skipping...
+Running predictor 'KNN' for group 'ClMR'.
+ERROR running train/test for predictor 'KNN' and group 'ClMR': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNN for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.mod$best.parameters$k, 
+     kknn.mod$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:171
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+Running predictor 'KNNC' for group 'ClMR'.
+ERROR running train/test for predictor 'KNNC' and group 'ClMR': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNNC for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.modC$best.parameters$k, 
+     kknn.modC$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:184
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.001 [perf: 0.594]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.01 [perf: 0.573]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.743]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.1 [perf: 0.586]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.316 [perf: 0.575]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0562 [perf: 0.602]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.00562 [perf: 0.758]
+SVM for groups Clinical - MSFC                     ( 18 features) -> best gamma: 0.0312, best cost: 1 [perf: 0.675]
+Ran predictor 'SVM' for group 'ClMS' in 120.68 minutes.
+Running predictor 'SofSVM' for group 'ClMS'.
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.573]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.596]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.747]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.00391, best cost: 3.16 [perf: 0.715]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.178 [perf: 0.593]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.01 [perf: 0.598]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.719]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.746]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.0312, best cost: 0.316 [perf: 0.542]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.178 [perf: 0.566]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.586]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.00562 [perf: 0.753]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0316 [perf: 0.594]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0562 [perf: 0.570]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0316 [perf: 0.590]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.0562 [perf: 0.593]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.739]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.000977, best cost: 0.316 [perf: 0.716]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.178 [perf: 0.572]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.01 [perf: 0.596]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.00562 [perf: 0.746]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.000977, best cost: 3.16 [perf: 0.718]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0562 [perf: 0.599]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.0178 [perf: 0.754]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.316 [perf: 0.569]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.00562 [perf: 0.597]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc, best cost: 0.01 [perf: 0.562]
+SofiaSVM for groups Clinical - Core                     ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.0178 [perf: 0.738]
+Ran predictor 'SofSVM' for group 'ClCo' in 20.32 minutes.
+Already run predictor 'NB' on group 'ClCo', skipping...
+Running predictor 'KNN' for group 'ClCo'.
+ERROR running train/test for predictor 'KNN' and group 'ClCo': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNN for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.mod$best.parameters$k, 
+     kknn.mod$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:171
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+Running predictor 'KNNC' for group 'ClCo'.
+ERROR running train/test for predictor 'KNNC' and group 'ClCo': 
+ too few arguments
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: cats("KNNC for groups %-35s (%3d features) ->  best k: %d / kernel: %s [perf: %.3f]\n", 
+     paste(unique(catNames(Xtrain)), collapse = " - "), ncol(Xtrain), kknn.modC$best.parameters$k, 
+     kknn.modC$best.parameters$kernel, file = logFilePath) at Code/06_predictAll.R:184
+4: cat(sprintf(fmt, ...), file = file, append = TRUE) at Code/Helpers.R:45
+5: sprintf(fmt, ...)
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.01 [perf: 0.578]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc, best cost: 0.178 [perf: 0.588]
+SVM for groups Clinical - QOL                      ( 16 features) -> best gamma: 0.00391, best cost: 31.6 [perf: 0.517]
+Ran predictor 'SVM' for group 'ClQO' in 125.79 minutes.
+Running predictor 'SofSVM' for group 'ClQO'.
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.00316 [perf: 0.589]
+SVM for groups Core - MRI                          (  8 features) -> best gamma: 0.000977, best cost: 31.6 [perf: 0.713]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: pegasos-roc, best cost: 0.178 [perf: 0.588]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: pegasos-combined-roc, best cost: 0.00562 [perf: 0.602]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.0178 [perf: 0.593]
+SVM for groups Core - Life                         (  9 features) -> best gamma: 0.00195, best cost: 0.316 [perf: 0.724]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.316 [perf: 0.582]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: pegasos-roc, best cost: 0.0316 [perf: 0.599]
+SofiaSVM for groups Clinical - QOL                      ( 16 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.01 [perf: 0.602]
+SofiaSVM for groups Clinical - Life                     ( 15 features) -> best learner.loop type: sgd-svm-roc, best cost: 0.178 [perf: 0.585]
+SofiaSVM for groups Clinical - Patient                  ( 13 features) -> best learner.loop type: logreg-pegasos-roc, best cost: 0.1 [perf: 0.598]

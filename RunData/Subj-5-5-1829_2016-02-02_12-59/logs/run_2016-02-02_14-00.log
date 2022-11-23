@@ -1,0 +1,204 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClCo
+Treating group of Categories: ClLi
+Treating group of Categories: ClFS
+Treating group of Categories: ClMR
+Treating group of Categories: ClMS
+Treating group of Categories: ClQO
+Treating group of Categories: Co
+Treating group of Categories: ClPa
+Treating group of Categories: CoFS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Already run for predictor 'GLM' and group 'ClLi', skipping...
+Already run for predictor 'GLM' and group 'ClCo', skipping...
+Already run for predictor 'GLM' and group 'Cl', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Already run for predictor 'GLM' and group 'ClMR', skipping...
+Already run for predictor 'RF' and group 'ClLi', skipping...
+Already run for predictor 'RF' and group 'Cl', skipping...
+Already run for predictor 'RF' and group 'ClCo', skipping...
+Already run for predictor 'GLM' and group 'ClMS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run for predictor 'GLM' and group 'ClFS', skipping...
+Already run for predictor 'RF' and group 'ClMR', skipping...
+Already run for predictor 'RF2' and group 'ClLi', skipping...
+Already run for predictor 'RF2' and group 'Cl', skipping...
+Already run for predictor 'RF2' and group 'ClCo', skipping...
+Already run for predictor 'RF' and group 'ClMS', skipping...
+Already run for predictor 'RF' and group 'ClFS', skipping...
+Already run for predictor 'RF2' and group 'ClMR', skipping...
+Already run for predictor 'RF3' and group 'ClLi', skipping...
+Already run for predictor 'GLM' and group 'ClQO', skipping...
+Already run for predictor 'GLM' and group 'Co', skipping...
+Already run for predictor 'RF3' and group 'Cl', skipping...
+Already run for predictor 'RF3' and group 'ClCo', skipping...
+Already run for predictor 'RF2' and group 'ClMS', skipping...
+Already run for predictor 'RF2' and group 'ClFS', skipping...
+Already run for predictor 'RF3' and group 'ClMR', skipping...
+Running for predictor 'RFO' for group 'ClLi'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run for predictor 'RF' and group 'Co', skipping...
+Running for predictor 'RFO' for group 'Cl'.
+Already run for predictor 'RF' and group 'ClQO', skipping...
+Running for predictor 'RFO' for group 'ClCo'.
+Already run for predictor 'RF3' and group 'ClMS', skipping...
+Running for predictor 'RFO' for group 'ClMR'.
+Already run for predictor 'RF3' and group 'ClFS', skipping...
+Already run for predictor 'RF2' and group 'Co', skipping...
+Running for predictor 'RFO' for group 'ClMS'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Already run for predictor 'RF2' and group 'ClQO', skipping...
+Already run for predictor 'GLM' and group 'ClPa', skipping...
+Running for predictor 'RFO' for group 'ClFS'.
+Already run for predictor 'RF3' and group 'Co', skipping...
+Already run for predictor 'RF3' and group 'ClQO', skipping...
+Already run for predictor 'RF' and group 'ClPa', skipping...
+Already run for predictor 'GLM' and group 'CoFS', skipping...
+Running for predictor 'RFO' for group 'Co'.
+Running for predictor 'RFO' for group 'ClQO'.
+Already run for predictor 'RF2' and group 'ClPa', skipping...
+Already run for predictor 'RF' and group 'CoFS', skipping...
+Already run for predictor 'RF3' and group 'ClPa', skipping...
+Already run for predictor 'RF2' and group 'CoFS', skipping...
+Running for predictor 'RFO' for group 'ClPa'.
+Already run for predictor 'RF3' and group 'CoFS', skipping...
+Running for predictor 'RFO' for group 'CoFS'.
+ERROR running train/test for predictor 'RFO' and group 'ClMS': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'ClMS'.
+ERROR running train/test for predictor 'RFO' and group 'CoFS': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'CoFS'.
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClCo': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClMR': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'Co'.
+Running for predictor 'SVM' for group 'ClCo'.
+ERROR running train/test for predictor 'RFO' and group 'Cl': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClFS': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClQO': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'ClMR'.
+Running for predictor 'SVM' for group 'Cl'.
+Running for predictor 'SVM' for group 'ClFS'.
+Running for predictor 'SVM' for group 'ClQO'.
+ERROR running train/test for predictor 'RFO' and group 'ClPa': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'ClPa'.
+ERROR running train/test for predictor 'RFO' and group 'ClLi': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'ClLi'.
+SVM for groups Core - FSSCs (7 features) ->  best gamma: 0.00781, best cost: 10 [perf: 0.767]SVM for groups Core (5 features) ->  best gamma: 0.0312, best cost: 3.16 [perf: 0.713]SVM for groups Clinical (11 features) ->  best gamma: 0.00391, best cost: 31.6 [perf: 0.533]SVM for groups Clinical - Core (16 features) ->  best gamma: 1, best cost: 31.6 [perf: 0.470]SVM for groups Clinical - Patient (13 features) ->  best gamma: 0.125, best cost: 31.6 [perf: 0.541]SVM for groups Clinical - FSSCs (13 features) ->  best gamma: 0.00781, best cost: 1 [perf: 0.538]SVM for groups Clinical - MSFC (18 features) ->  best gamma: 0.00781, best cost: 31.6 [perf: 0.660]Stopping cluster...
+Time elapsed for the run:
+5.760753 mins

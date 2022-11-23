@@ -1,0 +1,493 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS
+Running predictor 'GLM' for group 'Co'.
+Ran predictor 'GLM' for group 'Co' in 0.12 minutes.
+Running predictor 'RF' for group 'Co'.
+Ran predictor 'RF' for group 'Co' in 0.03 minutes.
+Running predictor 'RF2' for group 'Co'.
+Ran predictor 'RF2' for group 'Co' in 0.04 minutes.
+Running predictor 'RF3' for group 'Co'.
+Ran predictor 'RF3' for group 'Co' in 0.02 minutes.
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core                                (  5 features) -> best mtry:  3 [perf: 0.656]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.695]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.669]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.712]
+RFO for groups Core                                (  5 features) -> best mtry:  3 [perf: 0.708]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.743]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.706]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.811]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.762]
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.086, 0.196, 0.01, 0.002, 
+ 0.324, 0.278, 0.338, 0.72, 0.036, 0.042, 0.13, 0.188, 0.388, 0.054, 0.132, 0.422, 
+ 0.732, 0.038, 0.026, 0.044, 0.12, 0.2, 0.048), .Names = c("1", "2", "3", "4", "5", 
+ "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+ "21", "22", "23")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", 
+ "factor")), cutoffs = structure(c(Inf, 0.732, 0.72, 0.422, 0.388, 0.338, 0.324, 0.278, 
+ 0.2, 0.196, 0.188, 0.132, 0.13, 0.12, 0.086, 0.054, 0.048, 0.044, 0.042, 0.038, 0.036, 
+ 0.026, 0.01, 0.002), .Names = c("", "17", "8", "16", "13", "7", "5", "6", "22", "2", 
+ "12", "15", "11", "21", "1", "14", "23", "20", "10", "18", "9", "19", "3", "4")), 
+     fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+     20, 21, 22, 23), tp = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+     0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+     0, 0, 0, 0, 0, 0, 0), tn = c(23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 
+     11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 23L, n.pos.pred = c(0, 
+     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 
+     23), n.neg.pred = c(23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 
+     8, 7, 6, 5, 4, 3, 2, 1, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'Co'.
+RPart for groups Core                                (  5 features) -> best min split: 30 / best cp: 0.005  [perf: 0.675]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.669]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.813]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.709]
+RPart for groups Core                                (  5 features) -> best min split: 30 / best cp: 0.0001 [perf: 0.673]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.02   [perf: 0.730]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.708]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.726]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.622]
+RPart for groups Core                                (  5 features) -> best min split: 30 / best cp: 0.005  [perf: 0.799]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.01   [perf: 0.714]
+RPart for groups Core                                (  5 features) -> best min split: 40 / best cp: 0.01   [perf: 0.672]
+RPart for groups Core                                (  5 features) -> best min split: 60 / best cp: 0.0001 [perf: 0.652]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.625]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.0001 [perf: 0.630]
+ERROR running train/test for predictor 'RP' and group 'Co': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'Co'.
+SVM for groups Core                                (  5 features) -> best gamma:   0.00781 / best cost:      1 [perf: 0.678]
+SVM for groups Core                                (  5 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.687]
+SVM for groups Core                                (  5 features) -> best gamma:     0.125 / best cost:  0.316 [perf: 0.707]
+SVM for groups Core                                (  5 features) -> best gamma:       0.5 / best cost:    0.1 [perf: 0.757]
+SVM for groups Core                                (  5 features) -> best gamma:    0.0312 / best cost:   3.16 [perf: 0.723]
+SVM for groups Core                                (  5 features) -> best gamma:     0.125 / best cost:      1 [perf: 0.710]
+SVM for groups Core                                (  5 features) -> best gamma:    0.0312 / best cost:   31.6 [perf: 0.719]
+SVM for groups Core                                (  5 features) -> best gamma:       0.5 / best cost:    0.1 [perf: 0.850]
+SVM for groups Core                                (  5 features) -> best gamma:      0.25 / best cost:   31.6 [perf: 0.775]
+SVM for groups Core                                (  5 features) -> best gamma:      0.25 / best cost:   3.16 [perf: 0.808]
+SVM for groups Core                                (  5 features) -> best gamma:    0.0625 / best cost:   31.6 [perf: 0.824]
+SVM for groups Core                                (  5 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.741]
+SVM for groups Core                                (  5 features) -> best gamma:      0.25 / best cost:   31.6 [perf: 0.650]
+SVM for groups Core                                (  5 features) -> best gamma:   0.00195 / best cost:      1 [perf: 0.744]
+SVM for groups Core                                (  5 features) -> best gamma:       0.5 / best cost:    0.1 [perf: 0.755]
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:69
+5: tunecontrol$error.fun(true.y, pred)
+6: AUROC(Yp, Yt) at Code/05_predictors.R:76
+7: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+8: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+9: do.call(function.name, argumentlist)
+10: .performance.auc(fpr.stop = 1, predictions = structure(c(0.168989799270392, 0.172521687551089, 
+ 0.178301900441535, 0.176703697921868, 0.177326829002546, 0.175101317669606, 0.178072705376862, 
+ 0.175811605725049, 0.176481903946823, 0.178165434163987, 0.174298891541541, 0.178427680449637, 
+ 0.180135539078691, 0.177062225004492, 0.176566208610083, 0.177311842071259, 0.174598270110424, 
+ 0.17055603257022, 0.1767123855825, 0.178727939123088, 0.174258753717373, 0.177121436906522, 
+ 0.178503252985783, 0.178378036929699), .Names = c("1", "2", "3", "4", "5", "6", "7", 
+ "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", 
+ "22", "23", "24")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"
+ ), class = c("ordered", "factor")), cutoffs = structure(c(Inf, 0.180135539078691, 
+ 0.178727939123088, 0.178503252985783, 0.178427680449637, 0.178378036929699, 0.178301900441535, 
+ 0.178165434163987, 0.178072705376862, 0.177326829002546, 0.177311842071259, 0.177121436906522, 
+ 0.177062225004492, 0.1767123855825, 0.176703697921868, 0.176566208610083, 0.176481903946823, 
+ 0.175811605725049, 0.175101317669606, 0.174598270110424, 0.174298891541541, 0.174258753717373, 
+ 0.172521687551089, 0.17055603257022, 0.168989799270392), .Names = c("", "13", "20", 
+ "23", "12", "24", "3", "10", "7", "5", "16", "22", "14", "19", "4", "15", "9", "8", 
+ "6", "17", "11", "21", "2", "18", "1")), fp = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24), tp = c(0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(24, 23, 22, 21, 
+ 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), n.pos = 0L, 
+     n.neg = 24L, n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 
+     15, 16, 17, 18, 19, 20, 21, 22, 23, 24), n.neg.pred = c(24, 23, 22, 21, 20, 19, 
+     18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0))
+11: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'NB' for group 'Co'.
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.630]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.607]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.588]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.600]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.562]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.667]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.602]
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.629]
+NB for groups Core                                (  5 features) -> best l:  3 [perf: 0.559]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.609]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.686]
+NB for groups Core                                (  5 features) -> best l: 15 [perf: 0.572]
+NB for groups Core                                (  5 features) -> best l:  3 [perf: 0.635]
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.663]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.594]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.704]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.695]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.563]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.483]
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.565]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.656]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.519]
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.570]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.678]
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.593]
+NB for groups Core                                (  5 features) -> best l: 14 [perf: 0.625]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.635]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.608]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.488]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.680]
+NB for groups Core                                (  5 features) -> best l:  3 [perf: 0.375]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.619]
+NB for groups Core                                (  5 features) -> best l:  9 [perf: 0.636]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.573]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.624]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.738]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.606]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.664]
+NB for groups Core                                (  5 features) -> best l:  1 [perf: 0.558]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.636]
+Ran predictor 'NB' for group 'Co' in 0.75 minutes.
+Running predictor 'KNN' for group 'Co'.
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.616]
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.626]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.691]
+KNN for groups Core                                (  5 features) ->  best k: 11  / kernel: optimal    [perf: 0.714]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.658]
+KNN for groups Core                                (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.663]
+KNN for groups Core                                (  5 features) ->  best k: 9   / kernel: optimal    [perf: 0.607]
+KNN for groups Core                                (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.733]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.754]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.701]
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.626]
+KNN for groups Core                                (  5 features) ->  best k: 11  / kernel: optimal    [perf: 0.614]
+KNN for groups Core                                (  5 features) ->  best k: 9   / kernel: optimal    [perf: 0.611]
+KNN for groups Core                                (  5 features) ->  best k: 2   / kernel: optimal    [perf: 0.652]
+KNN for groups Core                                (  5 features) ->  best k: 8   / kernel: optimal    [perf: 0.656]
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.757]
+KNN for groups Core                                (  5 features) ->  best k: 9   / kernel: optimal    [perf: 0.681]
+KNN for groups Core                                (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.657]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.631]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.651]
+KNN for groups Core                                (  5 features) ->  best k: 3   / kernel: optimal    [perf: 0.682]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.714]
+KNN for groups Core                                (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.653]
+KNN for groups Core                                (  5 features) ->  best k: 6   / kernel: optimal    [perf: 0.649]
+KNN for groups Core                                (  5 features) ->  best k: 3   / kernel: optimal    [perf: 0.604]
+KNN for groups Core                                (  5 features) ->  best k: 9   / kernel: optimal    [perf: 0.745]
+KNN for groups Core                                (  5 features) ->  best k: 8   / kernel: optimal    [perf: 0.724]
+KNN for groups Core                                (  5 features) ->  best k: 2   / kernel: optimal    [perf: 0.662]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.736]
+KNN for groups Core                                (  5 features) ->  best k: 5   / kernel: optimal    [perf: 0.685]
+KNN for groups Core                                (  5 features) ->  best k: 3   / kernel: optimal    [perf: 0.609]
+KNN for groups Core                                (  5 features) ->  best k: 6   / kernel: optimal    [perf: 0.655]
+KNN for groups Core                                (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.649]
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.672]
+KNN for groups Core                                (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.607]
+KNN for groups Core                                (  5 features) ->  best k: 11  / kernel: optimal    [perf: 0.692]
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.585]
+KNN for groups Core                                (  5 features) ->  best k: 10  / kernel: optimal    [perf: 0.704]
+KNN for groups Core                                (  5 features) ->  best k: 6   / kernel: optimal    [perf: 0.669]
+KNN for groups Core                                (  5 features) ->  best k: 4   / kernel: optimal    [perf: 0.669]
+Ran predictor 'KNN' for group 'Co' in 0.04 minutes.
+Running predictor 'KNNC' for group 'Co'.
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 8 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 9 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 5 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 10 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+KNNC for groups Core                                (  5 features) ->  best k: 6 / kernel: optimal
+Ran predictor 'KNNC' for group 'Co' in 0.03 minutes.
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.DiseaseDuration, Core.DiseaseCourse, Core.EDSS, Core.MSSS, MSFC.PASAT, MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'CoMS'.
+Ran predictor 'GLM' for group 'CoMS' in 0.14 minutes.
+Running predictor 'RF' for group 'CoMS'.
+Ran predictor 'RF' for group 'CoMS' in 0.04 minutes.
+Running predictor 'RF2' for group 'CoMS'.
+Ran predictor 'RF2' for group 'CoMS' in 0.04 minutes.
+Running predictor 'RF3' for group 'CoMS'.
+Ran predictor 'RF3' for group 'CoMS' in 0.03 minutes.
+Running predictor 'RFO' for group 'CoMS'.
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  3 [perf: 0.706]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  4 [perf: 0.729]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  2 [perf: 0.791]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  3 [perf: 0.754]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  3 [perf: 0.680]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  4 [perf: 0.770]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  4 [perf: 0.720]
+RFO for groups Core - MSFC                         (  8 features) -> best mtry:  3 [perf: 0.683]
+ERROR running train/test for predictor 'RFO' and group 'CoMS': 
+ Not enough distinct predictions to compute area under the ROC curve.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/05_predictors.R:35
+5: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:39
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: do.call(function.name, argumentlist)
+11: .performance.auc(fpr.stop = 1, predictions = structure(c(0.35, 0.208, 0.232, 0.082, 
+ 0.216, 0.078, 0.196, 0.112, 0.106, 0.13, 0.312, 0.26, 0.11, 0.328, 0.642, 0.028, 
+ 0.06, 0.084, 0.104, 0.278, 0.218, 0.052, 0.084), .Names = c("1", "2", "3", "4", "5", 
+ "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+ "21", "22", "23")), labels = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("FALSE", "TRUE"), class = c("ordered", 
+ "factor")), cutoffs = structure(c(Inf, 0.642, 0.35, 0.328, 0.312, 0.278, 0.26, 0.232, 
+ 0.218, 0.216, 0.208, 0.196, 0.13, 0.112, 0.11, 0.106, 0.104, 0.084, 0.082, 0.078, 
+ 0.06, 0.052, 0.028), .Names = c("", "15", "1", "14", "11", "20", "12", "3", "21", 
+ "5", "2", "7", "10", "8", "13", "9", "19", "23", "4", "6", "17", "22", "16")), fp = c(0, 
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23), tp = c(0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), fn = c(0, 0, 0, 
+ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), tn = c(23, 22, 21, 20, 
+ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 5, 4, 3, 2, 1, 0), n.pos = 0L, n.neg = 23L, 
+     n.pos.pred = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 
+     19, 20, 21, 22, 23), n.neg.pred = c(23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 
+     12, 11, 10, 9, 8, 7, 5, 4, 3, 2, 1, 0))
+12: stop(paste("Not enough distinct predictions to compute area", "under the ROC curve."))
+Running predictor 'RP' for group 'CoMS'.
+RPart for groups Core - MSFC                         (  8 features) -> best min split: 40 / best cp: 0.02   [perf: 0.658]
+RPart for groups Core - MSFC                         (  8 features) -> best min split: 40 / best cp: 0.0001 [perf: 0.693]
+ERROR running train/test for predictor 'RP' and group 'CoMS': 
+ Number of classes is not equal to 2.
+ROCR currently supports only evaluation of binary classification tasks.
+TRACEBACK:
+1: withCallingHandlers({
+     if (file.exists(fn <- file.path(RD, paste0(predName, "_", catGroupLabel, ".tsv")))) {
+         cats("Already run predictor '%s' on group '%s', skipping...\n", predName, 
+             catGroupLabel, file = logFilePath)
+     }
+     else {
+         cats("Running predictor '%s' for group '%s'.\n", predName, catGroupLabel, 
+             file = logFilePath)
+         Yps <- run(X, Y, pred, FIs)
+         write.matrix(Yps, fn)
+         cats("Ran predictor '%s' for group '%s' in %.2f minutes.\n", predName, catGroupLabel, 
+             difftime(Sys.time(), t0, units = "min"), file = logFilePath)
+     }
+ }, error = function(e) {
+     sc <- sys.calls()
+     cats("ERROR running train/test for predictor '%s' and group '%s': \n %s\nTRACEBACK:\n%s\n", 
+         predName, catGroupLabel, e$message, paste(create_traceback(sc[25:(length(sc) - 
+             2)]), collapse = "\n"), file = logFilePath)
+ })
+2: run(X, Y, pred, FIs) at Code/Helpers.R:46
+3: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:161
+4: tune.rpart(formula = Y ~ ., data = data.frame(Y = as.numeric(Ytrain), Xtrain), minsplit = (2:11) * 
+     10, cp = c(1e-04, 3e-04, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05), tunecontrol = tune.control(cross = 5, 
+     error.fun = function(Yt, Yp) -AUROC(Yp, Yt))) at Code/05_predictors.R:123
+5: tune("rpart.wrapper", train.x = formula, data = data, ranges = ranges, predict.func = predict.func, 
+     na.action = na.action, ...)
+6: tunecontrol$error.fun(true.y, pred)
+7: AUROC(Yp, Yt) at Code/05_predictors.R:128
+8: calcAuroc(ROCR::prediction(preds, labels)) at Code/Helpers/Evaluator.R:26
+9: ROCR::performance(pred, "auc") at Code/Helpers/Evaluator.R:22
+10: ROCR::prediction(preds, labels)
+11: stop(message)
+Running predictor 'SVM' for group 'CoMS'.
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:       0.5 / best cost:    0.1 [perf: 0.671]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:     0.125 / best cost:   31.6 [perf: 0.695]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:     0.125 / best cost:   3.16 [perf: 0.713]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:  0.316 [perf: 0.765]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0312 / best cost:   31.6 [perf: 0.735]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0156 / best cost:   3.16 [perf: 0.800]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.682]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:   3.16 [perf: 0.717]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.714]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:     0.125 / best cost:   3.16 [perf: 0.725]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:   3.16 [perf: 0.721]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:     10 [perf: 0.745]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:       0.5 / best cost:  0.316 [perf: 0.717]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.680]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:   3.16 [perf: 0.753]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:    0.1 [perf: 0.880]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0156 / best cost:   31.6 [perf: 0.830]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:     0.125 / best cost:    0.1 [perf: 0.707]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.692]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.767]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0156 / best cost:    0.1 [perf: 0.801]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:  0.000977 / best cost:    0.1 [perf: 0.747]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:     10 [perf: 0.709]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:       0.5 / best cost:  0.316 [perf: 0.777]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:  0.316 [perf: 0.672]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:       0.5 / best cost:     10 [perf: 0.746]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0156 / best cost:     10 [perf: 0.717]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0156 / best cost:   31.6 [perf: 0.653]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:     0.125 / best cost:     10 [perf: 0.820]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0312 / best cost:    0.1 [perf: 0.748]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:  0.316 [perf: 0.731]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:      0.25 / best cost:  0.316 [perf: 0.730]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:   3.16 [perf: 0.700]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:     0.125 / best cost:    0.1 [perf: 0.747]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:   3.16 [perf: 0.653]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:     10 [perf: 0.782]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:       0.5 / best cost:  0.316 [perf: 0.709]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0312 / best cost:     10 [perf: 0.794]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:     10 [perf: 0.712]
+SVM for groups Core - MSFC                         (  8 features) -> best gamma:    0.0625 / best cost:  0.316 [perf: 0.675]
+Ran predictor 'SVM' for group 'CoMS' in 1.99 minutes.
+Running predictor 'NB' for group 'CoMS'.
+NB for groups Core - MSFC                         (  8 features) -> best l:  8 [perf: 0.523]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.586]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.628]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.610]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.528]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.615]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.618]
+NB for groups Core - MSFC                         (  8 features) -> best l:  1 [perf: 0.669]
+NB for groups Core - MSFC                         (  8 features) -> best l:  1 [perf: 0.572]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.589]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.662]
+NB for groups Core - MSFC                         (  8 features) -> best l:  0 [perf: 0.648]
+NB for groups Core - MSFC                         (  8 features) -> best l: 15 [perf: 0.548]
+Time elapsed for the run:
+31.89308 secs

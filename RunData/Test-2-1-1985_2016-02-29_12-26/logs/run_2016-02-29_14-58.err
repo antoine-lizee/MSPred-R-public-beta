@@ -1,0 +1,13 @@
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in best[1, 2] : subscript out of bounds
+Error in train.kknn(formula = Y ~ ., data = data.frame(Y = factor(as.numeric(Ytrain)),  : 
+  object 'ks' not found
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in best[1, 2] : subscript out of bounds
+Error in best[1, 2] : subscript out of bounds
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error: object 'XTRAIN' not found
+Error: object 'Xrtrain' not found

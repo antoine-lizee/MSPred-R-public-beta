@@ -1,0 +1,481 @@
+Starting up cluster...
+Treating group of Categories: Cl
+Treating group of Categories: ClFS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Running predictor 'RPS' for group 'ClFS'.
+Treating group of Categories: CoFS
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Running predictor 'RPS' for group 'Cl'.
+Treating group of Categories: ClPa
+Treating group of Categories: ClLi
+Treating group of Categories: ClMS
+Treating group of Categories: ClCo
+Treating group of Categories: ClMR
+Treating group of Categories: Co
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Running predictor 'RPS' for group 'ClLi'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Running predictor 'RPS' for group 'CoFS'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.T25FW, MSFC.NHPT
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running predictor 'RPS' for group 'ClCo'.
+Running predictor 'RPS' for group 'ClMS'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running predictor 'RPS' for group 'Co'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'ClPa'.
+Treating group of Categories: ClQO
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running predictor 'RPS' for group 'ClMR'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'ClQO'.
+ERROR running train/test for predictor 'RPS' and group 'Cl': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Running predictor 'RPS' for group 'CoLi'.
+ERROR running train/test for predictor 'RPS' and group 'CoLi': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoMR
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running predictor 'RPS' for group 'CoMR'.
+ERROR running train/test for predictor 'RPS' and group 'CoMR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'CoMS'.
+ERROR running train/test for predictor 'RPS' and group 'CoMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'CoPa'.
+ERROR running train/test for predictor 'RPS' and group 'CoPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoQO
+ERROR running train/test for predictor 'RPS' and group 'ClMR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'CoQO'.
+ERROR running train/test for predictor 'RPS' and group 'CoQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: FS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Running predictor 'RPS' for group 'FS'.
+ERROR running train/test for predictor 'RPS' and group 'FS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: FSLi
+Treating group of Categories: FSMR
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Running predictor 'RPS' for group 'FSLi'.
+ERROR running train/test for predictor 'RPS' and group 'FSLi': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'CoFS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running predictor 'RPS' for group 'FSMR'.
+Treating group of Categories: FSPa
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Patient.AgeOfOnset, Patient.Gender
+ERROR running train/test for predictor 'RPS' and group 'FSMR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Running predictor 'RPS' for group 'FSPa'.
+Treating group of Categories: FSMS
+ERROR running train/test for predictor 'RPS' and group 'FSPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'FSMS'.
+Treating group of Categories: FSQO
+Treating group of Categories: Li
+ERROR running train/test for predictor 'RPS' and group 'FSMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+ERROR running train/test for predictor 'RPS' and group 'ClLi': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Running predictor 'RPS' for group 'Li'.
+Treating group of Categories: LiMS
+Treating group of Categories: LiMR
+ERROR running train/test for predictor 'RPS' and group 'ClQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'LiMS'.
+ERROR running train/test for predictor 'RPS' and group 'ClMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: LiPa
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running predictor 'RPS' for group 'LiMR'.
+ERROR running train/test for predictor 'RPS' and group 'LiMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, Patient.AgeOfOnset, Patient.Gender
+ERROR running train/test for predictor 'RPS' and group 'ClPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Running predictor 'RPS' for group 'LiPa'.
+Treating group of Categories: MR
+ERROR running train/test for predictor 'RPS' and group 'LiPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'FSQO'.
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running predictor 'RPS' for group 'MR'.
+Treating group of Categories: LiQO
+ERROR running train/test for predictor 'RPS' and group 'ClCo': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'Li': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'LiQO'.
+ERROR running train/test for predictor 'RPS' and group 'LiMR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: MRQO
+ERROR running train/test for predictor 'RPS' and group 'FSQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'LiQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: MRPa
+Treating group of Categories: MRMS
+ERROR running train/test for predictor 'RPS' and group 'ClFS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'MRPa'.
+Running predictor 'RPS' for group 'MRMS'.
+ERROR running train/test for predictor 'RPS' and group 'MR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'MRMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'MRPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: MSPa
+Treating group of Categories: MS
+Treating group of Categories: MSQO
+Treating group of Categories: QO
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Treating group of Categories: Pa
+Running predictor 'RPS' for group 'MS'.
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'MSQO'.
+Running predictor 'RPS' for group 'QO'.
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'Pa'.
+ERROR running train/test for predictor 'RPS' and group 'MS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'MSQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'QO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoMSPa
+ERROR running train/test for predictor 'RPS' and group 'Pa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoMSQO
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'MSPa'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'CoMSPa'.
+ERROR running train/test for predictor 'RPS' and group 'MSPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'CoMSPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'Co': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: CoLiMS
+Treating group of Categories: PaQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: FSMSQO
+Running predictor 'RPS' for group 'CoMSQO'.
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'MRQO'.
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+ERROR running train/test for predictor 'RPS' and group 'CoMSQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Running predictor 'RPS' for group 'FSMSQO'.
+ERROR running train/test for predictor 'RPS' and group 'MRQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Treating group of Categories: CoMRMS
+Running predictor 'RPS' for group 'PaQO'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'CoLiMS'.
+ERROR running train/test for predictor 'RPS' and group 'FSMSQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'CoMRMS'.
+ERROR running train/test for predictor 'RPS' and group 'PaQO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'CoLiMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: FSMRMS
+Treating group of Categories: MS
+Treating group of Categories: QO
+ERROR running train/test for predictor 'RPS' and group 'CoMRMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'MS'.
+Running predictor 'RPS' for group 'FSMRMS'.
+ERROR running train/test for predictor 'RPS' and group 'MS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'FSMRMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'QO'.
+Treating group of Categories: MR
+Treating group of Categories: FSLiMS
+ERROR running train/test for predictor 'RPS' and group 'QO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Running predictor 'RPS' for group 'MR'.
+Running predictor 'RPS' for group 'FSLiMS'.
+ERROR running train/test for predictor 'RPS' and group 'MR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: MS
+ERROR running train/test for predictor 'RPS' and group 'FSLiMS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: Co
+Treating group of Categories: QO
+Treating group of Categories: FS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running predictor 'RPS' for group 'Co'.
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Running predictor 'RPS' for group 'FS'.
+ERROR running train/test for predictor 'RPS' and group 'FS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group 'QO'.
+ERROR running train/test for predictor 'RPS' and group 'Co': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+ERROR running train/test for predictor 'RPS' and group 'QO': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: FSMSPa
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Running predictor 'RPS' for group 'FSMSPa'.
+ERROR running train/test for predictor 'RPS' and group 'FSMSPa': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Treating group of Categories: MR
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Running predictor 'RPS' for group 'MR'.
+ERROR running train/test for predictor 'RPS' and group 'MR': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Treating group of Categories: .
+Running predictor 'RPS' for group 'MS'.
+ERROR running train/test for predictor 'RPS' and group 'MS': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running predictor 'RPS' for group '.'.
+ERROR running train/test for predictor 'RPS' and group '.': 
+ could not find function "rpart"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+Stopping cluster...
+Time elapsed for the run:
+8.493003 secs

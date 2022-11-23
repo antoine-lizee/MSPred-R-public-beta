@@ -1,0 +1,1006 @@
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+Loading required package: foreach
+Loading required package: foreach
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+Loaded glmnet 2.0-5
+
+Loaded glmnet 2.0-5
+
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Loading required package: foreach
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Loading required package: foreach
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Loaded glmnet 2.0-5
+
+Loaded glmnet 2.0-5
+
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+Loading required package: foreach
+Error in randomForest.default(structure(list(Clinical.ATM = structure(c(1L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+Loaded glmnet 2.0-5
+
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Rituximab, Rebif + Copaxone
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Clinical.ATM = structure(c(1L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Methotrexate
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(36L, 30L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Copaxone
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(44L, 35L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Methotrexate
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(60L, 38L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Avonex + Methotrexate, Rebif + Gilenya
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(53L, 35L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(50L, 34L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Aubagio + Gilenya
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(38L, 52L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Core.AgeAtExam = c(48L, 33L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Copaxone
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(FSSs.Visual = c(0, 0, 0,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Methotrexate
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Life.CaffeineFreq = structure(c(2L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Aubagio + Gilenya, Avonex + Methotrexate, Betaseron + Methotrexate, Betaseron + Rituximab, Rebif + Copaxone
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in randomForest.default(structure(list(MRI.CE_Lesion = c(0, 0, 0,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Aubagio + Gilenya, Rebif + Copaxone
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(MSFC.T25FW = c(5.85, 6.15,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Avonex + Methotrexate
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Patient.AgeOfOnset = c(42L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Betaseron + Copaxone, Copaxone + Rebif
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(QOL.LackFocus = c(0.249017083105662,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in model.frame.default(Terms, newdata, na.action = na.action, xlev = attr(object,  : 
+  factor Treatments.DMTname has new levels Aubagio + Gilenya, Betaseron + Rituximab
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Treatments.DMTname = c("None",  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+In addition: There were 12 warnings (use warnings() to see them)
+Error in lognet(x, is.sparse, ix, jx, y, weights, offset, alpha, nobs,  : 
+  NA/NaN/Inf in foreign function call (arg 5)
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, Ytrain, Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2: In data.matrix(x) : NAs introduced by coercion
+3: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(Xtrain, factor(Ytrain), Xtest) : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning messages:
+1: In data.matrix(x) : NAs introduced by coercion
+2: In data.matrix(xtest) : NAs introduced by coercion
+Error in randomForest.default(structure(list(Clinical.ATM = structure(c(1L,  : 
+  NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In data.matrix(x) : NAs introduced by coercion
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in AUROC(Yp, Yt) : could not find function "calcAuroc"
+Error in if (any(co)) { : missing value where TRUE/FALSE needed
+In addition: Warning message:
+In data.matrix(Xtrain) : NAs introduced by coercion
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+Error in FUN(X[[i]], ...) : could not find function "calcAuroc"
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error in valid[, ord, drop = FALSE] : subscript out of bounds

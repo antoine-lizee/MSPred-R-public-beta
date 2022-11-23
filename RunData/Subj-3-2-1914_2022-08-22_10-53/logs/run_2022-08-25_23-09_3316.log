@@ -1,0 +1,209 @@
+2022-08-25 23:09:43: ###### Treating group of Categories: ClLi
+2022-08-25 23:09:43: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.MemoryConcerns, Life.Smoking
+2022-08-25 23:09:43: Already run predictor 'GLM' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF2' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF3' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'RFO' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'RP' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'SVM' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'NB' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'KNN' on group 'ClLi', skipping...
+2022-08-25 23:09:43: Already run predictor 'KNNC' on group 'ClLi', skipping...
+2022-08-25 23:09:43: ## Ran group 'ClLi' in 0.00 minutes.
+
+2022-08-25 23:09:43: ###### Treating group of Categories: CoQO
+2022-08-25 23:09:43: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+2022-08-25 23:09:43: Already run predictor 'GLM' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF2' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF3' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'RFO' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'RP' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'SVM' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'NB' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'KNN' on group 'CoQO', skipping...
+2022-08-25 23:09:43: Already run predictor 'KNNC' on group 'CoQO', skipping...
+2022-08-25 23:09:43: ## Ran group 'CoQO' in 0.00 minutes.
+
+2022-08-25 23:09:43: ###### Treating group of Categories: CoLiMR
+2022-08-25 23:09:43: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+2022-08-25 23:09:43: Already run predictor 'GLM' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF2' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF3' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'RFO' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'RP' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'SVM' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'NB' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'KNN' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: Already run predictor 'KNNC' on group 'CoLiMR', skipping...
+2022-08-25 23:09:43: ## Ran group 'CoLiMR' in 0.00 minutes.
+
+2022-08-25 23:09:43: ###### Treating group of Categories: CoMRPa
+2022-08-25 23:09:43: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+2022-08-25 23:09:43: Already run predictor 'GLM' on group 'CoMRPa', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF' on group 'CoMRPa', skipping...
+2022-08-25 23:09:43: Already run predictor 'RF2' on group 'CoMRPa', skipping...
+2022-08-25 23:09:44: Already run predictor 'RF3' on group 'CoMRPa', skipping...
+2022-08-25 23:09:44: Already run predictor 'RFO' on group 'CoMRPa', skipping...
+2022-08-25 23:09:44: Already run predictor 'RP' on group 'CoMRPa', skipping...
+2022-08-25 23:09:44: Running predictor 'SVM' for group 'CoMRPa'.
+2022-08-25 23:09:44: CV num 1
+2022-08-25 23:12:42: SVM for groups Core - MRI - Patient                ( 10 features) -> best gamma:  0.000977 / best cost:      1 [perf: 0.706]
+2022-08-25 23:16:09: SVM for groups Core - MRI - Patient                ( 10 features) -> best gamma:   0.00195 / best cost:  0.316 [perf: 0.680]
+2022-08-25 23:19:39: SVM for groups Core - MRI - Patient                ( 10 features) -> best gamma:    0.0625 / best cost:    0.1 [perf: 0.671]
+
+2022-08-25 23:19:40: CV num 2
+2022-08-25 23:22:53: SVM for groups Core - MRI - Patient                ( 10 features) -> best gamma:    0.0312 / best cost:    0.1 [perf: 0.651]
+2022-08-25 23:25:49: SVM for groups Core - MRI - Patient                ( 10 features) -> best gamma:   0.00195 / best cost:  0.316 [perf: 0.683]
+2022-08-25 23:29:04: SVM for groups Core - MRI - Patient                ( 10 features) -> best gamma:   0.00391 / best cost:     10 [perf: 0.705]
+
+2022-08-25 23:29:04: Ran predictor 'SVM' for group 'CoMRPa' in 19.34 minutes.
+2022-08-25 23:29:04: Already run predictor 'NB' on group 'CoMRPa', skipping...
+2022-08-25 23:29:04: Running predictor 'KNN' for group 'CoMRPa'.
+2022-08-25 23:29:04: CV num 1
+2022-08-25 23:29:08: KNN for groups Core - MRI - Patient                ( 10 features) ->  best k: 200 / kernel: optimal    [perf: 0.685]
+2022-08-25 23:29:11: KNN for groups Core - MRI - Patient                ( 10 features) ->  best k: 200 / kernel: optimal    [perf: 0.670]
+2022-08-25 23:29:12: KNN for groups Core - MRI - Patient                ( 10 features) ->  best k: 120 / kernel: optimal    [perf: 0.651]
+
+2022-08-25 23:29:13: CV num 2
+2022-08-25 23:29:14: KNN for groups Core - MRI - Patient                ( 10 features) ->  best k: 200 / kernel: optimal    [perf: 0.650]
+2022-08-25 23:29:16: KNN for groups Core - MRI - Patient                ( 10 features) ->  best k: 120 / kernel: optimal    [perf: 0.667]
+2022-08-25 23:29:17: KNN for groups Core - MRI - Patient                ( 10 features) ->  best k: 200 / kernel: optimal    [perf: 0.689]
+
+2022-08-25 23:29:18: Ran predictor 'KNN' for group 'CoMRPa' in 0.22 minutes.
+2022-08-25 23:29:18: Already run predictor 'KNNC' on group 'CoMRPa', skipping...
+2022-08-25 23:29:18: ## Ran group 'CoMRPa' in 19.57 minutes.
+
+2022-08-25 23:29:18: ###### Treating group of Categories: LiMS
+2022-08-25 23:29:18: Selected columns:
+Life.CaffeineFreq, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+2022-08-25 23:29:18: Already run predictor 'GLM' on group 'LiMS', skipping...
+2022-08-25 23:29:18: Already run predictor 'RF' on group 'LiMS', skipping...
+2022-08-25 23:29:18: Already run predictor 'RF2' on group 'LiMS', skipping...
+2022-08-25 23:29:18: Already run predictor 'RF3' on group 'LiMS', skipping...
+2022-08-25 23:29:18: Running predictor 'RFO' for group 'LiMS'.
+2022-08-25 23:29:18: CV num 1
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+2022-08-25 23:29:31: RFO for groups Life - MSFC                         (  5 features) -> best mtry:  3 [perf: 0.471]
+2022-08-25 23:29:43: RFO for groups Life - MSFC                         (  5 features) -> best mtry:  3 [perf: 0.498]
+2022-08-25 23:29:54: RFO for groups Life - MSFC                         (  5 features) -> best mtry:  2 [perf: 0.487]
+
+2022-08-25 23:29:54: CV num 2
+2022-08-25 23:30:04: RFO for groups Life - MSFC                         (  5 features) -> best mtry:  3 [perf: 0.539]
+2022-08-25 23:30:16: RFO for groups Life - MSFC                         (  5 features) -> best mtry:  2 [perf: 0.511]
+2022-08-25 23:30:25: RFO for groups Life - MSFC                         (  5 features) -> best mtry:  2 [perf: 0.483]
+
+2022-08-25 23:30:25: Ran predictor 'RFO' for group 'LiMS' in 1.13 minutes.
+2022-08-25 23:30:25: Running predictor 'RP' for group 'LiMS'.
+2022-08-25 23:30:25: CV num 1
+2022-08-25 23:30:36: RPart for groups Life - MSFC                         (  5 features) -> best min split: 100 / best cp: 0.0001 [perf: 0.509]
+2022-08-25 23:30:46: RPart for groups Life - MSFC                         (  5 features) -> best min split: 50 / best cp: 0.0001 [perf: 0.518]
+2022-08-25 23:30:58: RPart for groups Life - MSFC                         (  5 features) -> best min split: 110 / best cp: 0.005  [perf: 0.522]
+
+2022-08-25 23:30:58: CV num 2
+2022-08-25 23:31:10: RPart for groups Life - MSFC                         (  5 features) -> best min split: 70 / best cp: 0.0003 [perf: 0.537]
+2022-08-25 23:31:22: RPart for groups Life - MSFC                         (  5 features) -> best min split: 110 / best cp: 0.005  [perf: 0.530]
+2022-08-25 23:31:34: RPart for groups Life - MSFC                         (  5 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+
+2022-08-25 23:31:34: Ran predictor 'RP' for group 'LiMS' in 1.14 minutes.
+2022-08-25 23:31:34: Running predictor 'SVM' for group 'LiMS'.
+2022-08-25 23:31:34: CV num 1
+2022-08-25 23:35:41: SVM for groups Life - MSFC                         (  5 features) -> best gamma:         1 / best cost:     10 [perf: 0.544]
+2022-08-25 23:41:15: SVM for groups Life - MSFC                         (  5 features) -> best gamma:      0.25 / best cost:    0.1 [perf: 0.537]
+2022-08-25 23:46:06: SVM for groups Life - MSFC                         (  5 features) -> best gamma:       0.5 / best cost:   31.6 [perf: 0.534]
+
+2022-08-25 23:46:06: CV num 2
+2022-08-25 23:50:11: SVM for groups Life - MSFC                         (  5 features) -> best gamma:  0.000977 / best cost:  0.316 [perf: 0.556]
+2022-08-25 23:53:47: SVM for groups Life - MSFC                         (  5 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.536]
+2022-08-25 23:57:49: SVM for groups Life - MSFC                         (  5 features) -> best gamma:    0.0312 / best cost:  0.316 [perf: 0.528]
+
+2022-08-25 23:57:49: Ran predictor 'SVM' for group 'LiMS' in 26.25 minutes.
+2022-08-25 23:57:49: Already run predictor 'NB' on group 'LiMS', skipping...
+2022-08-25 23:57:49: Running predictor 'KNN' for group 'LiMS'.
+2022-08-25 23:57:49: CV num 1
+2022-08-25 23:57:51: KNN for groups Life - MSFC                         (  5 features) ->  best k: 6   / kernel: optimal    [perf: 0.459]
+2022-08-25 23:57:52: KNN for groups Life - MSFC                         (  5 features) ->  best k: 11  / kernel: optimal    [perf: 0.513]
+2022-08-25 23:57:54: KNN for groups Life - MSFC                         (  5 features) ->  best k: 140 / kernel: optimal    [perf: 0.485]
+
+2022-08-25 23:57:54: CV num 2
+2022-08-25 23:57:56: KNN for groups Life - MSFC                         (  5 features) ->  best k: 6   / kernel: optimal    [perf: 0.480]
+2022-08-25 23:57:57: KNN for groups Life - MSFC                         (  5 features) ->  best k: 15  / kernel: optimal    [perf: 0.521]
+2022-08-25 23:57:59: KNN for groups Life - MSFC                         (  5 features) ->  best k: 7   / kernel: optimal    [perf: 0.475]
+
+2022-08-25 23:58:00: Ran predictor 'KNN' for group 'LiMS' in 0.18 minutes.
+2022-08-25 23:58:00: Already run predictor 'KNNC' on group 'LiMS', skipping...
+2022-08-25 23:58:00: ## Ran group 'LiMS' in 28.70 minutes.
+
+2022-08-25 23:58:00: ###### Treating group of Categories: MSPa
+2022-08-25 23:58:00: Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+2022-08-25 23:58:00: Already run predictor 'GLM' on group 'MSPa', skipping...
+2022-08-25 23:58:00: Already run predictor 'RF' on group 'MSPa', skipping...
+2022-08-25 23:58:00: Already run predictor 'RF2' on group 'MSPa', skipping...
+2022-08-25 23:58:00: Already run predictor 'RF3' on group 'MSPa', skipping...
+2022-08-25 23:58:00: Running predictor 'RFO' for group 'MSPa'.
+2022-08-25 23:58:00: CV num 1
+2022-08-25 23:58:09: RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.514]
+2022-08-25 23:58:21: RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.470]
+2022-08-25 23:58:30: RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.482]
+
+2022-08-25 23:58:30: CV num 2
+2022-08-25 23:58:41: RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.503]
+2022-08-25 23:58:51: RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  3 [perf: 0.514]
+2022-08-25 23:59:01: RFO for groups MSFC - Patient                      (  4 features) -> best mtry:  2 [perf: 0.491]
+
+2022-08-25 23:59:02: Ran predictor 'RFO' for group 'MSPa' in 1.02 minutes.
+2022-08-25 23:59:02: Running predictor 'RP' for group 'MSPa'.
+2022-08-25 23:59:02: CV num 1
+2022-08-25 23:59:17: RPart for groups MSFC - Patient                      (  4 features) -> best min split: 20 / best cp: 0.001  [perf: 0.543]
+2022-08-25 23:59:26: RPart for groups MSFC - Patient                      (  4 features) -> best min split: 100 / best cp: 0.005  [perf: 0.504]
+2022-08-25 23:59:37: RPart for groups MSFC - Patient                      (  4 features) -> best min split: 70 / best cp: 0.002  [perf: 0.531]
+
+2022-08-25 23:59:37: CV num 2
+2022-08-25 23:59:49: RPart for groups MSFC - Patient                      (  4 features) -> best min split: 50 / best cp: 0.002  [perf: 0.520]
+2022-08-26 00:00:07: RPart for groups MSFC - Patient                      (  4 features) -> best min split: 50 / best cp: 0.002  [perf: 0.533]
+2022-08-26 00:00:17: RPart for groups MSFC - Patient                      (  4 features) -> best min split: 70 / best cp: 0.002  [perf: 0.504]
+
+2022-08-26 00:00:17: Ran predictor 'RP' for group 'MSPa' in 1.26 minutes.
+2022-08-26 00:00:17: Running predictor 'SVM' for group 'MSPa'.
+2022-08-26 00:00:17: CV num 1
+2022-08-26 00:04:07: SVM for groups MSFC - Patient                      (  4 features) -> best gamma:   0.00195 / best cost:      1 [perf: 0.515]
+2022-08-26 00:06:27: SVM for groups MSFC - Patient                      (  4 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.535]
+2022-08-26 00:08:49: SVM for groups MSFC - Patient                      (  4 features) -> best gamma:  0.000977 / best cost:   3.16 [perf: 0.556]
+
+2022-08-26 00:08:49: CV num 2
+2022-08-26 00:11:21: SVM for groups MSFC - Patient                      (  4 features) -> best gamma:  0.000977 / best cost:  0.316 [perf: 0.558]
+2022-08-26 00:13:42: SVM for groups MSFC - Patient                      (  4 features) -> best gamma:  0.000977 / best cost:    0.1 [perf: 0.528]
+2022-08-26 00:16:19: SVM for groups MSFC - Patient                      (  4 features) -> best gamma:      0.25 / best cost:  0.316 [perf: 0.545]
+
+2022-08-26 00:16:19: Ran predictor 'SVM' for group 'MSPa' in 16.03 minutes.
+2022-08-26 00:16:19: Already run predictor 'NB' on group 'MSPa', skipping...
+2022-08-26 00:16:19: Running predictor 'KNN' for group 'MSPa'.
+2022-08-26 00:16:19: CV num 1
+2022-08-26 00:16:21: KNN for groups MSFC - Patient                      (  4 features) ->  best k: 6   / kernel: optimal    [perf: 0.507]
+2022-08-26 00:16:21: KNN for groups MSFC - Patient                      (  4 features) ->  best k: 6   / kernel: optimal    [perf: 0.492]
+2022-08-26 00:16:22: KNN for groups MSFC - Patient                      (  4 features) ->  best k: 200 / kernel: optimal    [perf: 0.504]
+
+2022-08-26 00:16:22: CV num 2
+2022-08-26 00:16:22: KNN for groups MSFC - Patient                      (  4 features) ->  best k: 200 / kernel: optimal    [perf: 0.487]
+2022-08-26 00:16:23: KNN for groups MSFC - Patient                      (  4 features) ->  best k: 10  / kernel: optimal    [perf: 0.509]
+2022-08-26 00:16:24: KNN for groups MSFC - Patient                      (  4 features) ->  best k: 200 / kernel: optimal    [perf: 0.500]
+
+2022-08-26 00:16:24: Ran predictor 'KNN' for group 'MSPa' in 0.08 minutes.
+2022-08-26 00:16:24: Already run predictor 'KNNC' on group 'MSPa', skipping...
+2022-08-26 00:16:24: ## Ran group 'MSPa' in 18.40 minutes.
+

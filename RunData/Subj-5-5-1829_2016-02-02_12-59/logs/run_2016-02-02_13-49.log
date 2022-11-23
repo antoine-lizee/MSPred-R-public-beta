@@ -1,0 +1,731 @@
+Starting up cluster...
+Stopping cluster...
+Starting up cluster...
+Treating group of Categories: ClCo
+Treating group of Categories: Cl
+Treating group of Categories: ClFS
+Treating group of Categories: ClLi
+Treating group of Categories: ClMR
+Treating group of Categories: ClMS
+Treating group of Categories: ClPa
+Treating group of Categories: ClQO
+Treating group of Categories: CoFS
+Treating group of Categories: Co
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSCs.T25FW, FSSCs.NHPT
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run for predictor 'GLM' and group 'ClFS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run for predictor 'GLM' and group 'Cl', skipping...
+Already run for predictor 'GLM' and group 'ClCo', skipping...
+Already run for predictor 'RF' and group 'ClFS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.Visual, MSFC.Brainstem, MSFC.Pyramidal, MSFC.Cerebellar, MSFC.Sensory, MSFC.Bowel, MSFC.Mental
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run for predictor 'GLM' and group 'ClLi', skipping...
+Already run for predictor 'RF' and group 'Cl', skipping...
+Already run for predictor 'RF' and group 'ClCo', skipping...
+Already run for predictor 'RF2' and group 'ClFS', skipping...
+Already run for predictor 'GLM' and group 'ClMS', skipping...
+Already run for predictor 'RF2' and group 'Cl', skipping...
+Already run for predictor 'RF' and group 'ClLi', skipping...
+Already run for predictor 'GLM' and group 'ClPa', skipping...
+Already run for predictor 'RF2' and group 'ClCo', skipping...
+Already run for predictor 'RF3' and group 'ClFS', skipping...
+Already run for predictor 'RF3' and group 'Cl', skipping...
+Already run for predictor 'RF' and group 'ClMS', skipping...
+Already run for predictor 'RF2' and group 'ClLi', skipping...
+Already run for predictor 'RF3' and group 'ClCo', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSCs.T25FW, FSSCs.NHPT
+Already run for predictor 'RF' and group 'ClPa', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Running for predictor 'RFO' for group 'ClFS'.
+Running for predictor 'RFO' for group 'Cl'.
+Already run for predictor 'RF2' and group 'ClMS', skipping...
+Already run for predictor 'RF2' and group 'ClPa', skipping...
+Running for predictor 'RFO' for group 'ClCo'.
+Already run for predictor 'GLM' and group 'CoFS', skipping...
+Already run for predictor 'GLM' and group 'ClQO', skipping...
+Already run for predictor 'RF3' and group 'ClMS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run for predictor 'RF3' and group 'ClLi', skipping...
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run for predictor 'RF3' and group 'ClPa', skipping...
+Already run for predictor 'RF' and group 'ClQO', skipping...
+Already run for predictor 'RF' and group 'CoFS', skipping...
+Running for predictor 'RFO' for group 'ClMS'.
+Running for predictor 'RFO' for group 'ClLi'.
+Already run for predictor 'GLM' and group 'ClMR', skipping...
+Running for predictor 'RFO' for group 'ClPa'.
+Already run for predictor 'RF2' and group 'CoFS', skipping...
+Already run for predictor 'RF2' and group 'ClQO', skipping...
+Already run for predictor 'GLM' and group 'Co', skipping...
+Already run for predictor 'RF' and group 'ClMR', skipping...
+Already run for predictor 'RF3' and group 'CoFS', skipping...
+Already run for predictor 'RF3' and group 'ClQO', skipping...
+Already run for predictor 'RF' and group 'Co', skipping...
+Already run for predictor 'RF2' and group 'ClMR', skipping...
+Running for predictor 'RFO' for group 'CoFS'.
+Running for predictor 'RFO' for group 'ClQO'.
+Already run for predictor 'RF2' and group 'Co', skipping...
+Already run for predictor 'RF3' and group 'ClMR', skipping...
+Already run for predictor 'RF3' and group 'Co', skipping...
+Running for predictor 'RFO' for group 'ClMR'.
+Running for predictor 'RFO' for group 'Co'.
+ERROR running train/test for predictor 'RFO' and group 'ClFS': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'Cl': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClCo': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClPa': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'ClFS'.
+ERROR running train/test for predictor 'RFO' and group 'ClQO': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'Co': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'ClMS': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'Cl'.
+ERROR running train/test for predictor 'RFO' and group 'ClLi': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'ClPa'.
+Running for predictor 'SVM' for group 'ClCo'.
+Running for predictor 'SVM' for group 'Co'.
+Running for predictor 'SVM' for group 'ClQO'.
+Running for predictor 'SVM' for group 'ClMS'.
+Running for predictor 'SVM' for group 'ClLi'.
+ERROR running train/test for predictor 'RFO' and group 'ClMR': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+ERROR running train/test for predictor 'RFO' and group 'CoFS': 
+ could not find function "randomForest"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune.randomForest(x = Xtrain, y = as.factor(Ytrain), mtry = mtrys, predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:62
+4: tune("randomForest", train.x = x, train.y = y, ranges = ranges, ...)
+5: do.call(method, c(list(train.x[train.ind[[sample]], ], y = train.y[train.ind[[sample]]]), 
+     pars, list(...)))
+Running for predictor 'SVM' for group 'CoFS'.
+Running for predictor 'SVM' for group 'ClMR'.
+ERROR running train/test for predictor 'SVM' and group 'Co': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'Co'.
+ERROR running train/test for predictor 'SVM' and group 'CoFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'CoFS'.
+ERROR running train/test for predictor 'SVM' and group 'Cl': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'Cl'.
+ERROR running train/test for predictor 'SVM' and group 'ClFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClFS'.
+ERROR running train/test for predictor 'SVM' and group 'ClMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClMR'.
+ERROR running train/test for predictor 'SVM' and group 'ClPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClPa'.
+ERROR running train/test for predictor 'SVM' and group 'ClLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClLi'.
+ERROR running train/test for predictor 'SVM' and group 'ClQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClQO'.
+ERROR running train/test for predictor 'SVM' and group 'ClMS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClMS'.
+ERROR running train/test for predictor 'SofSVM' and group 'Co': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'Co', skipping...
+Running for predictor 'KNN' for group 'Co'.
+ERROR running train/test for predictor 'SVM' and group 'ClCo': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(svm, train.x = data.matrix(Xtrain), train.y = as.factor(Ytrain), ranges = list(gamma = 2^seq(-10, 
+     0), cost = 10^(seq(-1, 1.5, 0.5)), probability = TRUE), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:97
+4: tunecontrol$error.fun(true.y, pred)
+Running for predictor 'SofSVM' for group 'ClCo'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'ClFS', skipping...
+Running for predictor 'KNN' for group 'ClFS'.
+ERROR running train/test for predictor 'SofSVM' and group 'CoFS': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'CoFS', skipping...
+Running for predictor 'KNN' for group 'CoFS'.
+Stopping cluster...
+Time elapsed for the run:
+7.507081 secsERROR running train/test for predictor 'SofSVM' and group 'ClMR': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'ClMR', skipping...
+Running for predictor 'KNN' for group 'ClMR'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClPa': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'ClPa', skipping...
+Running for predictor 'KNN' for group 'ClPa'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClLi': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'ClLi', skipping...
+Running for predictor 'KNN' for group 'ClLi'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClQO': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'ClQO', skipping...
+Running for predictor 'KNN' for group 'ClQO'.
+ERROR running train/test for predictor 'SofSVM' and group 'ClCo': 
+ could not find function "AUROC"
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: tune(train.x = Y ~ ., data = data.frame(Xtrain, Y = Ytrain + 0), method = function(learner_type, 
+     loop_type, ...) {
+     RSofia::sofia(learner_type = as.character(learner_type), loop_type = as.character(loop_type), 
+         ...)
+ }, ranges = list(learner_type = c("pegasos", "sgd-svm", "logreg-pegasos"), loop_type = c("roc", 
+     "combined-roc"), lambda = 10^seq(-3, 2, by = 0.25)), predict.func = predict.fun, 
+     tunecontrol = tune.control(cross = 5, error.fun = function(Yt, Yp) -AUROC(Yp, 
+         Yt))) at Code/06_predictAll.R:120
+4: tunecontrol$error.fun(true.y, pred)
+Already run for predictor 'NB' and group 'ClCo', skipping...
+Running for predictor 'KNN' for group 'ClCo'.
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core (5 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'Co' in 0.08 minutes.
+Running for predictor 'KNNC' for group 'Co'.
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Core - FSSCs (7 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'CoFS' in 0.08 minutes.
+Running for predictor 'KNNC' for group 'CoFS'.
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core (5 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'Co': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Core - FSSCs (7 features) ->  best k: 8 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'CoFS': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'ClPa' in 0.12 minutes.
+Running for predictor 'KNNC' for group 'ClPa'.
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'ClMR' in 0.12 minutes.
+Running for predictor 'KNNC' for group 'ClMR'.
+KNN for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Clinical - Patient (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'ClFS' in 0.13 minutes.
+Running for predictor 'KNNC' for group 'ClFS'.
+ERROR running train/test for predictor 'KNNC' and group 'ClPa': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Clinical - MRI (14 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'ClMR': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+KNN for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'ClLi' in 0.13 minutes.
+Running for predictor 'KNNC' for group 'ClLi'.
+KNNC for groups Clinical - FSSCs (13 features) ->  best k: 11 / kernel: optimal
+KNN for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'ClFS': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+Ran for predictor 'KNN' for group 'ClQO' in 0.13 minutes.
+Running for predictor 'KNNC' for group 'ClQO'.
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Clinical - Life (15 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'ClLi': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+KNN for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+KNNC for groups Clinical - QOL (16 features) ->  best k: 11 / kernel: optimal
+Ran for predictor 'KNN' for group 'ClCo' in 0.14 minutes.
+Running for predictor 'KNNC' for group 'ClCo'.
+ERROR running train/test for predictor 'KNNC' and group 'ClQO': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")
+KNNC for groups Clinical - Core (16 features) ->  best k: 11 / kernel: optimal
+ERROR running train/test for predictor 'KNNC' and group 'ClCo': 
+ incorrect number of dimensions
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:44
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:135
+3: kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob")[, 2] at Code/06_predictAll.R:187
+4: `[.factor`(kknn:::predict.train.kknn(kknn.modC, Xtest, type = "prob"), , 2) at Code/06_predictAll.R:187
+5: NextMethod("[")

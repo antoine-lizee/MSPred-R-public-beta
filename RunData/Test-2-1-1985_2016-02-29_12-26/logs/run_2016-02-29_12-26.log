@@ -1,0 +1,30 @@
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Running predictor 'GLM' for group 'Co'.
+Ran predictor 'GLM' for group 'Co' in 0.01 minutes.
+Running predictor 'RF' for group 'Co'.
+Ran predictor 'RF' for group 'Co' in 0.02 minutes.
+Running predictor 'RF2' for group 'Co'.
+Ran predictor 'RF2' for group 'Co' in 0.04 minutes.
+Running predictor 'RF3' for group 'Co'.
+Ran predictor 'RF3' for group 'Co' in 0.01 minutes.
+Running predictor 'RFO' for group 'Co'.
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.660]
+RFO for groups Core                                (  5 features) -> best mtry:  2 [perf: 0.659]
+Ran predictor 'RFO' for group 'Co' in 0.20 minutes.
+Running predictor 'RP' for group 'Co'.
+RPart for groups Core                                (  5 features) -> best min split: 80 / best cp: 0.002  [perf: 0.706]
+RPart for groups Core                                (  5 features) -> best min split: 20 / best cp: 0.005  [perf: 0.702]
+Ran predictor 'RP' for group 'Co' in 0.35 minutes.
+Running predictor 'SVM' for group 'Co'.
+SVM for groups Core                                (  5 features) -> best gamma:  0.000977 / best cost:  0.316 [perf: 0.719]
+SVM for groups Core                                (  5 features) -> best gamma:     0.125 / best cost:   3.16 [perf: 0.724]
+Ran predictor 'SVM' for group 'Co' in 2.02 minutes.
+Running predictor 'NB' for group 'Co'.
+NB for groups Core                                (  5 features) -> best l: 15 [perf: 0.701]
+NB for groups Core                                (  5 features) -> best l:  0 [perf: 0.513]
+Ran predictor 'NB' for group 'Co' in 0.18 minutes.
+Running predictor 'KNN' for group 'Co'.
+Time elapsed for the run:
+0.338685 secs

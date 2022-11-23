@@ -1,0 +1,205 @@
+2022-09-05 16:06:34: ###### Treating group of Categories: ClTr
+2022-09-05 16:06:34: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Treatments.nDMT, Treatments.hasIM, Treatments.hasIS, Treatments.hasMA, Treatments.DMTcategory
+2022-09-05 16:06:34: Running predictor 'GLM' for group 'ClTr'.
+2022-09-05 16:06:34: CV num 1:
+Loading required package: Matrix
+Loading required package: foreach
+Loaded glmnet 2.0-5
+
+2022-09-05 16:06:42: CV num 2:
+2022-09-05 16:06:47: Ran predictor 'GLM' for group 'ClTr' in 0.21 minutes.
+2022-09-05 16:06:47: Running predictor 'RF' for group 'ClTr'.
+2022-09-05 16:06:47: CV num 1:
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:01: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:19: Ran predictor 'RF' for group 'ClTr' in 0.53 minutes.
+2022-09-05 16:07:19: Running predictor 'RF2' for group 'ClTr'.
+2022-09-05 16:07:19: CV num 1:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:31: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 16:07:43: Ran predictor 'RF2' for group 'ClTr' in 0.41 minutes.
+2022-09-05 16:07:43: Running predictor 'RF3' for group 'ClTr'.
+2022-09-05 16:07:43: CV num 1:
+2022-09-05 16:07:48: CV num 2:
+2022-09-05 16:07:51: Ran predictor 'RF3' for group 'ClTr' in 0.13 minutes.
+2022-09-05 16:07:51: Running predictor 'RFO' for group 'ClTr'.
+2022-09-05 16:07:51: CV num 1:
+2022-09-05 16:08:20: RFO for groups Clinical - Treatments               ( 16 features) -> best mtry:  2 [perf: 0.480]
+2022-09-05 16:08:49: RFO for groups Clinical - Treatments               ( 16 features) -> best mtry:  2 [perf: 0.494]
+2022-09-05 16:09:18: RFO for groups Clinical - Treatments               ( 16 features) -> best mtry:  2 [perf: 0.445]
+2022-09-05 16:09:18: CV num 2:
+2022-09-05 16:09:42: RFO for groups Clinical - Treatments               ( 16 features) -> best mtry:  2 [perf: 0.466]
+2022-09-05 16:10:06: RFO for groups Clinical - Treatments               ( 16 features) -> best mtry:  5 [perf: 0.478]
+2022-09-05 16:10:32: RFO for groups Clinical - Treatments               ( 16 features) -> best mtry:  2 [perf: 0.481]
+2022-09-05 16:10:32: Ran predictor 'RFO' for group 'ClTr' in 2.68 minutes.
+2022-09-05 16:10:32: Running predictor 'RP' for group 'ClTr'.
+2022-09-05 16:10:32: CV num 1:
+2022-09-05 16:10:54: RPart for groups Clinical - Treatments               ( 16 features) -> best min split: 20 / best cp: 0.02   [perf: 0.500]
+2022-09-05 16:11:14: RPart for groups Clinical - Treatments               ( 16 features) -> best min split: 70 / best cp: 0.002  [perf: 0.508]
+2022-09-05 16:11:33: RPart for groups Clinical - Treatments               ( 16 features) -> best min split: 70 / best cp: 0.002  [perf: 0.511]
+2022-09-05 16:11:33: CV num 2:
+2022-09-05 16:11:51: RPart for groups Clinical - Treatments               ( 16 features) -> best min split: 100 / best cp: 0.001  [perf: 0.514]
+2022-09-05 16:12:10: RPart for groups Clinical - Treatments               ( 16 features) -> best min split: 20 / best cp: 0.01   [perf: 0.500]
+2022-09-05 16:12:31: RPart for groups Clinical - Treatments               ( 16 features) -> best min split: 90 / best cp: 0.002  [perf: 0.535]
+2022-09-05 16:12:31: Ran predictor 'RP' for group 'ClTr' in 1.99 minutes.
+2022-09-05 16:12:31: Running predictor 'SVM' for group 'ClTr'.
+2022-09-05 16:12:31: CV num 1:
+2022-09-05 16:16:49: SVM for groups Clinical - Treatments               ( 16 features) -> best gamma:     0.125 / best cost:  0.316 [perf: 0.535]
+2022-09-05 19:13:23: SVM for groups Clinical - Treatments               ( 16 features) -> best gamma:         1 / best cost:   3.16 [perf: 0.540]
+2022-09-05 19:57:09: SVM for groups Clinical - Treatments               ( 16 features) -> best gamma:         1 / best cost:    0.1 [perf: 0.584]
+2022-09-05 19:57:09: CV num 2:
+2022-09-05 20:01:08: SVM for groups Clinical - Treatments               ( 16 features) -> best gamma:    0.0156 / best cost:      1 [perf: 0.533]
+2022-09-05 20:05:19: SVM for groups Clinical - Treatments               ( 16 features) -> best gamma:   0.00391 / best cost:  0.316 [perf: 0.534]
+2022-09-05 21:23:07: SVM for groups Clinical - Treatments               ( 16 features) -> best gamma:       0.5 / best cost:      1 [perf: 0.582]
+2022-09-05 21:23:07: Ran predictor 'SVM' for group 'ClTr' in 310.60 minutes.
+2022-09-05 21:23:07: Already run predictor 'NB' on group 'ClTr', skipping...
+2022-09-05 21:23:07: Running predictor 'KNN' for group 'ClTr'.
+2022-09-05 21:23:07: CV num 1:
+2022-09-05 21:23:12: KNN for groups Clinical - Treatments               ( 16 features) ->  best k: 14  / kernel: optimal    [perf: 0.619]
+2022-09-05 21:23:13: KNN for groups Clinical - Treatments               ( 16 features) ->  best k: 18  / kernel: optimal    [perf: 0.630]
+2022-09-05 21:23:15: KNN for groups Clinical - Treatments               ( 16 features) ->  best k: 8   / kernel: optimal    [perf: 0.627]
+2022-09-05 21:23:15: CV num 2:
+2022-09-05 21:23:17: KNN for groups Clinical - Treatments               ( 16 features) ->  best k: 10  / kernel: optimal    [perf: 0.633]
+2022-09-05 21:23:18: KNN for groups Clinical - Treatments               ( 16 features) ->  best k: 19  / kernel: optimal    [perf: 0.627]
+2022-09-05 21:23:20: KNN for groups Clinical - Treatments               ( 16 features) ->  best k: 18  / kernel: optimal    [perf: 0.623]
+2022-09-05 21:23:20: Ran predictor 'KNN' for group 'ClTr' in 0.21 minutes.
+2022-09-05 21:23:20: Running predictor 'KNNC' for group 'ClTr'.
+2022-09-05 21:23:20: CV num 1:
+2022-09-05 21:23:23: KNNC for groups Clinical - Treatments               ( 16 features) ->  best k: 17 / kernel: optimal
+2022-09-05 21:23:26: KNNC for groups Clinical - Treatments               ( 16 features) ->  best k: 17 / kernel: optimal
+2022-09-05 21:23:29: KNNC for groups Clinical - Treatments               ( 16 features) ->  best k: 40 / kernel: optimal
+2022-09-05 21:23:29: CV num 2:
+2022-09-05 21:23:32: KNNC for groups Clinical - Treatments               ( 16 features) ->  best k: 30 / kernel: optimal
+2022-09-05 21:23:35: KNNC for groups Clinical - Treatments               ( 16 features) ->  best k: 14 / kernel: optimal
+2022-09-05 21:23:37: KNNC for groups Clinical - Treatments               ( 16 features) ->  best k: 30 / kernel: optimal
+2022-09-05 21:23:38: Ran predictor 'KNNC' for group 'ClTr' in 0.29 minutes.
+2022-09-05 21:23:38: ## Ran group 'ClTr' in 317.06 minutes.
+
+2022-09-05 21:23:38: ###### Treating group of Categories: .
+2022-09-05 21:23:38: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife, Treatments.nDMT, Treatments.hasIM, Treatments.hasIS, Treatments.hasMA, Treatments.DMTcategory
+2022-09-05 21:23:38: Running predictor 'GLM' for group '.'.
+2022-09-05 21:23:38: CV num 1:
+2022-09-05 21:23:52: CV num 2:
+2022-09-05 21:24:02: Ran predictor 'GLM' for group '.' in 0.41 minutes.
+2022-09-05 21:24:02: Running predictor 'RF' for group '.'.
+2022-09-05 21:24:02: CV num 1:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 21:24:43: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 21:25:15: Ran predictor 'RF' for group '.' in 1.22 minutes.
+2022-09-05 21:25:15: Running predictor 'RF2' for group '.'.
+2022-09-05 21:25:15: CV num 1:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 21:25:33: CV num 2:
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning in randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+2022-09-05 21:25:53: Ran predictor 'RF2' for group '.' in 0.62 minutes.
+2022-09-05 21:25:53: Running predictor 'RF3' for group '.'.
+2022-09-05 21:25:53: CV num 1:
+2022-09-05 21:26:01: CV num 2:
+2022-09-05 21:26:11: Ran predictor 'RF3' for group '.' in 0.30 minutes.
+2022-09-05 21:26:11: Running predictor 'RFO' for group '.'.
+2022-09-05 21:26:11: CV num 1:
+2022-09-05 21:27:35: RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best mtry:  9 [perf: 0.713]
+2022-09-05 21:28:30: RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best mtry:  9 [perf: 0.722]
+2022-09-05 21:29:19: RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best mtry:  7 [perf: 0.702]
+2022-09-05 21:29:19: CV num 2:
+2022-09-05 21:30:07: RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best mtry:  9 [perf: 0.717]
+2022-09-05 21:31:32: RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best mtry:  4 [perf: 0.733]
+2022-09-05 21:32:32: RFO for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best mtry:  7 [perf: 0.723]
+2022-09-05 21:32:32: Ran predictor 'RFO' for group '.' in 6.36 minutes.
+2022-09-05 21:32:32: Running predictor 'RP' for group '.'.
+2022-09-05 21:32:32: CV num 1:
+2022-09-05 21:33:21: RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best min split: 60 / best cp: 0.0003 [perf: 0.686]
+2022-09-05 21:34:01: RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best min split: 50 / best cp: 0.0003 [perf: 0.690]
+2022-09-05 21:34:37: RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best min split: 100 / best cp: 0.005  [perf: 0.668]
+2022-09-05 21:34:37: CV num 2:
+2022-09-05 21:35:11: RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best min split: 70 / best cp: 0.005  [perf: 0.676]
+2022-09-05 21:35:46: RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best min split: 80 / best cp: 0.005  [perf: 0.684]
+2022-09-05 21:36:18: RPart for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best min split: 80 / best cp: 0.0001 [perf: 0.699]
+2022-09-05 21:36:18: Ran predictor 'RP' for group '.' in 3.77 minutes.
+2022-09-05 21:36:18: Running predictor 'SVM' for group '.'.
+2022-09-05 21:36:18: CV num 1:
+2022-09-05 21:40:18: SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best gamma:  0.000977 / best cost:     10 [perf: 0.749]
+2022-09-05 21:45:12: SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.752]
+2022-09-05 21:49:21: SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.726]
+2022-09-05 21:49:22: CV num 2:
+2022-09-05 21:53:15: SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best gamma:   0.00195 / best cost:     10 [perf: 0.719]
+2022-09-05 21:56:34: SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best gamma:  0.000977 / best cost:   31.6 [perf: 0.756]
+2022-09-05 22:00:07: SVM for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) -> best gamma:   0.00195 / best cost:   31.6 [perf: 0.746]
+2022-09-05 22:00:07: Ran predictor 'SVM' for group '.' in 23.82 minutes.
+2022-09-05 22:00:07: Already run predictor 'NB' on group '.', skipping...
+2022-09-05 22:00:07: Running predictor 'KNN' for group '.'.
+2022-09-05 22:00:07: CV num 1:
+2022-09-05 22:00:08: KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal    [perf: 0.674]
+2022-09-05 22:00:09: KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal    [perf: 0.664]
+2022-09-05 22:00:10: KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal    [perf: 0.656]
+2022-09-05 22:00:11: CV num 2:
+2022-09-05 22:00:11: KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal    [perf: 0.649]
+2022-09-05 22:00:12: KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal    [perf: 0.666]
+2022-09-05 22:00:13: KNN for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal    [perf: 0.677]
+2022-09-05 22:00:13: Ran predictor 'KNN' for group '.' in 0.10 minutes.
+2022-09-05 22:00:13: Running predictor 'KNNC' for group '.'.
+2022-09-05 22:00:13: CV num 1:
+2022-09-05 22:00:15: KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 110 / kernel: optimal
+2022-09-05 22:00:16: KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 80 / kernel: optimal
+2022-09-05 22:00:17: KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 200 / kernel: optimal
+2022-09-05 22:00:18: CV num 2:
+2022-09-05 22:00:19: KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 140 / kernel: optimal
+2022-09-05 22:00:20: KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 130 / kernel: optimal
+2022-09-05 22:00:21: KNNC for groups Clinical - Core - FSSs - Life - MRI - MSFC - Patient - QOL - Treatments ( 43 features) ->  best k: 160 / kernel: optimal
+2022-09-05 22:00:22: Ran predictor 'KNNC' for group '.' in 0.14 minutes.
+2022-09-05 22:00:22: ## Ran group '.' in 36.73 minutes.
+

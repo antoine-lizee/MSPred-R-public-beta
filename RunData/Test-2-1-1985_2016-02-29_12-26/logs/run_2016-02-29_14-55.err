@@ -1,0 +1,8 @@
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in sprintf("KNNC for groups %-35s (%3d features) ->  best k: %d / kernel: %s\n",  : 
+  object 'kknn.modC' not found
+Error in sprintf("KNNC for groups %-35s (%3d features) ->  best k: %d / kernel: %s\n",  : 
+  object 'kknn.modC' not found
+Error in cl[C] : only 0's may be mixed with negative subscripts

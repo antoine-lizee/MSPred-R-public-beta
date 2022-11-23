@@ -1,0 +1,2412 @@
+2022-10-17 23:30:54: ###### Treating group of Categories: ClCo
+2022-10-17 23:30:54: Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+2022-10-17 23:30:54: Already run predictor 'GLM' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'RF' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'RF2' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'RF3' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'RFO' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'RP' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'SVM' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'NB' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'KNN' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Already run predictor 'KNNC' on group 'ClCo', skipping...
+2022-10-17 23:30:54: Running predictor 'XGB' for group 'ClCo'.
+2022-10-17 23:30:54: CV num 1:
+Loading required package: xgboost
+
+Attaching package: ‘xgboost’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
+Loading required package: plyr
+------------------------------------------------------------------------------
+You have loaded plyr after dplyr - this is likely to cause problems.
+If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+library(plyr); library(dplyr)
+------------------------------------------------------------------------------
+
+Attaching package: ‘plyr’
+
+The following objects are masked from ‘package:dplyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+Loading required package: lattice
+Loading required package: ggplot2
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:00] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:01] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:01] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:02] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:03] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:04] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:05] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:06] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:07] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:08] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:09] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:10] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo NONREC Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:11] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:12] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+
+Warning in nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Warning: Setting row names on a tibble is deprecated.
+Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:13] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo N Error:No such file or directory
+2022-10-17 23:31:13: ## Ran group 'ClCo' in 0.32 minutes.
+
+2022-10-17 23:31:13: ###### Treating group of Categories: Co
+2022-10-17 23:31:13: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+2022-10-17 23:31:13: Already run predictor 'GLM' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'RF' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'RF2' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'RF3' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'RFO' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'RP' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'SVM' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'NB' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'KNN' on group 'Co', skipping...
+2022-10-17 23:31:13: Already run predictor 'KNNC' on group 'Co', skipping...
+2022-10-17 23:31:13: Running predictor 'XGB' for group 'Co'.
+2022-10-17 23:31:13: CV num 1:
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:14] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:14] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:15] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:16] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 38 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:17] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-10-17_23-30_8047.log)
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:18] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:19] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:20] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:21] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:23] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:24] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning in nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Warning: Setting row names on a tibble is deprecated.
+Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:24] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+2022-10-17 23:31:24: ## Ran group 'Co' in 0.18 minutes.
+
+2022-10-17 23:31:24: ###### Treating group of Categories: CoFSPa
+2022-10-17 23:31:24: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Patient.AgeOfOnset, Patient.Gender
+2022-10-17 23:31:24: Already run predictor 'GLM' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'RF' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'RF2' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'RF3' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'RFO' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'RP' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'SVM' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'NB' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'KNN' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Already run predictor 'KNNC' on group 'CoFSPa', skipping...
+2022-10-17 23:31:24: Running predictor 'XGB' for group 'CoFSPa'.
+2022-10-17 23:31:24: CV num 1:
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:26] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:27] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:28] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:29] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:30] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:31] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:32] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:33] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 41 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:34] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:35] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning in nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Warning: closing unused connection 7 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-10-17_23-30_8047.log)
+Warning: Setting row names on a tibble is deprecated.
+Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:36] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+2022-10-17 23:31:36: ## Ran group 'CoFSPa' in 0.19 minutes.
+
+2022-10-17 23:31:36: ###### Treating group of Categories: CoMRPa
+2022-10-17 23:31:36: Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+2022-10-17 23:31:36: Already run predictor 'GLM' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'RF' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'RF2' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'RF3' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'RFO' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'RP' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'SVM' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'NB' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'KNN' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Already run predictor 'KNNC' on group 'CoMRPa', skipping...
+2022-10-17 23:31:36: Running predictor 'XGB' for group 'CoMRPa'.
+2022-10-17 23:31:36: CV num 1:
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:37] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 52 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:38] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep1: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:39] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:40] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:41] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep2: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:42] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:43] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 56 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.05, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:44] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.10, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=1, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=2, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.70, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning: Setting row names on a tibble is deprecated.
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold2.Rep3: eta=0.20, max_depth=3, gamma=0, colsample_bytree=0.8, min_child_weight=1, subsample=0.85, nrounds=250 Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:45] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+
+Warning in nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Warning: closing unused connection 5 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-10-17_23-30_8047.log)
+Warning: Setting row names on a tibble is deprecated.
+Error in xgb.DMatrix(x, label = y, missing = NA) : 
+  [23:31:46] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo 49 Error:No such file or directory
+2022-10-17 23:31:46: ## Ran group 'CoMRPa' in 0.16 minutes.
+
+2022-10-17 23:31:46: ###### Treating group of Categories: FS
+2022-10-17 23:31:46: Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+2022-10-17 23:31:46: Already run predictor 'GLM' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'RF' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'RF2' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'RF3' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'RFO' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'RP' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'SVM' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'NB' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'KNN' on group 'FS', skipping...
+2022-10-17 23:31:46: Already run predictor 'KNNC' on group 'FS', skipping...
+2022-10-17 23:31:46: Running predictor 'XGB' for group 'FS'.
+2022-10-17 23:31:46: CV num 1:
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: closing unused connection 7 (RunData/Subj-3-2-1914_2022-08-22_10-53/logs/run_2022-10-17_23-30_8047.log)
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+Warning: Setting row names on a tibble is deprecated.
+
+2022-10-18 12:27:02: XGB for groups FSSs                                (  7 features) -> best nrounds: 150  / eta 0.05 / max_depth 2 [perf: 0.665]
+2022-10-18 12:27:02: ERROR running train/test for predictor 'XGB' and group 'FS': 
+ length(res) == sum(foldIdx == i) is not TRUE
+TRACEBACK:
+1: run(X, Y, pred, FIs)
+2: stopifnot(length(res) == sum(foldIdx == i)) at Code/Helpers/CVer.R:151
+3: stop(sprintf(ngettext(length(r), "%s is not TRUE", "%s are not all TRUE"), ch), call. = FALSE, 
+     domain = NA)
+Error : length(res) == sum(foldIdx == i) is not TRUE
+2022-10-18 12:27:02: ## Ran group 'FS' in 775.27 minutes.
+

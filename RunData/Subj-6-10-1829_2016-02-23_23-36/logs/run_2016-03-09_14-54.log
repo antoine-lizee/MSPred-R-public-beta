@@ -1,0 +1,1908 @@
+Starting up cluster...
+Treating group of Categories: ClCo
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Treating group of Categories: ClFS
+Treating group of Categories: ClLi
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'GLM' on group 'ClFS', skipping...
+Already run predictor 'RF' on group 'ClFS', skipping...
+Already run predictor 'RF2' on group 'ClFS', skipping...
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'RF3' on group 'ClFS', skipping...
+Already run predictor 'GLM' on group 'ClLi', skipping...
+Already run predictor 'RFO' on group 'ClFS', skipping...
+Already run predictor 'RF' on group 'ClLi', skipping...
+Already run predictor 'RP' on group 'ClFS', skipping...
+Running predictor 'RPS' for group 'ClFS'.
+Already run predictor 'RF2' on group 'ClLi', skipping...
+Already run predictor 'RF3' on group 'ClLi', skipping...
+Already run predictor 'RFO' on group 'ClLi', skipping...
+Already run predictor 'RP' on group 'ClLi', skipping...
+Running predictor 'RPS' for group 'ClLi'.
+Treating group of Categories: ClMS
+Treating group of Categories: Co
+Treating group of Categories: ClMR
+Treating group of Categories: ClPa
+Already run predictor 'GLM' on group 'ClCo', skipping...
+Already run predictor 'RF' on group 'ClCo', skipping...
+Already run predictor 'RF2' on group 'ClCo', skipping...
+Already run predictor 'RF3' on group 'ClCo', skipping...
+Already run predictor 'RFO' on group 'ClCo', skipping...
+Already run predictor 'RP' on group 'ClCo', skipping...
+Running predictor 'RPS' for group 'ClCo'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'ClMS', skipping...
+Already run predictor 'RF' on group 'ClMS', skipping...
+Already run predictor 'RF2' on group 'ClMS', skipping...
+Already run predictor 'RF3' on group 'ClMS', skipping...
+Already run predictor 'RFO' on group 'ClMS', skipping...
+Already run predictor 'RP' on group 'ClMS', skipping...
+Running predictor 'RPS' for group 'ClMS'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'ClMR', skipping...
+Already run predictor 'GLM' on group 'ClPa', skipping...
+Already run predictor 'RF' on group 'ClMR', skipping...
+Already run predictor 'RF' on group 'ClPa', skipping...
+Already run predictor 'RF2' on group 'ClMR', skipping...
+Already run predictor 'RF2' on group 'ClPa', skipping...
+Already run predictor 'RF3' on group 'ClMR', skipping...
+Already run predictor 'RF3' on group 'ClPa', skipping...
+Already run predictor 'RFO' on group 'ClMR', skipping...
+Already run predictor 'RFO' on group 'ClPa', skipping...
+Already run predictor 'RP' on group 'ClMR', skipping...
+Already run predictor 'RP' on group 'ClPa', skipping...
+Running predictor 'RPS' for group 'ClMR'.
+Running predictor 'RPS' for group 'ClPa'.
+Treating group of Categories: Cl
+Treating group of Categories: CoFS
+Treating group of Categories: ClQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'GLM' on group 'CoFS', skipping...
+Already run predictor 'RF' on group 'CoFS', skipping...
+Already run predictor 'RF2' on group 'CoFS', skipping...
+Already run predictor 'RF3' on group 'CoFS', skipping...
+Already run predictor 'RFO' on group 'CoFS', skipping...
+Already run predictor 'RP' on group 'CoFS', skipping...
+Running predictor 'RPS' for group 'CoFS'.
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RP' on group 'Co', skipping...
+Running predictor 'RPS' for group 'Co'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'ClQO', skipping...
+Already run predictor 'RF' on group 'ClQO', skipping...
+Already run predictor 'RF2' on group 'ClQO', skipping...
+Already run predictor 'RF3' on group 'ClQO', skipping...
+Already run predictor 'RFO' on group 'ClQO', skipping...
+Already run predictor 'RP' on group 'ClQO', skipping...
+Running predictor 'RPS' for group 'ClQO'.
+Selected columns:
+Clinical.ATM, Clinical.OpticNeuritis, Clinical.INO, Clinical.MotorWeakness, Clinical.SensoryDisturbance, Clinical.Ataxia, Clinical.BladderDisturbance, Clinical.BowelDisturbance, Clinical.Myelopathy, Clinical.CogDisturbance, Clinical.VisualLoss
+Already run predictor 'GLM' on group 'Cl', skipping...
+Already run predictor 'RF' on group 'Cl', skipping...
+Already run predictor 'RF2' on group 'Cl', skipping...
+Already run predictor 'RF3' on group 'Cl', skipping...
+Already run predictor 'RFO' on group 'Cl', skipping...
+Already run predictor 'RP' on group 'Cl', skipping...
+Running predictor 'RPS' for group 'Cl'.
+Ran predictor 'RPS' for group 'Co' in 0.06 minutes.
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Already run predictor 'KNN' on group 'Co', skipping...
+Already run predictor 'KNNC' on group 'Co', skipping...
+Treating group of Categories: CoLi
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'GLM' on group 'CoLi', skipping...
+Already run predictor 'RF' on group 'CoLi', skipping...
+Already run predictor 'RF2' on group 'CoLi', skipping...
+Already run predictor 'RF3' on group 'CoLi', skipping...
+Already run predictor 'RFO' on group 'CoLi', skipping...
+Already run predictor 'RP' on group 'CoLi', skipping...
+Running predictor 'RPS' for group 'CoLi'.
+Ran predictor 'RPS' for group 'Cl' in 0.08 minutes.
+Already run predictor 'SVM' on group 'Cl', skipping...
+Already run predictor 'NB' on group 'Cl', skipping...
+Already run predictor 'KNN' on group 'Cl', skipping...
+Already run predictor 'KNNC' on group 'Cl', skipping...
+Treating group of Categories: CoMR
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'CoMR', skipping...
+Already run predictor 'RF' on group 'CoMR', skipping...
+Already run predictor 'RF2' on group 'CoMR', skipping...
+Already run predictor 'RF3' on group 'CoMR', skipping...
+Already run predictor 'RFO' on group 'CoMR', skipping...
+Already run predictor 'RP' on group 'CoMR', skipping...
+Running predictor 'RPS' for group 'CoMR'.
+Ran predictor 'RPS' for group 'ClMS' in 0.08 minutes.
+Already run predictor 'SVM' on group 'ClMS', skipping...
+Already run predictor 'NB' on group 'ClMS', skipping...
+Already run predictor 'KNN' on group 'ClMS', skipping...
+Already run predictor 'KNNC' on group 'ClMS', skipping...
+Treating group of Categories: CoMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'CoMS', skipping...
+Already run predictor 'RF' on group 'CoMS', skipping...
+Already run predictor 'RF2' on group 'CoMS', skipping...
+Already run predictor 'RF3' on group 'CoMS', skipping...
+Already run predictor 'RFO' on group 'CoMS', skipping...
+Already run predictor 'RP' on group 'CoMS', skipping...
+Running predictor 'RPS' for group 'CoMS'.
+Ran predictor 'RPS' for group 'ClPa' in 0.08 minutes.
+Already run predictor 'SVM' on group 'ClPa', skipping...
+Already run predictor 'NB' on group 'ClPa', skipping...
+Already run predictor 'KNN' on group 'ClPa', skipping...
+Already run predictor 'KNNC' on group 'ClPa', skipping...
+Treating group of Categories: CoPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'CoPa', skipping...
+Already run predictor 'RF' on group 'CoPa', skipping...
+Already run predictor 'RF2' on group 'CoPa', skipping...
+Already run predictor 'RF3' on group 'CoPa', skipping...
+Already run predictor 'RFO' on group 'CoPa', skipping...
+Already run predictor 'RP' on group 'CoPa', skipping...
+Running predictor 'RPS' for group 'CoPa'.
+Ran predictor 'RPS' for group 'ClMR' in 0.08 minutes.
+Already run predictor 'SVM' on group 'ClMR', skipping...
+Already run predictor 'NB' on group 'ClMR', skipping...
+Already run predictor 'KNN' on group 'ClMR', skipping...
+Already run predictor 'KNNC' on group 'ClMR', skipping...
+Treating group of Categories: CoQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'CoQO', skipping...
+Already run predictor 'RF' on group 'CoQO', skipping...
+Already run predictor 'RF2' on group 'CoQO', skipping...
+Already run predictor 'RF3' on group 'CoQO', skipping...
+Already run predictor 'RFO' on group 'CoQO', skipping...
+Already run predictor 'RP' on group 'CoQO', skipping...
+Running predictor 'RPS' for group 'CoQO'.
+Ran predictor 'RPS' for group 'ClQO' in 0.09 minutes.
+Already run predictor 'SVM' on group 'ClQO', skipping...
+Already run predictor 'NB' on group 'ClQO', skipping...
+Already run predictor 'KNN' on group 'ClQO', skipping...
+Already run predictor 'KNNC' on group 'ClQO', skipping...
+Treating group of Categories: FS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental
+Already run predictor 'GLM' on group 'FS', skipping...
+Already run predictor 'RF' on group 'FS', skipping...
+Already run predictor 'RF2' on group 'FS', skipping...
+Already run predictor 'RF3' on group 'FS', skipping...
+Already run predictor 'RFO' on group 'FS', skipping...
+Already run predictor 'RP' on group 'FS', skipping...
+Running predictor 'RPS' for group 'FS'.
+Ran predictor 'RPS' for group 'ClLi' in 0.11 minutes.
+Already run predictor 'SVM' on group 'ClLi', skipping...
+Already run predictor 'NB' on group 'ClLi', skipping...
+Already run predictor 'KNN' on group 'ClLi', skipping...
+Already run predictor 'KNNC' on group 'ClLi', skipping...
+Treating group of Categories: FSLi
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'GLM' on group 'FSLi', skipping...
+Already run predictor 'RF' on group 'FSLi', skipping...
+Already run predictor 'RF2' on group 'FSLi', skipping...
+Already run predictor 'RF3' on group 'FSLi', skipping...
+Already run predictor 'RFO' on group 'FSLi', skipping...
+Already run predictor 'RP' on group 'FSLi', skipping...
+Running predictor 'RPS' for group 'FSLi'.
+Ran predictor 'RPS' for group 'ClCo' in 0.11 minutes.
+Already run predictor 'SVM' on group 'ClCo', skipping...
+Already run predictor 'NB' on group 'ClCo', skipping...
+Already run predictor 'KNN' on group 'ClCo', skipping...
+Already run predictor 'KNNC' on group 'ClCo', skipping...
+Treating group of Categories: FSMR
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'FSMR', skipping...
+Already run predictor 'RF' on group 'FSMR', skipping...
+Already run predictor 'RF2' on group 'FSMR', skipping...
+Already run predictor 'RF3' on group 'FSMR', skipping...
+Already run predictor 'RFO' on group 'FSMR', skipping...
+Already run predictor 'RP' on group 'FSMR', skipping...
+Running predictor 'RPS' for group 'FSMR'.
+Ran predictor 'RPS' for group 'ClFS' in 0.12 minutes.
+Already run predictor 'SVM' on group 'ClFS', skipping...
+Already run predictor 'NB' on group 'ClFS', skipping...
+Already run predictor 'KNN' on group 'ClFS', skipping...
+Already run predictor 'KNNC' on group 'ClFS', skipping...
+Treating group of Categories: FSMS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'FSMS', skipping...
+Already run predictor 'RF' on group 'FSMS', skipping...
+Already run predictor 'RF2' on group 'FSMS', skipping...
+Already run predictor 'RF3' on group 'FSMS', skipping...
+Already run predictor 'RFO' on group 'FSMS', skipping...
+Already run predictor 'RP' on group 'FSMS', skipping...
+Running predictor 'RPS' for group 'FSMS'.
+Ran predictor 'RPS' for group 'CoFS' in 0.12 minutes.
+Already run predictor 'SVM' on group 'CoFS', skipping...
+Already run predictor 'NB' on group 'CoFS', skipping...
+Already run predictor 'KNN' on group 'CoFS', skipping...
+Already run predictor 'KNNC' on group 'CoFS', skipping...
+Treating group of Categories: FSPa
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'FSPa', skipping...
+Already run predictor 'RF' on group 'FSPa', skipping...
+Already run predictor 'RF2' on group 'FSPa', skipping...
+Already run predictor 'RF3' on group 'FSPa', skipping...
+Already run predictor 'RFO' on group 'FSPa', skipping...
+Already run predictor 'RP' on group 'FSPa', skipping...
+Running predictor 'RPS' for group 'FSPa'.
+Ran predictor 'RPS' for group 'FS' in 0.04 minutes.
+Already run predictor 'SVM' on group 'FS', skipping...
+Already run predictor 'NB' on group 'FS', skipping...
+Already run predictor 'KNN' on group 'FS', skipping...
+Already run predictor 'KNNC' on group 'FS', skipping...
+Treating group of Categories: FSQO
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'FSQO', skipping...
+Already run predictor 'RF' on group 'FSQO', skipping...
+Already run predictor 'RF2' on group 'FSQO', skipping...
+Already run predictor 'RF3' on group 'FSQO', skipping...
+Already run predictor 'RFO' on group 'FSQO', skipping...
+Already run predictor 'RP' on group 'FSQO', skipping...
+Running predictor 'RPS' for group 'FSQO'.
+Ran predictor 'RPS' for group 'CoLi' in 0.09 minutes.
+Already run predictor 'SVM' on group 'CoLi', skipping...
+Already run predictor 'NB' on group 'CoLi', skipping...
+Already run predictor 'KNN' on group 'CoLi', skipping...
+Already run predictor 'KNNC' on group 'CoLi', skipping...
+Treating group of Categories: Li
+Ran predictor 'RPS' for group 'CoMR' in 0.07 minutes.
+Already run predictor 'SVM' on group 'CoMR', skipping...
+Already run predictor 'NB' on group 'CoMR', skipping...
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking
+Already run predictor 'KNN' on group 'CoMR', skipping...
+Already run predictor 'GLM' on group 'Li', skipping...
+Already run predictor 'KNNC' on group 'CoMR', skipping...
+Already run predictor 'RF' on group 'Li', skipping...
+Already run predictor 'RF2' on group 'Li', skipping...
+Already run predictor 'RF3' on group 'Li', skipping...
+Already run predictor 'RFO' on group 'Li', skipping...
+Already run predictor 'RP' on group 'Li', skipping...
+Treating group of Categories: LiMR
+Running predictor 'RPS' for group 'Li'.
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'LiMR', skipping...
+Already run predictor 'RF' on group 'LiMR', skipping...
+Already run predictor 'RF2' on group 'LiMR', skipping...
+Already run predictor 'RF3' on group 'LiMR', skipping...
+Already run predictor 'RFO' on group 'LiMR', skipping...
+Already run predictor 'RP' on group 'LiMR', skipping...
+Running predictor 'RPS' for group 'LiMR'.
+Ran predictor 'RPS' for group 'CoMS' in 0.07 minutes.
+Already run predictor 'SVM' on group 'CoMS', skipping...
+Already run predictor 'NB' on group 'CoMS', skipping...
+Already run predictor 'KNN' on group 'CoMS', skipping...
+Already run predictor 'KNNC' on group 'CoMS', skipping...
+Treating group of Categories: LiMS
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'LiMS', skipping...
+Already run predictor 'RF' on group 'LiMS', skipping...
+Already run predictor 'RF2' on group 'LiMS', skipping...
+Already run predictor 'RF3' on group 'LiMS', skipping...
+Already run predictor 'RFO' on group 'LiMS', skipping...
+Already run predictor 'RP' on group 'LiMS', skipping...
+Running predictor 'RPS' for group 'LiMS'.
+Ran predictor 'RPS' for group 'CoPa' in 0.08 minutes.
+Already run predictor 'SVM' on group 'CoPa', skipping...
+Already run predictor 'NB' on group 'CoPa', skipping...
+Already run predictor 'KNN' on group 'CoPa', skipping...
+Already run predictor 'KNNC' on group 'CoPa', skipping...
+Treating group of Categories: LiPa
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'LiPa', skipping...
+Already run predictor 'RF' on group 'LiPa', skipping...
+Already run predictor 'RF2' on group 'LiPa', skipping...
+Already run predictor 'RF3' on group 'LiPa', skipping...
+Already run predictor 'RFO' on group 'LiPa', skipping...
+Already run predictor 'RP' on group 'LiPa', skipping...
+Running predictor 'RPS' for group 'LiPa'.
+Ran predictor 'RPS' for group 'Li' in 0.01 minutes.
+Already run predictor 'SVM' on group 'Li', skipping...
+Already run predictor 'NB' on group 'Li', skipping...
+Already run predictor 'KNN' on group 'Li', skipping...
+Already run predictor 'KNNC' on group 'Li', skipping...
+Treating group of Categories: LiQO
+Selected columns:
+Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'LiQO', skipping...
+Already run predictor 'RF' on group 'LiQO', skipping...
+Already run predictor 'RF2' on group 'LiQO', skipping...
+Already run predictor 'RF3' on group 'LiQO', skipping...
+Already run predictor 'RFO' on group 'LiQO', skipping...
+Already run predictor 'RP' on group 'LiQO', skipping...
+Running predictor 'RPS' for group 'LiQO'.
+Ran predictor 'RPS' for group 'LiQO' in 0.02 minutes.
+Already run predictor 'SVM' on group 'LiQO', skipping...
+Already run predictor 'NB' on group 'LiQO', skipping...
+Already run predictor 'KNN' on group 'LiQO', skipping...
+Already run predictor 'KNNC' on group 'LiQO', skipping...
+Treating group of Categories: MR
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'MR', skipping...
+Already run predictor 'RF' on group 'MR', skipping...
+Already run predictor 'RF2' on group 'MR', skipping...
+Already run predictor 'RF3' on group 'MR', skipping...
+Already run predictor 'RFO' on group 'MR', skipping...
+Already run predictor 'RP' on group 'MR', skipping...
+Running predictor 'RPS' for group 'MR'.
+Ran predictor 'RPS' for group 'LiMS' in 0.04 minutes.
+Already run predictor 'SVM' on group 'LiMS', skipping...
+Already run predictor 'NB' on group 'LiMS', skipping...
+Already run predictor 'KNN' on group 'LiMS', skipping...
+Already run predictor 'KNNC' on group 'LiMS', skipping...
+Treating group of Categories: MRMS
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'MRMS', skipping...
+Already run predictor 'RF' on group 'MRMS', skipping...
+Already run predictor 'RF2' on group 'MRMS', skipping...
+Already run predictor 'RF3' on group 'MRMS', skipping...
+Already run predictor 'RFO' on group 'MRMS', skipping...
+Already run predictor 'RP' on group 'MRMS', skipping...
+Running predictor 'RPS' for group 'MRMS'.
+Ran predictor 'RPS' for group 'LiPa' in 0.03 minutes.
+Already run predictor 'SVM' on group 'LiPa', skipping...
+Already run predictor 'NB' on group 'LiPa', skipping...
+Already run predictor 'KNN' on group 'LiPa', skipping...
+Already run predictor 'KNNC' on group 'LiPa', skipping...
+Treating group of Categories: MRPa
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'MRPa', skipping...
+Already run predictor 'RF' on group 'MRPa', skipping...
+Already run predictor 'RF2' on group 'MRPa', skipping...
+Already run predictor 'RF3' on group 'MRPa', skipping...
+Already run predictor 'RFO' on group 'MRPa', skipping...
+Already run predictor 'RP' on group 'MRPa', skipping...
+Running predictor 'RPS' for group 'MRPa'.
+Ran predictor 'RPS' for group 'CoQO' in 0.11 minutes.
+Already run predictor 'SVM' on group 'CoQO', skipping...
+Already run predictor 'NB' on group 'CoQO', skipping...
+Already run predictor 'KNN' on group 'CoQO', skipping...
+Already run predictor 'KNNC' on group 'CoQO', skipping...
+Treating group of Categories: MRQO
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'MRQO', skipping...
+Already run predictor 'RF' on group 'MRQO', skipping...
+Already run predictor 'RF2' on group 'MRQO', skipping...
+Already run predictor 'RF3' on group 'MRQO', skipping...
+Already run predictor 'RFO' on group 'MRQO', skipping...
+Already run predictor 'RP' on group 'MRQO', skipping...
+Running predictor 'RPS' for group 'MRQO'.
+Ran predictor 'RPS' for group 'FSMS' in 0.08 minutes.
+Already run predictor 'SVM' on group 'FSMS', skipping...
+Already run predictor 'NB' on group 'FSMS', skipping...
+Already run predictor 'KNN' on group 'FSMS', skipping...
+Already run predictor 'KNNC' on group 'FSMS', skipping...
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+Ran predictor 'RPS' for group 'FSPa' in 0.08 minutes.
+Already run predictor 'SVM' on group 'FSPa', skipping...
+Already run predictor 'NB' on group 'FSPa', skipping...
+Already run predictor 'KNN' on group 'FSPa', skipping...
+Already run predictor 'KNNC' on group 'FSPa', skipping...
+Treating group of Categories: MSPa
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'MSPa', skipping...
+Already run predictor 'RF' on group 'MSPa', skipping...
+Already run predictor 'RF2' on group 'MSPa', skipping...
+Already run predictor 'RF3' on group 'MSPa', skipping...
+Already run predictor 'RFO' on group 'MSPa', skipping...
+Already run predictor 'RP' on group 'MSPa', skipping...
+Running predictor 'RPS' for group 'MSPa'.
+Ran predictor 'RPS' for group 'FSMR' in 0.09 minutes.
+Already run predictor 'SVM' on group 'FSMR', skipping...
+Already run predictor 'NB' on group 'FSMR', skipping...
+Already run predictor 'KNN' on group 'FSMR', skipping...
+Already run predictor 'KNNC' on group 'FSMR', skipping...
+Treating group of Categories: MSQO
+Selected columns:
+MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'MSQO', skipping...
+Already run predictor 'RF' on group 'MSQO', skipping...
+Already run predictor 'RF2' on group 'MSQO', skipping...
+Already run predictor 'RF3' on group 'MSQO', skipping...
+Already run predictor 'RFO' on group 'MSQO', skipping...
+Already run predictor 'RP' on group 'MSQO', skipping...
+Running predictor 'RPS' for group 'MSQO'.
+Ran predictor 'RPS' for group 'FSLi' in 0.10 minutes.
+Already run predictor 'SVM' on group 'FSLi', skipping...
+Already run predictor 'NB' on group 'FSLi', skipping...
+Already run predictor 'KNN' on group 'FSLi', skipping...
+Already run predictor 'KNNC' on group 'FSLi', skipping...
+Treating group of Categories: Pa
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'Pa', skipping...
+Already run predictor 'RF' on group 'Pa', skipping...
+Already run predictor 'RF2' on group 'Pa', skipping...
+Already run predictor 'RF3' on group 'Pa', skipping...
+Already run predictor 'RFO' on group 'Pa', skipping...
+Already run predictor 'RP' on group 'Pa', skipping...
+Running predictor 'RPS' for group 'Pa'.
+Ran predictor 'RPS' for group 'MR' in 0.03 minutes.
+Already run predictor 'SVM' on group 'MR', skipping...
+Already run predictor 'NB' on group 'MR', skipping...
+Already run predictor 'KNN' on group 'MR', skipping...
+Already run predictor 'KNNC' on group 'MR', skipping...
+Treating group of Categories: PaQO
+Selected columns:
+Patient.AgeOfOnset, Patient.Gender, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'PaQO', skipping...
+Already run predictor 'RF' on group 'PaQO', skipping...
+Already run predictor 'RF2' on group 'PaQO', skipping...
+Already run predictor 'RF3' on group 'PaQO', skipping...
+Already run predictor 'RFO' on group 'PaQO', skipping...
+Already run predictor 'RP' on group 'PaQO', skipping...
+Running predictor 'RPS' for group 'PaQO'.
+Ran predictor 'RPS' for group 'MSPa' in 0.03 minutes.
+Already run predictor 'SVM' on group 'MSPa', skipping...
+Already run predictor 'NB' on group 'MSPa', skipping...
+Already run predictor 'KNN' on group 'MSPa', skipping...
+Already run predictor 'KNNC' on group 'MSPa', skipping...
+Treating group of Categories: QO
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'QO', skipping...
+Already run predictor 'RF' on group 'QO', skipping...
+Already run predictor 'RF2' on group 'QO', skipping...
+Already run predictor 'RF3' on group 'QO', skipping...
+Already run predictor 'RFO' on group 'QO', skipping...
+Already run predictor 'RP' on group 'QO', skipping...
+Running predictor 'RPS' for group 'QO'.
+Ran predictor 'RPS' for group 'Pa' in 0.02 minutes.
+Already run predictor 'SVM' on group 'Pa', skipping...
+Already run predictor 'NB' on group 'Pa', skipping...
+Already run predictor 'KNN' on group 'Pa', skipping...
+Already run predictor 'KNNC' on group 'Pa', skipping...
+Treating group of Categories: CoMSQO
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'CoMSQO', skipping...
+Already run predictor 'RF' on group 'CoMSQO', skipping...
+Already run predictor 'RF2' on group 'CoMSQO', skipping...
+Already run predictor 'RF3' on group 'CoMSQO', skipping...
+Already run predictor 'RFO' on group 'CoMSQO', skipping...
+Already run predictor 'RP' on group 'CoMSQO', skipping...
+Running predictor 'RPS' for group 'CoMSQO'.
+Ran predictor 'RPS' for group 'MSQO' in 0.03 minutes.
+Already run predictor 'SVM' on group 'MSQO', skipping...
+Already run predictor 'NB' on group 'MSQO', skipping...
+Already run predictor 'KNN' on group 'MSQO', skipping...
+Running predictor 'KNNC' for group 'MSQO'.
+Ran predictor 'RPS' for group 'MRMS' in 0.05 minutes.
+Already run predictor 'SVM' on group 'MRMS', skipping...
+Already run predictor 'NB' on group 'MRMS', skipping...
+Already run predictor 'KNN' on group 'MRMS', skipping...
+Already run predictor 'KNNC' on group 'MRMS', skipping...
+Treating group of Categories: CoMRMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'CoMRMS', skipping...
+Already run predictor 'RF' on group 'CoMRMS', skipping...
+Already run predictor 'RF2' on group 'CoMRMS', skipping...
+Already run predictor 'RF3' on group 'CoMRMS', skipping...
+Already run predictor 'RFO' on group 'CoMRMS', skipping...
+Already run predictor 'RP' on group 'CoMRMS', skipping...
+Running predictor 'RPS' for group 'CoMRMS'.
+Ran predictor 'RPS' for group 'LiMR' in 0.09 minutes.
+Already run predictor 'SVM' on group 'LiMR', skipping...
+Already run predictor 'NB' on group 'LiMR', skipping...
+Already run predictor 'KNN' on group 'LiMR', skipping...
+Already run predictor 'KNNC' on group 'LiMR', skipping...
+Treating group of Categories: CoMSPa
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, MSFC.T25FW, MSFC.NHPT, Patient.AgeOfOnset, Patient.Gender
+Already run predictor 'GLM' on group 'CoMSPa', skipping...
+Already run predictor 'RF' on group 'CoMSPa', skipping...
+Already run predictor 'RF2' on group 'CoMSPa', skipping...
+Already run predictor 'RF3' on group 'CoMSPa', skipping...
+Already run predictor 'RFO' on group 'CoMSPa', skipping...
+Already run predictor 'RP' on group 'CoMSPa', skipping...
+Running predictor 'RPS' for group 'CoMSPa'.
+Ran predictor 'RPS' for group 'FSQO' in 0.11 minutes.
+Already run predictor 'SVM' on group 'FSQO', skipping...
+Already run predictor 'NB' on group 'FSQO', skipping...
+Already run predictor 'KNN' on group 'FSQO', skipping...
+Already run predictor 'KNNC' on group 'FSQO', skipping...
+Treating group of Categories: CoLiMS
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS, Life.CaffeineFreq, Life.Overweight, Life.MemoryConcerns, Life.Smoking, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'CoLiMS', skipping...
+Already run predictor 'RF' on group 'CoLiMS', skipping...
+Already run predictor 'RF2' on group 'CoLiMS', skipping...
+Already run predictor 'RF3' on group 'CoLiMS', skipping...
+Already run predictor 'RFO' on group 'CoLiMS', skipping...
+Already run predictor 'RP' on group 'CoLiMS', skipping...
+Running predictor 'RPS' for group 'CoLiMS'.
+Ran predictor 'RPS' for group 'PaQO' in 0.03 minutes.
+Running predictor 'SVM' for group 'PaQO'.
+Ran predictor 'RPS' for group 'MRPa' in 0.06 minutes.
+Already run predictor 'SVM' on group 'MRPa', skipping...
+Already run predictor 'NB' on group 'MRPa', skipping...
+Already run predictor 'KNN' on group 'MRPa', skipping...
+Already run predictor 'KNNC' on group 'MRPa', skipping...
+Treating group of Categories: QO
+Selected columns:
+QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'QO', skipping...
+Already run predictor 'RF' on group 'QO', skipping...
+Already run predictor 'RF2' on group 'QO', skipping...
+Already run predictor 'RF3' on group 'QO', skipping...
+Already run predictor 'RFO' on group 'QO', skipping...
+Already run predictor 'RP' on group 'QO', skipping...
+Running predictor 'RPS' for group 'QO'.
+Ran predictor 'RPS' for group 'QO' in 0.03 minutes.
+Running predictor 'SVM' for group 'QO'.
+Ran predictor 'RPS' for group 'QO' in 0.02 minutes.
+Running predictor 'SVM' for group 'QO'.
+Ran predictor 'RPS' for group 'MRQO' in 0.09 minutes.
+Already run predictor 'SVM' on group 'MRQO', skipping...
+Already run predictor 'NB' on group 'MRQO', skipping...
+Already run predictor 'KNN' on group 'MRQO', skipping...
+Already run predictor 'KNNC' on group 'MRQO', skipping...
+Treating group of Categories: MR
+Selected columns:
+MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC
+Already run predictor 'GLM' on group 'MR', skipping...
+Already run predictor 'RF' on group 'MR', skipping...
+Already run predictor 'RF2' on group 'MR', skipping...
+Already run predictor 'RF3' on group 'MR', skipping...
+Already run predictor 'RFO' on group 'MR', skipping...
+Already run predictor 'RP' on group 'MR', skipping...
+Already run predictor 'RPS' on group 'MR', skipping...
+Already run predictor 'SVM' on group 'MR', skipping...
+Already run predictor 'NB' on group 'MR', skipping...
+Already run predictor 'KNN' on group 'MR', skipping...
+Already run predictor 'KNNC' on group 'MR', skipping...
+Treating group of Categories: MS
+Selected columns:
+MSFC.T25FW, MSFC.NHPT
+Running predictor 'GLM' for group 'MS'.
+Ran predictor 'RPS' for group 'CoMRMS' in 0.08 minutes.
+Running predictor 'SVM' for group 'CoMRMS'.
+Ran predictor 'RPS' for group 'CoMSPa' in 0.08 minutes.
+Running predictor 'SVM' for group 'CoMSPa'.
+ERROR running train/test for predictor 'GLM' and group 'MS': 
+ replacement has length zero
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: cv.glmnet(data.matrix(Xtrain), Ytrain, alpha = 0.999, type.measure = "auc", family = "binomial") at Code/05_predictors.R:54
+4: do.call(fun, list(outlist, lambda, x, y, weights, offset, foldid, type.measure, grouped, 
+     keep))
+5: cv.lognet(list(structure(list(a0 = structure(c(-0.818453088879316, -0.823228449957638, 
+ -0.827568432389131, -0.831513783874677, -0.835101237647749), .Names = c("s0", "s1", 
+ "s2", "s3", "s4")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L), dim = c(2L, 5L), lambda = c(0.00331698479176508, 
+     0.00302231300485783, 0.00275381904734995, 0.00250917735302671, 0.00228626895256639
+     ), dev.ratio = c(8.83220679222869e-15, 7.11490954834652e-06, 1.30058217095088e-05, 
+     1.78846765059741e-05, 2.19263544468183e-05), nulldev = 1658.10541099549, npasses = 17L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.797550300261444, 
+ -0.802902251759949, -0.807297193294386, -0.81021204884452, -0.812845136772524, -0.815227615060269, 
+ -0.817371206744443, -0.81930775877354), .Names = c("s0", "s1", "s2", "s3", "s4", 
+ "s5", "s6", "s7")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 2L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 8L), lambda = c(0.0035550577330402, 
+     0.00323923620218659, 0.00295147138569341, 0.00268927080238441, 0.00245036339624149, 
+     0.0022326798656039, 0.00203433473986721, 0.0018536100484389), dev.ratio = c(2.15041476255688e-15, 
+     8.06020725885436e-06, 1.87545354268832e-05, 3.635726830907e-05, 5.09477042052579e-05, 
+     6.30353173105008e-05, 7.31327283578056e-05, 8.15295482364657e-05), nulldev = 1667.80126382909, 
+     npasses = 31L, jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.818453088879316, 
+ -0.815289212260878, -0.812387758686567, -0.809728024729559, -0.807290830756668), .Names = c("s0", 
+ "s1", "s2", "s3", "s4")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L), dim = c(2L, 5L), lambda = c(0.00360390939663725, 
+     0.00328374801863051, 0.00299202889504415, 0.00272622529438561, 0.00248403495302415
+     ), dev.ratio = c(8.47170855581119e-15, 8.43950334960781e-06, 1.5493396759216e-05, 
+     2.13866986718395e-05, 2.63083353456048e-05), nulldev = 1658.10541099549, npasses = 17L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.828968126195621, 
+ -0.825576069882106, -0.8262303348464, -0.828880727819801, -0.831259457692504, -0.833396338546446, 
+ -0.835316051132934, -0.837043206885932), .Names = c("s0", "s1", "s2", "s3", "s4", 
+ "s5", "s6", "s7")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 2L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 8L), lambda = c(0.00370389269543335, 
+     0.00337484907672707, 0.00307503678622445, 0.00280185899329279, 0.00255294956257563, 
+     0.00232615255966024, 0.00211950357740513, 0.00193121272118509), dev.ratio = c(6.32757947595413e-15, 
+     8.98169060945338e-06, 2.60457019978619e-05, 4.53448141667946e-05, 6.13931904432714e-05, 
+     7.47416566927344e-05, 8.58540396652105e-05, 9.5100076762444e-05), nulldev = 1653.16316891316, 
+     npasses = 31L, jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.801022517015037, 
+ -0.805352779823071, -0.809289198047532, -0.812868449994951, -0.816123635514547), .Names = c("s0", 
+ "s1", "s2", "s3", "s4")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L), dim = c(2L, 5L), lambda = c(0.00298715617320067, 
+     0.00272178545172092, 0.00247998953374508, 0.00225967409870473, 0.00205893087969859
+     ), dev.ratio = c(-8.60991157067254e-15, 5.70473196998613e-06, 1.04293016886869e-05, 
+     1.43431022616443e-05, 1.75859934683785e-05), nulldev = 1666.20269177467, npasses = 17L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.804499325886038, 
+ -0.807638610891786, -0.810481258365726, -0.813035748827279, -0.815334518769959, -0.817403483446283, 
+ -0.819268073132955), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 2L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 7L), lambda = c(0.00346968797229132, 
+     0.00316145045569373, 0.00288059591053246, 0.00262469170909577, 0.00239152133161317, 
+     0.00217906516782164, 0.00198548302406763), dev.ratio = c(-1.83137088275565e-14, 
+     2.38224584548029e-05, 4.36841421099586e-05, 6.020253869153e-05, 7.39361275532881e-05, 
+     8.53640855857145e-05, 9.48690421916225e-05), nulldev = 1664.59717069963, npasses = 28L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.81602884526781, 
+ -0.82466205279186, -0.832492373934759, -0.839598291227018, -0.846049842416045, -0.851909683473183, 
+ -0.857233988771756), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L, 1L, 1L), dim = c(2L, 7L), lambda = c(0.00600006693690188, 
+     0.00546703752710494, 0.00498136098098374, 0.0045388306006393, 0.00413561339961983, 
+     0.00376821690342575, 0.00343345889936638), dev.ratio = c(-6.84478798617266e-15, 
+     2.32162882140992e-05, 4.23976981843204e-05, 5.82544157402228e-05, 7.13691657290477e-05, 
+     8.22207668230422e-05, 9.1203146871676e-05), nulldev = 1660.47146685223, npasses = 25L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.788241400963798, 
+ -0.781406733238889, -0.775166989291575, -0.769471235007673, -0.764952692590841, -0.762160673970849, 
+ -0.759593205786551, -0.757233494944953, -0.75506688739332), .Names = c("s0", "s1", 
+ "s2", "s3", "s4", "s5", "s6", "s7", "s8")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 9L), lambda = c(0.00412610978545029, 
+     0.00375955756414597, 0.00342556883192208, 0.00312125073815744, 0.00284396742510704, 
+     0.0025913171973632, 0.00236111171951892, 0.00215135706185344, 0.0019602364298669
+     ), dev.ratio = c(2.32367830537246e-14, 1.08193525642963e-05, 1.98208445038188e-05, 
+     2.73086954944723e-05, 3.73349592207315e-05, 5.28193188186289e-05, 6.56472670014945e-05, 
+     7.62725708258425e-05, 8.5076614097074e-05), nulldev = 1673.30523672423, npasses = 33L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.809054294454892, 
+ -0.818014454599145, -0.826139798767405, -0.833512284324352, -0.840204970154494, -0.84628315361469, 
+ -0.851805330153267), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L, 1L, 1L), dim = c(2L, 7L), lambda = c(0.00620056430995007, 
+     0.00564972326612545, 0.00514781742245267, 0.00469049951062131, 0.00427380846165606, 
+     0.00389413509703224, 0.00354819086769795), dev.ratio = c(-1.97751526337728e-15, 
+     2.46763707643326e-05, 4.50602048881132e-05, 6.19082204869555e-05, 7.58409674946956e-05, 
+     8.73680974930148e-05, 9.6908732657256e-05), nulldev = 1663.7216268841, npasses = 25L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.774456054632177, 
+ -0.781592264482772, -0.788070753634394, -0.793954590807217, -0.798415990364392, -0.801253203333852, 
+ -0.803802808575304, -0.806103380177449, -0.808168032633694, -0.810028728075679, -0.811707008039653
+ ), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10")), 
+     beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, df = c(0L, 
+     1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 11L), lambda = c(0.0050155928247054, 
+     0.00457002138171164, 0.00416403327766709, 0.00379411203783576, 0.00345705358140539, 
+     0.00314993846927226, 0.00287010661725631, 0.00261513425572457, 0.00238281293605802, 
+     0.00217113040212627, 0.0019782531610875), dev.ratio = c(8.19164587480533e-15, 
+     1.57966906413626e-05, 2.88607368208003e-05, 3.96695798876126e-05, 5.57941144460748e-05, 
+     7.84622922684787e-05, 9.73195721689847e-05, 0.000112965572070158, 0.000126022329150716, 
+     0.000136883996871884, 0.000145919188303236), nulldev = 1679.55597942541, npasses = 44L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet"))), c(0.00306932456999298, 
+ 0.00279665423460779, 0.00254820718030729, 0.00232183147756207, 0.00211556636833115
+ ), structure(c(4.1, 4.15, 4.6, 4.35, 4.55, 4.2, 4.05, 4.2, 3.4, 3.75, 5.85, 5.55, 
+ 6.05, 8.15, 11, 6.5, 4.45, 3.9, 2.95, 3.15, 5.5, 5.45, 4.35, 4.45, 4.1, 4.35, 4.2, 
+ 4.35, 4.65, 5, 4.65, 5.05, 3.95, 3.55, 3.3, 3.35, 5.55, 4.95, 5.3, 5.65, 4.3, 3.85, 
+ 4.2, 3.95, 3.65, 4.45, 4.6, 4.9, 4.35, 10.95, 11.3, 10.65, 9.9, 4.15, 4.25, 3.7, 
+ 3.45, 3.8, 5.6, 5.95, 3.65, 3.55, 3.85, 3.7, 5.45, 5.05, 5.7, 5.4, 5.6, 3.8, 5.3, 
+ 4, 4.1, 3.85, 4.8, 4.3, 4.75, 4.5, 4.5, 6.8, 5.25, 5, 5.1, 5.05, 4.85, 4.35, 5.7, 
+ 4.6, 3.95, 4.6, 5.35, 4.7, 4.85, 4.5, 4.35, 4.6, 4.7, 4.05, 3.75, 3.2, 4.1, 6.1, 
+ 5, 5.3, 5.15, 5.7, 4.65, 3.9, 3.55, 4.1, 3.95, 4.25, 4.15, 3.9, 4.25, 3.85, 4.05, 
+ 4.15, 4.05, 3.9, 4.85, 4.75, 4.9, 5.1, 5.3, 5.95, 5.1, 5.3, 5, 5.8, 5.5, 6.1, 8.4, 
+ 4.35, 5.15, 5.35, 5.05, 4.05, 3.7, 3.8, 5.05, 4.95, 5.5, 4.95, 5.15, 3.8, 4.25, 3.6, 
+ 3.8, 4.6, 3.9, 3.9, 4.2, 4.35, 3.9, 3.95, 4.25, 4.55, 3.7, 4.65, 4.65, 3.8, 4.15, 
+ 5.15, 4.35, 4.15, 4.4, 4.9, 4.5, 4.1, 4.4, 4, 4.65, 5.2, 4.7, 4, 4.75, 4.6, 4.05, 
+ 5.9, 6.3, 5.95, 5.55, 7.35, 24, 5.5, 4.05, 4.25, 4.3, 4.35, 5.5, 7.5, 5.4, 5, 5.05, 
+ 3.85, 3.9, 4, 3.85, 3.35, 3.95, 3.55, 5.05, 4.4, 4, 3.8, 5.6, 6.1, 4.85, 5, 5.1, 
+ 4.85, 5.05, 4.8, 5.05, 4.75, 5, 4.9, 4.85, 4.15, 4.25, 4.2, 3.95, 4.15, 5.25, 4.6, 
+ 4.4, 4.45, 4.6, 7.2, 7.1, 7.3, 3.85, 4.2, 4.15, 5.6, 5.85, 5.1, 5.2, 3.55, 6, 5.65, 
+ 5.65, 5.45, 5.5, 6.7, 4.55, 4.85, 5.25, 5.35, 5.3, 3.8, 3.95, 3.7, 3.8, 4, 4.65, 
+ 5.15, 5.3, 6.8, 5, 4.35, 5.3, 4.45, 4.4, 4.35, 4.9, 5.5, 4.95, 4.7, 5.35, 4.8, 5.2, 
+ 5.6, 4.95, 4.7, 5, 6.5, 6.65, 6.55, 7.5, 3.75, 3.25, 3.2, 3, 3.5, 3.85, 4.95, 4.5, 
+ 3.95, 4.3, 4.75, 5.3, 5.05, 4.75, 7.3, 9.2, 5.05, 5.4, 4.85, 4.7, 4.8, 4.35, 4.25, 
+ 4, 4.2, 3.8, 3.5, 3.5, 3.65, 3.45, 3.6, 3.4, 3.95, 4.1, 4.7, 4.1, 4.5, 3.75, 3.9, 
+ 3.6, 3.9, 3.8, 4.2, 3.7, 3.7, 4.3, 3.6, 7.3, 8.5, 4.5, 4.95, 4.9, 4.2, 4.85, 4.6, 
+ 4.5, 4.55, 4.25, 9.1, 6.3, 4, 3.95, 3.5, 3.5, 4.15, 7.45, 4.05, 4.1, 4.55, 4.55, 
+ 5.4, 7.65, 5.75, 5.9, 6, 5.45, 4.75, 4.35, 4.65, 4.6, 3.8, 4.05, 3.6, 3.4, 3.7, 4.25, 
+ 5.25, 4.15, 4.65, 4.35, 4.6, 4.35, 4.1, 4.15, 3.9, 4.55, 3.85, 3.85, 4.05, 5.35, 
+ 4, 5, 5.5, 5.2, 5.15, 5.6, 4.1, 4.25, 4.2, 4.2, 4.35, 4.75, 4.9, 4.75, 4.7, 5.4, 
+ 12.9, 14, 5.7, 6, 6.15, 5.55, 5.65, 9.3, 7.7, 8.45, 3.25, 4.05, 8.65, 7, 6.45, 6.3, 
+ 3.8, 4.35, 4.6, 4.4, 3.85, 3.95, 7.35, 7, 6.75, 7.05, 8.05, 4.85, 5, 4.8, 4.7, 4.15, 
+ 4.55, 4.25, 5, 4.8, 3.9, 4.3, 4.45, 4.05, 3.55, 4.05, 3.9, 3.55, 7.7, 5.95, 6.55, 
+ 8.5, 10.15, 3.85, 3.6, 4.1, 3.35, 4.55, 4.9, 5.35, 4.85, 4.75, 5.2, 5.05, 5.05, 4.1, 
+ 3.8, 3.95, 3.6, 3.8, 3.65, 3.6, 3.3, 3.85, 4.3, 6.35, 5.2, 6.35, 5.95, 4.1, 4.25, 
+ 3.75, 4.1, 4.15, 4.1, 3.9, 5.65, 4.6, 4.35, 4.95, 5.4, 4.15, 4.75, 3.7, 3.85, 4.2, 
+ 3.55, 3.8, 4.15, 3.75, 4.3, 4.45, 5.9, 4.3, 3.85, 4.4, 4.35, 3.85, 3.95, 4.1, 5.05, 
+ 4.6, 4.45, 4.95, 4.5, 4.35, 3.45, 3.6, 3.7, 3.2, 4.55, 4.1, 5.2, 5.1, 3.4, 4.05, 
+ 3.7, 3.45, 3.7, 4.45, 4.65, 4.45, 4.1, 4.25, 3.9, 3.8, 4.05, 3.45, 10.1, 3.4, 3.75, 
+ 3.7, 3.45, 4.25, 4.15, 3.3, 4.05, 4.95, 4.45, 4.3, 3.75, 4, 5.15, 5.3, 4.9, 4.1, 
+ 3.6, 2.9, 3.05, 2.65, 4.75, 4.05, 4.45, 4.25, 5.55, 5.7, 6.1, 6.4, 6.65, 4.7, 5.05, 
+ 4.5, 4.2, 4.2, 4.15, 3.9, 9.7, 4.8, 5.4, 6.7, 3.7, 3.65, 3.75, 3.4, 3.65, 4, 3.95, 
+ 4.05, 3.5, 4.7, 4.6, 4.35, 4.25, 4.6, 4.85, 4.45, 4.6, 4.95, 6, 7.4, 6.65, 6.7, 7.45, 
+ 8, 4.75, 5.65, 4.7, 5.7, 7.2, 4.25, 5.05, 3.85, 6.4, 6.2, 6.45, 5.85, 6.15, 10.2, 
+ 6.2, 5, 5.65, 5.65, 5.25, 4.5, 4.3, 4.75, 4.15, 4.85, 5.5, 4.9, 6.5, 5.3, 7.7, 3.8, 
+ 3.85, 3.7, 3.8, 4.55, 5, 3.65, 3.65, 3.45, 4.5, 4.15, 4.1, 4.5, 4.65, 5.7, 4.9, 5.7, 
+ 5.3, 4.5, 4.45, 3.85, 4.45, 4.7, 4.65, 3.8, 4.85, 3.65, 5.1, 5.35, 5.25, 5.9, 4.9, 
+ 6.6, 5.35, 5.55, 5.7, 5.8, 4.9, 5.65, 6.1, 7.05, 7.6, 4.65, 4.25, 4.05, 4.5, 6.2, 
+ 5, 6, 5.25, 5.05, 6.1, 4.7, 5.25, 4.25, 4.55, 3.95, 4.05, 4.35, 4.25, 4.75, 4.2, 
+ 4.5, 4.95, 4.45, 4.9, 4.85, 4.4, 4.4, 4.6, 4.4, 4.15, 4.45, 3.8, 4.8, 4.6, 5.1, 4.65, 
+ 5.05, 4.1, 4.05, 4, 4.25, 4.3, 4.5, 4.4, 3.8, 3.85, 6.1, 6.45, 5.45, 3.6, 3.1, 3.3, 
+ 3.2, 3.2, 3.7, 3.6, 4.7, 4.1, 5.05, 4.55, 5.75, 5.8, 4.9, 5.4, 5.55, 5.7, 4.95, 45.45, 
+ 5.7, 4.25, 4.7, 4.4, 4.85, 4.9, 5.65, 5.6, 3.95, 3.85, 3.45, 4.8, 5.5, 3.65, 4.15, 
+ 4.1, 3.9, 3.65, 6, 5.45, 4.95, 5.05, 4.9, 4.05, 4, 4.7, 4.15, 3.9, 4.55, 4.7, 4.8, 
+ 4.65, 7.7, 6.05, 5.85, 8.1, 4.15, 5.1, 4.2, 4.6, 4.4, 3.5, 4, 5, 4.75, 5.35, 5.15, 
+ 5.15, 4.75, 4.25, 4.15, 3.95, 3.75, 3.95, 4.3, 3.8, 4.8, 4.35, 4.15, 5.25, 4, 5.45, 
+ 4.85, 5.3, 6.05, 5.85, 4.2, 4.3, 4, 4.15, 5.1, 4.2, 4.65, 5.4, 4.55, 6.65, 7.6, 6.65, 
+ 6.05, 5.9, 5.3, 5.45, 3.25, 2.9, 2.5, 2.55, 2.55, 4.05, 3.65, 3.6, 4.15, 4.9, 3.8, 
+ 4.05, 3.55, 13.45, 11.65, 11.8, 5.9, 4.8, 4.95, 4.9, 5.95, 4.05, 4, 3.5, 4.45, 3.85, 
+ 4.7, 4.25, 6.15, 5.05, 5.25, 5.95, 5.8, 5.65, 6.4, 5.9, 5.4, 5.1, 4.6, 5.4, 6, 6.4, 
+ 6.25, 4.55, 4.15, 5.05, 4.3, 4.4, 3.35, 3.05, 4.2, 4, 5.75, 6.15, 5.75, 7.6, 5.95, 
+ 4.65, 4.55, 3.8, 4.35, 3.9, 4.7, 4.85, 4.95, 5.8, 5, 4.9, 4.05, 3.75, 3.95, 4.6, 
+ 4, 3.85, 3.95, 4.45, 4.45, 4.15, 3.95, 4, 3.65, 3.85, 3.7, 3.5, 4, 2.9, 3.35, 6.1, 
+ 6.8, 4.1, 3.95, 4.35, 4.45, 4.55, 5.95, 6.1, 5.7, 6.05, 4.6, 4.75, 4.2, 4.75, 4.5, 
+ 3.55, 3.2, 3.4, 3.45, 3.55, 7.45, 7.95, 7.35, 7, 4.9, 4.7, 4.65, 3.6, 3.4, 3.4, 3.95, 
+ 3.65, 6.35, 6.05, 3.9, 3.65, 4.25, 4.45, 3.65, 4.9, 5, 3.95, 4.05, 3.55, 3.5, 4.05, 
+ 2.95, 3.4, 3.75, 4.95, 5.55, 5.25, 3.9, 3.9, 4.4, 4.15, 4.05, 6.5, 7.3, 10.1, 9.95, 
+ 4.75, 4.9, 4.7, 4.55, 5.05, 4.25, 4.3, 6.55, 4.25, 4.1, 4.35, 4.25, 3.95, 7.1, 7.4, 
+ 9.75, 4.2, 3.85, 4.2, 4.4, 3.85, 4.35, 4.75, 5, 4.55, 4.4, 5, 4.75, 13.45, 5.15, 
+ 3.6, 4.5, 4.2, 4.2, 4.25, 4.3, 5.3, 5.4, 5.55, 6.05, 5.95, 4.7, 5.15, 3.95, 5.05, 
+ 4.5, 4.65, 4.7, 5.4, 4.05, 3.85, 3.9, 3.7, 3.9, 3.4, 3.6, 3.4, 3.55, 4.15, 6.25, 
+ 6.2, 6.15, 4.6, 3.9, 4.25, 4, 6.25, 5.9, 5.75, 5.7, 4.55, 4.55, 5.05, 5.2, 4.45, 
+ 4, 3.95, 3.6, 3.95, 3.85, 4.3, 4.75, 5.35, 5.2, 4.95, 5.75, 6.1, 4.95, 5.1, 5.2, 
+ 5.15, 6.4, 4.7, 5.25, 5.2, 5.6, 4.9, 4.05, 4.6, 3.85, 4.15, 7.4, 7.85, 5.9, 5.75, 
+ 4.55, 4.35, 4.2, 4.55, 4.55, 6.7, 6.35, 5.25, 5.55, 6.15, 7.85, 6.85, 7.45, 6.35, 
+ 12.85, 4.75, 4.1, 3.9, 4.2, 6.1, 5.9, 4.5, 4, 4.05, 4.45, 4.5, 4.65, 4.9, 4.95, 3.95, 
+ 3.5, 4.85, 5.35, 5.2, 5.5, 5.35, 5.3, 4.9, 4.35, 4.1, 4.35, 4.25, 15.35, 16.45, 18.15, 
+ 4.6, 4.65, 5.1, 6.05, 6.55, 5.4, 4.9, 4.35, 4.85, 4.95, 3.65, 5.2, 4.8, 5.6, 4.35, 
+ 4.1, 4.15, 4.05, 4, 4.35, 4.1, 4.15, 4.2, 4.15, 4.2, 4.3, 3.9, 3.8, 3.6, 3.55, 3.8, 
+ 5.2, 5.05, 5.45, 3.7, 4.45, 3.45, 4.8, 4.6, 4.75, 4.5, 4.35, 4.55, 5.1, 9.4, 10, 
+ 5.15, 53.65, 4.1, 4.85, 4.9, 4.75, 3.85, 4.8, 4.75, 3.95, 9.75, 7.75, 6.7, 5.1, 5.75, 
+ 3.9, 4.35, 8.05, 4.5, 4.5, 4.05, 4.45, 4.35, 7.65, 7.75, 5.45, 7.3, 3.75, 3.9, 4.15, 
+ 4.25, 3.55, 5.3, 5.65, 5.1, 5.05, 5.3, 4.15, 4.45, 4.05, 4.05, 4.4, 4.5, 5.65, 5.8, 
+ 4, 4.25, 3.9, 4.2, 5.4, 5.7, 4.95, 4.85, 6.5, 5.25, 4.75, 4.6, 5.2, 5.15, 6.15, 7.75, 
+ 3.45, 3.65, 2.9, 3.55, 3.4, 4.15, 4.75, 4.35, 5.1, 4.7, 4.6, 4.45, 4.65, 6.25, 5.85, 
+ 5.65, 5.7, 5.05, 7.05, 6.8, 6.3, 6.6, 7, 6, 6.6, 2.95, 3.2, 2.95, 3.65, 4.7, 4.4, 
+ 4.05, 4.55, 4.7, 6.45, 5.8, 5.95, 5.6, 6.7, 7.55, 5, 4.7, 4.3, 5.35, 5.75, 5.6, 4.75, 
+ 4.05, 4.45, 4.35, 4, 3.85, 3.95, 3.75, 3.55, 5, 5.05, 4.65, 4.25, 3.7, 3.9, 4, 3.85, 
+ 5.95, 6.5, 5.35, 6.7, 5.35, 4.65, 3.95, 3.75, 4.15, 25, 3.4, 3.7, 3.1, 6.25, 7.4, 
+ 4.5, 4.15, 3.8, 4.15, 4.3, 4.3, 5.3, 4.5, 5.25, 5.75, 5.55, 4.9, 4.3, 4.35, 4.35, 
+ 4.35, 3.95, 4.3, 4.4, 3.85, 4.35, 4.15, 3.5, 3.05, 3.45, 6.75, 5.8, 5.65, 4.65, 4.65, 
+ 4.25, 3.9, 3.95, 3.9, 3.6, 4.1, 4.2, 4.05, 5.2, 4.25, 4.25, 4.5, 4, 4.4, 4, 6.1, 
+ 6, 6.15, 6.55, 6.45, 7.9, 7.05, 6.35, 4.5, 7.35, 3.75, 4.8, 4.35, 4.45, 5.9, 6.2, 
+ 5.75, 5.25, 8.5, 7.35, 7.55, 4.3, 4.6, 4.35, 4.85, 4.8, 5.2, 5.1, 5.4, 4.75, 3.55, 
+ 3.55, 3.35, 3.6, 5.25, 3.8, 3.5, 3.05, 3.1, 4.65, 3.5, 3.45, 5.9, 5.55, 4.9, 8.3, 
+ 7.6, 4.5, 4.15, 3.65, 4.4, 3.6, 3.8, 3.75, 4.2, 4.7, 4.45, 4.75, 5, 6.15, 5.8, 5.45, 
+ 6.85, 5.2, 3.95, 3.55, 4.15, 3.9, 5.65, 5.5, 5.5, 5.25, 5.2, 4.75, 4.75, 3.85, 3.8, 
+ 4.3, 4.15, 3.45, 3.65, 4.15, 4.2, 3.9, 4, 3.55, 3.7, 3.4, 3.35, 3.95, 3.35, 3.6, 
+ 3.7, 4.05, 4.4, 4, 5.7, 4.2, 5.1, 5.05, 4.9, 4.35, 5.2, 4.8, 5.25, 5.2, 4.75, 4.35, 
+ 5.85, 3.85, 3.7, 3.55, 4.2, 3.6, 3.25, 3.1, 3.6, 5.95, 7.15, 4, 4.5, 4.35, 4.3, 4.35, 
+ 4.4, 6.6, 8.6, 3.85, 4.05, 3.9, 5.4, 4.25, 4.65, 5.15, 5.15, 4.7, 6.35, 6.7, 2.5, 
+ 3, 2.7, 3.3, 3.3, 3.6, 4.9, 5.4, 4.35, 4.2, 4.4, 19.4, 19.725, 21.375, 17.05, 20.075, 
+ 22.95, 20.825, 23.1, 29.1, 24.1, 19.8, 19.55, 21.45, 19.025, 21.35, 21.2, 18.775, 
+ 17.475, 18.5, 17.45, 23.925, 26.125, 17.775, 22.25, 19.5, 21.175, 23, 17.375, 18.7, 
+ 18.05, 17.55, 17.5, 19.825, 21.575, 20.25, 18.575, 16.825, 15.375, 16.5, 16.475, 
+ 14.425, 22.975, 19.85, 20.15, 20.8, 23.05, 18.275, 18.95, 18.925, 31.075, 29.7, 27.2, 
+ 24.8, 21.275, 20.625, 19.625, 18.675, 20.45, 19.875, 19.85, 17.425, 19.85, 20.475, 
+ 17.925, 20.725, 23.075, 20.2, 17.875, 17.875, 19.4, 19.7, 16.925, 17.8, 18.05, 20.1, 
+ 18.375, 18.85, 18.425, 18.925, 20.65, 19.9, 21.125, 20.175, 23.225, 20.925, 21.15, 
+ 22.9, 19.525, 21.4, 18.45, 18.025, 16.025, 15.55, 18.125, 18.2, 19.325, 19.525, 18.9, 
+ 19.375, 18.875, 20.3, 37.05, 55.5, 86.275, 119.225, 19.15, 20.675, 20.1, 21.825, 
+ 19.025, 18.4, 17.675, 18.125, 18.3, 16.7, 19.425, 22.55, 22.05, 17.2, 20.425, 27.2, 
+ 25.475, 29.225, 24.525, 25.425, 30.025, 30, 27.425, 27.15, 29.625, 32.5, 34.05, 30.325, 
+ 28.25, 32.85, 21.8, 22.35, 19.875, 19, 18.3, 21.975, 20.95, 19.25, 19.15, 17.325, 
+ 18.125, 16.225, 17.575, 17.275, 18.375, 22.775, 19.525, 18.65, 21.275, 18.925, 18.4, 
+ 21.8, 21.2, 28.45, 23.75, 22.3, 20.45, 20.075, 21.675, 21.15, 19.5, 20.15, 18.625, 
+ 17.925, 17.075, 18.1, 17.85, 19.275, 19.675, 16.45, 17.4, 22.775, 21.25, 22.775, 
+ 27.825, 24.325, 31.75, 31.225, 23.425, 20.725, 20.15, 16.75, 15.675, 18.125, 16.8, 
+ 18.9, 17.675, 17.725, 21.225, 17, 18.25, 18.05, 17.05, 17.025, 15.65, 16.7, 17.525, 
+ 17.375, 23.975, 22.75, 20.85, 28.15, 30.825, 30.475, 34.7, 33.9, 22.85, 20.5, 22.25, 
+ 21.875, 21.9, 22.1, 21, 28.525, 20.225, 19.4, 20.275, 21.4, 18.65, 19.125, 18.075, 
+ 18.7, 18.8, 17.7, 40.125, 36.7, 32.55, 20.4, 20.9, 20.325, 24.45, 22.05, 20.725, 
+ 21.675, 17.475, 22.15, 20.2, 24.25, 22.025, 24.35, 24.125, 20.875, 20.3, 22.325, 
+ 19.15, 20.45, 16.35, 17.225, 18.7, 17, 17.2, 15.8, 17.4, 16.45, 17.175, 16.975, 24.425, 
+ 30.7, 27.275, 24.875, 22.1, 18.65, 20.575, 18.925, 19.725, 18.25, 18.2, 18.225, 20.175, 
+ 17.4, 19.3, 29.525, 30.15, 34.125, 31.325, 31.95, 19.45, 17.375, 16.85, 16.525, 16.925, 
+ 20.225, 18.7, 18.575, 18.525, 20, 18.625, 18.975, 18.475, 18.2, 20.825, 20.275, 24.4, 
+ 23.325, 25.525, 28.95, 20.3, 20.3, 17.025, 19.7, 19.25, 16.875, 15.8, 14.45, 16.425, 
+ 14.35, 20.625, 21.55, 21.55, 21.825, 23.2, 19.275, 20.425, 17.475, 18.1, 18.1, 24.325, 
+ 21.95, 19.7, 19.75, 21.15, 19.175, 17.2, 24.175, 24.4, 28.725, 28.225, 32.075, 25.05, 
+ 26.25, 18.7, 16.4, 16.225, 15.7, 28.375, 34.05, 16.6, 16.35, 17.95, 15.975, 17.025, 
+ 25.925, 23.175, 21.025, 20.775, 24.275, 20.75, 23.85, 28.825, 24.925, 26.45, 24.925, 
+ 20.4, 18.7, 21.475, 19.65, 21.85, 21.45, 19.95, 20.775, 19.725, 26.425, 22.125, 22.575, 
+ 28.075, 18.875, 17, 17.5, 15.275, 16.35, 17.1, 19.1, 16.675, 17.225, 27.825, 27.5, 
+ 22.125, 21.025, 17.4, 18.4, 15.825, 17.15, 18.125, 18.1, 20.525, 17.825, 18.35, 19.675, 
+ 17.85, 18.925, 18.25, 17.675, 36.275, 41.375, 31.8, 30.675, 30.475, 27, 26.475, 29.425, 
+ 33.825, 37.075, 21.675, 23.25, 25.425, 20.75, 23.225, 26.475, 24.125, 20.5, 20.25, 
+ 19.675, 19, 19, 26.775, 21.775, 23.65, 23.675, 22.35, 17.975, 20.7, 20.275, 17.925, 
+ 25.1, 26.475, 25.2, 23.35, 23.125, 21.425, 21.8, 24.125, 24.975, 19.75, 22.175, 18.275, 
+ 18.925, 24.225, 22.8, 24.575, 26.275, 25.475, 18.45, 21.75, 20, 19.525, 21.875, 21.625, 
+ 23.025, 23.05, 20.4, 18.5, 19.4, 20.075, 21.525, 19.375, 19.65, 16.2, 19.3, 17.475, 
+ 19.575, 16.3, 17.25, 19.825, 21.775, 20.875, 22.325, 23, 21.375, 21.375, 18.85, 19.05, 
+ 19.075, 19.05, 19.675, 22.45, 18.175, 21.725, 21.95, 23.1, 19.65, 19.275, 20.7, 20.25, 
+ 19.05, 19.025, 20.675, 21.725, 19.3, 19.3, 19.95, 19.325, 21.575, 18.025, 19.4, 17.025, 
+ 17.275, 17.325, 15.775, 18.375, 16.65, 24.15, 24.05, 21.75, 23.4, 17.575, 18.075, 
+ 16.125, 16.075, 18.15, 19.4, 18.65, 17.45, 18.45, 16.15, 18.5, 17.775, 18.525, 22.65, 
+ 23.75, 26.425, 19.325, 19.775, 19.725, 18.225, 19.375, 20.675, 31.8, 16.9, 16.25, 
+ 17.775, 16.775, 17.475, 17.15, 15.425, 18.05, 25.25, 19.35, 22.25, 20.7, 21.15, 24.95, 
+ 25.725, 26.1, 20.325, 19.6, 20.425, 21.825, 20.875, 16.725, 18.775, 19.05, 19.625, 
+ 28.9, 26.7, 27.525, 30.05, 27.725, 19.175, 19.65, 18.7, 17.5, 16.975, 16.25, 15.65, 
+ 28, 21.375, 21.1, 19.225, 17.825, 19.1, 18.35, 19.55, 21.25, 22.15, 22.85, 27.7, 
+ 31.925, 18.2, 18.075, 17.85, 17.95, 16.975, 21, 21.1, 20.25, 21.225, 20.9, 21.15, 
+ 19.15, 19.725, 22.55, 20.075, 23.375, 23.6, 21.175, 22.175, 24.8, 19.95, 19.025, 
+ 19.225, 21.375, 21.55, 19.625, 20.125, 21.075, 35.65, 24.625, 24.85, 20.7, 21.075, 
+ 21.425, 18.225, 18.05, 15.85, 16.675, 16.725, 31.35, 35.2, 27.25, 25.875, 26.25, 
+ 19.275, 17.8, 18.3, 18.975, 16.55, 19.425, 17.15, 19.375, 16.175, 36.65, 37.275, 
+ 34.025, 42.25, 47.025, 26, 25.025, 27.35, 25.725, 25.4, 29.425, 29.05, 29.15, 21.525, 
+ 19.875, 19.85, 20.025, 21.2, 17.375, 16.625, 18.3, 17.75, 17, 24.6, 21.75, 20.7, 
+ 20.475, 19.925, 20.4, 21.35, 22.35, 22.25, 22.6, 18.025, 17.875, 20.275, 17.875, 
+ 21.525, 23.1, 20.2, 28.75, 22.325, 31.275, 28.125, 33.6, 20.05, 20.325, 19.075, 19.6, 
+ 19.525, 20.8, 22.025, 22.25, 16.625, 16.275, 25.975, 26.325, 24.675, 22.4, 23.125, 
+ 24.45, 24.1, 19.55, 16.075, 17.6, 19.65, 17.7, 20.3, 18.525, 18.225, 20.6, 21.2, 
+ 20.325, 20.925, 19.15, 20.7, 21.4, 18, 17.525, 25.425, 24.525, 25.225, 21.125, 19.375, 
+ 18.325, 16.325, 18.425, 26.275, 25, 17.425, 18.225, 19.575, 19.65, 20.675, 24.3, 
+ 23.725, 24.1, 25.4, 24.45, 23.85, 66.3, 20.575, 21.85, 20.4, 19.4, 22.15, 20.525, 
+ 24.1, 22.675, 22.425, 21.425, 21.825, 24.825, 22.825, 17.075, 16.425, 17.35, 16.725, 
+ 16.825, 20.475, 20.875, 19.575, 17.2, 18.25, 17.675, 15.65, 15.4, 17.05, 17.025, 
+ 21.4, 23.25, 19.375, 21.7, 21.975, 17.625, 18.1, 19.475, 22.4, 22.15, 20.05, 19.3, 
+ 21.025, 21.525, 20.1, 22.55, 26.425, 28.425, 21.05, 18.875, 19.75, 18.425, 18.7, 
+ 17.675, 20.425, 19.9, 21.25, 19.725, 22.475, 19.075, 24.45, 22.175, 19.575, 35.275, 
+ 27.725, 23.525, 27.275, 29.525, 24.6, 20.875, 20.5, 20.95, 17.625, 18.9, 18, 18.725, 
+ 20, 35.45, 27.6, 33.05, 22.1, 21.95, 20.575, 19.875, 17.4, 15.625, 17.225, 16.2, 
+ 17, 16.825, 17.1, 16.75, 16.7, 24.5, 22.125, 23.05, 22.875, 24.7, 23.6, 23.975, 16.975, 
+ 17.9, 17.525, 17.8, 16.975, 21.225, 27.25, 23.25, 25.45, 23.325, 17.925, 17.25, 35.075, 
+ 38.925, 31.45, 23.55, 23.375, 25.05, 24.95, 26.8, 20.375, 21.225, 21.05, 21.975, 
+ 22.175, 19.7, 22.15, 19.55, 18.175, 20.875, 18.725, 17.2, 18.4, 17.875, 17.325, 18.3, 
+ 25.775, 33.675, 28.225, 30.275, 21.6, 19, 19.8, 18.15, 18.15, 17.9, 27.6, 25.975, 
+ 22.3, 25.025, 22.075, 21.15, 19.725, 16.8, 17.125, 16.225, 16.6, 15.75, 21.175, 20.95, 
+ 23.175, 18.55, 17.9, 17.275, 18.425, 17.525, 17.15, 15.875, 16.45, 15.55, 15.825, 
+ 25.85, 27.425, 21.35, 18.1, 17.125, 16.85, 17.35, 24.275, 23.35, 22.15, 23.1, 16.7, 
+ 18.025, 17.675, 17.775, 18.75, 18.625, 18.025, 18.775, 18.875, 18.975, 25.8, 21.875, 
+ 21.1, 22.4, 18.875, 26.675, 25.575, 15.525, 14.875, 15.35, 15, 13.925, 21.95, 20.125, 
+ 19.425, 17.375, 18.125, 19.225, 21.1, 18.15, 18.7, 16.425, 15.9, 16.025, 23.9, 20.55, 
+ 23.625, 23.675, 23.9, 19.125, 19.6, 20.05, 21.125, 21.75, 22.625, 20.45, 22.55, 24.575, 
+ 22.675, 23.675, 22.425, 21.15, 21.925, 23.25, 23.825, 25.85, 29.825, 30.85, 21.5, 
+ 19.625, 18.425, 15.825, 16.275, 16.35, 45.675, 54, 51.25, 17.275, 18.575, 17.025, 
+ 19.575, 19.975, 21.475, 16.825, 22.275, 21.825, 21.4, 23.75, 22.725, 29.4, 18.15, 
+ 18.65, 18.225, 22.4, 19.175, 18.275, 18.25, 21.2, 21.675, 22.7, 21.975, 21.325, 17.425, 
+ 16.875, 21.95, 18, 19.775, 19.375, 20.275, 20.325, 17.65, 18.475, 18, 18.4, 17.7, 
+ 19.2, 20.05, 18.05, 18, 17.825, 32.05, 30.1, 34.125, 19.45, 19.9, 19.325, 16.95, 
+ 37.5, 36.175, 37.475, 33.225, 19.675, 18.525, 20.175, 19.425, 18.775, 21.875, 21.45, 
+ 19.525, 19.025, 17.45, 22.675, 20.975, 22, 19.475, 21.075, 18.55, 20.55, 20.175, 
+ 21.975, 21.325, 20.925, 32.35, 29.7, 29, 31.45, 19.6, 24.475, 20.95, 24.025, 22.025, 
+ 25.275, 25.625, 26.85, 23, 21.175, 22.05, 20.525, 22.625, 19.7, 20.375, 21.275, 21.075, 
+ 22.125, 21.55, 20, 19.6, 19.775, 18.075, 17.45, 18.825, 16.725, 15.25, 15.7, 22.95, 
+ 37.3, 21.7, 20.775, 20.8, 20.325, 23.9, 21.225, 20.2, 21.575, 21.625, 22.2, 20.2, 
+ 19.75, 19.25, 18.575, 18.6, 19.25, 17.225, 19.175, 18.575, 18.95, 17.35, 18.075, 
+ 29.2, 39.675, 44.1, 16.1, 18.375, 17.85, 18.125, 18.05, 21.55, 21.225, 21.725, 26.6, 
+ 22.2, 22.075, 22, 21.325, 18.775, 20.525, 16.225, 18.125, 17.25, 18.05, 18.8, 20.35, 
+ 20.175, 19.275, 19.95, 20.25, 18.85, 22.6, 21.625, 18.85, 19.4, 18.375, 18.95, 19.275, 
+ 19.175, 19.275, 18.475, 16.2, 17.4, 22.15, 19.725, 19.7, 18.9, 19.2, 21.975, 40.425, 
+ 42.175, 20.425, 32.2, 14.875, 14.625, 15.725, 15.25, 18.975, 18.6, 17.45, 17.6, 27.1, 
+ 23.925, 23.95, 19.275, 16.775, 15.5, 17.35, 29.05, 20.525, 19.65, 19.2, 17.4, 17.775, 
+ 18.025, 17.275, 19.375, 19.55, 21.5, 19.575, 18.525, 18.375, 20.5, 28.375, 25.1, 
+ 20.775, 21.55, 21.825, 23.025, 20.8, 19.825, 17.95, 21.725, 19.5, 34.25, 31.225, 
+ 15.4, 14.925, 15.4, 15, 18.85, 18.825, 18.075, 18.1, 17.75, 22.75, 24.25, 23.65, 
+ 22.125, 23.925, 21.425, 20.125, 18.15, 17.925, 17.05, 16.7, 16.475, 17.65, 16.225, 
+ 16.55, 16.55, 17.2, 19.5, 20.1, 17.45, 34.4, 34.55, 29.75, 31.475, 31.275, 25.2, 
+ 24.2, 25.6, 28.775, 25.45, 25.95, 24.15, 21.475, 22.225, 22, 21.65, 19.325, 18.1, 
+ 18.2, 17.25, 20.6, 25.225, 24.3, 24.4, 21.475, 18.05, 23.525, 17.6, 18.125, 17.65, 
+ 17.7, 20.025, 30.425, 51.75, 43.5, 54.55, 60.65, 22.55, 21.15, 21.875, 23.225, 23.275, 
+ 25.525, 19.275, 20.7, 18.975, 18.6, 18.6, 16.75, 17.7, 40.275, 35.275, 31.05, 32.675, 
+ 34.8, 21, 20.45, 19.05, 20.375, 19.55, 19.025, 17.4, 17.275, 20.5, 24.2, 20.15, 20.2, 
+ 19.4, 20.15, 21.05, 22.025, 23.85, 24.775, 30.6, 28.35, 19.15, 19.4, 21.35, 21.975, 
+ 22.5, 21.1, 23.9, 20.9, 18.375, 19.125, 19.55, 16.325, 17.1, 19.825, 17.25, 37.825, 
+ 37.45, 43.15, 22.475, 20.925, 17.05, 18.575, 15.775, 15.725, 15.7, 19.2, 18.925, 
+ 18.05, 17.5, 17.5, 17, 16.225, 16.45, 16.55, 15.175, 26.625, 26.35, 25.05, 26.475, 
+ 26.925, 27.375, 23.4, 48.25, 21.795, 25.725, 22.6, 23.825, 25.75, 24.825, 22.925, 
+ 21.675, 20.8, 22.65, 31.4, 30.725, 32.075, 16.85, 16.75, 15.675, 16.725, 18.775, 
+ 17.125, 16.975, 17.875, 18.875, 21.375, 18.125, 18.025, 16.725, 15.625, 19.825, 20.325, 
+ 20.45, 22.95, 19.175, 18.75, 19.45, 19.175, 19.425, 20.2, 18.625, 21.25, 23.675, 
+ 17.55, 23.1, 26.25, 22.65, 22.225, 20.9, 16.275, 17.225, 16.65, 17.225, 19.375, 28.15, 
+ 22.475, 23.775, 23.025, 17.35, 18.275, 17.2, 16.625, 17.55, 18.775, 17.925, 18.425, 
+ 16.425, 17.8, 21.3, 23.55, 23.7, 20.7, 21.1, 18.55, 16.875, 17.85, 15.925, 17.625, 
+ 18.2, 19.15, 20.525, 19.65, 21.4, 18.825, 18.2, 19.25, 16.975, 18.5, 19.075, 18.3, 
+ 18.575, 17.375, 17.8, 20.525, 19.875, 20.25, 18.375, 17.175, 20.6, 20.45, 18.625, 
+ 19.25, 19, 27.575, 18.8, 19.55, 19.375, 19.45, 15.15, 16.375, 16.4, 14.675, 19.15, 
+ 19.85, 19.525, 19.5, 16.85, 21.45, 17.7, 17.275, 29.05, 32.8, 20.325, 19.625, 20, 
+ 20.75, 18.7, 17.75, 18.175, 18.9, 17.85, 29.375, 27.55, 17.575, 15.725, 17.225, 16.025, 
+ 15.025, 16.3, 14.2, 15.475, 17.1, 17.75, 17.825), .Dim = c(1496L, 2L), .Dimnames = list(
+     NULL, c("MSFC.T25FW", "MSFC.NHPT"))), c(TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE), c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), NULL, c(4L, 7L, 7L, 3L, 7L, 5L, 
+ 3L, 6L, 3L, 2L, 7L, 2L, 10L, 1L, 6L, 4L, 4L, 1L, 3L, 10L, 5L, 4L, 10L, 10L, 8L, 3L, 
+ 1L, 6L, 7L, 5L, 7L, 9L, 1L, 7L, 1L, 4L, 9L, 6L, 10L, 6L, 8L, 3L, 3L, 10L, 1L, 9L, 
+ 2L, 8L, 2L, 7L, 2L, 6L, 10L, 3L, 10L, 10L, 6L, 6L, 10L, 6L, 8L, 5L, 9L, 7L, 4L, 3L, 
+ 5L, 5L, 5L, 3L, 5L, 5L, 3L, 8L, 7L, 7L, 7L, 4L, 9L, 2L, 1L, 9L, 6L, 3L, 6L, 2L, 3L, 
+ 7L, 10L, 8L, 1L, 4L, 6L, 4L, 6L, 5L, 3L, 9L, 2L, 9L, 9L, 5L, 2L, 2L, 8L, 3L, 7L, 
+ 10L, 1L, 6L, 8L, 9L, 3L, 7L, 4L, 10L, 9L, 10L, 9L, 4L, 8L, 2L, 10L, 7L, 3L, 2L, 8L, 
+ 2L, 9L, 1L, 7L, 10L, 10L, 6L, 6L, 3L, 7L, 3L, 3L, 7L, 8L, 4L, 9L, 7L, 6L, 5L, 8L, 
+ 1L, 3L, 8L, 1L, 8L, 6L, 6L, 4L, 8L, 5L, 7L, 1L, 7L, 6L, 10L, 7L, 2L, 2L, 10L, 6L, 
+ 8L, 1L, 2L, 5L, 10L, 8L, 3L, 1L, 2L, 1L, 7L, 6L, 8L, 8L, 10L, 6L, 9L, 4L, 4L, 9L, 
+ 9L, 3L, 6L, 9L, 1L, 9L, 8L, 10L, 10L, 8L, 1L, 6L, 7L, 2L, 2L, 1L, 9L, 5L, 7L, 8L, 
+ 8L, 9L, 2L, 5L, 9L, 3L, 6L, 1L, 4L, 9L, 1L, 5L, 6L, 5L, 4L, 10L, 8L, 1L, 1L, 6L, 
+ 2L, 9L, 10L, 2L, 1L, 4L, 9L, 4L, 3L, 3L, 10L, 4L, 1L, 8L, 7L, 7L, 4L, 10L, 5L, 4L, 
+ 9L, 7L, 2L, 9L, 8L, 6L, 4L, 10L, 7L, 3L, 8L, 9L, 6L, 8L, 5L, 7L, 8L, 3L, 9L, 6L, 
+ 4L, 9L, 1L, 3L, 3L, 6L, 2L, 1L, 8L, 8L, 5L, 8L, 4L, 5L, 4L, 2L, 5L, 2L, 8L, 3L, 1L, 
+ 6L, 5L, 7L, 5L, 9L, 3L, 5L, 4L, 6L, 6L, 4L, 7L, 3L, 1L, 2L, 4L, 4L, 8L, 6L, 3L, 6L, 
+ 8L, 1L, 8L, 2L, 3L, 5L, 2L, 5L, 3L, 8L, 3L, 1L, 3L, 7L, 1L, 10L, 10L, 2L, 5L, 6L, 
+ 9L, 6L, 8L, 8L, 3L, 3L, 8L, 3L, 3L, 6L, 8L, 2L, 1L, 4L, 8L, 9L, 6L, 7L, 4L, 4L, 3L, 
+ 2L, 4L, 2L, 8L, 4L, 6L, 4L, 1L, 9L, 7L, 7L, 10L, 4L, 1L, 2L, 4L, 9L, 4L, 9L, 8L, 
+ 8L, 10L, 2L, 8L, 5L, 1L, 4L, 8L, 8L, 7L, 8L, 9L, 10L, 9L, 8L, 5L, 6L, 1L, 8L, 4L, 
+ 1L, 9L, 7L, 4L, 2L, 9L, 7L, 8L, 9L, 9L, 5L, 5L, 2L, 2L, 10L, 9L, 5L, 5L, 7L, 5L, 
+ 2L, 2L, 4L, 5L, 4L, 3L, 2L, 1L, 2L, 9L, 7L, 10L, 5L, 4L, 1L, 5L, 2L, 1L, 1L, 4L, 
+ 2L, 10L, 1L, 7L, 10L, 9L, 8L, 9L, 5L, 9L, 2L, 3L, 9L, 6L, 9L, 3L, 7L, 6L, 7L, 5L, 
+ 4L, 9L, 7L, 10L, 1L, 1L, 4L, 6L, 2L, 5L, 2L, 5L, 7L, 2L, 9L, 5L, 9L, 5L, 1L, 9L, 
+ 1L, 5L, 5L, 9L, 5L, 5L, 9L, 4L, 5L, 6L, 5L, 10L, 1L, 3L, 10L, 1L, 7L, 2L, 6L, 8L, 
+ 3L, 10L, 10L, 5L, 6L, 9L, 6L, 7L, 9L, 6L, 4L, 1L, 9L, 7L, 3L, 10L, 6L, 2L, 3L, 3L, 
+ 4L, 1L, 6L, 10L, 10L, 7L, 1L, 2L, 1L, 3L, 8L, 2L, 3L, 5L, 2L, 5L, 4L, 2L, 8L, 8L, 
+ 2L, 7L, 9L, 10L, 9L, 10L, 2L, 5L, 4L, 1L, 6L, 3L, 2L, 6L, 2L, 2L, 5L, 10L, 9L, 9L, 
+ 5L, 1L, 5L, 5L, 5L, 1L, 2L, 7L, 9L, 4L, 3L, 10L, 4L, 10L, 9L, 8L, 7L, 5L, 10L, 10L, 
+ 10L, 5L, 1L, 4L, 9L, 10L, 1L, 5L, 8L, 1L, 4L, 3L, 10L, 3L, 7L, 3L, 3L, 7L, 10L, 10L, 
+ 6L, 10L, 7L, 6L, 3L, 2L, 9L, 6L, 3L, 5L, 7L, 6L, 3L, 1L, 5L, 7L, 10L, 10L, 9L, 8L, 
+ 4L, 3L, 9L, 7L, 6L, 4L, 3L, 1L, 5L, 9L, 5L, 3L, 1L, 6L, 8L, 3L, 2L, 6L, 8L, 7L, 8L, 
+ 1L, 8L, 9L, 10L, 9L, 10L, 9L, 2L, 6L, 1L, 7L, 2L, 10L, 3L, 10L, 2L, 9L, 4L, 4L, 3L, 
+ 8L, 3L, 3L, 4L, 2L, 7L, 10L, 3L, 6L, 1L, 1L, 6L, 7L, 8L, 1L, 8L, 7L, 4L, 6L, 9L, 
+ 6L, 1L, 3L, 3L, 7L, 8L, 7L, 5L, 1L, 2L, 1L, 6L, 7L, 1L, 5L, 9L, 5L, 1L, 8L, 1L, 10L, 
+ 1L, 4L, 8L, 8L, 2L, 2L, 4L, 7L, 8L, 9L, 8L, 2L, 2L, 1L, 4L, 5L, 8L, 8L, 8L, 6L, 9L, 
+ 4L, 1L, 5L, 8L, 6L, 10L, 6L, 1L, 7L, 9L, 1L, 4L, 10L, 2L, 8L, 2L, 9L, 8L, 7L, 6L, 
+ 6L, 4L, 8L, 9L, 10L, 9L, 10L, 10L, 10L, 4L, 2L, 2L, 4L, 10L, 7L, 7L, 8L, 5L, 3L, 
+ 9L, 5L, 4L, 2L, 1L, 10L, 10L, 4L, 10L, 5L, 5L, 5L, 10L, 8L, 5L, 1L, 6L, 10L, 3L, 
+ 7L, 1L, 5L, 8L, 1L, 2L, 5L, 6L, 1L, 4L, 5L, 10L, 9L, 6L, 8L, 3L, 7L, 4L, 7L, 2L, 
+ 4L, 5L, 1L, 9L, 1L, 2L, 9L, 1L, 7L, 3L, 1L, 7L, 2L, 9L, 5L, 4L, 8L, 8L, 9L, 4L, 7L, 
+ 9L, 4L, 7L, 6L, 2L, 7L, 3L, 6L, 8L, 3L, 6L, 10L, 5L, 7L, 6L, 5L, 4L, 5L, 4L, 1L, 
+ 9L, 8L, 3L, 4L, 3L, 3L, 5L, 8L, 7L, 9L, 7L, 8L, 8L, 7L, 3L, 9L, 3L, 3L, 1L, 5L, 10L, 
+ 3L, 1L, 1L, 9L, 4L, 9L, 6L, 1L, 3L, 3L, 3L, 7L, 1L, 5L, 3L, 8L, 9L, 4L, 1L, 6L, 10L, 
+ 3L, 6L, 4L, 7L, 3L, 7L, 4L, 2L, 4L, 10L, 1L, 10L, 8L, 10L, 7L, 9L, 5L, 10L, 1L, 6L, 
+ 1L, 3L, 8L, 10L, 7L, 6L, 9L, 4L, 10L, 5L, 8L, 7L, 4L, 10L, 9L, 9L, 10L, 3L, 10L, 
+ 10L, 4L, 3L, 5L, 5L, 2L, 7L, 4L, 10L, 8L, 2L, 4L, 5L, 2L, 6L, 7L, 5L, 5L, 1L, 10L, 
+ 1L, 10L, 7L, 3L, 10L, 4L, 8L, 4L, 2L, 6L, 5L, 5L, 2L, 7L, 4L, 10L, 7L, 4L, 4L, 2L, 
+ 9L, 2L, 6L, 2L, 10L, 3L, 1L, 6L, 7L, 3L, 4L, 2L, 2L, 10L, 9L, 9L, 9L, 4L, 8L, 7L, 
+ 2L, 7L, 1L, 4L, 5L, 6L, 10L, 3L, 6L, 6L, 6L, 10L, 1L, 1L, 5L, 7L, 7L, 1L, 8L, 9L, 
+ 5L, 1L, 10L, 9L, 1L, 5L, 2L, 5L, 6L, 6L, 7L, 4L, 7L, 3L, 7L, 6L, 8L, 8L, 1L, 10L, 
+ 2L, 3L, 1L, 3L, 3L, 7L, 6L, 7L, 10L, 2L, 5L, 4L, 10L, 4L, 3L, 7L, 1L, 6L, 4L, 6L, 
+ 9L, 8L, 2L, 10L, 1L, 5L, 8L, 8L, 2L, 5L, 8L, 10L, 7L, 1L, 1L, 8L, 6L, 7L, 1L, 6L, 
+ 9L, 6L, 2L, 5L, 3L, 10L, 9L, 1L, 1L, 3L, 1L, 6L, 6L, 8L, 2L, 1L, 2L, 6L, 10L, 10L, 
+ 2L, 10L, 9L, 6L, 5L, 3L, 7L, 1L, 6L, 10L, 6L, 9L, 7L, 6L, 9L, 10L, 7L, 9L, 8L, 7L, 
+ 2L, 1L, 4L, 2L, 3L, 2L, 8L, 7L, 9L, 9L, 6L, 10L, 8L, 7L, 10L, 4L, 7L, 6L, 10L, 9L, 
+ 5L, 4L, 5L, 4L, 7L, 10L, 1L, 8L, 4L, 9L, 6L, 4L, 10L, 2L, 10L, 9L, 8L, 2L, 7L, 4L, 
+ 4L, 5L, 8L, 7L, 2L, 6L, 4L, 10L, 9L, 9L, 10L, 1L, 8L, 9L, 5L, 5L, 3L, 2L, 9L, 7L, 
+ 2L, 2L, 7L, 9L, 9L, 4L, 7L, 5L, 8L, 5L, 10L, 1L, 3L, 4L, 4L, 4L, 2L, 3L, 5L, 6L, 
+ 6L, 5L, 2L, 1L, 2L, 8L, 3L, 10L, 7L, 9L, 5L, 6L, 3L, 2L, 7L, 10L, 6L, 5L, 10L, 10L, 
+ 4L, 10L, 4L, 2L, 8L, 6L, 6L, 2L, 3L, 1L, 5L, 3L, 4L, 6L, 3L, 8L, 6L, 5L, 2L, 9L, 
+ 5L, 7L, 9L, 10L, 4L, 2L, 3L, 5L, 4L, 6L, 6L, 7L, 8L, 6L, 8L, 8L, 9L, 9L, 10L, 7L, 
+ 9L, 4L, 1L, 6L, 8L, 2L, 3L, 6L, 10L, 6L, 6L, 3L, 10L, 5L, 7L, 4L, 9L, 6L, 8L, 2L, 
+ 2L, 2L, 1L, 3L, 6L, 2L, 5L, 8L, 7L, 4L, 1L, 4L, 8L, 9L, 4L, 7L, 7L, 8L, 6L, 4L, 4L, 
+ 7L, 4L, 8L, 6L, 10L, 9L, 10L, 3L, 6L, 8L, 3L, 6L, 10L, 5L, 3L, 6L, 2L, 9L, 8L, 2L, 
+ 1L, 9L, 8L, 5L, 1L, 7L, 1L, 1L, 10L, 5L, 7L, 9L, 8L, 3L, 6L, 4L, 7L, 6L, 2L, 4L, 
+ 6L, 1L, 5L, 5L, 9L, 4L, 10L, 1L, 7L, 4L, 1L, 6L, 6L, 7L, 5L, 3L, 8L, 2L, 7L, 8L, 
+ 1L, 3L, 2L, 5L, 4L, 3L, 9L, 4L, 5L, 4L, 3L, 4L, 8L, 10L, 4L, 10L, 2L, 2L, 1L, 1L, 
+ 8L, 3L, 2L, 6L, 9L, 2L, 1L, 3L, 8L, 2L, 3L, 5L, 6L, 3L, 1L, 1L, 6L, 9L, 3L, 5L, 9L, 
+ 5L, 5L, 4L, 8L, 6L, 3L, 10L, 7L, 3L, 9L, 9L, 3L, 4L, 2L, 5L, 1L, 3L, 5L, 7L, 6L, 
+ 1L, 1L, 3L, 8L, 3L, 5L, 9L, 3L, 9L, 3L, 7L, 3L, 2L, 2L, 7L, 6L, 10L, 1L, 3L, 2L, 
+ 10L, 8L, 10L, 8L, 5L, 7L, 3L, 8L, 4L, 10L, 9L, 1L, 10L, 4L, 3L, 7L, 1L, 8L, 8L, 2L, 
+ 5L, 10L, 3L, 2L, 8L, 2L, 2L, 6L, 10L, 9L, 1L, 6L, 5L, 2L, 2L, 2L, 9L, 2L, 4L, 7L, 
+ 10L, 2L, 7L, 5L, 8L, 7L, 10L, 3L, 6L, 4L, 3L, 5L, 4L, 3L, 8L, 2L, 4L, 8L, 1L, 8L, 
+ 9L, 10L, 5L, 8L, 5L, 2L, 4L, 4L, 9L, 3L, 5L, 1L, 2L, 7L, 7L, 5L, 6L, 5L, 4L, 9L, 
+ 1L), "auc", TRUE, FALSE)
+Already run predictor 'RF' on group 'MS', skipping...
+Already run predictor 'RF2' on group 'MS', skipping...
+Already run predictor 'RF3' on group 'MS', skipping...
+Already run predictor 'RFO' on group 'MS', skipping...
+Already run predictor 'RP' on group 'MS', skipping...
+Running predictor 'RPS' for group 'MS'.
+Ran predictor 'RPS' for group 'CoLiMS' in 0.10 minutes.
+Running predictor 'SVM' for group 'CoLiMS'.
+Ran predictor 'RPS' for group 'CoMSQO' in 0.11 minutes.
+Running predictor 'SVM' for group 'CoMSQO'.
+Ran predictor 'RPS' for group 'MS' in 0.02 minutes.
+Already run predictor 'SVM' on group 'MS', skipping...
+Already run predictor 'NB' on group 'MS', skipping...
+Already run predictor 'KNN' on group 'MS', skipping...
+Already run predictor 'KNNC' on group 'MS', skipping...
+Treating group of Categories: Co
+Selected columns:
+Core.AgeAtExam, Core.EDSS, Core.DiseaseDuration, Core.DiseaseCourse, Core.MSSS
+Already run predictor 'GLM' on group 'Co', skipping...
+Already run predictor 'RF' on group 'Co', skipping...
+Already run predictor 'RF2' on group 'Co', skipping...
+Already run predictor 'RF3' on group 'Co', skipping...
+Already run predictor 'RFO' on group 'Co', skipping...
+Already run predictor 'RP' on group 'Co', skipping...
+Already run predictor 'RPS' on group 'Co', skipping...
+Already run predictor 'SVM' on group 'Co', skipping...
+Already run predictor 'NB' on group 'Co', skipping...
+Already run predictor 'KNN' on group 'Co', skipping...
+Already run predictor 'KNNC' on group 'Co', skipping...
+Treating group of Categories: FSMSQO
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MSFC.T25FW, MSFC.NHPT, QOL.LackFocus, QOL.LackEnergy, QOL.PsychoDown, QOL.RelativePain, QOL.NotEnjoyLife
+Already run predictor 'GLM' on group 'FSMSQO', skipping...
+Already run predictor 'RF' on group 'FSMSQO', skipping...
+Already run predictor 'RF2' on group 'FSMSQO', skipping...
+Already run predictor 'RF3' on group 'FSMSQO', skipping...
+Already run predictor 'RFO' on group 'FSMSQO', skipping...
+Already run predictor 'RP' on group 'FSMSQO', skipping...
+Running predictor 'RPS' for group 'FSMSQO'.
+KNNC for groups MSFC - QOL                          (  7 features) ->  best k: 70 / kernel: optimal
+ERROR running train/test for predictor 'GLM' and group 'MS': 
+ replacement has length zero
+TRACEBACK:
+1: run(X, Y, pred, FIs) at Code/Helpers.R:46
+2: predictor$trainPredict(X[foldIdx != i, ], Y[foldIdx != i], X[foldIdx == i, ], logFilePath = logFilePath) at Code/Helpers/CVer.R:137
+3: cv.glmnet(data.matrix(Xtrain), Ytrain, alpha = 0.999, type.measure = "auc", family = "binomial") at Code/05_predictors.R:54
+4: do.call(fun, list(outlist, lambda, x, y, weights, offset, foldid, type.measure, grouped, 
+     keep))
+5: cv.lognet(list(structure(list(a0 = structure(c(-0.825458316779238, -0.818978929753375, 
+ -0.812991896483628, -0.807462525681407, -0.802358750627008, -0.797650755811802, -0.793310700773949, 
+ -0.789312516121342, -0.78563175089668, -0.782245455825695), .Names = c("s0", "s1", 
+ "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), dim = c(2L, 10L), lambda = c(0.0072497457194178, 
+     0.00660569829084118, 0.00601886626075023, 0.00548416677083571, 0.00499696850991165, 
+     0.00455305159971341, 0.0041485710443309, 0.00378002342669346, 0.00344421656364713, 
+     0.00313824185679134), dev.ratio = c(-1.10170416316532e-14, 3.44436820869434e-05, 
+     6.34590245100266e-05, 8.78887413004567e-05, 0.000108445137754462, 0.000125730968548684, 
+     0.000140256588180372, 0.000152454181896072, 0.000162689670485019, 0.000171272732772334
+     ), nulldev = 1654.81759455228, npasses = 37L, jerr = 0L, offset = FALSE, classnames = c("FALSE", 
+     "TRUE"), call = glmnet(x = x[!which, , drop = FALSE], y = y_sub, family = "binomial", 
+         weights = weights[!which], offset = offset_sub, alpha = 0.999, lambda = lambda), 
+     nobs = 1346L), .Names = c("a0", "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", 
+ "npasses", "jerr", "offset", "classnames", "call", "nobs"), class = c("lognet", "glmnet"
+ )), structure(list(a0 = structure(c(-0.780257055456575, -0.778022564901751, -0.775977583561462, 
+ -0.774106605106556, -0.772395321386984), .Names = c("s0", "s1", "s2", "s3", "s4")), 
+     beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, df = c(0L, 
+     1L, 1L, 1L, 1L), dim = c(2L, 5L), lambda = c(0.00256479271882859, 0.0023369436025528, 
+     0.00212933597378847, 0.00194017163457296, 0.00176781213389459), dev.ratio = c(1.19499573825985e-14, 
+     4.164224593389e-06, 7.63735191183508e-06, 1.05331600827307e-05, 1.29468804232174e-05
+     ), nulldev = 1675.69020710556, npasses = 17L, jerr = 0L, offset = FALSE, classnames = c("FALSE", 
+     "TRUE"), call = glmnet(x = x[!which, , drop = FALSE], y = y_sub, family = "binomial", 
+         weights = weights[!which], offset = offset_sub, alpha = 0.999, lambda = lambda), 
+     nobs = 1346L), .Names = c("a0", "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", 
+ "npasses", "jerr", "offset", "classnames", "call", "nobs"), class = c("lognet", "glmnet"
+ )), structure(list(a0 = structure(c(-0.821953314792451, -0.827433606693854, -0.832393275812779, 
+ -0.836885660860603, -0.840957819916586), .Names = c("s0", "s1", "s2", "s3", "s4")), 
+     beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, df = c(0L, 
+     1L, 1L, 1L, 1L), dim = c(2L, 5L), lambda = c(0.00506911137799969, 0.00461878549423458, 
+     0.00420846532083303, 0.00383459686074668, 0.00349394184422975), dev.ratio = c(8.11924289169114e-15, 
+     1.66168157867587e-05, 3.03149408503391e-05, 4.1617168140931e-05, 5.09497773182254e-05
+     ), nulldev = 1656.46500538523, npasses = 17L, jerr = 0L, offset = FALSE, classnames = c("FALSE", 
+     "TRUE"), call = glmnet(x = x[!which, , drop = FALSE], y = y_sub, family = "binomial", 
+         weights = weights[!which], offset = offset_sub, alpha = 0.999, lambda = lambda), 
+     nobs = 1346L), .Names = c("a0", "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", 
+ "npasses", "jerr", "offset", "classnames", "call", "nobs"), class = c("lognet", "glmnet"
+ )), structure(list(a0 = structure(c(-0.787160903830043, -0.783176159290988, -0.781744178948086, 
+ -0.784969093577847, -0.787859625411223, -0.790451870834503, -0.79277919457829, -0.794871750568546, 
+ -0.796753416888744, -0.798447807243125), .Names = c("s0", "s1", "s2", "s3", "s4", 
+ "s5", "s6", "s7", "s8", "s9")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 10L), lambda = c(0.00455528554352705, 
+     0.00415060653073314, 0.00378187808609376, 0.00344590646021796, 0.00313978162760837, 
+     0.00286085208141242, 0.00260670186733847, 0.00237512965781552, 0.00216412968514682, 
+     0.00197187436850973), dev.ratio = c(1.0900203713105e-14, 1.32189572994496e-05, 
+     3.10631316827213e-05, 5.928453829737e-05, 8.27531697522584e-05, 0.000102283928340114, 
+     0.000118538114632566, 0.000132060445464342, 0.000143318468000063, 0.00015268665795902
+     ), nulldev = 1672.55537711243, npasses = 41L, jerr = 0L, offset = FALSE, classnames = c("FALSE", 
+     "TRUE"), call = glmnet(x = x[!which, , drop = FALSE], y = y_sub, family = "binomial", 
+         weights = weights[!which], offset = offset_sub, alpha = 0.999, lambda = lambda), 
+     nobs = 1346L), .Names = c("a0", "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", 
+ "npasses", "jerr", "offset", "classnames", "call", "nobs"), class = c("lognet", "glmnet"
+ )), structure(list(a0 = structure(c(-0.811466840860277, -0.822391710335159, -0.832288256203677, 
+ -0.841259869597049, -0.849398168396825, -0.856784615285869, -0.863491862667933, -0.869584878618849, 
+ -0.87512189600669), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"
+ )), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, df = c(0L, 
+ 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), dim = c(2L, 9L), lambda = c(0.00749528124810166, 
+ 0.00682942111988105, 0.00622271417026415, 0.00566990539389679, 0.00516620662561708, 
+ 0.00470725506765936, 0.00428907550118711, 0.00390804585484907, 0.00356086583212999
+ ), dev.ratio = c(2.19472441614689e-14, 3.60933274992934e-05, 6.58750190827639e-05, 
+ 9.0467726697413e-05, 0.000110789087943277, 0.000127590658955639, 0.000141489040522424, 
+ 0.000152990874420318, 0.000162512997334676), nulldev = 1661.36524456968, npasses = 33L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.801022517015037, 
+ -0.822345804583262, -0.841584515251407, -0.858971066886981, -0.874705623689352, -0.888961764571854, 
+ -0.901890991362716, -0.913626326328591, -0.924285195110323, -0.933971750581118, -0.942778759428391, 
+ -0.950789146108222, -0.958077267382174, -0.964709973939945, -0.970747502706212, -0.975329160046071, 
+ -0.97852686540756, -0.981422562094476, -0.98404665719989, -0.986433045166478, -0.988590398132931, 
+ -0.990547923458998), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", 
+ "s9", "s10", "s11", "s12", "s13", "s14", "s15", "s16", "s17", "s18", "s19", "s20", 
+ "s21")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 
+     2L, 2L, 2L, 2L), dim = c(2L, 22L), lambda = c(0.0142571867370993, 0.0129906175618286, 
+     0.011836566901278, 0.0107850389207139, 0.00982692578781046, 0.00895392878496375, 
+     0.00815848642976939, 0.00743370898107949, 0.00677331876336086, 0.00617159579247264, 
+     0.00562332823190012, 0.00512376725032016, 0.004668585889496, 0.00425384158623505, 
+     0.00387594202379262, 0.00353161401694273, 0.00321787516121363, 0.00293200800072699, 
+     0.00267153649089507, 0.00243420455210705, 0.00221795652864673, 0.0020209193835861
+     ), dev.ratio = c(-8.0717920975055e-15, 0.000129377463582761, 0.000235675170387861, 
+     0.000323160595619868, 0.000395267685598341, 0.00045477221667021, 0.000503926976720656, 
+     0.000544566743933403, 0.000578190402976223, 0.000606025634073212, 0.000629080216621911, 
+     0.000648182970240676, 0.000664016610445938, 0.000677144248109787, 0.000688030856594284, 
+     0.000705882522635639, 0.000729606599484151, 0.000749379055324201, 0.000765852674911962, 
+     0.000779529806489969, 0.000790968605448175, 0.000800495369266759), nulldev = 1666.20269177467, 
+     npasses = 89L, jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1346L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.81602884526781, 
+ -0.809933840265426, -0.804369991365528, -0.799291741863875, -0.79465733488876), .Names = c("s0", 
+ "s1", "s2", "s3", "s4")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L), dim = c(2L, 5L), lambda = c(0.0036828688326217, 0.00335569291594342, 
+     0.00305758240596823, 0.00278595521207224, 0.00253845862944605), dev.ratio = c(-6.84478798617266e-15, 
+     8.77822874553789e-06, 1.60806682618654e-05, 2.21544774056402e-05, 2.72056337333374e-05
+     ), nulldev = 1660.47146685223, npasses = 17L, jerr = 0L, offset = FALSE, classnames = c("FALSE", 
+     "TRUE"), call = glmnet(x = x[!which, , drop = FALSE], y = y_sub, family = "binomial", 
+         weights = weights[!which], offset = offset_sub, alpha = 0.999, lambda = lambda), 
+     nobs = 1347L), .Names = c("a0", "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", 
+ "npasses", "jerr", "offset", "classnames", "call", "nobs"), class = c("lognet", "glmnet"
+ )), structure(list(a0 = structure(c(-0.788241400963798, -0.783549620141392, -0.779234018589752, 
+ -0.775266235234125, -0.778604092606141, -0.781650383385004, -0.784377146359521, -0.786820776542404, 
+ -0.789013153935557, -0.790983031709522, -0.792753278603815, -0.794346365688846), .Names = c("s0", 
+ "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L), dim = c(2L, 12L), lambda = c(0.00539339708418299, 
+     0.00491426255204941, 0.00447769301120048, 0.00407990710512449, 0.0037174594026004, 
+     0.00338721055502082, 0.00308630010485625, 0.00281212170974034, 0.00256230056757921, 
+     0.00233467284715176, 0.00212726694603879, 0.00193828641354608), dev.ratio = c(2.34155275387532e-14, 
+     1.85570990194617e-05, 3.41161237137756e-05, 4.71551946699696e-05, 7.97585130435369e-05, 
+     0.000107072928547246, 0.000129813030846899, 0.000148745629434595, 0.000164507925213442, 
+     0.000177625865551906, 0.000188549849275991, 0.000197642380098597), nulldev = 1673.30523672423, 
+     npasses = 50L, jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.854732838874722, 
+ -0.863609988717775, -0.871659390592623, -0.87896234523847, -0.885591338477671, -0.891611161299389, 
+ -0.89707985702592), .Names = c("s0", "s1", "s2", "s3", "s4", "s5", "s6")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 1L, 1L, 1L, 1L, 1L), dim = c(2L, 7L), lambda = c(0.00609380961589791, 
+     0.00555245236486461, 0.00505918779997001, 0.00460974349952653, 0.00420022659201406, 
+     0.0038270900378891, 0.00348710190682516), dev.ratio = c(-2.20391647550827e-14, 
+     2.45846966788486e-05, 4.48907818767577e-05, 6.16728388252771e-05, 7.55496434206326e-05, 
+     8.70293558010293e-05, 9.65298340775838e-05), nulldev = 1642.09417303666, npasses = 25L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet")), structure(list(a0 = structure(c(-0.771020689985937, 
+ -0.772010156989872, -0.773667844408541, -0.775257017276187, -0.776678133258216), .Names = c("s0", 
+ "s1", "s2", "s3", "s4")), beta = <S4 object of class structure("dgCMatrix", package = "Matrix")>, 
+     df = c(0L, 1L, 2L, 2L, 2L), dim = c(2L, 5L), lambda = c(0.00101059309678077, 
+     0.000920814791374052, 0.00083901214318029, 0.000764476616794517, 0.000696562621144337
+     ), dev.ratio = c(4.80371973408186e-15, 6.41212444502137e-07, 1.46996602725813e-06, 
+     2.15878068213798e-06, 2.71399520235151e-06), nulldev = 1681.10145544574, npasses = 5L, 
+     jerr = 0L, offset = FALSE, classnames = c("FALSE", "TRUE"), call = glmnet(x = x[!which, 
+         , drop = FALSE], y = y_sub, family = "binomial", weights = weights[!which], 
+         offset = offset_sub, alpha = 0.999, lambda = lambda), nobs = 1347L), .Names = c("a0", 
+ "beta", "df", "dim", "lambda", "dev.ratio", "nulldev", "npasses", "jerr", "offset", 
+ "classnames", "call", "nobs"), class = c("lognet", "glmnet"))), c(0.00306932456999298, 
+ 0.00279665423460779, 0.00254820718030729, 0.00232183147756207, 0.00211556636833115
+ ), structure(c(4.1, 4.15, 4.6, 4.35, 4.55, 4.2, 4.05, 4.2, 3.4, 3.75, 5.85, 5.55, 
+ 6.05, 8.15, 11, 6.5, 4.45, 3.9, 2.95, 3.15, 5.5, 5.45, 4.35, 4.45, 4.1, 4.35, 4.2, 
+ 4.35, 4.65, 5, 4.65, 5.05, 3.95, 3.55, 3.3, 3.35, 5.55, 4.95, 5.3, 5.65, 4.3, 3.85, 
+ 4.2, 3.95, 3.65, 4.45, 4.6, 4.9, 4.35, 10.95, 11.3, 10.65, 9.9, 4.15, 4.25, 3.7, 
+ 3.45, 3.8, 5.6, 5.95, 3.65, 3.55, 3.85, 3.7, 5.45, 5.05, 5.7, 5.4, 5.6, 3.8, 5.3, 
+ 4, 4.1, 3.85, 4.8, 4.3, 4.75, 4.5, 4.5, 6.8, 5.25, 5, 5.1, 5.05, 4.85, 4.35, 5.7, 
+ 4.6, 3.95, 4.6, 5.35, 4.7, 4.85, 4.5, 4.35, 4.6, 4.7, 4.05, 3.75, 3.2, 4.1, 6.1, 
+ 5, 5.3, 5.15, 5.7, 4.65, 3.9, 3.55, 4.1, 3.95, 4.25, 4.15, 3.9, 4.25, 3.85, 4.05, 
+ 4.15, 4.05, 3.9, 4.85, 4.75, 4.9, 5.1, 5.3, 5.95, 5.1, 5.3, 5, 5.8, 5.5, 6.1, 8.4, 
+ 4.35, 5.15, 5.35, 5.05, 4.05, 3.7, 3.8, 5.05, 4.95, 5.5, 4.95, 5.15, 3.8, 4.25, 3.6, 
+ 3.8, 4.6, 3.9, 3.9, 4.2, 4.35, 3.9, 3.95, 4.25, 4.55, 3.7, 4.65, 4.65, 3.8, 4.15, 
+ 5.15, 4.35, 4.15, 4.4, 4.9, 4.5, 4.1, 4.4, 4, 4.65, 5.2, 4.7, 4, 4.75, 4.6, 4.05, 
+ 5.9, 6.3, 5.95, 5.55, 7.35, 24, 5.5, 4.05, 4.25, 4.3, 4.35, 5.5, 7.5, 5.4, 5, 5.05, 
+ 3.85, 3.9, 4, 3.85, 3.35, 3.95, 3.55, 5.05, 4.4, 4, 3.8, 5.6, 6.1, 4.85, 5, 5.1, 
+ 4.85, 5.05, 4.8, 5.05, 4.75, 5, 4.9, 4.85, 4.15, 4.25, 4.2, 3.95, 4.15, 5.25, 4.6, 
+ 4.4, 4.45, 4.6, 7.2, 7.1, 7.3, 3.85, 4.2, 4.15, 5.6, 5.85, 5.1, 5.2, 3.55, 6, 5.65, 
+ 5.65, 5.45, 5.5, 6.7, 4.55, 4.85, 5.25, 5.35, 5.3, 3.8, 3.95, 3.7, 3.8, 4, 4.65, 
+ 5.15, 5.3, 6.8, 5, 4.35, 5.3, 4.45, 4.4, 4.35, 4.9, 5.5, 4.95, 4.7, 5.35, 4.8, 5.2, 
+ 5.6, 4.95, 4.7, 5, 6.5, 6.65, 6.55, 7.5, 3.75, 3.25, 3.2, 3, 3.5, 3.85, 4.95, 4.5, 
+ 3.95, 4.3, 4.75, 5.3, 5.05, 4.75, 7.3, 9.2, 5.05, 5.4, 4.85, 4.7, 4.8, 4.35, 4.25, 
+ 4, 4.2, 3.8, 3.5, 3.5, 3.65, 3.45, 3.6, 3.4, 3.95, 4.1, 4.7, 4.1, 4.5, 3.75, 3.9, 
+ 3.6, 3.9, 3.8, 4.2, 3.7, 3.7, 4.3, 3.6, 7.3, 8.5, 4.5, 4.95, 4.9, 4.2, 4.85, 4.6, 
+ 4.5, 4.55, 4.25, 9.1, 6.3, 4, 3.95, 3.5, 3.5, 4.15, 7.45, 4.05, 4.1, 4.55, 4.55, 
+ 5.4, 7.65, 5.75, 5.9, 6, 5.45, 4.75, 4.35, 4.65, 4.6, 3.8, 4.05, 3.6, 3.4, 3.7, 4.25, 
+ 5.25, 4.15, 4.65, 4.35, 4.6, 4.35, 4.1, 4.15, 3.9, 4.55, 3.85, 3.85, 4.05, 5.35, 
+ 4, 5, 5.5, 5.2, 5.15, 5.6, 4.1, 4.25, 4.2, 4.2, 4.35, 4.75, 4.9, 4.75, 4.7, 5.4, 
+ 12.9, 14, 5.7, 6, 6.15, 5.55, 5.65, 9.3, 7.7, 8.45, 3.25, 4.05, 8.65, 7, 6.45, 6.3, 
+ 3.8, 4.35, 4.6, 4.4, 3.85, 3.95, 7.35, 7, 6.75, 7.05, 8.05, 4.85, 5, 4.8, 4.7, 4.15, 
+ 4.55, 4.25, 5, 4.8, 3.9, 4.3, 4.45, 4.05, 3.55, 4.05, 3.9, 3.55, 7.7, 5.95, 6.55, 
+ 8.5, 10.15, 3.85, 3.6, 4.1, 3.35, 4.55, 4.9, 5.35, 4.85, 4.75, 5.2, 5.05, 5.05, 4.1, 
+ 3.8, 3.95, 3.6, 3.8, 3.65, 3.6, 3.3, 3.85, 4.3, 6.35, 5.2, 6.35, 5.95, 4.1, 4.25, 
+ 3.75, 4.1, 4.15, 4.1, 3.9, 5.65, 4.6, 4.35, 4.95, 5.4, 4.15, 4.75, 3.7, 3.85, 4.2, 
+ 3.55, 3.8, 4.15, 3.75, 4.3, 4.45, 5.9, 4.3, 3.85, 4.4, 4.35, 3.85, 3.95, 4.1, 5.05, 
+ 4.6, 4.45, 4.95, 4.5, 4.35, 3.45, 3.6, 3.7, 3.2, 4.55, 4.1, 5.2, 5.1, 3.4, 4.05, 
+ 3.7, 3.45, 3.7, 4.45, 4.65, 4.45, 4.1, 4.25, 3.9, 3.8, 4.05, 3.45, 10.1, 3.4, 3.75, 
+ 3.7, 3.45, 4.25, 4.15, 3.3, 4.05, 4.95, 4.45, 4.3, 3.75, 4, 5.15, 5.3, 4.9, 4.1, 
+ 3.6, 2.9, 3.05, 2.65, 4.75, 4.05, 4.45, 4.25, 5.55, 5.7, 6.1, 6.4, 6.65, 4.7, 5.05, 
+ 4.5, 4.2, 4.2, 4.15, 3.9, 9.7, 4.8, 5.4, 6.7, 3.7, 3.65, 3.75, 3.4, 3.65, 4, 3.95, 
+ 4.05, 3.5, 4.7, 4.6, 4.35, 4.25, 4.6, 4.85, 4.45, 4.6, 4.95, 6, 7.4, 6.65, 6.7, 7.45, 
+ 8, 4.75, 5.65, 4.7, 5.7, 7.2, 4.25, 5.05, 3.85, 6.4, 6.2, 6.45, 5.85, 6.15, 10.2, 
+ 6.2, 5, 5.65, 5.65, 5.25, 4.5, 4.3, 4.75, 4.15, 4.85, 5.5, 4.9, 6.5, 5.3, 7.7, 3.8, 
+ 3.85, 3.7, 3.8, 4.55, 5, 3.65, 3.65, 3.45, 4.5, 4.15, 4.1, 4.5, 4.65, 5.7, 4.9, 5.7, 
+ 5.3, 4.5, 4.45, 3.85, 4.45, 4.7, 4.65, 3.8, 4.85, 3.65, 5.1, 5.35, 5.25, 5.9, 4.9, 
+ 6.6, 5.35, 5.55, 5.7, 5.8, 4.9, 5.65, 6.1, 7.05, 7.6, 4.65, 4.25, 4.05, 4.5, 6.2, 
+ 5, 6, 5.25, 5.05, 6.1, 4.7, 5.25, 4.25, 4.55, 3.95, 4.05, 4.35, 4.25, 4.75, 4.2, 
+ 4.5, 4.95, 4.45, 4.9, 4.85, 4.4, 4.4, 4.6, 4.4, 4.15, 4.45, 3.8, 4.8, 4.6, 5.1, 4.65, 
+ 5.05, 4.1, 4.05, 4, 4.25, 4.3, 4.5, 4.4, 3.8, 3.85, 6.1, 6.45, 5.45, 3.6, 3.1, 3.3, 
+ 3.2, 3.2, 3.7, 3.6, 4.7, 4.1, 5.05, 4.55, 5.75, 5.8, 4.9, 5.4, 5.55, 5.7, 4.95, 45.45, 
+ 5.7, 4.25, 4.7, 4.4, 4.85, 4.9, 5.65, 5.6, 3.95, 3.85, 3.45, 4.8, 5.5, 3.65, 4.15, 
+ 4.1, 3.9, 3.65, 6, 5.45, 4.95, 5.05, 4.9, 4.05, 4, 4.7, 4.15, 3.9, 4.55, 4.7, 4.8, 
+ 4.65, 7.7, 6.05, 5.85, 8.1, 4.15, 5.1, 4.2, 4.6, 4.4, 3.5, 4, 5, 4.75, 5.35, 5.15, 
+ 5.15, 4.75, 4.25, 4.15, 3.95, 3.75, 3.95, 4.3, 3.8, 4.8, 4.35, 4.15, 5.25, 4, 5.45, 
+ 4.85, 5.3, 6.05, 5.85, 4.2, 4.3, 4, 4.15, 5.1, 4.2, 4.65, 5.4, 4.55, 6.65, 7.6, 6.65, 
+ 6.05, 5.9, 5.3, 5.45, 3.25, 2.9, 2.5, 2.55, 2.55, 4.05, 3.65, 3.6, 4.15, 4.9, 3.8, 
+ 4.05, 3.55, 13.45, 11.65, 11.8, 5.9, 4.8, 4.95, 4.9, 5.95, 4.05, 4, 3.5, 4.45, 3.85, 
+ 4.7, 4.25, 6.15, 5.05, 5.25, 5.95, 5.8, 5.65, 6.4, 5.9, 5.4, 5.1, 4.6, 5.4, 6, 6.4, 
+ 6.25, 4.55, 4.15, 5.05, 4.3, 4.4, 3.35, 3.05, 4.2, 4, 5.75, 6.15, 5.75, 7.6, 5.95, 
+ 4.65, 4.55, 3.8, 4.35, 3.9, 4.7, 4.85, 4.95, 5.8, 5, 4.9, 4.05, 3.75, 3.95, 4.6, 
+ 4, 3.85, 3.95, 4.45, 4.45, 4.15, 3.95, 4, 3.65, 3.85, 3.7, 3.5, 4, 2.9, 3.35, 6.1, 
+ 6.8, 4.1, 3.95, 4.35, 4.45, 4.55, 5.95, 6.1, 5.7, 6.05, 4.6, 4.75, 4.2, 4.75, 4.5, 
+ 3.55, 3.2, 3.4, 3.45, 3.55, 7.45, 7.95, 7.35, 7, 4.9, 4.7, 4.65, 3.6, 3.4, 3.4, 3.95, 
+ 3.65, 6.35, 6.05, 3.9, 3.65, 4.25, 4.45, 3.65, 4.9, 5, 3.95, 4.05, 3.55, 3.5, 4.05, 
+ 2.95, 3.4, 3.75, 4.95, 5.55, 5.25, 3.9, 3.9, 4.4, 4.15, 4.05, 6.5, 7.3, 10.1, 9.95, 
+ 4.75, 4.9, 4.7, 4.55, 5.05, 4.25, 4.3, 6.55, 4.25, 4.1, 4.35, 4.25, 3.95, 7.1, 7.4, 
+ 9.75, 4.2, 3.85, 4.2, 4.4, 3.85, 4.35, 4.75, 5, 4.55, 4.4, 5, 4.75, 13.45, 5.15, 
+ 3.6, 4.5, 4.2, 4.2, 4.25, 4.3, 5.3, 5.4, 5.55, 6.05, 5.95, 4.7, 5.15, 3.95, 5.05, 
+ 4.5, 4.65, 4.7, 5.4, 4.05, 3.85, 3.9, 3.7, 3.9, 3.4, 3.6, 3.4, 3.55, 4.15, 6.25, 
+ 6.2, 6.15, 4.6, 3.9, 4.25, 4, 6.25, 5.9, 5.75, 5.7, 4.55, 4.55, 5.05, 5.2, 4.45, 
+ 4, 3.95, 3.6, 3.95, 3.85, 4.3, 4.75, 5.35, 5.2, 4.95, 5.75, 6.1, 4.95, 5.1, 5.2, 
+ 5.15, 6.4, 4.7, 5.25, 5.2, 5.6, 4.9, 4.05, 4.6, 3.85, 4.15, 7.4, 7.85, 5.9, 5.75, 
+ 4.55, 4.35, 4.2, 4.55, 4.55, 6.7, 6.35, 5.25, 5.55, 6.15, 7.85, 6.85, 7.45, 6.35, 
+ 12.85, 4.75, 4.1, 3.9, 4.2, 6.1, 5.9, 4.5, 4, 4.05, 4.45, 4.5, 4.65, 4.9, 4.95, 3.95, 
+ 3.5, 4.85, 5.35, 5.2, 5.5, 5.35, 5.3, 4.9, 4.35, 4.1, 4.35, 4.25, 15.35, 16.45, 18.15, 
+ 4.6, 4.65, 5.1, 6.05, 6.55, 5.4, 4.9, 4.35, 4.85, 4.95, 3.65, 5.2, 4.8, 5.6, 4.35, 
+ 4.1, 4.15, 4.05, 4, 4.35, 4.1, 4.15, 4.2, 4.15, 4.2, 4.3, 3.9, 3.8, 3.6, 3.55, 3.8, 
+ 5.2, 5.05, 5.45, 3.7, 4.45, 3.45, 4.8, 4.6, 4.75, 4.5, 4.35, 4.55, 5.1, 9.4, 10, 
+ 5.15, 53.65, 4.1, 4.85, 4.9, 4.75, 3.85, 4.8, 4.75, 3.95, 9.75, 7.75, 6.7, 5.1, 5.75, 
+ 3.9, 4.35, 8.05, 4.5, 4.5, 4.05, 4.45, 4.35, 7.65, 7.75, 5.45, 7.3, 3.75, 3.9, 4.15, 
+ 4.25, 3.55, 5.3, 5.65, 5.1, 5.05, 5.3, 4.15, 4.45, 4.05, 4.05, 4.4, 4.5, 5.65, 5.8, 
+ 4, 4.25, 3.9, 4.2, 5.4, 5.7, 4.95, 4.85, 6.5, 5.25, 4.75, 4.6, 5.2, 5.15, 6.15, 7.75, 
+ 3.45, 3.65, 2.9, 3.55, 3.4, 4.15, 4.75, 4.35, 5.1, 4.7, 4.6, 4.45, 4.65, 6.25, 5.85, 
+ 5.65, 5.7, 5.05, 7.05, 6.8, 6.3, 6.6, 7, 6, 6.6, 2.95, 3.2, 2.95, 3.65, 4.7, 4.4, 
+ 4.05, 4.55, 4.7, 6.45, 5.8, 5.95, 5.6, 6.7, 7.55, 5, 4.7, 4.3, 5.35, 5.75, 5.6, 4.75, 
+ 4.05, 4.45, 4.35, 4, 3.85, 3.95, 3.75, 3.55, 5, 5.05, 4.65, 4.25, 3.7, 3.9, 4, 3.85, 
+ 5.95, 6.5, 5.35, 6.7, 5.35, 4.65, 3.95, 3.75, 4.15, 25, 3.4, 3.7, 3.1, 6.25, 7.4, 
+ 4.5, 4.15, 3.8, 4.15, 4.3, 4.3, 5.3, 4.5, 5.25, 5.75, 5.55, 4.9, 4.3, 4.35, 4.35, 
+ 4.35, 3.95, 4.3, 4.4, 3.85, 4.35, 4.15, 3.5, 3.05, 3.45, 6.75, 5.8, 5.65, 4.65, 4.65, 
+ 4.25, 3.9, 3.95, 3.9, 3.6, 4.1, 4.2, 4.05, 5.2, 4.25, 4.25, 4.5, 4, 4.4, 4, 6.1, 
+ 6, 6.15, 6.55, 6.45, 7.9, 7.05, 6.35, 4.5, 7.35, 3.75, 4.8, 4.35, 4.45, 5.9, 6.2, 
+ 5.75, 5.25, 8.5, 7.35, 7.55, 4.3, 4.6, 4.35, 4.85, 4.8, 5.2, 5.1, 5.4, 4.75, 3.55, 
+ 3.55, 3.35, 3.6, 5.25, 3.8, 3.5, 3.05, 3.1, 4.65, 3.5, 3.45, 5.9, 5.55, 4.9, 8.3, 
+ 7.6, 4.5, 4.15, 3.65, 4.4, 3.6, 3.8, 3.75, 4.2, 4.7, 4.45, 4.75, 5, 6.15, 5.8, 5.45, 
+ 6.85, 5.2, 3.95, 3.55, 4.15, 3.9, 5.65, 5.5, 5.5, 5.25, 5.2, 4.75, 4.75, 3.85, 3.8, 
+ 4.3, 4.15, 3.45, 3.65, 4.15, 4.2, 3.9, 4, 3.55, 3.7, 3.4, 3.35, 3.95, 3.35, 3.6, 
+ 3.7, 4.05, 4.4, 4, 5.7, 4.2, 5.1, 5.05, 4.9, 4.35, 5.2, 4.8, 5.25, 5.2, 4.75, 4.35, 
+ 5.85, 3.85, 3.7, 3.55, 4.2, 3.6, 3.25, 3.1, 3.6, 5.95, 7.15, 4, 4.5, 4.35, 4.3, 4.35, 
+ 4.4, 6.6, 8.6, 3.85, 4.05, 3.9, 5.4, 4.25, 4.65, 5.15, 5.15, 4.7, 6.35, 6.7, 2.5, 
+ 3, 2.7, 3.3, 3.3, 3.6, 4.9, 5.4, 4.35, 4.2, 4.4, 19.4, 19.725, 21.375, 17.05, 20.075, 
+ 22.95, 20.825, 23.1, 29.1, 24.1, 19.8, 19.55, 21.45, 19.025, 21.35, 21.2, 18.775, 
+ 17.475, 18.5, 17.45, 23.925, 26.125, 17.775, 22.25, 19.5, 21.175, 23, 17.375, 18.7, 
+ 18.05, 17.55, 17.5, 19.825, 21.575, 20.25, 18.575, 16.825, 15.375, 16.5, 16.475, 
+ 14.425, 22.975, 19.85, 20.15, 20.8, 23.05, 18.275, 18.95, 18.925, 31.075, 29.7, 27.2, 
+ 24.8, 21.275, 20.625, 19.625, 18.675, 20.45, 19.875, 19.85, 17.425, 19.85, 20.475, 
+ 17.925, 20.725, 23.075, 20.2, 17.875, 17.875, 19.4, 19.7, 16.925, 17.8, 18.05, 20.1, 
+ 18.375, 18.85, 18.425, 18.925, 20.65, 19.9, 21.125, 20.175, 23.225, 20.925, 21.15, 
+ 22.9, 19.525, 21.4, 18.45, 18.025, 16.025, 15.55, 18.125, 18.2, 19.325, 19.525, 18.9, 
+ 19.375, 18.875, 20.3, 37.05, 55.5, 86.275, 119.225, 19.15, 20.675, 20.1, 21.825, 
+ 19.025, 18.4, 17.675, 18.125, 18.3, 16.7, 19.425, 22.55, 22.05, 17.2, 20.425, 27.2, 
+ 25.475, 29.225, 24.525, 25.425, 30.025, 30, 27.425, 27.15, 29.625, 32.5, 34.05, 30.325, 
+ 28.25, 32.85, 21.8, 22.35, 19.875, 19, 18.3, 21.975, 20.95, 19.25, 19.15, 17.325, 
+ 18.125, 16.225, 17.575, 17.275, 18.375, 22.775, 19.525, 18.65, 21.275, 18.925, 18.4, 
+ 21.8, 21.2, 28.45, 23.75, 22.3, 20.45, 20.075, 21.675, 21.15, 19.5, 20.15, 18.625, 
+ 17.925, 17.075, 18.1, 17.85, 19.275, 19.675, 16.45, 17.4, 22.775, 21.25, 22.775, 
+ 27.825, 24.325, 31.75, 31.225, 23.425, 20.725, 20.15, 16.75, 15.675, 18.125, 16.8, 
+ 18.9, 17.675, 17.725, 21.225, 17, 18.25, 18.05, 17.05, 17.025, 15.65, 16.7, 17.525, 
+ 17.375, 23.975, 22.75, 20.85, 28.15, 30.825, 30.475, 34.7, 33.9, 22.85, 20.5, 22.25, 
+ 21.875, 21.9, 22.1, 21, 28.525, 20.225, 19.4, 20.275, 21.4, 18.65, 19.125, 18.075, 
+ 18.7, 18.8, 17.7, 40.125, 36.7, 32.55, 20.4, 20.9, 20.325, 24.45, 22.05, 20.725, 
+ 21.675, 17.475, 22.15, 20.2, 24.25, 22.025, 24.35, 24.125, 20.875, 20.3, 22.325, 
+ 19.15, 20.45, 16.35, 17.225, 18.7, 17, 17.2, 15.8, 17.4, 16.45, 17.175, 16.975, 24.425, 
+ 30.7, 27.275, 24.875, 22.1, 18.65, 20.575, 18.925, 19.725, 18.25, 18.2, 18.225, 20.175, 
+ 17.4, 19.3, 29.525, 30.15, 34.125, 31.325, 31.95, 19.45, 17.375, 16.85, 16.525, 16.925, 
+ 20.225, 18.7, 18.575, 18.525, 20, 18.625, 18.975, 18.475, 18.2, 20.825, 20.275, 24.4, 
+ 23.325, 25.525, 28.95, 20.3, 20.3, 17.025, 19.7, 19.25, 16.875, 15.8, 14.45, 16.425, 
+ 14.35, 20.625, 21.55, 21.55, 21.825, 23.2, 19.275, 20.425, 17.475, 18.1, 18.1, 24.325, 
+ 21.95, 19.7, 19.75, 21.15, 19.175, 17.2, 24.175, 24.4, 28.725, 28.225, 32.075, 25.05, 
+ 26.25, 18.7, 16.4, 16.225, 15.7, 28.375, 34.05, 16.6, 16.35, 17.95, 15.975, 17.025, 
+ 25.925, 23.175, 21.025, 20.775, 24.275, 20.75, 23.85, 28.825, 24.925, 26.45, 24.925, 
+ 20.4, 18.7, 21.475, 19.65, 21.85, 21.45, 19.95, 20.775, 19.725, 26.425, 22.125, 22.575, 
+ 28.075, 18.875, 17, 17.5, 15.275, 16.35, 17.1, 19.1, 16.675, 17.225, 27.825, 27.5, 
+ 22.125, 21.025, 17.4, 18.4, 15.825, 17.15, 18.125, 18.1, 20.525, 17.825, 18.35, 19.675, 
+ 17.85, 18.925, 18.25, 17.675, 36.275, 41.375, 31.8, 30.675, 30.475, 27, 26.475, 29.425, 
+ 33.825, 37.075, 21.675, 23.25, 25.425, 20.75, 23.225, 26.475, 24.125, 20.5, 20.25, 
+ 19.675, 19, 19, 26.775, 21.775, 23.65, 23.675, 22.35, 17.975, 20.7, 20.275, 17.925, 
+ 25.1, 26.475, 25.2, 23.35, 23.125, 21.425, 21.8, 24.125, 24.975, 19.75, 22.175, 18.275, 
+ 18.925, 24.225, 22.8, 24.575, 26.275, 25.475, 18.45, 21.75, 20, 19.525, 21.875, 21.625, 
+ 23.025, 23.05, 20.4, 18.5, 19.4, 20.075, 21.525, 19.375, 19.65, 16.2, 19.3, 17.475, 
+ 19.575, 16.3, 17.25, 19.825, 21.775, 20.875, 22.325, 23, 21.375, 21.375, 18.85, 19.05, 
+ 19.075, 19.05, 19.675, 22.45, 18.175, 21.725, 21.95, 23.1, 19.65, 19.275, 20.7, 20.25, 
+ 19.05, 19.025, 20.675, 21.725, 19.3, 19.3, 19.95, 19.325, 21.575, 18.025, 19.4, 17.025, 
+ 17.275, 17.325, 15.775, 18.375, 16.65, 24.15, 24.05, 21.75, 23.4, 17.575, 18.075, 
+ 16.125, 16.075, 18.15, 19.4, 18.65, 17.45, 18.45, 16.15, 18.5, 17.775, 18.525, 22.65, 
+ 23.75, 26.425, 19.325, 19.775, 19.725, 18.225, 19.375, 20.675, 31.8, 16.9, 16.25, 
+ 17.775, 16.775, 17.475, 17.15, 15.425, 18.05, 25.25, 19.35, 22.25, 20.7, 21.15, 24.95, 
+ 25.725, 26.1, 20.325, 19.6, 20.425, 21.825, 20.875, 16.725, 18.775, 19.05, 19.625, 
+ 28.9, 26.7, 27.525, 30.05, 27.725, 19.175, 19.65, 18.7, 17.5, 16.975, 16.25, 15.65, 
+ 28, 21.375, 21.1, 19.225, 17.825, 19.1, 18.35, 19.55, 21.25, 22.15, 22.85, 27.7, 
+ 31.925, 18.2, 18.075, 17.85, 17.95, 16.975, 21, 21.1, 20.25, 21.225, 20.9, 21.15, 
+ 19.15, 19.725, 22.55, 20.075, 23.375, 23.6, 21.175, 22.175, 24.8, 19.95, 19.025, 
+ 19.225, 21.375, 21.55, 19.625, 20.125, 21.075, 35.65, 24.625, 24.85, 20.7, 21.075, 
+ 21.425, 18.225, 18.05, 15.85, 16.675, 16.725, 31.35, 35.2, 27.25, 25.875, 26.25, 
+ 19.275, 17.8, 18.3, 18.975, 16.55, 19.425, 17.15, 19.375, 16.175, 36.65, 37.275, 
+ 34.025, 42.25, 47.025, 26, 25.025, 27.35, 25.725, 25.4, 29.425, 29.05, 29.15, 21.525, 
+ 19.875, 19.85, 20.025, 21.2, 17.375, 16.625, 18.3, 17.75, 17, 24.6, 21.75, 20.7, 
+ 20.475, 19.925, 20.4, 21.35, 22.35, 22.25, 22.6, 18.025, 17.875, 20.275, 17.875, 
+ 21.525, 23.1, 20.2, 28.75, 22.325, 31.275, 28.125, 33.6, 20.05, 20.325, 19.075, 19.6, 
+ 19.525, 20.8, 22.025, 22.25, 16.625, 16.275, 25.975, 26.325, 24.675, 22.4, 23.125, 
+ 24.45, 24.1, 19.55, 16.075, 17.6, 19.65, 17.7, 20.3, 18.525, 18.225, 20.6, 21.2, 
+ 20.325, 20.925, 19.15, 20.7, 21.4, 18, 17.525, 25.425, 24.525, 25.225, 21.125, 19.375, 
+ 18.325, 16.325, 18.425, 26.275, 25, 17.425, 18.225, 19.575, 19.65, 20.675, 24.3, 
+ 23.725, 24.1, 25.4, 24.45, 23.85, 66.3, 20.575, 21.85, 20.4, 19.4, 22.15, 20.525, 
+ 24.1, 22.675, 22.425, 21.425, 21.825, 24.825, 22.825, 17.075, 16.425, 17.35, 16.725, 
+ 16.825, 20.475, 20.875, 19.575, 17.2, 18.25, 17.675, 15.65, 15.4, 17.05, 17.025, 
+ 21.4, 23.25, 19.375, 21.7, 21.975, 17.625, 18.1, 19.475, 22.4, 22.15, 20.05, 19.3, 
+ 21.025, 21.525, 20.1, 22.55, 26.425, 28.425, 21.05, 18.875, 19.75, 18.425, 18.7, 
+ 17.675, 20.425, 19.9, 21.25, 19.725, 22.475, 19.075, 24.45, 22.175, 19.575, 35.275, 
+ 27.725, 23.525, 27.275, 29.525, 24.6, 20.875, 20.5, 20.95, 17.625, 18.9, 18, 18.725, 
+ 20, 35.45, 27.6, 33.05, 22.1, 21.95, 20.575, 19.875, 17.4, 15.625, 17.225, 16.2, 
+ 17, 16.825, 17.1, 16.75, 16.7, 24.5, 22.125, 23.05, 22.875, 24.7, 23.6, 23.975, 16.975, 
+ 17.9, 17.525, 17.8, 16.975, 21.225, 27.25, 23.25, 25.45, 23.325, 17.925, 17.25, 35.075, 
+ 38.925, 31.45, 23.55, 23.375, 25.05, 24.95, 26.8, 20.375, 21.225, 21.05, 21.975, 
+ 22.175, 19.7, 22.15, 19.55, 18.175, 20.875, 18.725, 17.2, 18.4, 17.875, 17.325, 18.3, 
+ 25.775, 33.675, 28.225, 30.275, 21.6, 19, 19.8, 18.15, 18.15, 17.9, 27.6, 25.975, 
+ 22.3, 25.025, 22.075, 21.15, 19.725, 16.8, 17.125, 16.225, 16.6, 15.75, 21.175, 20.95, 
+ 23.175, 18.55, 17.9, 17.275, 18.425, 17.525, 17.15, 15.875, 16.45, 15.55, 15.825, 
+ 25.85, 27.425, 21.35, 18.1, 17.125, 16.85, 17.35, 24.275, 23.35, 22.15, 23.1, 16.7, 
+ 18.025, 17.675, 17.775, 18.75, 18.625, 18.025, 18.775, 18.875, 18.975, 25.8, 21.875, 
+ 21.1, 22.4, 18.875, 26.675, 25.575, 15.525, 14.875, 15.35, 15, 13.925, 21.95, 20.125, 
+ 19.425, 17.375, 18.125, 19.225, 21.1, 18.15, 18.7, 16.425, 15.9, 16.025, 23.9, 20.55, 
+ 23.625, 23.675, 23.9, 19.125, 19.6, 20.05, 21.125, 21.75, 22.625, 20.45, 22.55, 24.575, 
+ 22.675, 23.675, 22.425, 21.15, 21.925, 23.25, 23.825, 25.85, 29.825, 30.85, 21.5, 
+ 19.625, 18.425, 15.825, 16.275, 16.35, 45.675, 54, 51.25, 17.275, 18.575, 17.025, 
+ 19.575, 19.975, 21.475, 16.825, 22.275, 21.825, 21.4, 23.75, 22.725, 29.4, 18.15, 
+ 18.65, 18.225, 22.4, 19.175, 18.275, 18.25, 21.2, 21.675, 22.7, 21.975, 21.325, 17.425, 
+ 16.875, 21.95, 18, 19.775, 19.375, 20.275, 20.325, 17.65, 18.475, 18, 18.4, 17.7, 
+ 19.2, 20.05, 18.05, 18, 17.825, 32.05, 30.1, 34.125, 19.45, 19.9, 19.325, 16.95, 
+ 37.5, 36.175, 37.475, 33.225, 19.675, 18.525, 20.175, 19.425, 18.775, 21.875, 21.45, 
+ 19.525, 19.025, 17.45, 22.675, 20.975, 22, 19.475, 21.075, 18.55, 20.55, 20.175, 
+ 21.975, 21.325, 20.925, 32.35, 29.7, 29, 31.45, 19.6, 24.475, 20.95, 24.025, 22.025, 
+ 25.275, 25.625, 26.85, 23, 21.175, 22.05, 20.525, 22.625, 19.7, 20.375, 21.275, 21.075, 
+ 22.125, 21.55, 20, 19.6, 19.775, 18.075, 17.45, 18.825, 16.725, 15.25, 15.7, 22.95, 
+ 37.3, 21.7, 20.775, 20.8, 20.325, 23.9, 21.225, 20.2, 21.575, 21.625, 22.2, 20.2, 
+ 19.75, 19.25, 18.575, 18.6, 19.25, 17.225, 19.175, 18.575, 18.95, 17.35, 18.075, 
+ 29.2, 39.675, 44.1, 16.1, 18.375, 17.85, 18.125, 18.05, 21.55, 21.225, 21.725, 26.6, 
+ 22.2, 22.075, 22, 21.325, 18.775, 20.525, 16.225, 18.125, 17.25, 18.05, 18.8, 20.35, 
+ 20.175, 19.275, 19.95, 20.25, 18.85, 22.6, 21.625, 18.85, 19.4, 18.375, 18.95, 19.275, 
+ 19.175, 19.275, 18.475, 16.2, 17.4, 22.15, 19.725, 19.7, 18.9, 19.2, 21.975, 40.425, 
+ 42.175, 20.425, 32.2, 14.875, 14.625, 15.725, 15.25, 18.975, 18.6, 17.45, 17.6, 27.1, 
+ 23.925, 23.95, 19.275, 16.775, 15.5, 17.35, 29.05, 20.525, 19.65, 19.2, 17.4, 17.775, 
+ 18.025, 17.275, 19.375, 19.55, 21.5, 19.575, 18.525, 18.375, 20.5, 28.375, 25.1, 
+ 20.775, 21.55, 21.825, 23.025, 20.8, 19.825, 17.95, 21.725, 19.5, 34.25, 31.225, 
+ 15.4, 14.925, 15.4, 15, 18.85, 18.825, 18.075, 18.1, 17.75, 22.75, 24.25, 23.65, 
+ 22.125, 23.925, 21.425, 20.125, 18.15, 17.925, 17.05, 16.7, 16.475, 17.65, 16.225, 
+ 16.55, 16.55, 17.2, 19.5, 20.1, 17.45, 34.4, 34.55, 29.75, 31.475, 31.275, 25.2, 
+ 24.2, 25.6, 28.775, 25.45, 25.95, 24.15, 21.475, 22.225, 22, 21.65, 19.325, 18.1, 
+ 18.2, 17.25, 20.6, 25.225, 24.3, 24.4, 21.475, 18.05, 23.525, 17.6, 18.125, 17.65, 
+ 17.7, 20.025, 30.425, 51.75, 43.5, 54.55, 60.65, 22.55, 21.15, 21.875, 23.225, 23.275, 
+ 25.525, 19.275, 20.7, 18.975, 18.6, 18.6, 16.75, 17.7, 40.275, 35.275, 31.05, 32.675, 
+ 34.8, 21, 20.45, 19.05, 20.375, 19.55, 19.025, 17.4, 17.275, 20.5, 24.2, 20.15, 20.2, 
+ 19.4, 20.15, 21.05, 22.025, 23.85, 24.775, 30.6, 28.35, 19.15, 19.4, 21.35, 21.975, 
+ 22.5, 21.1, 23.9, 20.9, 18.375, 19.125, 19.55, 16.325, 17.1, 19.825, 17.25, 37.825, 
+ 37.45, 43.15, 22.475, 20.925, 17.05, 18.575, 15.775, 15.725, 15.7, 19.2, 18.925, 
+ 18.05, 17.5, 17.5, 17, 16.225, 16.45, 16.55, 15.175, 26.625, 26.35, 25.05, 26.475, 
+ 26.925, 27.375, 23.4, 48.25, 21.795, 25.725, 22.6, 23.825, 25.75, 24.825, 22.925, 
+ 21.675, 20.8, 22.65, 31.4, 30.725, 32.075, 16.85, 16.75, 15.675, 16.725, 18.775, 
+ 17.125, 16.975, 17.875, 18.875, 21.375, 18.125, 18.025, 16.725, 15.625, 19.825, 20.325, 
+ 20.45, 22.95, 19.175, 18.75, 19.45, 19.175, 19.425, 20.2, 18.625, 21.25, 23.675, 
+ 17.55, 23.1, 26.25, 22.65, 22.225, 20.9, 16.275, 17.225, 16.65, 17.225, 19.375, 28.15, 
+ 22.475, 23.775, 23.025, 17.35, 18.275, 17.2, 16.625, 17.55, 18.775, 17.925, 18.425, 
+ 16.425, 17.8, 21.3, 23.55, 23.7, 20.7, 21.1, 18.55, 16.875, 17.85, 15.925, 17.625, 
+ 18.2, 19.15, 20.525, 19.65, 21.4, 18.825, 18.2, 19.25, 16.975, 18.5, 19.075, 18.3, 
+ 18.575, 17.375, 17.8, 20.525, 19.875, 20.25, 18.375, 17.175, 20.6, 20.45, 18.625, 
+ 19.25, 19, 27.575, 18.8, 19.55, 19.375, 19.45, 15.15, 16.375, 16.4, 14.675, 19.15, 
+ 19.85, 19.525, 19.5, 16.85, 21.45, 17.7, 17.275, 29.05, 32.8, 20.325, 19.625, 20, 
+ 20.75, 18.7, 17.75, 18.175, 18.9, 17.85, 29.375, 27.55, 17.575, 15.725, 17.225, 16.025, 
+ 15.025, 16.3, 14.2, 15.475, 17.1, 17.75, 17.825), .Dim = c(1496L, 2L), .Dimnames = list(
+     NULL, c("MSFC.T25FW", "MSFC.NHPT"))), c(TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, 
+ FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, 
+ FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, TRUE, FALSE, 
+ TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, 
+ FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, 
+ FALSE, FALSE), c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), NULL, c(7L, 4L, 1L, 5L, 8L, 8L, 
+ 6L, 6L, 3L, 5L, 10L, 2L, 9L, 8L, 7L, 6L, 5L, 2L, 7L, 4L, 5L, 1L, 7L, 9L, 2L, 5L, 
+ 1L, 3L, 5L, 9L, 3L, 2L, 5L, 6L, 1L, 3L, 6L, 9L, 7L, 7L, 2L, 8L, 9L, 4L, 8L, 2L, 6L, 
+ 2L, 7L, 5L, 9L, 2L, 7L, 4L, 3L, 1L, 8L, 5L, 6L, 4L, 9L, 6L, 2L, 1L, 2L, 8L, 5L, 3L, 
+ 6L, 4L, 6L, 6L, 8L, 2L, 9L, 6L, 6L, 8L, 6L, 2L, 9L, 2L, 7L, 8L, 2L, 10L, 10L, 9L, 
+ 7L, 4L, 10L, 9L, 6L, 8L, 2L, 5L, 3L, 4L, 5L, 6L, 4L, 7L, 5L, 6L, 7L, 8L, 10L, 2L, 
+ 5L, 3L, 10L, 8L, 5L, 3L, 2L, 7L, 8L, 3L, 9L, 1L, 7L, 9L, 5L, 1L, 2L, 10L, 5L, 8L, 
+ 8L, 7L, 2L, 5L, 8L, 9L, 1L, 9L, 6L, 2L, 4L, 2L, 10L, 2L, 8L, 1L, 7L, 10L, 2L, 10L, 
+ 5L, 7L, 5L, 8L, 1L, 9L, 6L, 5L, 3L, 6L, 2L, 8L, 1L, 10L, 5L, 5L, 3L, 3L, 7L, 8L, 
+ 10L, 2L, 8L, 10L, 9L, 5L, 5L, 1L, 9L, 3L, 2L, 6L, 5L, 7L, 3L, 1L, 3L, 4L, 3L, 3L, 
+ 4L, 7L, 8L, 1L, 1L, 5L, 3L, 5L, 10L, 9L, 1L, 6L, 3L, 10L, 7L, 4L, 7L, 2L, 7L, 3L, 
+ 10L, 3L, 8L, 4L, 9L, 4L, 5L, 9L, 3L, 4L, 8L, 10L, 4L, 10L, 9L, 6L, 8L, 6L, 5L, 2L, 
+ 3L, 6L, 1L, 2L, 5L, 1L, 2L, 4L, 10L, 10L, 1L, 8L, 8L, 6L, 6L, 7L, 6L, 1L, 9L, 9L, 
+ 1L, 1L, 5L, 4L, 7L, 8L, 2L, 10L, 1L, 7L, 6L, 9L, 10L, 2L, 3L, 9L, 2L, 5L, 6L, 4L, 
+ 3L, 4L, 5L, 4L, 9L, 3L, 8L, 9L, 10L, 8L, 1L, 1L, 5L, 7L, 6L, 8L, 7L, 8L, 6L, 3L, 
+ 4L, 4L, 1L, 4L, 4L, 2L, 7L, 8L, 4L, 9L, 4L, 10L, 9L, 9L, 5L, 8L, 9L, 7L, 1L, 4L, 
+ 2L, 5L, 9L, 4L, 1L, 5L, 1L, 6L, 5L, 4L, 5L, 2L, 9L, 4L, 7L, 7L, 9L, 2L, 1L, 3L, 5L, 
+ 10L, 10L, 7L, 4L, 9L, 2L, 3L, 3L, 3L, 8L, 4L, 4L, 7L, 6L, 5L, 9L, 10L, 6L, 10L, 3L, 
+ 5L, 3L, 6L, 5L, 4L, 2L, 10L, 1L, 9L, 2L, 5L, 10L, 2L, 3L, 4L, 4L, 2L, 6L, 7L, 2L, 
+ 3L, 2L, 1L, 4L, 6L, 4L, 4L, 4L, 8L, 6L, 7L, 5L, 5L, 6L, 6L, 7L, 9L, 3L, 10L, 3L, 
+ 2L, 2L, 8L, 5L, 7L, 3L, 4L, 7L, 5L, 5L, 4L, 8L, 1L, 4L, 7L, 2L, 6L, 10L, 1L, 10L, 
+ 8L, 8L, 5L, 2L, 1L, 8L, 7L, 1L, 5L, 9L, 10L, 6L, 2L, 1L, 7L, 10L, 5L, 9L, 10L, 1L, 
+ 3L, 8L, 7L, 2L, 5L, 3L, 3L, 6L, 1L, 1L, 1L, 6L, 4L, 6L, 1L, 10L, 2L, 3L, 3L, 8L, 
+ 4L, 5L, 3L, 9L, 10L, 2L, 2L, 4L, 9L, 8L, 1L, 10L, 9L, 3L, 7L, 1L, 2L, 6L, 2L, 8L, 
+ 9L, 10L, 4L, 7L, 4L, 5L, 5L, 4L, 10L, 9L, 6L, 1L, 4L, 9L, 2L, 10L, 4L, 9L, 3L, 9L, 
+ 7L, 7L, 5L, 6L, 10L, 4L, 10L, 1L, 9L, 5L, 8L, 8L, 5L, 8L, 1L, 8L, 7L, 6L, 7L, 8L, 
+ 10L, 7L, 9L, 5L, 3L, 2L, 9L, 8L, 5L, 3L, 1L, 2L, 2L, 5L, 2L, 2L, 4L, 3L, 4L, 3L, 
+ 8L, 10L, 6L, 9L, 1L, 3L, 1L, 4L, 6L, 2L, 1L, 7L, 6L, 1L, 6L, 9L, 4L, 1L, 1L, 3L, 
+ 6L, 9L, 7L, 10L, 9L, 4L, 8L, 4L, 8L, 2L, 7L, 5L, 8L, 4L, 5L, 5L, 4L, 10L, 4L, 8L, 
+ 4L, 1L, 9L, 2L, 6L, 10L, 1L, 4L, 4L, 4L, 1L, 10L, 2L, 10L, 1L, 1L, 1L, 5L, 3L, 10L, 
+ 1L, 5L, 10L, 7L, 3L, 3L, 3L, 2L, 7L, 9L, 9L, 8L, 1L, 3L, 3L, 3L, 9L, 6L, 5L, 9L, 
+ 9L, 8L, 9L, 10L, 6L, 7L, 6L, 8L, 9L, 4L, 2L, 7L, 2L, 1L, 2L, 10L, 10L, 6L, 1L, 8L, 
+ 10L, 9L, 10L, 10L, 3L, 2L, 7L, 7L, 2L, 4L, 4L, 2L, 5L, 5L, 8L, 7L, 3L, 5L, 4L, 4L, 
+ 7L, 2L, 7L, 9L, 6L, 6L, 6L, 10L, 8L, 5L, 6L, 10L, 8L, 2L, 3L, 9L, 6L, 8L, 4L, 6L, 
+ 2L, 8L, 1L, 3L, 5L, 8L, 2L, 9L, 8L, 1L, 6L, 8L, 4L, 7L, 7L, 8L, 9L, 9L, 3L, 9L, 8L, 
+ 7L, 2L, 8L, 8L, 5L, 7L, 2L, 5L, 1L, 4L, 9L, 10L, 8L, 2L, 7L, 7L, 3L, 8L, 4L, 10L, 
+ 3L, 3L, 3L, 9L, 3L, 7L, 6L, 3L, 5L, 9L, 4L, 4L, 7L, 1L, 5L, 10L, 6L, 6L, 8L, 7L, 
+ 3L, 8L, 4L, 5L, 4L, 10L, 10L, 1L, 6L, 9L, 7L, 7L, 6L, 7L, 10L, 5L, 4L, 6L, 4L, 9L, 
+ 2L, 10L, 6L, 9L, 4L, 3L, 5L, 8L, 5L, 8L, 10L, 6L, 4L, 2L, 4L, 1L, 7L, 1L, 7L, 7L, 
+ 8L, 6L, 1L, 1L, 9L, 7L, 9L, 9L, 7L, 10L, 3L, 9L, 7L, 3L, 3L, 10L, 2L, 3L, 8L, 10L, 
+ 8L, 10L, 1L, 8L, 2L, 8L, 8L, 6L, 10L, 7L, 5L, 2L, 3L, 3L, 8L, 2L, 1L, 3L, 2L, 8L, 
+ 3L, 3L, 2L, 9L, 4L, 4L, 2L, 6L, 6L, 6L, 9L, 9L, 4L, 2L, 4L, 10L, 9L, 3L, 6L, 6L, 
+ 5L, 10L, 6L, 4L, 2L, 3L, 4L, 8L, 8L, 3L, 10L, 8L, 9L, 3L, 8L, 6L, 6L, 1L, 3L, 1L, 
+ 6L, 3L, 1L, 1L, 3L, 10L, 9L, 5L, 9L, 5L, 9L, 3L, 9L, 1L, 4L, 10L, 3L, 7L, 2L, 10L, 
+ 1L, 7L, 10L, 1L, 4L, 6L, 5L, 5L, 7L, 9L, 3L, 2L, 7L, 1L, 5L, 5L, 8L, 1L, 3L, 1L, 
+ 2L, 7L, 8L, 4L, 6L, 4L, 7L, 6L, 7L, 2L, 9L, 1L, 7L, 1L, 5L, 1L, 9L, 10L, 5L, 10L, 
+ 1L, 7L, 4L, 6L, 5L, 5L, 10L, 3L, 10L, 9L, 1L, 10L, 5L, 4L, 1L, 2L, 9L, 2L, 8L, 6L, 
+ 5L, 2L, 10L, 1L, 4L, 2L, 2L, 9L, 4L, 10L, 8L, 1L, 1L, 4L, 6L, 3L, 6L, 3L, 9L, 2L, 
+ 7L, 9L, 3L, 5L, 5L, 7L, 10L, 5L, 2L, 5L, 2L, 7L, 6L, 8L, 4L, 1L, 4L, 5L, 10L, 8L, 
+ 5L, 10L, 6L, 4L, 2L, 1L, 5L, 10L, 3L, 8L, 1L, 7L, 3L, 7L, 4L, 2L, 5L, 3L, 6L, 6L, 
+ 7L, 7L, 9L, 8L, 8L, 7L, 7L, 7L, 9L, 9L, 3L, 1L, 5L, 8L, 3L, 6L, 1L, 3L, 4L, 8L, 2L, 
+ 5L, 3L, 3L, 8L, 10L, 8L, 7L, 7L, 6L, 6L, 3L, 9L, 9L, 8L, 1L, 2L, 10L, 7L, 10L, 1L, 
+ 7L, 10L, 4L, 5L, 5L, 8L, 2L, 10L, 5L, 3L, 3L, 5L, 3L, 5L, 8L, 10L, 7L, 5L, 6L, 8L, 
+ 1L, 6L, 2L, 3L, 2L, 10L, 3L, 2L, 1L, 6L, 1L, 9L, 9L, 4L, 5L, 9L, 8L, 6L, 1L, 6L, 
+ 7L, 5L, 4L, 5L, 6L, 6L, 10L, 10L, 7L, 5L, 7L, 7L, 4L, 2L, 1L, 2L, 9L, 4L, 8L, 2L, 
+ 1L, 8L, 7L, 2L, 9L, 5L, 1L, 5L, 10L, 9L, 2L, 6L, 1L, 3L, 1L, 4L, 10L, 2L, 9L, 1L, 
+ 8L, 8L, 9L, 10L, 9L, 1L, 3L, 8L, 10L, 6L, 9L, 10L, 3L, 3L, 5L, 4L, 1L, 7L, 10L, 9L, 
+ 4L, 6L, 7L, 1L, 8L, 5L, 10L, 8L, 7L, 9L, 6L, 8L, 1L, 3L, 9L, 3L, 10L, 7L, 6L, 3L, 
+ 4L, 6L, 3L, 9L, 6L, 3L, 9L, 10L, 3L, 7L, 7L, 7L, 9L, 3L, 4L, 3L, 7L, 4L, 8L, 6L, 
+ 8L, 7L, 10L, 10L, 9L, 3L, 10L, 6L, 2L, 9L, 3L, 1L, 3L, 2L, 7L, 8L, 4L, 9L, 9L, 5L, 
+ 6L, 5L, 6L, 10L, 9L, 9L, 10L, 9L, 2L, 7L, 3L, 2L, 6L, 8L, 8L, 1L, 10L, 1L, 1L, 8L, 
+ 1L, 6L, 5L, 1L, 10L, 9L, 9L, 10L, 4L, 4L, 7L, 9L, 8L, 9L, 1L, 4L, 8L, 5L, 7L, 1L, 
+ 1L, 6L, 8L, 7L, 10L, 7L, 6L, 8L, 10L, 3L, 3L, 1L, 7L, 8L, 1L, 10L, 2L, 8L, 5L, 7L, 
+ 6L, 1L, 3L, 4L, 2L, 5L, 2L, 10L, 9L, 7L, 3L, 1L, 1L, 6L, 2L, 3L, 2L, 9L, 7L, 1L, 
+ 5L, 2L, 7L, 6L, 2L, 6L, 9L, 9L, 3L, 1L, 6L, 2L, 6L, 7L, 8L, 8L, 5L, 4L, 10L, 2L, 
+ 4L, 2L, 10L, 4L, 5L, 5L, 7L, 6L, 6L, 1L, 6L, 7L, 3L, 3L, 9L, 5L, 4L, 4L, 4L, 2L, 
+ 9L, 4L, 1L, 7L, 4L, 8L, 4L, 5L, 1L, 10L, 10L, 6L, 3L, 9L, 2L, 6L, 3L, 8L, 6L, 4L, 
+ 6L, 6L, 2L, 2L, 4L, 10L, 10L, 3L, 10L, 5L, 7L, 9L, 10L, 8L, 8L, 10L, 2L, 2L, 10L, 
+ 9L, 1L, 2L, 10L, 2L, 9L, 5L, 5L, 10L, 4L, 4L, 1L, 3L, 7L, 8L, 8L, 6L, 7L, 3L, 7L, 
+ 4L, 10L, 6L, 7L, 10L, 10L, 7L, 9L, 1L, 2L, 5L, 6L, 1L, 6L, 1L, 5L, 8L, 8L, 10L, 7L, 
+ 8L, 1L, 10L, 8L, 6L, 8L, 5L, 10L, 9L, 5L, 4L, 5L, 2L, 10L, 6L, 1L, 2L, 9L, 4L, 4L, 
+ 4L, 3L, 4L, 4L, 3L, 9L, 3L, 4L, 9L, 5L, 8L, 9L, 4L, 6L, 1L, 6L, 6L, 8L, 4L, 1L, 1L, 
+ 3L, 5L, 3L, 2L, 6L, 5L, 2L, 2L, 8L, 2L, 1L, 5L, 10L, 3L, 2L, 3L, 2L, 6L, 6L, 4L, 
+ 6L, 10L, 7L, 10L, 5L, 7L, 8L, 7L, 4L, 6L, 7L, 1L, 7L, 5L, 9L, 7L, 9L, 10L, 8L, 4L, 
+ 4L, 1L, 4L, 1L, 10L, 7L, 9L, 5L, 3L, 8L, 5L, 2L, 3L, 1L, 4L, 7L, 5L, 2L, 10L, 5L, 
+ 3L, 10L, 2L, 10L, 8L), "auc", TRUE, FALSE)
+Already run predictor 'RF' on group 'MS', skipping...
+Already run predictor 'RF2' on group 'MS', skipping...
+Already run predictor 'RF3' on group 'MS', skipping...
+Already run predictor 'RFO' on group 'MS', skipping...
+Already run predictor 'RP' on group 'MS', skipping...
+Already run predictor 'RPS' on group 'MS', skipping...
+Already run predictor 'SVM' on group 'MS', skipping...
+Already run predictor 'NB' on group 'MS', skipping...
+Already run predictor 'KNN' on group 'MS', skipping...
+Already run predictor 'KNNC' on group 'MS', skipping...
+Treating group of Categories: FSMRMS
+Selected columns:
+FSSs.Visual, FSSs.Brainstem, FSSs.Pyramidal, FSSs.Cerebellar, FSSs.Sensory, FSSs.Bowel, FSSs.Mental, MRI.CE_Lesion, MRI.GM_Volume, MRI.Siena_PBVC, MSFC.T25FW, MSFC.NHPT
+Already run predictor 'GLM' on group 'FSMRMS', skipping...
+Already run predictor 'RF' on group 'FSMRMS', skipping...
+Already run predictor 'RF2' on group 'FSMRMS', skipping...
+Already run predictor 'RF3' on group 'FSMRMS', skipping...
+Already run predictor 'RFO' on group 'FSMRMS', skipping...
+Already run predictor 'RP' on group 'FSMRMS', skipping...
+Running predictor 'RPS' for group 'FSMRMS'.
+KNNC for groups MSFC - QOL                          (  7 features) ->  best k: 40 / kernel: optimal
+Ran predictor 'RPS' for group 'FSMSQO' in 0.15 minutes.
+Running predictor 'SVM' for group 'FSMSQO'.
+Ran predictor 'RPS' for group 'FSMRMS' in 0.10 minutes.
+Running predictor 'SVM' for group 'FSMRMS'.
+KNNC for groups MSFC - QOL                          (  7 features) ->  best k: 70 / kernel: optimal
+KNNC for groups MSFC - QOL                          (  7 features) ->  best k: 60 / kernel: optimal
+KNNC for groups MSFC - QOL                          (  7 features) ->  best k: 70 / kernel: optimal
+Stopping cluster...
+Time elapsed for the run:
+52.07871 secs

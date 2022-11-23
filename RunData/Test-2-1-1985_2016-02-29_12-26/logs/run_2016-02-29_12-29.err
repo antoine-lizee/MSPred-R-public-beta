@@ -1,0 +1,235 @@
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:base’:
+
+    crossprod, tcrossprod
+
+Loading required package: foreach
+Loaded glmnet 2.0-2
+
+Loaded glmnet 2.0-2
+
+Loaded glmnet 2.0-2
+
+Loaded glmnet 2.0-2
+
+Loaded glmnet 2.0-2
+
+Loaded glmnet 2.0-2
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: Warning message:
+package ‘dplyr’ was built under R version 3.1.3 
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in .performance.auc(fpr.stop = 1, predictions = structure(c(0.06,  : 
+  Not enough distinct predictions to compute area under the ROC curve.
+In addition: Warning messages:
+1: package ‘dplyr’ was built under R version 3.1.3 
+2: package ‘glmnet’ was built under R version 3.1.3 
+3: package ‘Matrix’ was built under R version 3.1.3 
+4: package ‘foreach’ was built under R version 3.1.3 
+5: package ‘randomForest’ was built under R version 3.1.3 
+6: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+7: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+8: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+9: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+10: package ‘e1071’ was built under R version 3.1.3 
+Error in cl[C] : only 0's may be mixed with negative subscripts
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: Warning messages:
+1: package ‘dplyr’ was built under R version 3.1.3 
+2: package ‘glmnet’ was built under R version 3.1.3 
+3: package ‘Matrix’ was built under R version 3.1.3 
+4: package ‘foreach’ was built under R version 3.1.3 
+5: package ‘randomForest’ was built under R version 3.1.3 
+6: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+7: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+8: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+9: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+10: package ‘e1071’ was built under R version 3.1.3 
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: Warning messages:
+1: package ‘dplyr’ was built under R version 3.1.3 
+2: package ‘glmnet’ was built under R version 3.1.3 
+3: package ‘Matrix’ was built under R version 3.1.3 
+4: package ‘foreach’ was built under R version 3.1.3 
+5: package ‘randomForest’ was built under R version 3.1.3 
+6: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+7: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+8: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+9: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+10: package ‘e1071’ was built under R version 3.1.3 
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: Warning messages:
+1: package ‘dplyr’ was built under R version 3.1.3 
+2: package ‘glmnet’ was built under R version 3.1.3 
+3: package ‘Matrix’ was built under R version 3.1.3 
+4: package ‘foreach’ was built under R version 3.1.3 
+5: package ‘randomForest’ was built under R version 3.1.3 
+6: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+7: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+8: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+9: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+10: package ‘e1071’ was built under R version 3.1.3 
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: Warning messages:
+1: package ‘dplyr’ was built under R version 3.1.3 
+2: package ‘glmnet’ was built under R version 3.1.3 
+3: package ‘Matrix’ was built under R version 3.1.3 
+4: package ‘foreach’ was built under R version 3.1.3 
+5: package ‘randomForest’ was built under R version 3.1.3 
+6: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+7: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+8: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+9: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+10: package ‘e1071’ was built under R version 3.1.3 
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
+Error in cl[C] : only 0's may be mixed with negative subscripts
+In addition: Warning messages:
+1: package ‘dplyr’ was built under R version 3.1.3 
+2: package ‘glmnet’ was built under R version 3.1.3 
+3: package ‘Matrix’ was built under R version 3.1.3 
+4: package ‘foreach’ was built under R version 3.1.3 
+5: package ‘randomForest’ was built under R version 3.1.3 
+6: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+7: In randomForest.default(Xtrain, Ytrain, Xtest) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+8: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+9: In randomForest.default(Xtrain, Ytrain, Xtest, mtry = floor(sqrt(ncol(Xtest)))) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+10: package ‘e1071’ was built under R version 3.1.3 
+Error in `[.default`(cl, C) : 
+  only 0's may be mixed with negative subscripts
