@@ -10,7 +10,7 @@ source("Code/01_Label.R")
 
 # Extract & Compute performance data ----------------------------------------------------------
 
-yExtr <- extractYpred("2022")
+yExtr <- extractYpred("All-5-10")
 perfDfTot <- perfYpredDf(yExtr = yExtr)
 perfDf <- perfDfTot %>% 
   filter(!method %in% c("SofSVM")) %>% 

@@ -40,7 +40,7 @@ perfDfNorm <- perfDfAgg %>%
 ## Get for the example cat
 perfDfMeth <- perfDfNorm %>% filter(cv == 1, 
                                     mPcat == max(mPcat), 
-                                    method %in% c("GLM", "NB", "RF", "RF2", "RF3", "SVM"))
+                                    method %in% c("GLM", "NB", "RFO", "SVM"))
 
 ## Get for the example method
 perfDfCat <- perfDfNorm %>% filter(cv == 1, 

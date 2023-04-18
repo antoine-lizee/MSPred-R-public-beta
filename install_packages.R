@@ -18,7 +18,8 @@ packages <- c(
   "grid",
   "XLConnect",
   "caret",
-  "xgboost"
+  "xgboost",
+  "Hmisc"
 )
 installed_packages <- rownames(installed.packages())
 

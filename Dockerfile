@@ -3,6 +3,7 @@
 
 ## Commands:
 # Build:       docker build -t antoinelizee/mspred . --no-cache --progress plain
+#              docker build -t antoinelizee/mspred:3.5.3 . --no-cache --progress plain --build-arg R_VERSION=3.5.3
 # Run (dev):   docker run -e DISABLE_AUTH=true -e ROOT=TRUE -p 8787:8787 -d --rm --name mspred -v "$PWD:/mspred" antoinelizee/mspred
 #      with:   docker exec -ti mspred /bin/bash
 # Run (repro): TBD

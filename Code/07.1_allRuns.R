@@ -82,7 +82,7 @@ ggTot <- ggplot(data = perfDf %>%
   facet_wrap(~ catGrDot, nrow = 3) +
   geom_text(data = perfDfLabels, aes(label = sprintf('%d', n)), x = 2.5, y = 0.45, color = "black")
 
-ggsave(ggTot, filename = file.path(yExtr$RD, "07.1_totPerf.pdf"), w = 16, h = 10)#, device = cairo_pdf)
+ggsave(ggTot, filename = file.path(yExtr$RD, "07.1_totPerf.pdf"), w = 25, h = 10)#, device = cairo_pdf)
 
 
 # Alternate vertical viz --------------------------------------------------
