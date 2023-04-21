@@ -45,7 +45,7 @@ list <- structure(NA,class="result")
 # cat with sprintf
 cats <- function(fmt, ..., file = if(interactive() | sink.number() > 0) "" else "run.log", timing = TRUE) {
   out <- sprintf(fmt, ...)
-  if (timing) out <- paste0(sprintf('%s: ', Sys.time()), out)
+  if (timing) out <- paste0(sprintf('%s:  ', Sys.time()), out)
   cat(out, file = file, append = TRUE)
 }
 
@@ -114,6 +114,11 @@ bool2facs <- function(df) {
 
 # Performance Assessment and estimation (miscs) -------------------------------------------------------------
 
+uniquifyCatGroups <- function(cg) {
+  CG <- unique(lapply(lapply(cg, sort), unique))
+  CG[order(sapply(CG, function(group) if (all(group == ".")) Inf else length(group)))]
+}
+
 createCatGroups <- function(featCats, level = length(featCats)) {
   cCG <- function(featCats, level) {
     if (level == 0) {
@@ -124,7 +129,7 @@ createCatGroups <- function(featCats, level = length(featCats)) {
                                       'c', featCat))
     }
   }
-  unique(lapply(lapply(c(cCG(featCats, level)), sort), unique))
+  uniquifyCatGroups(c(cCG(featCats, level)))
 }
 
 createArgsDf <- function(..., maxRuns = 200) {

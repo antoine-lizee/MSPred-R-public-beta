@@ -21,9 +21,10 @@ delayedEdss <- function(edssTable, id = "EPICID") {
 }
 
 # Classification function
+month <- as.difftime(365.25/12, units = "days")
 classify <- function (edssExpTable, 
-                      threNoInfo =  365.25/12 * (24 + 2), 
-                      threSig = 365.25/12 * (12 + 2), 
+                      threNoInfo =  (24 + 2) * month,
+                      threSig = (12 + 2) * month,
                       threEDSSsig = 3, 
                       thredEDSSstable = 0,
                       thredEDSSneg = 0,

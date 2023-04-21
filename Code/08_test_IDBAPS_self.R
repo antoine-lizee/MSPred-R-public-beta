@@ -41,19 +41,6 @@ if (dsSize == "wide") {
   featCats <- c("Core", "Patient")
 }
 
-createCatGroups <- function(featCats, level = length(featCats)) {
-  cCG <- function(featCats, level) {
-    if (level == 0) {
-      return(list(NULL))
-    } else {
-      sapply(featCats, 
-             function(featCat) lapply(cCG(featCats, level - 1),
-                                      'c', featCat))
-    }
-  }
-  unique(lapply(lapply(c(cCG(featCats, level)), sort), unique))
-}
-
 catGroups <- createCatGroups(featCats)
 
 runAll(predictTableI, 4, 10,
